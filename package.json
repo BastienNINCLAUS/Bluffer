@@ -1,0 +1,26 @@
+{
+  "name": "bluffer",
+  "version": "0.1.0",
+  "description": "Bluffer : jeu de bluff façon Kahoot (écran partagé + téléphones)",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node scripts/run-tests.js",
+    "test:e2e": "node scripts/run-tests.js --e2e",
+    "coverage": "c8 --check-coverage --lines 90 --include game/engine.js --include shared/**/*.js node scripts/run-tests.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "c8": "^10.1.2",
+    "playwright": "^1.47.0",
+    "socket.io-client": "^4.7.5"
+  }
+}
