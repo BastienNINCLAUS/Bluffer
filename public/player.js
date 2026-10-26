@@ -39,12 +39,13 @@ const joinEl = h('main', { id: 'join', class: 'screen' });
 const mainEl = h('main', { id: 'main', class: 'screen' });
 const composerEl = h('section', { id: 'composer', class: 'composer' });
 const chatListEl = h('div', { id: 'chat-list', class: 'chat-list' });
+const chatFormEl = h('form', { class: 'row', onsubmit: sendChat }, chatInput, h('button', { class: 'btn primary', type: 'submit' }, 'Envoyer'));
 const chatEl = h(
   'section',
   { id: 'chat', class: 'card chat', hidden: true },
   h('h3', {}, 'Tchat d’équipe'),
   chatListEl,
-  h('form', { class: 'row', onsubmit: sendChat }, chatInput, h('button', { class: 'btn primary', type: 'submit' }, 'Envoyer')),
+  chatFormEl,
 );
 const gameEl = h('div', { id: 'game', hidden: true }, mainEl, composerEl, chatEl);
 const footerEl = h('footer', { class: 'footer-hint' }, 'Besoin des règles ? Appuie sur « Règles » en haut de l’écran.');
@@ -491,21 +492,73 @@ setInterval(() => {
 
 // ---------- saisie au clavier ----------
 
-// Pendant la saisie, la page ne garde que la barre, la proposition en attente, les champs de saisie et un tchat réduit,
-// tous en haut de la page : le champ reste visible quel que soit le clavier, sans mesurer sa hauteur.
+// Pendant la saisie, la page ne garde que la barre, la proposition en attente, les champs de saisie et un tchat réduit.
+// Le champ du tchat reste en bas, collé au-dessus du clavier : on place ce champ d'après la zone visible
+// (visualViewport) ; tant que le navigateur ne signale pas de clavier, on suppose un clavier de taille courante
+// pour que le champ soit déjà visible et que le navigateur n'ait pas à faire défiler la page.
 const typingInputs = [chatInput, answerInput, nameInput];
 const viewport = window.visualViewport;
+const KEYBOARD_GUESS = 0.42;
 
 // Hauteur visible sans clavier : sert à détecter que le clavier a été replié.
 let baseHeight = Math.max(window.innerHeight, viewport?.height ?? 0);
 let typingSince = 0;
+let typingFrame = 0;
+// Vrai une fois que le navigateur a signalé le clavier : seul un retour à la pleine hauteur signifie alors « replié ».
+let keyboardSeen = false;
+
+function keyboardHeight() {
+  const layoutHeight = document.documentElement.clientHeight;
+  const reported = viewport ? layoutHeight - (viewport.offsetTop + viewport.height) : 0;
+  if (reported > 80) {
+    keyboardSeen = true;
+    return reported;
+  }
+  // La page elle-même a été rétrécie par le navigateur : rien à compenser.
+  if (layoutHeight < baseHeight - 80) {
+    keyboardSeen = true;
+    return 0;
+  }
+  return Math.round(layoutHeight * KEYBOARD_GUESS);
+}
+
+const debugEl = new URLSearchParams(location.search).has('debug') ? h('pre', { class: 'debug-overlay' }) : null;
+if (debugEl) document.body.append(debugEl);
+
+function layoutTyping() {
+  const kb = keyboardHeight();
+  document.documentElement.style.setProperty('--kb', `${kb}px`);
+  if (!chatEl.hidden) {
+    const visibleBottom = document.documentElement.clientHeight - kb;
+    const room = visibleBottom - chatFormEl.offsetHeight - chatListEl.getBoundingClientRect().top - 12;
+    chatListEl.style.maxHeight = `${Math.max(room, 72)}px`;
+  }
+  if (debugEl) {
+    debugEl.textContent = `vv.h=${Math.round(viewport?.height ?? -1)} vv.top=${Math.round(viewport?.offsetTop ?? -1)} inner=${window.innerHeight} client=${document.documentElement.clientHeight} base=${baseHeight} kb=${kb}`;
+  }
+}
+
+function typingLoop() {
+  if (!document.body.classList.contains('typing')) return;
+  layoutTyping();
+  typingFrame = requestAnimationFrame(typingLoop);
+}
 
 function setTyping(on) {
   if (document.body.classList.contains('typing') === on) return;
   document.body.classList.toggle('typing', on);
-  if (on) typingSince = Date.now();
   window.scrollTo(0, 0);
-  if (on) requestAnimationFrame(() => { chatListEl.scrollTop = chatListEl.scrollHeight; });
+  if (on) {
+    typingSince = Date.now();
+    keyboardSeen = false;
+    layoutTyping();
+    typingFrame = requestAnimationFrame(typingLoop);
+    requestAnimationFrame(() => { chatListEl.scrollTop = chatListEl.scrollHeight; });
+  } else {
+    cancelAnimationFrame(typingFrame);
+    chatListEl.style.maxHeight = '';
+    document.documentElement.style.removeProperty('--kb');
+  }
 }
 
 // Le clavier replié ne retire pas toujours le focus du champ : on le retire nous-mêmes.
@@ -524,7 +577,7 @@ if (viewport) {
       baseHeight = Math.max(window.innerHeight, viewport.height);
       return;
     }
-    if (viewport.height >= baseHeight - 80 && Date.now() - typingSince > 400) leaveTyping();
+    if (viewport.height >= baseHeight - 80 && Date.now() - typingSince > 400 && keyboardSeen) leaveTyping();
   };
   viewport.addEventListener('resize', onViewportChange);
   viewport.addEventListener('scroll', onViewportChange);

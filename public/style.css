@@ -119,13 +119,14 @@ body.player { max-width: 560px; margin: 0 auto; padding-bottom: 4rem; }
 #composer { padding: 0; }
 .composer.card { padding: .7rem; }
 
-/* Saisie au clavier : tout ce qui sert à écrire reste en haut de la page, hors de portée du clavier (voir player.js). */
+/* Saisie au clavier : le champ du tchat reste en bas, au-dessus du clavier (--kb et la hauteur de la liste sont posés par player.js). */
 body.player.typing { padding-bottom: 0; }
 .typing #main, .typing .footer-hint, .typing #chat h3 { display: none; }
 .typing #composer { margin-top: .5rem; }
-.typing #chat { display: flex; flex-direction: column; margin-top: .5rem; }
-.typing #chat form { order: -1; }
-.typing .chat-list { max-height: 26vh; margin-top: .5rem; padding: .6rem 0 0; }
+.typing #chat { margin-top: .5rem; }
+.typing #chat form { position: fixed; left: 0; right: 0; bottom: var(--kb, 0px); max-width: 560px; margin: 0 auto; padding: .6rem .8rem; background: var(--panel); box-shadow: 0 -8px 16px #0008; z-index: 8; }
+.typing .chat-list { padding-top: .6rem; }
+.debug-overlay { position: fixed; left: 0; top: 0; z-index: 99; margin: 0; padding: .2rem .4rem; background: #000c; color: #0f0; font-size: 11px; pointer-events: none; }
 .close-typing { display: none; }
 .typing .close-typing { display: inline-flex; }
 .selfie { display: flex; align-items: center; gap: 1rem; }
