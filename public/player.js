@@ -491,15 +491,10 @@ setInterval(() => {
 
 // ---------- saisie au clavier ----------
 
-// Pendant la saisie, la page se limite à la zone visible au-dessus du clavier : barre, proposition, saisie et tchat.
+// Pendant la saisie, la page ne garde que la barre, la proposition en attente, les champs de saisie et un tchat réduit,
+// tous en haut de la page : le champ reste visible quel que soit le clavier, sans mesurer sa hauteur.
 const typingInputs = [chatInput, answerInput, nameInput];
 const viewport = window.visualViewport;
-
-function syncViewport() {
-  const root = document.documentElement.style;
-  root.setProperty('--vvh', `${viewport.height}px`);
-  root.setProperty('--vvtop', `${viewport.offsetTop}px`);
-}
 
 // Hauteur visible sans clavier : sert à détecter que le clavier a été replié.
 let baseHeight = Math.max(window.innerHeight, viewport?.height ?? 0);
@@ -508,10 +503,7 @@ let typingSince = 0;
 function setTyping(on) {
   if (document.body.classList.contains('typing') === on) return;
   document.body.classList.toggle('typing', on);
-  if (on) {
-    typingSince = Date.now();
-    if (viewport) syncViewport();
-  }
+  if (on) typingSince = Date.now();
   window.scrollTo(0, 0);
   if (on) requestAnimationFrame(() => { chatListEl.scrollTop = chatListEl.scrollHeight; });
 }
@@ -532,9 +524,7 @@ if (viewport) {
       baseHeight = Math.max(window.innerHeight, viewport.height);
       return;
     }
-    const keyboardClosed = viewport.height >= baseHeight - 80;
-    if (keyboardClosed && Date.now() - typingSince > 400) leaveTyping();
-    else if (!keyboardClosed) syncViewport();
+    if (viewport.height >= baseHeight - 80 && Date.now() - typingSince > 400) leaveTyping();
   };
   viewport.addEventListener('resize', onViewportChange);
   viewport.addEventListener('scroll', onViewportChange);
