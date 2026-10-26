@@ -27,7 +27,8 @@ Adaptation du jeu de société Bluffer (voir [Rules.md](./Rules.md)) en applicat
 | `server.js` | Express, Socket.IO, salons à code de 4 lettres, machine à états, timers |
 | `game/engine.js` | Logique pure : tirage, mélange, validation, points |
 | `game/questions.json`, `game/questions.*.json` | Banque de questions, chacune avec sa vraie réponse et ses thèmes (`tags`) : questions rédigées à la main, anecdotes insolites de Wikipédia (`questions.dyk.json`) et faits classiques de Wikidata (`questions.wikidata.json`, thème « Classique ») |
-| `shared/themes.js` | Thèmes : décompte, filtre, sélection par défaut |
+| `shared/themes.js` | Thèmes : décompte, filtre |
+| `game/testGame.js` | Partie de test : code `TEST`, 2 questions génériques, robots |
 | `scripts/import-dyk.js`, `scripts/import-wikidata.js` | Génération des banques de questions (`NOTICE.md` : licences) |
 | `public/host.html`, `host.js` | Écran hôte |
 | `public/player.html`, `player.js` | Page joueur (reconnexion automatique) |
@@ -132,7 +133,9 @@ Le « Prêt » se règle au début de la partie :
 - Affiche l'avancement par équipe (nom, couleur, ronds avec photos des membres, par exemple « Les Lions : 2/3 ont validé ») sans révéler le contenu des échanges.
 - Dans les résultats, l'auteur de chaque réponse est identifié par le nom et la couleur de son équipe, avec son avatar (photo ou initiales).
 - **Classement entre les questions** : une barre horizontale par équipe, à la couleur de l'équipe, avec son nom, son avatar et son score. La longueur est proportionnelle au score du leader. L'animation (environ 2 s) étire chaque barre de l'ancien au nouveau score, avec un compteur et le gain de la question (« +3 »). Si le classement change, les lignes glissent à leur nouvelle position. Désactivée si l'appareil demande moins de mouvement.
-- Sur téléphone, le classement se limite au rang de l'équipe et aux points gagnés sur la question.- Fin de partie : classement final, équipe gagnante, et bouton « Rejouer » qui conserve les équipes, les noms et les couleurs.
+- Sur téléphone, le classement se limite au rang de l'équipe et aux points gagnés sur la question.
+- **Partie de test** : le bouton « 🧪 Partie de test » du salon crée un salon au code fixe `TEST`, avec 2 questions génériques (aucune question préparée) et 3 robots qui jouent seuls (prêt, réponse, vote, avec un petit délai). Les joueurs peuvent la rejoindre pour s'entraîner. Elle n'alimente pas le compteur de questions jouées, et en relancer une remplace la précédente.
+- Fin de partie : classement final, équipe gagnante, et bouton « Rejouer » qui conserve les équipes, les noms et les couleurs.
 
 ## 9 bis. Règles du jeu dans l'application
 

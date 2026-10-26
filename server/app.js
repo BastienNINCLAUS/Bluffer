@@ -7,6 +7,7 @@ import { Server } from 'socket.io';
 import QRCode from 'qrcode';
 import { Game } from '../game/engine.js';
 import { MemoryHistory } from '../game/history.js';
+import { TEST_CODE, TEST_QUESTIONS, addBots, createBots } from '../game/testGame.js';
 import { hostView, playerView } from '../game/views.js';
 import { PROTOCOL_VERSION, SERVER_EVENTS, validatePayload } from '../shared/protocol.js';
 import { resolvePublicUrl, lanAddress } from './publicUrl.js';
@@ -93,7 +94,7 @@ export function createApp({
     for (let attempt = 0; attempt < 100; attempt += 1) {
       let code = '';
       for (let i = 0; i < 4; i += 1) code += CODE_LETTERS[randomInt(CODE_LETTERS.length)];
-      if (!rooms.has(code)) return code;
+      if (code !== TEST_CODE && !rooms.has(code)) return code;
     }
     throw new Error('Plus de code de salon disponible.');
   }
@@ -132,6 +133,7 @@ export function createApp({
     const stamp = now();
     for (const room of [...rooms.values()]) {
       if (room.game.tick()) broadcast(room);
+      if (room.bots?.step()) broadcast(room);
       const hasSockets = room.hostSockets.size > 0 || [...room.playerSockets.values()].some((s) => s.size > 0);
       if (!hasSockets && stamp - room.lastActivity > roomTtlMs) closeRoom(room, 'expired');
     }
@@ -190,10 +192,17 @@ export function createApp({
     }
 
     on('host:create', 'none', ({ data }) => {
-      const code = newCode();
+      const test = data.test === true;
+      if (test) {
+        const previous = rooms.get(TEST_CODE);
+        if (previous) closeRoom(previous, 'replaced');
+      }
+      const code = test ? TEST_CODE : newCode();
       let game;
       try {
-        game = new Game({ code, questions, config: { ...(data.config ?? {}) }, now, rng, history });
+        game = test
+          ? new Game({ code, questions: [...TEST_QUESTIONS], config: { ...(data.config ?? {}), totalQuestions: TEST_QUESTIONS.length }, now, rng, history: new MemoryHistory() })
+          : new Game({ code, questions, config: { ...(data.config ?? {}) }, now, rng, history });
       } catch {
         return { ok: false, error: 'invalid_config' };
       }
@@ -205,7 +214,13 @@ export function createApp({
         playerSockets: new Map(),
         tokens: new Map(),
         lastActivity: now(),
+        bots: null,
       };
+      if (test) {
+        game.test = true;
+        room.bots = createBots(game, addBots(game));
+        room.bots.step();
+      }
       rooms.set(code, room);
       attachHost(room, socket);
       return { ok: true, code, token: room.hostToken, room };

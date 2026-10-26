@@ -44,7 +44,7 @@ describe('contrat des événements Socket.IO', () => {
     assert.deepEqual(Object.keys(hostView(game)).sort(), [
       'canLock', 'canStart', 'code', 'config', 'deadlineIn', 'history', 'limits', 'options', 'phase', 'players', 'pool',
       'question',
-      'ranking', 'ready', 'revealCount', 'revealTotal', 'role', 'selectedThemes', 'teams', 'teamsNamed', 'themes',
+      'ranking', 'ready', 'revealCount', 'revealTotal', 'role', 'selectedThemes', 'teams', 'teamsNamed', 'test', 'themes',
       'unassigned', 'winners',
     ]);
   });
@@ -54,7 +54,7 @@ describe('contrat des événements Socket.IO', () => {
     const view = playerView(game, groups[1][0]);
     assert.deepEqual(Object.keys(view).sort(), [
       'code', 'config', 'deadlineIn', 'limits', 'me', 'options', 'phase', 'players', 'question',
-      'ranking', 'ready', 'revealCount', 'revealTotal', 'role', 'team', 'teams', 'teamsNamed', 'winners',
+      'ranking', 'ready', 'revealCount', 'revealTotal', 'role', 'team', 'teams', 'teamsNamed', 'test', 'winners',
     ]);
     assert.deepEqual(Object.keys(view.me).sort(), ['id', 'name', 'ready', 'teamId']);
     assert.deepEqual(Object.keys(view.team).sort(), [

@@ -54,6 +54,7 @@ export function publicView(game) {
 
   return {
     code: game.code,
+    test: game.test === true,
     phase,
     config: { ...game.config },
     // Le texte reste caché tant que tout le monde n'est pas prêt, pour ne pas laisser le temps de réfléchir.

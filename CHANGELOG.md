@@ -4,6 +4,9 @@ Versionnement sémantique. Le numéro de protocole Socket.IO (`shared/protocol.j
 
 ## [Non publié]
 
+### Ajouté
+- Partie de test : bouton « 🧪 Partie de test » dans le salon de l'écran hôte. Salon au code fixe `TEST`, 2 questions génériques et 3 robots (`game/testGame.js`) qui se déclarent prêts, répondent et votent seuls ; les joueurs peuvent la rejoindre pour un tour de chauffe. Elle ne compte pas dans les questions jouées. Commande `host:create` : champ facultatif `test` ; la vue contient `test`.
+
 ### Modifié
 - Tous les thèmes sont cochés par défaut dans un nouveau salon (« Classique » compris).
 - Une équipe qui n'a pas validé à l'échéance du délai garde sa dernière proposition comme réponse ou comme vote, au lieu de ne rien jouer.

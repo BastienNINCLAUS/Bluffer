@@ -11,7 +11,7 @@ export const SERVER_EVENTS = Object.freeze({
 // Type de chaque champ : 'string', 'number', 'boolean', 'object', 'string|number', 'string|null'.
 // Un « ? » final rend le champ facultatif.
 export const COMMANDS = Object.freeze({
-  'host:create': { config: 'object?' },
+  'host:create': { config: 'object?', test: 'boolean?' },
   'host:resume': { code: 'string', token: 'string' },
   'host:configure': { config: 'object' },
   'host:randomize': { teamCount: 'number?' },

@@ -17,6 +17,8 @@ let publicUrl = location.origin;
 let conn = null;
 let previouslyRevealed = new Set();
 let creating = false;
+// Évite que la fin de partie demandée par « Nouvelle partie » ne recrée aussitôt une partie ordinaire.
+let restarting = false;
 
 const rulesText = await fetchRules();
 const carousel = createRulesCarousel(rulesText, { delai: 30 });
@@ -50,10 +52,10 @@ async function act(event, payload) {
   return result;
 }
 
-async function createRoom() {
+async function createRoom(test = false) {
   if (creating) return;
   creating = true;
-  const result = await conn.emit('host:create', { config: {} });
+  const result = await conn.emit('host:create', test ? { config: {}, test: true } : { config: {} });
   creating = false;
   if (!result.ok) return toast(errorMessage(result.error));
   saveJson(SESSION_KEY, { code: result.code, token: result.token });
@@ -71,13 +73,16 @@ async function resumeOrCreate() {
   await createRoom();
 }
 
-async function newGame() {
-  if (view && !confirm('Terminer cette partie et en créer une nouvelle ?')) return;
+async function newGame(test = false) {
+  const question = test ? 'Terminer cette partie et lancer une partie de test (code TEST, avec des robots) ?' : 'Terminer cette partie et en créer une nouvelle ?';
+  if (view && !confirm(question)) return;
+  restarting = true;
   await conn.emit('host:end');
   saveJson(SESSION_KEY, null);
   view = null;
   render();
-  await createRoom();
+  await createRoom(test);
+  restarting = false;
 }
 
 function advance() {
@@ -309,7 +314,7 @@ function stageFinal(v) {
     h('h1', { class: 'victory' }, winners.length > 1 ? '🏆 Égalité !' : '🏆 Victoire !'),
     h('div', { class: 'winners' }, winners.map((team) => h('div', { class: 'winner', vars: { '--team': team.color } }, avatarStack(v, team, 'xl'), h('div', { class: 'winner-name' }, teamLabel(team))))),
     renderScoreboard(v, { animate: false }),
-    h('div', { class: 'actions' }, h('button', { class: 'btn primary huge', type: 'button', onclick: () => act('host:replay') }, '↻ Rejouer (mêmes équipes)'), h('button', { class: 'btn', type: 'button', onclick: newGame }, 'Nouvelle partie')),
+    h('div', { class: 'actions' }, h('button', { class: 'btn primary huge', type: 'button', onclick: () => act('host:replay') }, '↻ Rejouer (mêmes équipes)'), h('button', { class: 'btn', type: 'button', onclick: () => newGame() }, 'Nouvelle partie')),
   ];
 }
 
@@ -354,12 +359,14 @@ function renderHint(v) {
 // ---------- en-tête ----------
 
 function renderHeader() {
-  const key = JSON.stringify([view?.code, view?.phase, status, publicUrl]);
+  const key = JSON.stringify([view?.code, view?.phase, view?.test, status, publicUrl]);
   region(headerEl, key, () => [
     h('span', { class: 'logo' }, 'Bluffer'),
+    view?.test ? h('span', { class: 'test-badge', title: 'Partie d’entraînement avec des robots' }, '🧪 Partie de test') : null,
     view && view.phase !== 'lobby' ? h('span', { class: 'join-info' }, `Rejoindre : ${publicUrl}/play · code `, h('strong', {}, view.code)) : null,
     h('span', { class: status === 'connected' ? 'dot-status ok' : 'dot-status', title: status }, ''),
-    view ? h('button', { class: 'btn small', type: 'button', onclick: newGame }, 'Nouvelle partie') : null,
+    view?.phase === 'lobby' && !view.test ? h('button', { class: 'btn small', type: 'button', onclick: () => newGame(true) }, '🧪 Partie de test') : null,
+    view ? h('button', { class: 'btn small', type: 'button', onclick: () => newGame() }, 'Nouvelle partie') : null,
   ]);
 }
 
@@ -402,7 +409,7 @@ conn = createConnection({
     saveJson(SESSION_KEY, null);
     view = null;
     render();
-    resumeOrCreate();
+    if (!restarting) resumeOrCreate();
   },
   onStatus(next) {
     status = next;

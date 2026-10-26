@@ -192,6 +192,7 @@ body.host { font-size: clamp(16px, 1.5vw, 26px); }
 .hbar { display: flex; align-items: center; gap: 1rem; padding: .6rem 1.5rem; background: #0f0c1ae6; }
 .logo { font-weight: 900; font-size: 1.6rem; color: var(--accent-2); }
 .join-info { flex: 1; color: var(--muted); }
+.test-badge { flex: 1; color: #fbbf24; font-weight: 700; }
 .stage { padding: 1.2rem 2rem 7rem; max-width: 1500px; margin: 0 auto; }
 .stage h1 { font-size: clamp(1.8rem, 3.2vw, 3.2rem); text-align: center; }
 .stage h2 { font-size: 1.5rem; }
