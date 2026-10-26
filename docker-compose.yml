@@ -10,3 +10,9 @@ services:
       # Utilisés pour construire l'URL du QR code : http://HOST_IP:HOST_PORT
       HOST_IP: "${HOST_IP:-}"
       HOST_PORT: "${HOST_PORT:-3417}"
+    volumes:
+      # Historique des questions déjà jouées (data/played.json dans le conteneur).
+      - bluffer-data:/data
+
+volumes:
+  bluffer-data:

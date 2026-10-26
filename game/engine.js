@@ -1,6 +1,7 @@
 import { cleanText, normalizeText } from '../shared/text.js';
 import { TEAM_COLORS } from '../shared/palette.js';
 import { themeCounts, filterByThemes } from '../shared/themes.js';
+import { MemoryHistory } from './history.js';
 
 export { TEAM_COLORS };
 
@@ -46,12 +47,13 @@ const fail = (error, extra = {}) => ({ ok: false, error, ...extra });
 const ok = (extra = {}) => ({ ok: true, ...extra });
 
 export class Game {
-  constructor({ code = 'TEST', questions, config = {}, now = Date.now, rng = Math.random } = {}) {
+  constructor({ code = 'TEST', questions, config = {}, now = Date.now, rng = Math.random, history = new MemoryHistory() } = {}) {
     if (!Array.isArray(questions) || questions.length === 0) {
       throw new Error('Une banque de questions non vide est requise.');
     }
     this.code = code;
     this.bank = questions;
+    this.history = history;
     this.themeList = themeCounts(questions);
     this.now = now;
     this.rng = rng;
@@ -62,7 +64,6 @@ export class Game {
     this.phase = PHASES.LOBBY;
     this.nextPlayerId = 1;
     this.nextTeamId = 1;
-    this.usedQuestionIds = new Set();
     this.resetRound();
     const applied = this.configure(config);
     if (!applied.ok) throw new Error(`Configuration invalide : ${applied.error}`);
@@ -219,9 +220,10 @@ export class Game {
 
   // Questions disponibles pour les thèmes choisis, face au nombre de questions demandé.
   pool() {
-    const available = filterByThemes(this.bank, this.config.themes).length;
+    const themed = filterByThemes(this.bank, this.config.themes);
+    const available = themed.length;
     const needed = this.config.totalQuestions;
-    return { available, needed, ok: available >= needed };
+    return { available, needed, ok: available >= needed, fresh: available - this.history.playedAmong(themed) };
   }
 
   poolError() {
@@ -417,14 +419,17 @@ export class Game {
 
   pickQuestions(count) {
     const themed = filterByThemes(this.bank, this.config.themes);
-    let pool = themed.filter((q) => !this.usedQuestionIds.has(q.id));
-    if (pool.length < count) {
-      this.usedQuestionIds.clear();
-      pool = themed;
-    }
-    const picked = this.shuffle(pool).slice(0, count);
-    for (const q of picked) this.usedQuestionIds.add(q.id);
-    return picked;
+    // Mélange puis tri stable par nombre de passages : les questions les moins jouées passent d'abord.
+    const ranked = this.shuffle(themed)
+      .map((question) => ({ question, played: this.history.count(question.id) }))
+      .sort((a, b) => a.played - b.played);
+    return this.shuffle(ranked.slice(0, count).map((entry) => entry.question));
+  }
+
+  resetHistory() {
+    if (this.phase !== PHASES.LOBBY) return fail('wrong_phase');
+    this.history.reset();
+    return ok();
   }
 
   replay() {
@@ -437,6 +442,7 @@ export class Game {
 
   enterQuestion() {
     this.question = this.order[this.qIndex];
+    this.history.record(this.question.id);
     this.phase = PHASES.QUESTION;
     this.options = [];
     this.revealOrder = [];

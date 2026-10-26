@@ -12,6 +12,11 @@ COPY game ./game
 COPY shared ./shared
 COPY public ./public
 
+# Compteur de questions jouées : à monter sur un volume pour survivre aux reconstructions de l'image.
+ENV DATA_DIR=/data
+RUN mkdir -p /data && chown node:node /data
+VOLUME /data
+
 # Port interne fixe ; le port publié sur le PC se règle avec HOST_PORT (docker-compose.yml).
 ENV PORT=3000
 EXPOSE 3000

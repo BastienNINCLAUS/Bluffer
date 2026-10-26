@@ -116,6 +116,20 @@ describe('confidentialité des vues', () => {
     assert.equal(hostView(game).winners.length, 3);
   });
 
+  test('le texte de la question reste caché avant que tout le monde soit prêt et absent des téléphones', () => {
+    const { game, ids } = startedBaseGame();
+    assert.equal(game.phase, PHASES.QUESTION);
+    assert.equal(hostView(game).question.text, null);
+    assert.ok(!json(hostView(game)).includes(game.question.text));
+    game.setReady(ids[0]);
+    assert.equal(hostView(game).players.find((p) => p.id === ids[0]).ready, true);
+    assert.equal(hostView(game).players.find((p) => p.id === ids[1]).ready, false);
+    toWriting(game);
+    assert.equal(hostView(game).question.text, game.question.text);
+    assert.ok(!('text' in playerView(game, ids[0]).question));
+    assert.ok(!json(playerView(game, ids[0])).includes(game.question.text));
+  });
+
   test('vue joueur inconnue', () => {
     const { game } = startedBaseGame();
     assert.equal(playerView(game, 'zzz'), null);

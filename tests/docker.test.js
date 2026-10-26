@@ -47,5 +47,13 @@ describe('Docker', () => {
     assert.equal(service.environment.HOST_PORT, '4242');
     assert.equal(service.environment.HOST_IP, '192.168.1.20');
     assert.equal(service.environment.PORT, '3000');
+    assert.equal(service.volumes[0].target, '/data');
+    assert.equal(service.volumes[0].type, 'volume');
+  });
+
+  test('le Dockerfile prépare un dossier /data accessible à l’utilisateur node', () => {
+    const dockerfile = readFileSync(join(root, 'Dockerfile'), 'utf8');
+    assert.match(dockerfile, /ENV DATA_DIR=\/data/);
+    assert.match(dockerfile, /chown node:node \/data/);
   });
 });

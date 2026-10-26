@@ -56,8 +56,9 @@ export function publicView(game) {
     code: game.code,
     phase,
     config: { ...game.config },
+    // Le texte reste caché tant que tout le monde n'est pas prêt, pour ne pas laisser le temps de réfléchir.
     question: QUESTION_PHASES.includes(phase)
-      ? { index: game.qIndex + 1, total: game.order.length, text: game.question.text }
+      ? { index: game.qIndex + 1, total: game.order.length, text: phase === PHASES.QUESTION ? null : game.question.text }
       : null,
     options: publicOptions(game),
     revealCount: game.revealCount,
@@ -74,6 +75,7 @@ export function publicView(game) {
       name: p.name,
       teamId: p.teamId,
       connected: p.connected,
+      ready: game.ready.has(p.id),
       hasPhoto: p.photo !== null,
       photoVersion: p.photoVersion,
     })),
@@ -94,6 +96,7 @@ export function hostView(game) {
     unassigned,
     themes: game.themeList.map((t) => ({ ...t })),
     selectedThemes: game.config.themes ?? game.themeList.map((t) => t.name),
+    history: { played: game.history.playedAmong(game.bank), total: game.bank.length },
     pool,
     canLock:
       game.phase === PHASES.LOBBY &&
@@ -121,6 +124,8 @@ export function playerView(game, playerId) {
 
   return {
     ...base,
+    // La question est lue sur l'écran commun, pas sur les téléphones.
+    question: base.question ? { index: base.question.index, total: base.question.total } : null,
     role: 'player',
     me: {
       id: player.id,

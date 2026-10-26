@@ -132,7 +132,9 @@ async function fullGame() {
   assert.equal(await phones.B1.getByText('Les Lions').count(), 0, 'le tchat ne fuit pas vers l’autre équipe');
   assert.equal(await host.getByText('Lions').count(), 0, 'le tchat ne fuit pas vers l’écran');
   await phones.A2.locator('.msg', { hasText: 'Les Lions' }).getByRole('button', { name: 'Proposer', exact: true }).click();
-  await phones.A1.getByText('Proposition de l’équipe').waitFor();
+  await phones.A1.locator('.proposal-banner').waitFor();
+  assert.match(await phones.A1.locator('.proposal-banner').textContent(), /Les Lions/);
+  assert.equal(await phones.B1.locator('.proposal-banner').count(), 0, 'l’encart reste propre à l’équipe');
   await phones.A1.getByRole('button', { name: 'Valider', exact: true }).click();
   await shot(phones.A1, '04-phone-naming');
   assert.equal(await host.locator('.badge.ok').count(), 1, 'seule l’équipe solo a un nom avant l’unanimité');
@@ -147,13 +149,17 @@ async function fullGame() {
   await shot(host, '05-host-naming');
   await button(host, 'Lancer la partie').click();
 
-  // Question.
-  await host.locator('.question-big h1').waitFor();
+  // Question : le texte n'apparaît qu'une fois tout le monde prêt.
+  await host.getByText('Prêts pour la prochaine question').waitFor();
+  assert.equal(await host.locator('.question-big h1').count(), 1);
+  assert.equal(await host.locator('.ready-member').count(), 5, 'état de chaque joueur affiché');
+  assert.ok(await host.getByText('Un doute sur les règles').isVisible(), 'rappel permanent des règles sur l’écran');
+  await shot(host, '06-host-question');
+  for (const name of names) await phones[name].getByRole('button', { name: /Je suis prêt/ }).click();
+  await host.getByText('Inventez une fausse réponse').waitFor();
   const questionText = (await host.locator('.question-big h1').textContent()).trim();
   const truth = questions.find((q) => q.text === questionText).answer;
-  assert.ok(await host.getByText('Un doute sur les règles').isVisible(), 'rappel permanent des règles sur l’écran');
-  for (const name of names) await phones[name].getByRole('button', { name: /Je suis prêt/ }).click();
-  await shot(host, '06-host-question');
+  assert.equal(await phones.A1.getByText(questionText).count(), 0, 'la question n’apparaît pas sur les téléphones');
 
   // Écriture des fausses réponses.
   await phones.A1.locator('#answer-input').fill('Un hibou furieux');

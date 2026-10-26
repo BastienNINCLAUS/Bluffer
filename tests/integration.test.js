@@ -363,7 +363,7 @@ describe('thèmes des questions', () => {
       { name: 'Noël', count: 2 },
     ]);
     assert.deepEqual(state.selectedThemes, ['Insolite', 'Noël']);
-    assert.deepEqual(state.pool, { available: 6, needed: 3, ok: true });
+    assert.deepEqual(state.pool, { available: 6, needed: 3, ok: true, fresh: 6 });
   });
 
   test('changer les thèmes met à jour le décompte ; thème inconnu refusé', async () => {

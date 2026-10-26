@@ -2,6 +2,14 @@
 
 Versionnement sémantique. Le numéro de protocole Socket.IO (`shared/protocol.js`) est incrémenté à chaque changement incompatible des événements.
 
+## [Non publié]
+
+### Modifié
+- Les téléphones restent allumés pendant la partie (Screen Wake Lock ; demande HTTPS ou localhost). L'écran hôte aussi.
+- Avant chaque question, l'écran affiche les équipes, les joueurs et leur état « prêt » ; le texte de la question n'apparaît qu'une fois tout le monde prêt (`question.text` est `null` en phase `question`, `players[].ready` ajouté).
+- Le texte de la question n'est plus envoyé aux téléphones : il se lit sur l'écran.
+- Écran d'équipe : la proposition en attente s'affiche dans un encart collé en haut de l'écran, au-dessus du tchat, avec avatars des validations, compteur et bouton « Valider ».
+
 ## [0.2.0] - 2026-10-26
 
 Protocole Socket.IO : 1 (champs ajoutés, rien de retiré).
@@ -10,7 +18,7 @@ Protocole Socket.IO : 1 (champs ajoutés, rien de retiré).
 - Thèmes (`tags`) sur chaque question et filtre de thèmes dans les réglages de l'écran hôte, avec le nombre de questions entre parenthèses ; « Classique » est décoché par défaut.
 - La partie ne se lance pas (verrouillage des équipes ou « Lancer la partie ») si les thèmes choisis ont moins de questions que demandé : erreur `not_enough_questions`, avertissement sur l'écran.
 - Banque de ~1 400 anecdotes insolites en questions à trous, tirées de « Le saviez-vous ? » de Wikipédia FR (`scripts/import-dyk.js`, crédits dans `NOTICE.md`), et ~50 questions rédigées dont Halloween, Noël, Pâques et automobile.
-- Relecture des 3 400 candidats (trou évident, réponse ambiguë, fait périssable, sujet déplacé écartés ; thèmes corrigés) : décisions versionnées dans `scripts/data/dyk-review.json`, appliquées à chaque import ; seules les questions relues sont conservées.
+- Compteur de questions jouées (`game/history.js`, `server/history.js`) : chaque question posée est comptée, partagé entre tous les salons et enregistré dans `data/played.json` (volume Docker `bluffer-data`). Le tirage prend toujours les questions les moins jouées, donc rien ne se répète d'un salon à l'autre tant qu'il en reste de nouvelles ; en « Rejouer », les nouvelles passent d'abord. Le salon affiche « dont N jamais jouée(s) » et un bouton « Réinitialiser » (commande `host:resetHistory`). (trou évident, réponse ambiguë, fait périssable, sujet déplacé écartés ; thèmes corrigés) : décisions versionnées dans `scripts/data/dyk-review.json`, appliquées à chaque import ; seules les questions relues sont conservées.
 - Les faits Wikidata (`scripts/import-wikidata.js`) passent dans le thème « Classique ».
 
 ### Modifié

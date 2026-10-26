@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { Server } from 'socket.io';
 import QRCode from 'qrcode';
 import { Game } from '../game/engine.js';
+import { MemoryHistory } from '../game/history.js';
 import { hostView, playerView } from '../game/views.js';
 import { PROTOCOL_VERSION, SERVER_EVENTS, validatePayload } from '../shared/protocol.js';
 import { defaultThemes } from '../shared/themes.js';
@@ -30,6 +31,7 @@ export function createApp({
   tickMs = 250,
   roomTtlMs = 6 * 60 * 60 * 1000,
   version = '0.0.0',
+  history = new MemoryHistory(),
 } = {}) {
   if (!Array.isArray(questions) || questions.length === 0) throw new Error('Questions requises.');
   const initialThemes = defaultThemes(questions);
@@ -193,7 +195,7 @@ export function createApp({
       const code = newCode();
       let game;
       try {
-        game = new Game({ code, questions, config: { themes: initialThemes, ...(data.config ?? {}) }, now, rng });
+        game = new Game({ code, questions, config: { themes: initialThemes, ...(data.config ?? {}) }, now, rng, history });
       } catch {
         return { ok: false, error: 'invalid_config' };
       }
@@ -225,6 +227,7 @@ export function createApp({
     on('host:start', 'host', ({ game }) => game.start());
     on('host:advance', 'host', ({ game }) => game.hostAdvance());
     on('host:replay', 'host', ({ game }) => game.replay());
+    on('host:resetHistory', 'host', ({ game }) => game.resetHistory());
 
     on('host:kick', 'host', ({ room, game, data }) => {
       const result = game.removePlayer(data.playerId);
@@ -312,7 +315,8 @@ export function createApp({
     const closing = new Promise((resolve) => io.close(resolve));
     server.closeAllConnections?.();
     await closing;
+    history.flush?.();
   }
 
-  return { app, server, io, rooms, listen, close };
+  return { app, server, io, rooms, history, listen, close };
 }

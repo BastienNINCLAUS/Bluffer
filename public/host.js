@@ -5,6 +5,7 @@ import { avatar, avatarStack, teamChip, toast } from './lib/ui.js';
 import { fetchRules, createRulesCarousel } from './rules.js';
 import { renderScoreboard } from './scoreboard.js';
 import { teamById, membersOf, progressText, remainingMs, formatSeconds, teamLabel } from './lib/model.js';
+import { keepScreenAwake } from './lib/wakelock.js';
 
 const SESSION_KEY = 'bluffer.host';
 
@@ -120,7 +121,10 @@ function themePicker(v, patch) {
     else next.add(name);
     patch({ themes: [...next] });
   };
-  const { available, needed, ok } = v.pool;
+  const { available, needed, ok, fresh } = v.pool;
+  const resetHistory = () => {
+    if (confirm('Remettre à zéro le compteur de questions déjà jouées ?')) act('host:resetHistory');
+  };
   return h(
     'fieldset',
     { class: 'themes' },
@@ -128,14 +132,20 @@ function themePicker(v, patch) {
     h('div', { class: 'themes-tools' }, h('button', { class: 'btn small', type: 'button', onclick: () => patch({ themes: null }) }, 'Tout cocher'), h('button', { class: 'btn small', type: 'button', onclick: () => patch({ themes: [] }) }, 'Tout décocher')),
     h('div', { class: 'theme-list' }, v.themes.map((theme) => h('label', { class: selected.has(theme.name) ? 'theme on' : 'theme' }, h('input', { type: 'checkbox', checked: selected.has(theme.name), onchange: () => toggle(theme.name) }), `${theme.name} (${theme.count})`))),
     ok
-      ? h('p', { class: 'muted small' }, `${available} question(s) disponible(s) pour ${needed} demandée(s).`)
+      ? h('p', { class: 'muted small' }, `${available} question(s) disponible(s) pour ${needed} demandée(s), dont ${fresh} jamais jouée(s).`)
       : h('p', { class: 'error pool-warning' }, `Pas assez de questions : ${available} disponible(s) pour ${needed} demandée(s). Sélectionne d’autres thèmes ou réduis le nombre de questions.`),
+    h(
+      'p',
+      { class: 'muted small history' },
+      `Historique : ${v.history.played} question(s) déjà jouée(s) sur ${v.history.total}. Les moins jouées sont tirées en premier. `,
+      v.history.played > 0 ? h('button', { class: 'btn small', type: 'button', onclick: resetHistory }, 'Réinitialiser') : null,
+    ),
   );
 }
 
 function renderSettings(v) {
   const patch = (config) => act('host:configure', { config });
-  region(settingsEl, JSON.stringify(v.config), () => [
+  region(settingsEl, JSON.stringify([v.config, v.pool, v.history]), () => [
     h('h2', {}, 'Réglages'),
     h('label', { class: 'field' }, 'Mode', select([['teams', 'Équipes (tchat + validation)'], ['base', 'Un joueur = une équipe']], v.config.mode, (mode) => patch({ mode }))),
     h('label', { class: 'field' }, 'Nombre de questions', numberInput(v.config.totalQuestions, 1, 30, (n) => patch({ totalQuestions: n }))),
@@ -209,8 +219,29 @@ function stageNaming(v) {
   ];
 }
 
+function readyGrid(v) {
+  return h(
+    'div',
+    { class: 'progress-grid ready-grid' },
+    v.teams.map((team) => {
+      const members = membersOf(v, team);
+      const allReady = members.length > 0 && members.every((m) => m.ready || !m.connected);
+      return h(
+        'div',
+        { class: allReady ? 'progress-card done' : 'progress-card', vars: { '--team': team.color } },
+        h('div', { class: 'progress-name' }, teamLabel(team)),
+        h('ul', { class: 'ready-members' }, members.map((member) => h('li', { class: member.ready ? 'ready-member ok' : member.connected ? 'ready-member' : 'ready-member off' }, avatar(member, team.color, v.code, 'md'), h('span', { class: 'ready-name' }, member.name), h('span', { class: 'ready-state' }, member.ready ? '✔ Prêt' : member.connected ? '… Pas encore prêt' : 'Déconnecté')))),
+      );
+    }),
+  );
+}
+
 function stageQuestion(v) {
-  return [questionBlock(v), h('p', { class: 'center muted' }, 'Préparez-vous à inventer une fausse réponse…')];
+  return [
+    h('div', { class: 'question-big' }, h('div', { class: 'question-index' }, `Question ${v.question.index} / ${v.question.total}`), h('h1', {}, 'Prêts pour la prochaine question ?')),
+    h('p', { class: 'center muted' }, 'La question s’affichera quand tout le monde aura appuyé sur « Je suis prêt » sur son téléphone.'),
+    readyGrid(v),
+  ];
 }
 
 function stageWriting(v) {
@@ -266,7 +297,7 @@ function stageKey(v) {
   const teams = v.teams.map((t) => [t.id, t.name, t.color, t.score, t.prevScore, t.gain, t.progress, t.memberIds]);
   switch (v.phase) {
     case 'naming': return JSON.stringify([teams, v.teamsNamed, v.canStart, v.players]);
-    case 'question': return JSON.stringify([v.question]);
+    case 'question': return JSON.stringify([v.question, teams, v.players]);
     case 'writing': return JSON.stringify([v.question, teams, v.players]);
     case 'voting': return JSON.stringify([v.question, v.options, teams]);
     case 'reveal': return JSON.stringify([v.question, v.options, v.revealCount]);
@@ -362,4 +393,5 @@ conn = createConnection({
   },
 });
 
+keepScreenAwake();
 render();

@@ -1,6 +1,7 @@
 import { test, describe } from 'node:test';
 import assert from 'node:assert/strict';
 import { Game, PHASES, TEAM_COLORS, LIMITS } from '../game/engine.js';
+import { MemoryHistory } from '../game/history.js';
 import {
   newGame, addPlayers, expectOk, startedBaseGame, startedTeamsGame, nameTeam, everyoneReady,
   toWriting, submitAnswers, submitVotes, optionOf, QUESTIONS,
@@ -849,7 +850,7 @@ describe('thèmes des questions', () => {
   test('tous les thèmes par défaut ; une question sans tag va dans « Divers »', () => {
     const game = themed();
     assert.equal(game.config.themes, null);
-    assert.deepEqual(game.pool(), { available: 7, needed: 3, ok: true });
+    assert.deepEqual(game.pool(), { available: 7, needed: 3, ok: true, fresh: 7 });
   });
 
   test('réglage des thèmes : liste connue, doublons ignorés, null pour tout, inconnu refusé', () => {
@@ -902,5 +903,101 @@ describe('thèmes des questions', () => {
     game.phase = PHASES.FINAL;
     expectOk(game.replay());
     assert.deepEqual(game.order.map((q) => q.id).sort(), ['a3', 'n1']);
+  });
+});
+
+describe('historique des questions jouées', () => {
+  const bankOf = (n) => Array.from({ length: n }, (_, i) => ({ id: `q${i + 1}`, text: `Question ${i + 1} ?`, answer: `Vraie ${i + 1}` }));
+  const gameWith = (history, total, extra = {}) => {
+    const game = newGame({ mode: 'base', totalQuestions: total, ...extra }, { questions: bankOf(6), seed: extra.seed ?? 7 });
+    game.history = history;
+    return game;
+  };
+  const playAll = (game) => {
+    addPlayers(game, ['Ann', 'Bob', 'Cid']);
+    expectOk(game.start());
+    const ids = [];
+    while (game.phase !== PHASES.FINAL) {
+      ids.push(game.question.id);
+      game.phase = PHASES.SCOREBOARD;
+      game.advanceStep();
+    }
+    return ids;
+  };
+
+  test('chaque question affichée est comptée une seule fois', () => {
+    const history = new MemoryHistory();
+    const ids = playAll(gameWith(history, 3));
+    assert.equal(ids.length, 3);
+    for (const id of ids) assert.equal(history.count(id), 1);
+    assert.equal(history.playedAmong(bankOf(6)), 3);
+  });
+
+  test('une partie abandonnée ne compte que les questions réellement posées', () => {
+    const history = new MemoryHistory();
+    const game = gameWith(history, 4);
+    addPlayers(game, ['Ann', 'Bob', 'Cid']);
+    expectOk(game.start());
+    assert.equal(history.playedAmong(bankOf(6)), 1);
+  });
+
+  test('deux parties à la suite (salons différents) ne répètent aucune question tant qu’il en reste de nouvelles', () => {
+    const history = new MemoryHistory();
+    const first = playAll(gameWith(history, 3, { seed: 1 }));
+    const second = playAll(gameWith(history, 3, { seed: 2 }));
+    assert.equal(new Set([...first, ...second]).size, 6);
+  });
+
+  test('banque épuisée : on repart des moins jouées, chaque question est rejouée à égalité', () => {
+    const history = new MemoryHistory();
+    for (let round = 0; round < 4; round += 1) playAll(gameWith(history, 3, { seed: round + 1 }));
+    for (const q of bankOf(6)) assert.equal(history.count(q.id), 2, q.id);
+  });
+
+  test('rejouer dans le même salon pioche d’abord des questions jamais vues', () => {
+    const history = new MemoryHistory();
+    const game = gameWith(history, 3);
+    const first = playAll(game);
+    expectOk(game.replay());
+    const second = game.order.map((q) => q.id);
+    assert.equal(new Set([...first, ...second]).size, 6);
+  });
+
+  test('les questions jamais jouées passent avant les autres', () => {
+    const history = new MemoryHistory();
+    for (const id of ['q1', 'q2', 'q3', 'q4']) history.record(id);
+    const game = gameWith(history, 3);
+    addPlayers(game, ['Ann', 'Bob', 'Cid']);
+    expectOk(game.start());
+    const ids = game.order.map((q) => q.id);
+    assert.ok(ids.includes('q5') && ids.includes('q6'));
+  });
+
+  test('le tirage reste dans les thèmes choisis ; « jamais jouées » compte dans la sélection', () => {
+    const bank = [
+      { id: 'a1', text: 'A1 ?', answer: 'x', tags: ['A'] },
+      { id: 'a2', text: 'A2 ?', answer: 'x', tags: ['A'] },
+      { id: 'b1', text: 'B1 ?', answer: 'x', tags: ['B'] },
+    ];
+    const history = new MemoryHistory();
+    history.record('a1');
+    history.record('b1');
+    const game = newGame({ mode: 'base', totalQuestions: 1, themes: ['A'] }, { questions: bank });
+    game.history = history;
+    assert.deepEqual(game.pool(), { available: 2, needed: 1, ok: true, fresh: 1 });
+    addPlayers(game, ['Ann', 'Bob', 'Cid']);
+    expectOk(game.start());
+    assert.equal(game.order[0].id, 'a2');
+  });
+
+  test('réinitialisation : seulement depuis le salon', () => {
+    const history = new MemoryHistory();
+    const game = gameWith(history, 3);
+    history.record('q1');
+    expectOk(game.resetHistory());
+    assert.equal(history.count('q1'), 0);
+    addPlayers(game, ['Ann', 'Bob', 'Cid']);
+    expectOk(game.start());
+    assert.equal(errorOf(game.resetHistory()), 'wrong_phase');
   });
 });
