@@ -187,7 +187,7 @@ function teamCard(v, team, extra = null) {
   return h(
     'div',
     { class: 'team-card', vars: { '--team': team.color } },
-    h('div', { class: 'team-card-head' }, h('strong', {}, team.name ?? 'Équipe sans nom'), extra),
+    h('div', { class: 'team-card-head' }, h('strong', {}, teamLabel(team)), extra),
     h('div', { class: 'team-card-members' }, membersOf(v, team).map((member) => h('span', { class: member.connected ? 'member' : 'member off' }, avatar(member, team.color, v.code, 'md'), h('span', {}, member.name), v.phase === 'lobby' ? h('button', { class: 'x', type: 'button', title: `Retirer ${member.name}`, onclick: () => act('host:kick', { playerId: member.id }) }, '×') : null))),
   );
 }

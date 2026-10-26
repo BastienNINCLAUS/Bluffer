@@ -4,10 +4,10 @@ import { readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { TEAM_COLORS as ENGINE_COLORS } from '../game/engine.js';
-import { TEAM_COLORS } from '../shared/palette.js';
+import { TEAM_COLORS, TEAM_COLOR_NAMES } from '../shared/palette.js';
 import { ERROR_MESSAGES, errorMessage } from '../public/lib/messages.js';
 import {
-  avatarSpec, remainingMs, formatSeconds, chatProposalValue, progressText, standing, rankLabel, ownResult, teamsInOrder,
+  avatarSpec, remainingMs, formatSeconds, chatProposalValue, progressText, standing, rankLabel, ownResult, teamsInOrder, teamLabel,
 } from '../public/lib/model.js';
 import { buildScoreboardModel } from '../public/scoreboard.js';
 import { squareCrop, fitsLimit, SELFIE_MAX_CHARS } from '../public/avatar.js';
@@ -41,6 +41,13 @@ describe('messages d’erreur', () => {
 describe('modèle d’affichage', () => {
   test('palette partagée identique à celle du moteur', () => {
     assert.deepEqual([...ENGINE_COLORS], [...TEAM_COLORS]);
+  });
+
+  test('une équipe sans nom est désignée par sa couleur', () => {
+    assert.equal(teamLabel({ name: null, color: '#4363d8' }), 'Équipe bleue');
+    assert.equal(teamLabel({ name: null, color: '#3cb44b' }), 'Équipe verte');
+    assert.equal(teamLabel({ name: 'Lions', color: '#3cb44b' }), 'Lions');
+    assert.deepEqual(Object.keys(TEAM_COLOR_NAMES).sort(), [...TEAM_COLORS].sort());
   });
 
   test('avatar : photo versionnée ou initiales, couleur d’équipe', () => {

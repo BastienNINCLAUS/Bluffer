@@ -1,5 +1,6 @@
 import { initials } from '../../shared/text.js';
 import { rankTeams } from '../../shared/ranking.js';
+import { TEAM_COLOR_NAMES } from '../../shared/palette.js';
 
 // Données d'un avatar : bordure à la couleur de l'équipe, photo au centre (ou initiales).
 export function avatarSpec(player, color, code) {
@@ -24,7 +25,9 @@ export function membersOf(view, team) {
 }
 
 export function teamLabel(team) {
-  return team.name ?? 'Équipe sans nom';
+  if (team.name) return team.name;
+  const color = TEAM_COLOR_NAMES[team.color];
+  return color ? `Équipe ${color}` : 'Équipe';
 }
 
 // Millisecondes restantes d'un délai annoncé par le serveur (deadlineIn) à la réception.
