@@ -352,7 +352,7 @@ describe('thèmes des questions', () => {
     ...Array.from({ length: 5 }, (_, i) => ({ id: `c${i}`, text: `Classique ${i} ?`, answer: `rc${i}`, tags: ['Classique'] })),
   ];
 
-  test('le salon expose les thèmes et leur effectif ; « Classique » est décoché par défaut', async () => {
+  test('le salon expose les thèmes et leur effectif ; tous les thèmes sont cochés par défaut', async () => {
     await setup({ questions: BANK });
     const { host } = await createRoom(server, { mode: 'base', totalQuestions: 3 });
     track(host);
@@ -362,8 +362,8 @@ describe('thèmes des questions', () => {
       { name: 'Insolite', count: 6 },
       { name: 'Noël', count: 2 },
     ]);
-    assert.deepEqual(state.selectedThemes, ['Insolite', 'Noël']);
-    assert.deepEqual(state.pool, { available: 6, needed: 3, ok: true, fresh: 6 });
+    assert.deepEqual(state.selectedThemes, ['Classique', 'Insolite', 'Noël']);
+    assert.deepEqual(state.pool, { available: 11, needed: 3, ok: true, fresh: 11 });
   });
 
   test('changer les thèmes met à jour le décompte ; thème inconnu refusé', async () => {

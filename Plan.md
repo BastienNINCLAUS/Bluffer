@@ -81,7 +81,7 @@ Adaptation du jeu de société Bluffer (voir [Rules.md](./Rules.md)) en applicat
   - Quand tous ont validé, la réponse ou le vote est envoyé et verrouillé.
   - Une nouvelle proposition remet les validations à zéro.
   - Tant que la phase est ouverte, un membre peut retirer sa validation.
-  - Si le délai expire sans accord, l'équipe ne marque aucun point pour cette phase.
+  - Si le délai expire sans accord, la dernière proposition de l'équipe est retenue (réponse ou vote) ; sans aucune proposition, l'équipe ne marque aucun point pour cette phase.
 - **Vote** : un seul vote par équipe, validé collectivement.
 - **Avatars** : un rond à bordure de la couleur de l'équipe, avec la photo du joueur au centre. Il apparaît à côté des messages du tchat, dans l'avancement par équipe, dans les résultats et dans le classement.
 
@@ -113,7 +113,7 @@ Le « Prêt » se règle au début de la partie :
 
 - Mode : « base » (une équipe par joueur, sans tchat ni constitution d'équipes) ou « équipes »
 - Nombre total de questions
-- **Thèmes** : l'animateur coche les thèmes utilisés (Insolite, Histoire, Automobile, Halloween, Noël, Pâques, personnages célèbres…). Chaque thème affiche son nombre de questions entre parenthèses, « Classique » est décoché par défaut. Si les thèmes cochés contiennent moins de questions que le nombre demandé, la partie ne se lance pas (verrouillage des équipes ou « Lancer la partie » refusé) et l'écran invite à choisir d'autres thèmes ou à réduire le nombre de questions.
+- **Thèmes** : l'animateur coche les thèmes utilisés (Insolite, Histoire, Automobile, Halloween, Noël, Pâques, personnages célèbres…). Chaque thème affiche son nombre de questions entre parenthèses, « Classique » est coché comme les autres par défaut. Si les thèmes cochés contiennent moins de questions que le nombre demandé, la partie ne se lance pas (verrouillage des équipes ou « Lancer la partie » refusé) et l'écran invite à choisir d'autres thèmes ou à réduire le nombre de questions.
 - Délai accordé aux retardataires, en secondes
 - Mode d'avancement : téléphones, écran, ou les deux (défaut : les deux)
 

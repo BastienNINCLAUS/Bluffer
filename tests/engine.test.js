@@ -564,6 +564,38 @@ describe('écriture des fausses réponses', () => {
     expectOk(game.hostAdvance());
     assert.equal(game.phase, PHASES.VOTING);
   });
+
+  test('équipe en désaccord à l’échéance : sa dernière proposition devient sa réponse', () => {
+    const { game, groups } = startedTeamsGame([2, 1, 1], { graceSeconds: 10 });
+    toWriting(game);
+    const [p, q] = groups[0];
+    game.propose(p, 'Un chat');
+    game.propose(q, 'Un rat');
+    game.validate(p);
+    submitAnswers(game, [[groups[1], 'Un lion']]);
+    game.clock.advance(10_000);
+    game.tick();
+    assert.equal(game.phase, PHASES.VOTING);
+    assert.equal(game.teamOf(p).answer, 'Un rat');
+    assert.ok(game.options.some((o) => o.kind === 'team' && o.text === 'Un rat'));
+  });
+
+  test('équipe en désaccord à l’échéance du vote : son dernier vote proposé est retenu', () => {
+    const { game, groups } = startedTeamsGame([2, 1, 1], { graceSeconds: 10 });
+    toWriting(game);
+    submitAnswers(game, groups.map((g, i) => [g, `Réponse ${i}`]));
+    assert.equal(game.phase, PHASES.VOTING);
+    const [p, q] = groups[0];
+    const options = game.options.filter((o) => o.kind === 'team' && o.teamId !== game.teamOf(p).id);
+    game.propose(p, options[0].id);
+    game.propose(q, options[1].id);
+    game.validate(p);
+    game.propose(groups[1][0], game.options.find((o) => o.kind === 'truth').id);
+    game.clock.advance(10_000);
+    game.tick();
+    assert.equal(game.phase, PHASES.REVEAL);
+    assert.equal(game.teamOf(p).vote, options[1].id);
+  });
 });
 
 describe('chat d’équipe', () => {

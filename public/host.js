@@ -40,7 +40,7 @@ const joinCardEl = h('section', { class: 'card join-card' });
 const settingsEl = h('section', { class: 'card settings' });
 const playersEl = h('section', { class: 'players-zone' });
 const actionsEl = h('div', { class: 'actions' });
-const lobbyEl = h('div', { class: 'lobby' }, h('div', { class: 'lobby-left' }, joinCardEl, settingsEl), h('div', { class: 'lobby-right' }, carousel.el), playersEl, actionsEl);
+const lobbyEl = h('div', { class: 'lobby' }, h('div', { class: 'lobby-left' }, joinCardEl, settingsEl, carousel.el), h('div', { class: 'lobby-right' }, actionsEl, playersEl));
 
 // ---------- actions ----------
 
@@ -143,15 +143,37 @@ function themePicker(v, patch) {
   );
 }
 
+const MODE_LABELS = { teams: 'Équipes', base: 'Un joueur = une équipe' };
+let settingsOpen = false;
+
+function toggleSettings() {
+  settingsOpen = !settingsOpen;
+  if (view) renderSettings(view);
+}
+
 function renderSettings(v) {
   const patch = (config) => act('host:configure', { config });
-  region(settingsEl, JSON.stringify([v.config, v.pool, v.history]), () => [
-    h('h2', {}, 'Réglages'),
-    h('label', { class: 'field' }, 'Mode', select([['teams', 'Équipes (tchat + validation)'], ['base', 'Un joueur = une équipe']], v.config.mode, (mode) => patch({ mode }))),
-    h('label', { class: 'field' }, 'Nombre de questions', numberInput(v.config.totalQuestions, 1, 30, (n) => patch({ totalQuestions: n }))),
-    h('label', { class: 'field' }, 'Délai accordé aux retardataires (s)', numberInput(v.config.graceSeconds, 5, 300, (n) => patch({ graceSeconds: n }))),
-    h('label', { class: 'field' }, 'Faire avancer le jeu avec', select([['both', 'Téléphones ou écran'], ['phones', 'Téléphones (tous prêts)'], ['host', 'Écran uniquement']], v.config.advance, (advanceMode) => patch({ advance: advanceMode }))),
-    themePicker(v, patch),
+  lobbyEl.classList.toggle('settings-open', settingsOpen);
+  region(settingsEl, JSON.stringify([v.config, v.pool, v.history, settingsOpen]), () => [
+    h(
+      'button',
+      { class: 'settings-toggle', type: 'button', 'aria-expanded': String(settingsOpen), onclick: toggleSettings },
+      h('span', { class: 'settings-title' }, `⚙ Paramètres de la partie ${settingsOpen ? '▴' : '▾'}`),
+      settingsOpen ? null : h('span', { class: 'settings-summary' }, `${MODE_LABELS[v.config.mode] ?? v.config.mode} · ${v.config.totalQuestions} questions · ${v.config.graceSeconds} s`),
+    ),
+    settingsOpen
+      ? [
+          h(
+            'div',
+            { class: 'settings-grid' },
+            h('label', { class: 'field' }, 'Mode', select([['teams', 'Équipes (tchat + validation)'], ['base', 'Un joueur = une équipe']], v.config.mode, (mode) => patch({ mode }))),
+            h('label', { class: 'field' }, 'Nombre de questions', numberInput(v.config.totalQuestions, 1, 30, (n) => patch({ totalQuestions: n }))),
+            h('label', { class: 'field' }, 'Délai accordé aux retardataires (s)', numberInput(v.config.graceSeconds, 5, 300, (n) => patch({ graceSeconds: n }))),
+            h('label', { class: 'field' }, 'Faire avancer le jeu avec', select([['both', 'Téléphones ou écran'], ['phones', 'Téléphones (tous prêts)'], ['host', 'Écran uniquement']], v.config.advance, (advanceMode) => patch({ advance: advanceMode }))),
+          ),
+          themePicker(v, patch),
+        ]
+      : null,
   ]);
   carousel.update({ delai: v.config.graceSeconds });
 }
@@ -343,6 +365,7 @@ function renderHeader() {
 
 function render() {
   renderHeader();
+  document.body.classList.toggle('is-lobby', view?.phase === 'lobby');
   if (!view) {
     region(stageEl, 'loading', () => h('p', { class: 'muted center' }, status === 'connected' ? 'Création de la partie…' : 'Connexion au serveur…'));
     region(hintEl, 'none', () => null);

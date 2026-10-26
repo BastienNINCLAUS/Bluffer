@@ -84,7 +84,8 @@ async function fullGame() {
   assert.ok(await host.locator('.rules-card').isVisible(), 'règles affichées à la création de la partie');
   assert.ok(await host.getByText('Un doute sur les règles').isHidden(), 'bandeau de rappel inutile dans le salon');
 
-  // Réglages : 1 seule question.
+  // Réglages : 1 seule question (panneau replié par défaut).
+  await host.getByRole('button', { name: /Paramètres de la partie/ }).click();
   await host.locator('.settings input[type=number]').first().fill('1');
   await host.keyboard.press('Tab');
   await host.waitForFunction(() => document.querySelector('.settings input[type=number]').value === '1');

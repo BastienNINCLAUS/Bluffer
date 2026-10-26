@@ -539,9 +539,17 @@ export class Game {
     }
   }
 
+  // Les équipes qui n'ont pas validé à la fin du délai gardent leur dernière proposition.
   finishPhase() {
+    if (this.phase !== PHASES.WRITING && this.phase !== PHASES.VOTING) return;
+    for (const team of this.teamList()) {
+      if (team.locked || !team.proposal) continue;
+      if (this.phase === PHASES.WRITING) team.answer = team.proposal.value;
+      else team.vote = team.proposal.value;
+      team.locked = true;
+    }
     if (this.phase === PHASES.WRITING) this.enterVoting();
-    else if (this.phase === PHASES.VOTING) this.enterReveal();
+    else this.enterReveal();
   }
 
   // ---------- propositions, validation à l'unanimité ----------

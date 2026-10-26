@@ -2,7 +2,7 @@ import { test, describe } from 'node:test';
 import assert from 'node:assert/strict';
 import { cleanText, normalizeText, initials } from '../shared/text.js';
 import { rankTeams, barPercents, interpolate } from '../shared/ranking.js';
-import { tagsOf, themeCounts, filterByThemes, defaultThemes, CLASSIC_TAG } from '../shared/themes.js';
+import { tagsOf, themeCounts, filterByThemes } from '../shared/themes.js';
 
 describe('texte', () => {
   test('cleanText', () => {
@@ -92,11 +92,5 @@ describe('thèmes', () => {
     assert.deepEqual(filterByThemes(Q, ['B', 'Divers']).map((q) => q.id), ['1', '3']);
     assert.equal(filterByThemes(Q, null).length, 4);
     assert.equal(filterByThemes(Q, []).length, 0);
-  });
-
-  test('defaultThemes : tout sauf « Classique », null s’il n’y a rien à exclure', () => {
-    assert.deepEqual(defaultThemes(Q), ['A', 'B', 'Divers']);
-    assert.equal(defaultThemes(Q.slice(0, 3)), null);
-    assert.equal(defaultThemes([{ id: '4', text: 'd ?', answer: 'w', tags: [CLASSIC_TAG] }]), null);
   });
 });

@@ -1,7 +1,5 @@
 // Thèmes (tags) des questions : fonctions pures partagées par le moteur, le serveur et les tests.
 export const FALLBACK_TAG = 'Divers';
-// Thème des questions « classiques » (faits simples tirés de Wikidata) : décoché par défaut.
-export const CLASSIC_TAG = 'Classique';
 
 export function tagsOf(question) {
   const tags = Array.isArray(question?.tags) ? question.tags.filter((t) => typeof t === 'string' && t.trim() !== '') : [];
@@ -24,11 +22,4 @@ export function filterByThemes(questions, themes) {
   if (themes === null || themes === undefined) return [...questions];
   const wanted = new Set(themes);
   return questions.filter((q) => tagsOf(q).some((tag) => wanted.has(tag)));
-}
-
-// Sélection initiale d'un salon : tous les thèmes sauf « Classique » (null = tous, s'il n'y a rien à exclure).
-export function defaultThemes(questions) {
-  const names = themeCounts(questions).map((t) => t.name);
-  const selected = names.filter((name) => name !== CLASSIC_TAG);
-  return selected.length === names.length || selected.length === 0 ? null : selected;
 }

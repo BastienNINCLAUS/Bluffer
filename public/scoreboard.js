@@ -1,9 +1,13 @@
 import { h, reducedMotion } from './lib/dom.js';
 import { rankTeams, barPercents, interpolate } from '../shared/ranking.js';
 import { avatarStack } from './lib/ui.js';
+import { membersOf } from './lib/model.js';
 
 export const ROW_HEIGHT = 74;
 export const ANIMATION_MS = 1800;
+// Doivent correspondre à .avatar-md et au chevauchement de .avatar-stack dans style.css.
+const AVATAR_PX = 48;
+const AVATAR_OVERLAP_PX = 10;
 
 // Modèle pur : positions avant/après et largeurs de barres relatives au leader.
 export function buildScoreboardModel(teams) {
@@ -39,6 +43,9 @@ export function renderScoreboard(view, { animate = true } = {}) {
   const teamsById = new Map(view.teams.map((t) => [t.id, t]));
   const skip = !animate || reducedMotion();
   const board = h('div', { class: 'scoreboard', vars: { '--rows': model.rows.length, '--row-h': `${ROW_HEIGHT}px` } });
+  // Largeur réservée aux avatars de la plus grande équipe, pour que toutes les barres démarrent au même endroit.
+  const biggest = Math.max(1, ...view.teams.map((t) => membersOf(view, t).length));
+  board.style.setProperty('--stack-w', `${biggest * AVATAR_PX - (biggest - 1) * AVATAR_OVERLAP_PX}px`);
   const parts = [];
 
   for (const row of model.rows) {
@@ -50,7 +57,7 @@ export function renderScoreboard(view, { animate = true } = {}) {
       'div',
       { class: 'sb-row', vars: { '--team': row.color } },
       h('span', { class: 'sb-rank' }, String(row.rank)),
-      avatarStack(view, teamsById.get(row.id), 'md'),
+      h('span', { class: 'sb-avatars' }, avatarStack(view, teamsById.get(row.id), 'md')),
       h('div', { class: 'sb-main' }, h('div', { class: 'sb-name' }, row.name ?? '—'), h('div', { class: 'sb-track' }, fill)),
       h('div', { class: 'sb-points' }, counter, gain),
     );

@@ -5,10 +5,15 @@ Versionnement sémantique. Le numéro de protocole Socket.IO (`shared/protocol.j
 ## [Non publié]
 
 ### Modifié
+- Tous les thèmes sont cochés par défaut dans un nouveau salon (« Classique » compris).
+- Une équipe qui n'a pas validé à l'échéance du délai garde sa dernière proposition comme réponse ou comme vote, au lieu de ne rien jouer.
 - Les téléphones restent allumés pendant la partie (Screen Wake Lock ; demande HTTPS ou localhost). L'écran hôte aussi.
 - Avant chaque question, l'écran affiche les équipes, les joueurs et leur état « prêt » ; le texte de la question n'apparaît qu'une fois tout le monde prêt (`question.text` est `null` en phase `question`, `players[].ready` ajouté).
 - Le texte de la question n'est plus envoyé aux téléphones : il se lit sur l'écran.
-- Écran d'équipe : la proposition en attente s'affiche dans un encart collé en haut de l'écran, au-dessus du tchat, avec avatars des validations, compteur et bouton « Valider ».
+- Écran d'équipe : la proposition en attente s'affiche dans un encart compact collé en haut de l'écran, au-dessus du tchat : texte, état de validation de chaque coéquipier et bouton « Valider » / « Retirer ».
+- Téléphones : plus de carte « question » ni d'« Avancement » (déjà sur l'écran principal) ; la carte principale est réduite à l'essentiel.
+- Classement : les barres partent toutes du même point, quelle que soit la taille des équipes.
+- Écran hôte, salon : tout tient dans la hauteur de l'écran, sans défilement de la page. À gauche, le QR code, les « Paramètres de la partie » (repliés par défaut, les règles se masquent quand ils sont dépliés) et les règles ; à droite, les boutons puis les équipes et les joueurs.
 
 ## [0.2.0] - 2026-10-26
 

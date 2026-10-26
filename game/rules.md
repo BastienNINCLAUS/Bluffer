@@ -21,7 +21,7 @@
 ## Le temps
 - Il n'y a pas de minuteur au départ.
 - Dès qu'une équipe a validé, les autres ont **{{delai}} secondes** pour finir.
-- Une équipe qui n'a rien validé à temps ne marque pas de point pour cette étape.
+- Une équipe qui n'a pas validé à temps garde sa **dernière proposition**. Sans aucune proposition, elle ne marque pas de point pour cette étape.
 
 ## Les points
 - **+2 points** pour chaque vote reçu sur votre fausse réponse : vous avez piégé quelqu'un !

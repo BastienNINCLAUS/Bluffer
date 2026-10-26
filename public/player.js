@@ -7,7 +7,7 @@ import { fetchRules, openRulesModal } from './rules.js';
 import { keepScreenAwake } from './lib/wakelock.js';
 import { TEAM_COLORS } from '../shared/palette.js';
 import {
-  teamById, playerById, membersOf, progressText, chatProposalValue, standing, rankLabel,
+  teamById, playerById, membersOf, chatProposalValue, standing, rankLabel,
   remainingMs, formatSeconds, teamLabel,
 } from './lib/model.js';
 
@@ -164,10 +164,6 @@ function renderJoin() {
 
 const card = (...children) => h('section', { class: 'card' }, ...children);
 
-function questionCard(v) {
-  return h('div', { class: 'question' }, h('div', { class: 'question-index' }, `Question ${v.question.index}/${v.question.total}`), h('p', { class: 'muted small' }, 'La question est affichée sur l’écran.'));
-}
-
 function countdown(v) {
   if (v.deadlineIn === null) return null;
   return h('div', { class: 'countdown-box' }, 'Plus que ', h('strong', { 'data-countdown': '' }, formatSeconds(remainingMs(v.deadlineIn, receivedAt, Date.now()))), ' s pour les retardataires');
@@ -181,10 +177,6 @@ function readyButton(v) {
     { class: ready ? 'btn ready on big' : 'btn primary big', type: 'button', onclick: () => act('player:ready', { ready: !ready }) },
     ready ? `Prêt ✔ (${v.ready.count}/${v.ready.total})` : `Je suis prêt (${v.ready.count}/${v.ready.total})`,
   );
-}
-
-function teamsProgress(v) {
-  return h('ul', { class: 'progress-list' }, v.teams.map((team) => h('li', {}, teamChip(v, team, { extra: h('span', { class: team.progress.locked ? 'status ok' : 'status' }, progressText(team, v.phase)) }))));
 }
 
 // La proposition en cours s'affiche dans l'encart collé en haut de l'écran (voir renderProposal).
@@ -247,18 +239,15 @@ function screenNaming(v) {
 }
 
 function screenQuestion(v) {
-  return [card(h('div', { class: 'question-index' }, `Question ${v.question.index}/${v.question.total}`), h('p', { class: 'muted' }, 'La question s’affichera sur l’écran quand tout le monde sera prêt.'), readyButton(v))];
+  return [card(h('p', { class: 'muted' }, 'La question s’affichera sur l’écran quand tout le monde sera prêt.'), readyButton(v))];
 }
 
 function screenWriting(v) {
   const team = v.team;
   if (team.locked) {
-    return [card(questionCard(v), h('div', { class: 'sent' }, h('strong', {}, 'Réponse envoyée ✔'), h('p', { class: 'quote' }, `« ${team.answer} »`)), countdown(v), teamsProgress(v))];
+    return [card(h('div', { class: 'sent' }, h('strong', {}, 'Réponse envoyée ✔'), h('p', { class: 'quote' }, `« ${team.answer} »`)), countdown(v))];
   }
-  return [
-    card(questionCard(v), h('p', { class: 'hint' }, 'Invente une fausse réponse crédible. Si tu connais la vraie, invente-en une autre !'), proposalCard(v), countdown(v)),
-    card(h('h3', {}, 'Avancement'), teamsProgress(v)),
-  ];
+  return [card(h('p', { class: 'hint' }, 'Invente une fausse réponse crédible. Si tu connais la vraie, invente-en une autre !'), proposalCard(v), countdown(v))];
 }
 
 function screenVoting(v) {
@@ -295,7 +284,6 @@ function screenVoting(v) {
   const optionText = (id) => v.options.find((o) => o.id === id)?.text ?? '';
   return [
     card(
-      questionCard(v),
       h('div', { class: 'options' }, buttons),
       team.locked
         ? h('div', { class: 'sent' }, h('strong', {}, `Vote envoyé ✔ : n°${team.vote}`), h('p', { class: 'quote' }, `« ${optionText(team.vote)} »`))
@@ -304,7 +292,6 @@ function screenVoting(v) {
           : proposalCard(v),
       countdown(v),
     ),
-    card(h('h3', {}, 'Avancement'), teamsProgress(v)),
   ];
 }
 
@@ -380,7 +367,7 @@ function renderBar() {
 let lastProposalId = null;
 
 function proposalText(value) {
-  if (view.phase === 'voting') return `Réponse n°${value} : « ${view.options.find((o) => o.id === value)?.text ?? ''} »`;
+  if (view.phase === 'voting') return `n°${value} · « ${view.options.find((o) => o.id === value)?.text ?? ''} »`;
   return `« ${value} »`;
 }
 
@@ -407,17 +394,20 @@ function renderProposal() {
     return h(
       'div',
       { class: ['proposal-banner', validated ? 'validated' : '', fresh ? 'fresh' : ''].join(' ').trim(), vars: { '--team': mine.color } },
-      h('div', { class: 'pb-head' }, h('span', {}, `💡 Proposition ${by === view.me.id ? 'de ta part' : `de ${author?.name ?? 'ton équipe'}`}`), h('span', { class: 'pb-count' }, `${mine.progress.validated}/${mine.progress.size} validé`)),
-      h('div', { class: 'pb-value' }, proposalText(value)),
       h(
         'div',
-        { class: 'pb-foot' },
-        h('span', { class: 'validators' }, membersOf(view, mine).map((member) => h('span', { class: team.validations.includes(member.id) ? 'validator ok' : 'validator', title: member.name }, avatar(member, mine.color, view.code, 'sm'), team.validations.includes(member.id) ? '✔' : '…'))),
-        validated
-          ? h('button', { class: 'btn small', type: 'button', onclick: () => act('team:unvalidate') }, 'Retirer ma validation')
-          : h('button', { class: 'btn primary', type: 'button', onclick: () => act('team:validate') }, 'Valider'),
+        { class: 'pb-text' },
+        h('div', { class: 'pb-value' }, proposalText(value)),
+        h(
+          'div',
+          { class: 'pb-meta' },
+          `💡 ${by === view.me.id ? 'Toi' : (author?.name ?? 'Équipe')} · `,
+          membersOf(view, mine).map((member) => h('span', { class: team.validations.includes(member.id) ? 'pb-member ok' : 'pb-member' }, `${member.id === view.me.id ? 'Toi' : member.name} ${team.validations.includes(member.id) ? '✔' : '…'}`)),
+        ),
       ),
-      validated ? h('p', { class: 'pb-wait' }, 'Tu as validé ✔ En attente des autres…') : null,
+      validated
+        ? h('button', { class: 'btn small', type: 'button', onclick: () => act('team:unvalidate') }, 'Retirer')
+        : h('button', { class: 'btn primary', type: 'button', onclick: () => act('team:validate') }, 'Valider'),
     );
   });
 }
