@@ -1,0 +1,42 @@
+// Messages d'erreur affichés aux joueurs et à l'animateur (codes renvoyés par le serveur et le moteur).
+export const ERROR_MESSAGES = Object.freeze({
+  wrong_phase: 'Ce n’est pas le bon moment pour faire ça.',
+  game_started: 'La partie a déjà commencé.',
+  game_full: 'La partie est complète.',
+  invalid_name: 'Pseudo invalide (20 caractères max).',
+  name_taken: 'Ce nom est déjà pris.',
+  invalid_config: 'Réglage invalide.',
+  too_many_for_base: 'Trop de joueurs pour le mode « un joueur par équipe » (12 max).',
+  unknown_player: 'Joueur inconnu.',
+  unknown_team: 'Équipe inconnue.',
+  unknown_room: 'Code de partie inconnu.',
+  invalid_photo: 'Photo invalide.',
+  too_many_teams: 'Il y a déjà le maximum d’équipes.',
+  no_team: 'Rejoins d’abord une équipe.',
+  invalid_color: 'Couleur invalide.',
+  color_taken: 'Cette couleur est déjà prise par une autre équipe.',
+  not_enough_players: 'Il faut au moins 3 joueurs.',
+  players_without_team: 'Des joueurs n’ont pas encore d’équipe.',
+  not_enough_teams: 'Il faut au moins 3 équipes.',
+  teams_not_ready: 'Toutes les équipes doivent avoir un nom.',
+  already_locked: 'C’est déjà validé, on ne peut plus changer.',
+  invalid_vote: 'Choix invalide.',
+  own_answer: 'Tu ne peux pas voter pour la réponse de ton équipe.',
+  invalid_text: 'Texte vide ou trop long.',
+  is_truth: 'Cette réponse est la vraie ! Invente-en une autre.',
+  no_proposal: 'Il n’y a pas encore de proposition.',
+  no_chat: 'Le tchat est réservé aux équipes de plusieurs joueurs.',
+  ready_disabled: 'Seul l’écran fait avancer le jeu.',
+  host_disabled: 'Seuls les téléphones font avancer le jeu.',
+  not_authorized: 'Action non autorisée.',
+  invalid_payload: 'Données invalides.',
+  unknown_command: 'Commande inconnue.',
+  rate_limited: 'Doucement ! Trop d’actions à la suite.',
+  server_error: 'Erreur du serveur, réessaie.',
+  timeout: 'Le serveur ne répond pas.',
+  protocol_mismatch: 'Version de l’application obsolète : recharge la page.',
+});
+
+export function errorMessage(code) {
+  return ERROR_MESSAGES[code] ?? `Erreur (${code}).`;
+}

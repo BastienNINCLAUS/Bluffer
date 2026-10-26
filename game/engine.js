@@ -1,4 +1,7 @@
 import { cleanText, normalizeText } from '../shared/text.js';
+import { TEAM_COLORS } from '../shared/palette.js';
+
+export { TEAM_COLORS };
 
 export const PHASES = Object.freeze({
   LOBBY: 'lobby',
@@ -10,11 +13,6 @@ export const PHASES = Object.freeze({
   SCOREBOARD: 'scoreboard',
   FINAL: 'final',
 });
-
-export const TEAM_COLORS = Object.freeze([
-  '#e6194b', '#3cb44b', '#4363d8', '#f58231', '#911eb4', '#0fb5ba',
-  '#f032e6', '#b8a900', '#800000', '#008080', '#9a6324', '#6b7280',
-]);
 
 export const LIMITS = Object.freeze({
   minTeams: 3,
