@@ -234,7 +234,6 @@ function screenNaming(v) {
       solo ? h('p', { class: 'muted small' }, 'Tu peux garder ton pseudo ou en choisir un autre.') : null,
       !mine.name ? proposalCard(v) : h('p', { class: 'ok' }, 'Nom adopté ✔'),
     ),
-    card(h('p', { class: 'center' }, `${v.teamsNamed.named}/${v.teamsNamed.total} équipes ont leur nom`), h('p', { class: 'muted center small' }, 'L’animateur lance la partie quand toutes les équipes sont prêtes.')),
   ];
 }
 
