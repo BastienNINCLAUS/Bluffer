@@ -365,7 +365,7 @@ function renderHeader() {
     view?.test ? h('span', { class: 'test-badge', title: 'Partie d’entraînement avec des robots' }, '🧪 Partie de test') : null,
     view && view.phase !== 'lobby' ? h('span', { class: 'join-info' }, `Rejoindre : ${publicUrl}/play · code `, h('strong', {}, view.code)) : null,
     h('span', { class: status === 'connected' ? 'dot-status ok' : 'dot-status', title: status }, ''),
-    view?.phase === 'lobby' && !view.test ? h('button', { class: 'btn small', type: 'button', onclick: () => newGame(true) }, '🧪 Partie de test') : null,
+    view && !view.test ? h('button', { class: 'btn small', type: 'button', onclick: () => newGame(true) }, '🧪 Partie de test') : null,
     view ? h('button', { class: 'btn small', type: 'button', onclick: () => newGame() }, 'Nouvelle partie') : null,
   ]);
 }
