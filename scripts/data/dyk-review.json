@@ -1,0 +1,10258 @@
+{
+ "remove": {
+  "lsv-12113": "réponse évidente",
+  "lsv-12466": "record périssable",
+  "lsv-12494": "date impossible à bluffer",
+  "lsv-12571": "réponse évidente",
+  "lsv-12585": "nom propre obscur",
+  "lsv-12598": "date/record",
+  "lsv-12600": "réponse longue et déductible",
+  "lsv-12629": "date",
+  "lsv-12655": "réponse évidente",
+  "lsv-12680": "réponse évidente",
+  "lsv-12701": "date",
+  "lsv-12731": "date",
+  "lsv-12743": "réponse ambiguë",
+  "lsv-12787": "nom obscur",
+  "lsv-12806": "réponse évidente",
+  "lsv-12849": "réponse évidente",
+  "lsv-12864": "date",
+  "lsv-12889": "réponse évidente",
+  "lsv-12921": "réponse évidente",
+  "lsv-12940": "réponse évidente",
+  "lsv-12956": "trop vague",
+  "lsv-12970": "réponse évidente",
+  "lsv-12988": "évident et macabre",
+  "lsv-13007": "trop vague",
+  "lsv-13008": "périssable, personne vivante",
+  "lsv-13021": "date",
+  "lsv-13049": "banal et vague",
+  "lsv-13057": "local et périssable",
+  "lsv-13066": "réponse évidente",
+  "lsv-13072": "ambigu (Myanmar)",
+  "lsv-13077": "réponse évidente",
+  "lsv-13094": "trop vague",
+  "lsv-13108": "réponse évidente",
+  "lsv-13172": "anagramme déductible",
+  "lsv-13195": "phrase défectueuse",
+  "lsv-13222": "réponse évidente",
+  "lsv-13244": "phrase défectueuse",
+  "lsv-13245": "réponse évidente",
+  "lsv-13260": "réponse ambiguë",
+  "lsv-13265": "phrase incompréhensible",
+  "lsv-13272": "phrase défectueuse",
+  "lsv-13282": "date",
+  "lsv-13312": "trop vague",
+  "lsv-13313": "réponse évidente",
+  "lsv-13329": "phrase défectueuse",
+  "lsv-13336": "phrase défectueuse",
+  "lsv-13339": "réponse évidente",
+  "lsv-13360": "date",
+  "lsv-13371": "contexte manquant",
+  "lsv-13379": "réponse évidente",
+  "lsv-13404": "sexualité",
+  "lsv-13405": "réponse ambiguë",
+  "lsv-13407": "évident, personne vivante",
+  "lsv-13433": "mort animale gratuite",
+  "lsv-13435": "réponse ambiguë",
+  "lsv-13445": "érotique",
+  "lsv-13458": "phrase défectueuse",
+  "lsv-13462": "réponse ambiguë",
+  "lsv-13466": "date",
+  "lsv-13467": "phrase défectueuse",
+  "lsv-13476": "réponse longue et obscure",
+  "lsv-13478": "sujet macabre",
+  "lsv-13479": "réponse ambiguë",
+  "lsv-13491": "record périssable",
+  "lsv-13534": "sexualité",
+  "lsv-13548": "phrase défectueuse",
+  "lsv-13551": "réponse évidente",
+  "lsv-13561": "réponse évidente",
+  "lsv-13575": "date",
+  "lsv-13594": "réponse évidente",
+  "lsv-13605": "réponse évidente",
+  "lsv-13645": "réponse évidente",
+  "lsv-13657": "terrorisme",
+  "lsv-13689": "réponse évidente",
+  "lsv-13701": "sujet macabre",
+  "lsv-13714": "fait périssable",
+  "lsv-13715": "trop vague",
+  "lsv-13773": "réponse ambiguë",
+  "lsv-13809": "phrase défectueuse",
+  "lsv-13835": "phrase défectueuse",
+  "lsv-13839": "réponse évidente",
+  "lsv-13841": "sexualité",
+  "lsv-13858": "réponse évidente",
+  "lsv-13905": "réponse évidente",
+  "lsv-13926": "date",
+  "lsv-13978": "réponse évidente",
+  "lsv-13980": "nom obscur",
+  "lsv-13995": "sexualité",
+  "lsv-14022": "réponse évidente",
+  "lsv-14023": "réponse évidente",
+  "lsv-14032": "réponse évidente",
+  "lsv-14044": "date",
+  "lsv-14060": "suicide, évident",
+  "lsv-14064": "date",
+  "lsv-14068": "nom obscur",
+  "lsv-14069": "réponse évidente",
+  "lsv-14081": "réponse évidente",
+  "lsv-14092": "date",
+  "lsv-14104": "banal",
+  "lsv-14106": "réponse ambiguë",
+  "lsv-14136": "local obscur",
+  "lsv-14155": "renvoie à une image",
+  "lsv-14158": "sujet politique obscur",
+  "lsv-14160": "date",
+  "lsv-14168": "nom obscur",
+  "lsv-14189": "réponse ambiguë",
+  "lsv-14191": "phrase défectueuse",
+  "lsv-14201": "nom obscur",
+  "lsv-14219": "réponse ambiguë",
+  "lsv-14223": "date",
+  "lsv-14252": "trop vague",
+  "lsv-14281": "record périssable",
+  "lsv-14296": "réponse évidente",
+  "lsv-14302": "phrase défectueuse",
+  "lsv-14304": "réponse ambiguë",
+  "lsv-14305": "réponse évidente",
+  "lsv-14326": "réponse évidente",
+  "lsv-14332": "réponse évidente",
+  "lsv-14352": "fait périssable",
+  "lsv-14369": "sujet macabre",
+  "lsv-14370": "nom obscur",
+  "lsv-14392": "unités défectueuses",
+  "lsv-14398": "nom obscur",
+  "lsv-14403": "sujet obscur",
+  "lsv-14414": "réponse évidente",
+  "lsv-14508": "réponse évidente",
+  "lsv-14513": "réponse évidente",
+  "lsv-14518": "réponse évidente",
+  "lsv-14540": "réponse évidente",
+  "lsv-14550": "nom obscur",
+  "lsv-14564": "phrase incompréhensible",
+  "lsv-14566": "phrase défectueuse",
+  "lsv-14568": "banal",
+  "lsv-14601": "réponse évidente",
+  "lsv-14616": "date",
+  "lsv-14621": "phrase défectueuse",
+  "lsv-14625": "nom obscur",
+  "lsv-14630": "enfants victimes",
+  "lsv-14667": "obsèques, évident",
+  "lsv-14676": "date",
+  "lsv-14682": "réponse évidente",
+  "lsv-14691": "ambigu et macabre",
+  "lsv-14708": "date",
+  "lsv-14745": "réponse évidente",
+  "lsv-14772": "phrase défectueuse",
+  "lsv-14781": "record périssable",
+  "lsv-14798": "réponse évidente",
+  "lsv-14807": "trou évident (japonaise)",
+  "lsv-14810": "trou évident",
+  "lsv-14851": "mot-outil, évident",
+  "lsv-14852": "Québec/Canada ambigu",
+  "lsv-14872": "réponse trop longue, ambiguë",
+  "lsv-14881": "trou évident (Indiana Jones)",
+  "lsv-14899": "trou évident",
+  "lsv-14913": "trou évident",
+  "lsv-14920": "date non bluffable",
+  "lsv-14940": "trou évident",
+  "lsv-14943": "réponse déductible, cancer",
+  "lsv-14969": "trou évident (1970)",
+  "lsv-15026": "ambiguë (Amérique du Nord/monde)",
+  "lsv-15071": "trou déductible (Art nouveau)",
+  "lsv-15111": "partie de mot, évident",
+  "lsv-15146": "phrase tronquée, mot coupé",
+  "lsv-15161": "trou évident (bonnardiser)",
+  "lsv-15165": "trou évident",
+  "lsv-15175": "incompréhensible seule",
+  "lsv-15189": "réponse vague/déductible",
+  "lsv-15207": "évident, politique",
+  "lsv-15219": "sujet sexualité, évident",
+  "lsv-15263": "fait périssable, statistique",
+  "lsv-15266": "mot coupé, markup",
+  "lsv-15289": "trou déductible",
+  "lsv-15294": "trou évident",
+  "lsv-15334": "fait périssable (record)",
+  "lsv-15350": "date non bluffable",
+  "lsv-15387": "trou évident",
+  "lsv-15402": "trou évident",
+  "lsv-15422": "nom obscur, sans intérêt",
+  "lsv-15434": "plusieurs réponses valides",
+  "lsv-15443": "date vague",
+  "lsv-15444": "phrase incompréhensible",
+  "lsv-15469": "trop obscur",
+  "lsv-15481": "trou évident (Indiana Jones)",
+  "lsv-15487": "réponse longue, macabre",
+  "lsv-15549": "trou évident",
+  "lsv-15552": "sujet administratif local",
+  "lsv-15572": "politique, trou déductible",
+  "lsv-15600": "trou déductible",
+  "lsv-15605": "trou évident",
+  "lsv-15606": "trou déductible, sans intérêt",
+  "lsv-15620": "trou déductible",
+  "lsv-15623": "réponse vague",
+  "lsv-15641": "trou évident",
+  "lsv-15648": "réponse banale",
+  "lsv-15678": "date obscure",
+  "lsv-15693": "plusieurs réponses valides",
+  "lsv-15733": "réponse vague",
+  "lsv-15746": "sujet administratif local",
+  "lsv-15750": "réponse vague",
+  "lsv-15752": "cadavres, macabre",
+  "lsv-15773": "date banale",
+  "lsv-15858": "nom obscur sans indice",
+  "lsv-15873": "trou évident",
+  "lsv-15897": "réponse longue, bizarre",
+  "lsv-15899": "trou évident",
+  "lsv-15906": "trou évident",
+  "lsv-15920": "trou évident",
+  "lsv-15924": "contexte obscur",
+  "lsv-15935": "titre long, obscur",
+  "lsv-15938": "réponse vague",
+  "lsv-15959": "sujet sensible (handicap)",
+  "lsv-15961": "trou évident",
+  "lsv-15982": "trou évident",
+  "lsv-15995": "réponse vague",
+  "lsv-16016": "trou évident",
+  "lsv-16026": "trou évident",
+  "lsv-16048": "trou évident, réponse ambiguë",
+  "lsv-16064": "mort violente",
+  "lsv-16068": "trou évident",
+  "lsv-16091": "trou évident",
+  "lsv-16127": "politique locale",
+  "lsv-16137": "trou évident (leet speak)",
+  "lsv-16139": "trou évident",
+  "lsv-16144": "local obscur",
+  "lsv-16145": "réponse vague",
+  "lsv-16156": "réponse vague, sexualité",
+  "lsv-16174": "enfant victime, Shoah",
+  "lsv-16177": "trou évident",
+  "lsv-16189": "politique locale, date",
+  "lsv-16193": "trou évident",
+  "lsv-16200": "réponse vague",
+  "lsv-16201": "trou évident, exécution",
+  "lsv-16204": "partie de mot, évident",
+  "lsv-16245": "obscur, sans intérêt",
+  "lsv-16258": "nom obscur, politique",
+  "lsv-16260": "réponse vague",
+  "lsv-16275": "banal, ambigu",
+  "lsv-16291": "réponse ambiguë",
+  "lsv-16294": "trou évident",
+  "lsv-16320": "réponse ambiguë (forets)",
+  "lsv-16329": "sujet nazi",
+  "lsv-16339": "réponse banale",
+  "lsv-16341": "trou évident",
+  "lsv-16351": "réponse vague",
+  "lsv-16360": "trou évident",
+  "lsv-16379": "date politique périssable",
+  "lsv-16388": "trou déductible",
+  "lsv-16401": "politique immigration",
+  "lsv-16422": "mot coupé",
+  "lsv-16433": "local, déductible",
+  "lsv-16438": "assassinat",
+  "lsv-16523": "trou évident",
+  "lsv-16529": "date non bluffable",
+  "lsv-16537": "trou évident (1848)",
+  "lsv-16611": "phrase défectueuse, mort",
+  "lsv-16732": "enfant victime, lynchage",
+  "lsv-16739": "réponse banale",
+  "lsv-16755": "trou évident",
+  "lsv-16766": "Shoah, réponse obscure",
+  "lsv-16860": "réponse ambiguë",
+  "lsv-16897": "contexte obscur",
+  "lsv-16925": "nom obscur",
+  "lsv-16928": "nom obscur",
+  "lsv-16945": "réponse déductible, confuse",
+  "lsv-16965": "trou déductible",
+  "lsv-16973": "trou évident",
+  "lsv-16977": "trou évident",
+  "lsv-16979": "trou évident",
+  "lsv-17014": "trou évident, politique",
+  "lsv-17020": "réponse vague",
+  "lsv-17048": "date évidente",
+  "lsv-17050": "trou déductible",
+  "lsv-17064": "fait périssable",
+  "lsv-17077": "nom obscur sans indice",
+  "lsv-17089": "Québec/Canada ambigu",
+  "lsv-17104": "trou évident",
+  "lsv-17109": "trou déductible, local",
+  "lsv-17152": "trou évident",
+  "lsv-17156": "trou évident",
+  "lsv-17164": "mot-outil, évident",
+  "lsv-17207": "local obscur",
+  "lsv-17218": "technique, déductible",
+  "lsv-17219": "réponse déductible et vague",
+  "lsv-17221": "réponse évidente, sujet drogue",
+  "lsv-17244": "réponse évidente/ambiguë",
+  "lsv-17246": "réponse évidente",
+  "lsv-17251": "expression évidente",
+  "lsv-17254": "réponse évidente",
+  "lsv-17258": "réponse évidente",
+  "lsv-17273": "réponse vague, chiffres sans repère",
+  "lsv-17279": "phrase défectueuse (typographie)",
+  "lsv-17290": "réponse évidente",
+  "lsv-17294": "réponse évidente",
+  "lsv-17307": "réponse évidente, accord cassé",
+  "lsv-17310": "réponse évidente (marbre)",
+  "lsv-17328": "réponse évidente",
+  "lsv-17338": "réponse évidente",
+  "lsv-17352": "réponse évidente",
+  "lsv-17383": "date non bluffable",
+  "lsv-17400": "date, sujet obscur",
+  "lsv-17406": "date non bluffable",
+  "lsv-17410": "réponse évidente",
+  "lsv-17415": "réponse évidente et vague",
+  "lsv-17433": "sans intérêt, réponse administrative",
+  "lsv-17439": "réponse déductible",
+  "lsv-17446": "meurtre, sujet macabre",
+  "lsv-17464": "date non bluffable",
+  "lsv-17487": "réponse évidente",
+  "lsv-17553": "date déductible",
+  "lsv-17562": "réponse évidente",
+  "lsv-17577": "nom obscur impossible à bluffer",
+  "lsv-17615": "date non bluffable",
+  "lsv-17673": "date non bluffable",
+  "lsv-17678": "réponse ambiguë, local",
+  "lsv-17733": "réponse évidente",
+  "lsv-17754": "record périssable, évident",
+  "lsv-17782": "date non bluffable",
+  "lsv-17834": "réponse évidente",
+  "lsv-17863": "réponse évidente",
+  "lsv-17899": "réponse évidente, drogue",
+  "lsv-17982": "mot coupé par le trou",
+  "lsv-17984": "date, sujet local",
+  "lsv-18026": "réponse évidente",
+  "lsv-18027": "nom obscur impossible à bluffer",
+  "lsv-18041": "réponse ambiguë (synonymes)",
+  "lsv-18052": "nom obscur impossible à bluffer",
+  "lsv-18105": "réponse ambiguë, contexte absent",
+  "lsv-18129": "réponse évidente",
+  "lsv-18148": "mot coupé par le trou",
+  "lsv-18159": "sujet local, banal",
+  "lsv-18201": "réponse évidente, esclavage",
+  "lsv-18228": "réponse évidente",
+  "lsv-18289": "décapitation, réponse devinable",
+  "lsv-18295": "réponse trop vague",
+  "lsv-18296": "fait périssable",
+  "lsv-18302": "réponse évidente",
+  "lsv-18306": "réponse vague/période",
+  "lsv-18309": "mot coupé par le trou",
+  "lsv-18326": "mot coupé par le trou",
+  "lsv-18337": "date non bluffable",
+  "lsv-18347": "réponse vague, périmé",
+  "lsv-18348": "unité sans intérêt",
+  "lsv-18351": "réponse évidente",
+  "lsv-18390": "réponse évidente",
+  "lsv-18403": "maladie grave",
+  "lsv-18405": "réponse évidente",
+  "lsv-18413": "nom obscur impossible à bluffer",
+  "lsv-18419": "date non bluffable",
+  "lsv-18425": "réponse évidente",
+  "lsv-18426": "mot coupé par le trou",
+  "lsv-18427": "record périssable",
+  "lsv-18428": "réponse évidente",
+  "lsv-18431": "réponse évidente",
+  "lsv-18439": "réponse vague",
+  "lsv-18451": "réponse évidente",
+  "lsv-18461": "réponse évidente",
+  "lsv-18469": "réponse évidente, banal",
+  "lsv-18483": "enfants victimes, date",
+  "lsv-18487": "nom obscur impossible à bluffer",
+  "lsv-18507": "réponse évidente",
+  "lsv-18519": "réponse évidente",
+  "lsv-18535": "nom obscur impossible à bluffer",
+  "lsv-18545": "réponse vague",
+  "lsv-18554": "réponse obscure",
+  "lsv-18555": "réponse évidente",
+  "lsv-18578": "réponse évidente, périssable",
+  "lsv-18586": "banal, scolaire",
+  "lsv-18615": "réponse ambiguë (griffes)",
+  "lsv-18619": "réponse évidente",
+  "lsv-18627": "réponse évidente",
+  "lsv-18642": "réponse ambiguë",
+  "lsv-18649": "nom obscur",
+  "lsv-18650": "réponse évidente, sujet sensible",
+  "lsv-18658": "nom obscur, local",
+  "lsv-18659": "terme technique non bluffable",
+  "lsv-18664": "réponse évidente",
+  "lsv-18695": "réponse évidente",
+  "lsv-18720": "réponse ambiguë",
+  "lsv-18726": "réponse évidente",
+  "lsv-18764": "réponse évidente",
+  "lsv-18768": "réponse vague",
+  "lsv-18776": "réponse évidente",
+  "lsv-18797": "réponse évidente",
+  "lsv-18858": "contexte local obscur",
+  "lsv-18861": "réponse non bluffable",
+  "lsv-18898": "mot coupé par le trou",
+  "lsv-18936": "date, personne obscure",
+  "lsv-18973": "sujet local obscur",
+  "lsv-18977": "phrase technique obscure",
+  "lsv-18983": "réponse évidente",
+  "lsv-18989": "réponse évidente",
+  "lsv-19030": "réponse évidente",
+  "lsv-19043": "réponse évidente",
+  "lsv-19052": "mot coupé par le trou",
+  "lsv-19060": "fait périssable, réponse vague",
+  "lsv-19067": "date non bluffable",
+  "lsv-19071": "mot coupé par le trou",
+  "lsv-19074": "réponse évidente",
+  "lsv-19090": "phrase confuse, administratif",
+  "lsv-19096": "réponse évidente et vague",
+  "lsv-19101": "réponse obscure",
+  "lsv-19124": "réponse évidente",
+  "lsv-19126": "réponse évidente",
+  "lsv-19192": "réponse défectueuse, vague",
+  "lsv-19195": "phrase défectueuse, vague",
+  "lsv-19199": "réponse évidente",
+  "lsv-19212": "réponse évidente",
+  "lsv-19215": "date non bluffable",
+  "lsv-19237": "sujet local",
+  "lsv-19247": "réponse évidente",
+  "lsv-19248": "banal, périssable",
+  "lsv-19276": "réponse vague",
+  "lsv-19281": "réponse évidente",
+  "lsv-19294": "réponse évidente",
+  "lsv-19296": "réponse évidente",
+  "lsv-19299": "réponse évidente",
+  "lsv-19318": "nom obscur",
+  "lsv-19325": "contexte incompréhensible",
+  "lsv-19332": "réponse ambiguë",
+  "lsv-19344": "nom obscur",
+  "lsv-19363": "réponse évidente",
+  "lsv-19382": "sujet sombre",
+  "lsv-19389": "nom obscur",
+  "lsv-19429": "réponse ambiguë",
+  "lsv-19434": "phrase défectueuse",
+  "lsv-19457": "nom obscur",
+  "lsv-19460": "réponse évidente/ambiguë",
+  "lsv-19466": "phrase défectueuse",
+  "lsv-19473": "réponse évidente",
+  "lsv-19476": "réponse vague",
+  "lsv-19481": "mot technique obscur",
+  "lsv-19497": "date locale",
+  "lsv-19499": "réponse évidente",
+  "lsv-19526": "réponse ambiguë",
+  "lsv-19531": "fait périssable",
+  "lsv-19556": "date non bluffable",
+  "lsv-19581": "phrase incompréhensible",
+  "lsv-19582": "réponse évidente",
+  "lsv-19615": "phrase défectueuse",
+  "lsv-19653": "maladie grave",
+  "lsv-19660": "réponse évidente",
+  "lsv-19663": "phrase défectueuse",
+  "lsv-19682": "mot-outil",
+  "lsv-19698": "réponse évidente",
+  "lsv-19714": "réponse évidente",
+  "lsv-19725": "réponse vague",
+  "lsv-19731": "sans intérêt",
+  "lsv-19735": "nom obscur",
+  "lsv-19747": "réponse évidente",
+  "lsv-19751": "réponse vague",
+  "lsv-19757": "réponse évidente",
+  "lsv-19793": "phrase défectueuse",
+  "lsv-19801": "réponse évidente",
+  "lsv-19803": "réponse évidente",
+  "lsv-19813": "réponse évidente",
+  "lsv-19814": "fait périssable",
+  "lsv-19817": "résidu de markup",
+  "lsv-19854": "réponse évidente",
+  "lsv-19865": "anecdote banale",
+  "lsv-19870": "réponse évidente",
+  "lsv-19899": "réponse vague",
+  "lsv-19904": "réponse évidente",
+  "lsv-19973": "réponse vague",
+  "lsv-19998": "sexualité",
+  "lsv-20000": "phrase incompréhensible",
+  "lsv-20014": "phrase défectueuse",
+  "lsv-20089": "réponse évidente",
+  "lsv-20098": "réponse évidente",
+  "lsv-20118": "réponse évidente, mort trouble",
+  "lsv-20121": "réponse ambiguë",
+  "lsv-20125": "réponse évidente",
+  "lsv-20151": "mot coupé",
+  "lsv-20153": "réponse vague",
+  "lsv-20160": "date non bluffable",
+  "lsv-20165": "réponse évidente",
+  "lsv-20172": "phrase incompréhensible",
+  "lsv-20185": "nom obscur",
+  "lsv-20208": "réponse évidente",
+  "lsv-20220": "réponse évidente",
+  "lsv-20221": "sujet de guerre, réponse locale",
+  "lsv-20241": "réponse ambiguë",
+  "lsv-20242": "nom obscur",
+  "lsv-20244": "nom obscur",
+  "lsv-20250": "réponse évidente",
+  "lsv-20254": "réponse évidente",
+  "lsv-20263": "réponse évidente",
+  "lsv-20283": "réponse vague",
+  "lsv-20285": "réponse vague",
+  "lsv-20293": "nom obscur",
+  "lsv-20308": "réponse vague",
+  "lsv-20314": "date non bluffable",
+  "lsv-20324": "mot coupé",
+  "lsv-20341": "fait périssable",
+  "lsv-20346": "fait périssable",
+  "lsv-20351": "anecdote banale",
+  "lsv-20359": "date non bluffable",
+  "lsv-20370": "réponse évidente",
+  "lsv-20376": "phrase défectueuse",
+  "lsv-20384": "réponse évidente",
+  "lsv-20398": "anecdote banale",
+  "lsv-20407": "anecdote banale",
+  "lsv-20418": "date non bluffable",
+  "lsv-20423": "mot obscur",
+  "lsv-20429": "réponse évidente",
+  "lsv-20440": "réponse ambiguë",
+  "lsv-20453": "nom obscur",
+  "lsv-20457": "terme obscur",
+  "lsv-20462": "réponse évidente",
+  "lsv-20468": "phrase défectueuse",
+  "lsv-20502": "sujet local",
+  "lsv-20508": "phrase défectueuse",
+  "lsv-20540": "réponse évidente",
+  "lsv-20541": "nom obscur",
+  "lsv-20544": "mort, date",
+  "lsv-20545": "réponse évidente",
+  "lsv-20576": "réponse évidente",
+  "lsv-20579": "phrase incompréhensible",
+  "lsv-20595": "date non bluffable",
+  "lsv-20606": "sujet local",
+  "lsv-20637": "nom obscur",
+  "lsv-20650": "date non bluffable",
+  "lsv-20653": "réponse évidente",
+  "lsv-20689": "réponse évidente",
+  "lsv-20693": "nom obscur",
+  "lsv-20694": "nom obscur",
+  "lsv-20701": "meurtre",
+  "lsv-20720": "nom obscur",
+  "lsv-20725": "réponse évidente",
+  "lsv-20734": "esclavage",
+  "lsv-20759": "réponse évidente",
+  "lsv-20771": "réponse évidente",
+  "lsv-20778": "réponse évidente",
+  "lsv-20822": "phrase défectueuse",
+  "lsv-20842": "réponse évidente",
+  "lsv-20856": "nom obscur",
+  "lsv-20858": "réponse évidente",
+  "lsv-20860": "réponse évidente",
+  "lsv-20861": "nom obscur",
+  "lsv-20893": "date non bluffable",
+  "lsv-20919": "réponse évidente",
+  "lsv-20951": "nom obscur",
+  "lsv-20978": "violence",
+  "lsv-20998": "nom obscur",
+  "lsv-21001": "réponse évidente",
+  "lsv-21019": "réponse vague",
+  "lsv-21022": "réponse évidente",
+  "lsv-21054": "nom obscur",
+  "lsv-21068": "mort violente",
+  "lsv-21079": "réponse ambiguë",
+  "lsv-21087": "date non bluffable",
+  "lsv-21140": "nom obscur",
+  "lsv-21152": "réponse évidente",
+  "lsv-21157": "sujet local",
+  "lsv-21187": "réponse évidente",
+  "lsv-21214": "réponse évidente",
+  "lsv-21217": "réponse évidente",
+  "lsv-21235": "réponse ambiguë",
+  "lsv-21267": "date non bluffable",
+  "lsv-21298": "macabre",
+  "lsv-21319": "phrase absurde",
+  "lsv-21325": "banal, peu insolite",
+  "lsv-21332": "réponse évidente (NASA)",
+  "lsv-21351": "verbe déductible",
+  "lsv-21360": "réponse évidente",
+  "lsv-21373": "réponse imposée par le contexte",
+  "lsv-21378": "réponse évidente (Pâques)",
+  "lsv-21381": "réponse évidente",
+  "lsv-21421": "réponse déductible (Guinness)",
+  "lsv-21445": "réponse incohérente/ambiguë",
+  "lsv-21461": "réponse évidente",
+  "lsv-21465": "résidu de markup",
+  "lsv-21472": "date non bluffable",
+  "lsv-21478": "réponse évidente",
+  "lsv-21483": "date non bluffable",
+  "lsv-21528": "verbe évident",
+  "lsv-21537": "mot coupé par le trou",
+  "lsv-21546": "banal, peu insolite",
+  "lsv-21548": "phrase fausse/défectueuse",
+  "lsv-21566": "date non bluffable",
+  "lsv-21578": "mot coupé par le trou",
+  "lsv-21597": "date évidente",
+  "lsv-21640": "réponse évidente",
+  "lsv-21643": "nom propre obscur",
+  "lsv-21649": "phrase défectueuse",
+  "lsv-21673": "sujet local, réponse imposée",
+  "lsv-21683": "réponse ambiguë (CEE/UE)",
+  "lsv-21686": "réponse évidente",
+  "lsv-21690": "nom propre obscur",
+  "lsv-21703": "nom propre obscur, sans intérêt",
+  "lsv-21705": "réponse vague",
+  "lsv-21706": "date non bluffable",
+  "lsv-21722": "réponse déductible",
+  "lsv-21773": "sujet politique obscur",
+  "lsv-21774": "réponse évidente",
+  "lsv-21777": "réponse vague",
+  "lsv-21778": "réponse évidente",
+  "lsv-21803": "réponses multiples possibles (Alaska)",
+  "lsv-21824": "banal, peu insolite",
+  "lsv-21830": "réponse évidente",
+  "lsv-21836": "réponse banale/vague",
+  "lsv-21871": "phrase incohérente",
+  "lsv-21883": "nom latin obscur",
+  "lsv-21907": "réponse évidente",
+  "lsv-21917": "réponse évidente, accord cassé",
+  "lsv-21926": "accord cassé par le trou",
+  "lsv-21927": "réponse évidente",
+  "lsv-21929": "réponse ambiguë",
+  "lsv-22008": "nom propre obscur",
+  "lsv-22010": "réponse déductible",
+  "lsv-22035": "banal",
+  "lsv-22072": "réponse ambiguë (plusieurs villes)",
+  "lsv-22075": "sujet macabre/collaboration, mot obscur",
+  "lsv-22076": "réponse déductible",
+  "lsv-22082": "réponse ambiguë",
+  "lsv-22083": "réponse déductible",
+  "lsv-22093": "nom propre obscur",
+  "lsv-22114": "sujet local",
+  "lsv-22127": "réponse déductible",
+  "lsv-22177": "politique, périssable",
+  "lsv-22192": "réponse évidente",
+  "lsv-22220": "réponse évidente",
+  "lsv-22237": "réponse évidente",
+  "lsv-22254": "réponse vague",
+  "lsv-22261": "nom propre obscur",
+  "lsv-22264": "réponse évidente",
+  "lsv-22267": "date non bluffable",
+  "lsv-22276": "sujet sexualité/genre, local",
+  "lsv-22294": "réponse vague",
+  "lsv-22299": "réponse évidente",
+  "lsv-22301": "date non bluffable",
+  "lsv-22367": "réponse déductible",
+  "lsv-22389": "mauvais goût",
+  "lsv-22418": "mot obscur, sans repère",
+  "lsv-22436": "réponse évidente",
+  "lsv-22449": "nom propre obscur",
+  "lsv-22451": "réponse évidente",
+  "lsv-22453": "réponse déductible",
+  "lsv-22462": "réponse déductible",
+  "lsv-22486": "réponse ambiguë",
+  "lsv-22510": "réponse évidente",
+  "lsv-22518": "mot coupé par le trou",
+  "lsv-22553": "nom propre obscur, opium",
+  "lsv-22570": "nom propre obscur",
+  "lsv-22574": "maladie grave, réponse déductible",
+  "lsv-22614": "fait périssable",
+  "lsv-22624": "sujet local",
+  "lsv-22628": "réponse évidente",
+  "lsv-22648": "réponse évidente",
+  "lsv-22652": "réponse évidente",
+  "lsv-22658": "réponse vague/ambiguë",
+  "lsv-22681": "réponse évidente",
+  "lsv-22694": "sujet local",
+  "lsv-22707": "réponse évidente",
+  "lsv-22713": "réponse évidente",
+  "lsv-22717": "mort d'animaux macabre",
+  "lsv-22735": "réponse évidente",
+  "lsv-22745": "réponse vague/déductible",
+  "lsv-22747": "fait périssable",
+  "lsv-22761": "réponse ambiguë (plusieurs pays)",
+  "lsv-22763": "réponse évidente",
+  "lsv-22767": "réponse déductible",
+  "lsv-22800": "réponse évidente",
+  "lsv-22856": "réponse évidente",
+  "lsv-22863": "nom obscur non bluffable",
+  "lsv-22868": "réponse évidente",
+  "lsv-22872": "réponse évidente",
+  "lsv-22896": "réponse évidente",
+  "lsv-22906": "réponse évidente",
+  "lsv-22950": "réponse évidente",
+  "lsv-22952": "réponse évidente",
+  "lsv-22953": "morts macabres",
+  "lsv-22988": "réponse déductible",
+  "lsv-22999": "réponse évidente",
+  "lsv-23008": "réponse évidente",
+  "lsv-23044": "réponse évidente",
+  "lsv-23048": "réponse évidente",
+  "lsv-23060": "nom propre obscur",
+  "lsv-23110": "phrase tronquée/réponse trop longue",
+  "lsv-23140": "meurtre/macabre",
+  "lsv-23149": "sexualité",
+  "lsv-23201": "date non bluffable",
+  "lsv-23353": "réponse trop vague",
+  "lsv-23444": "nom propre obscur",
+  "lsv-23455": "réponse ambiguë",
+  "lsv-23467": "sujet sexuel, nom obscur",
+  "lsv-23506": "réponse évidente",
+  "lsv-23668": "réponse évidente",
+  "lsv-23672": "nom propre obscur",
+  "lsv-23713": "réponse trop longue/acronyme",
+  "lsv-23778": "réponse évidente",
+  "lsv-24189": "date non bluffable",
+  "lsv-24263": "réponse vague",
+  "lsv-12287": "réponse évidente (rejetée)",
+  "lsv-12351": "évident (Christophe Colomb)",
+  "lsv-12565": "mot coupé par le trou",
+  "lsv-12570": "évident (Berlin)",
+  "lsv-12576": "évident (diamant)",
+  "lsv-12577": "local, déductible",
+  "lsv-12641": "réponse vague (poète)",
+  "lsv-12646": "mot-outil (Nous)",
+  "lsv-12650": "année déductible",
+  "lsv-12663": "administratif, vague",
+  "lsv-12686": "évident (réalisateur)",
+  "lsv-12689": "évident",
+  "lsv-12693": "mot coupé par le trou",
+  "lsv-12696": "évident (Empire romain)",
+  "lsv-12706": "macabre, massacre",
+  "lsv-12709": "unité défectueuse (km 2)",
+  "lsv-12735": "réponses multiples possibles",
+  "lsv-12756": "évident (Seconde Guerre mondiale)",
+  "lsv-12791": "réponse ambiguë",
+  "lsv-12793": "attentats",
+  "lsv-12817": "mot coupé par le trou",
+  "lsv-12825": "évident (Obama)",
+  "lsv-12841": "évident (Seconde Guerre mondiale)",
+  "lsv-12842": "phrase défectueuse",
+  "lsv-12844": "évident (médailles)",
+  "lsv-12856": "ambiguë, déductible",
+  "lsv-12858": "évident (initiales M G)",
+  "lsv-12867": "évident (Coran)",
+  "lsv-12899": "évident",
+  "lsv-12913": "fait périssable, ambigu",
+  "lsv-12925": "seulement deux options",
+  "lsv-12936": "chiffre sans repère",
+  "lsv-12939": "évident (solitaire)",
+  "lsv-12942": "scolaire, sujet sensible",
+  "lsv-12943": "enfants victimes, sujet sensible",
+  "lsv-12964": "banal, année sans repère",
+  "lsv-12972": "évident (prénom)",
+  "lsv-12978": "réponse ambiguë",
+  "lsv-12979": "réponse ambiguë",
+  "lsv-12982": "phrase défectueuse",
+  "lsv-12994": "chiffre périssable",
+  "lsv-12996": "périssable, évident",
+  "lsv-13003": "évident (Padanie)",
+  "lsv-13010": "administratif, ambigu",
+  "lsv-13014": "évident (marine)",
+  "lsv-13039": "phrase obscure",
+  "lsv-13055": "local, vague",
+  "lsv-13056": "évident (Espagne)",
+  "lsv-13058": "évident (figurants)",
+  "lsv-13059": "mot coupé par le trou",
+  "lsv-13067": "réponse vague",
+  "lsv-13073": "année déductible",
+  "lsv-13076": "évident (Alpes)",
+  "lsv-13083": "évident (ONU)",
+  "lsv-13084": "sexualité",
+  "lsv-13086": "année sans repère",
+  "lsv-13088": "périssable, évident",
+  "lsv-13092": "évident",
+  "lsv-13093": "évident (gazeux)",
+  "lsv-13099": "évident (États-Unis)",
+  "lsv-13106": "banal",
+  "lsv-13111": "évident (Lune)",
+  "lsv-13112": "chiffre sans repère",
+  "lsv-13124": "vague, scolaire",
+  "lsv-13132": "évident (congélation)",
+  "lsv-13140": "mot-outil",
+  "lsv-13142": "évident (URSS)",
+  "lsv-13143": "réponse vague",
+  "lsv-13159": "évident (Gagarine)",
+  "lsv-13160": "évident (Louis-Philippe)",
+  "lsv-13165": "réponse vague",
+  "lsv-13169": "réponse ambiguë",
+  "lsv-13182": "groupe sensible",
+  "lsv-13200": "phrase défectueuse",
+  "lsv-13201": "réponses multiples possibles",
+  "lsv-13209": "évident (Constitution)",
+  "lsv-13218": "fait périssable",
+  "lsv-13224": "réponse vague",
+  "lsv-13227": "périssable, évident",
+  "lsv-13228": "chiffre sans repère, périssable",
+  "lsv-13238": "évident (radar)",
+  "lsv-13242": "phrase confuse",
+  "lsv-13246": "date vague",
+  "lsv-13249": "administratif",
+  "lsv-13255": "réponse ambiguë",
+  "lsv-13261": "évident (Proust)",
+  "lsv-13277": "évident (reptile)",
+  "lsv-13278": "réponse ambiguë",
+  "lsv-13284": "réponse vague",
+  "lsv-13287": "réponse vague",
+  "lsv-13290": "évident (Parti communiste)",
+  "lsv-13291": "évident (Chine)",
+  "lsv-13295": "sujet sensible (nudité), année sans repère",
+  "lsv-13296": "réponse vague",
+  "lsv-13304": "évident, macabre",
+  "lsv-13320": "réponse vague",
+  "lsv-13327": "évident (North Sentinel)",
+  "lsv-13337": "sacrifice humain macabre",
+  "lsv-13345": "réponse ambiguë",
+  "lsv-13350": "évident (traduction)",
+  "lsv-13351": "mot coupé par le trou",
+  "lsv-13354": "évident, accord cassé",
+  "lsv-13356": "réponse vague",
+  "lsv-13361": "évident, macabre",
+  "lsv-13364": "fait périssable",
+  "lsv-13366": "évident (plan Pinay)",
+  "lsv-13378": "élection locale",
+  "lsv-13415": "évident (saison)",
+  "lsv-13418": "administratif, ambigu",
+  "lsv-13419": "administratif local",
+  "lsv-13439": "évident (chanteur)",
+  "lsv-13449": "évident, famine",
+  "lsv-13450": "évident (Rome antique)",
+  "lsv-13456": "évident, record périssable",
+  "lsv-13473": "propos antisémites",
+  "lsv-13506": "film douteux/ambigu",
+  "lsv-13512": "évident (paysan)",
+  "lsv-13513": "évident (Victor Hugo)",
+  "lsv-13515": "militaire, local",
+  "lsv-13517": "sexualité",
+  "lsv-13526": "réponse ambiguë",
+  "lsv-13528": "réponse vague",
+  "lsv-13550": "disparition probablement meurtrière, sujet sombre",
+  "lsv-13553": "maison close, sexualité",
+  "lsv-13566": "phrase défectueuse",
+  "lsv-13574": "Combray déductible, Proust évident",
+  "lsv-13587": "évident (guerre/paix)",
+  "lsv-13593": "réponse vague",
+  "lsv-13596": "évident (bobo = bourgeois-bohème)",
+  "lsv-13618": "évident et discutable",
+  "lsv-13620": "fait périssable",
+  "lsv-13624": "mot coupé par le trou",
+  "lsv-13631": "supplice macabre, guessable",
+  "lsv-13640": "évident (noix de coco)",
+  "lsv-13650": "évident",
+  "lsv-13661": "réponse ambiguë",
+  "lsv-13667": "fait périssable",
+  "lsv-13679": "cannibalisme, macabre",
+  "lsv-13698": "réponse vague",
+  "lsv-13702": "évident",
+  "lsv-13708": "fait périssable",
+  "lsv-13711": "évident",
+  "lsv-13733": "réponse vague",
+  "lsv-13736": "réponse ambiguë",
+  "lsv-13745": "évident (Mai 68)",
+  "lsv-13765": "phrase douteuse",
+  "lsv-13777": "déductible (Edmonton)",
+  "lsv-13787": "périssable, réponse inadaptée",
+  "lsv-13800": "mot-outil",
+  "lsv-13802": "phrase non compréhensible seule",
+  "lsv-13807": "évident",
+  "lsv-13820": "périssable, violence",
+  "lsv-13845": "réponse ambiguë",
+  "lsv-13852": "attentat",
+  "lsv-13859": "évident",
+  "lsv-13860": "scolaire, évident",
+  "lsv-13869": "évident",
+  "lsv-13888": "évident",
+  "lsv-13897": "banal",
+  "lsv-13898": "réponse ambiguë",
+  "lsv-13900": "évident",
+  "lsv-13904": "mot trop simple",
+  "lsv-13912": "record périssable",
+  "lsv-13913": "résidu de markup",
+  "lsv-13916": "attentat",
+  "lsv-13919": "agression",
+  "lsv-13932": "réponse vague",
+  "lsv-13933": "réponse ambiguë",
+  "lsv-13935": "évident",
+  "lsv-13936": "sujet administratif sans intérêt",
+  "lsv-13940": "évident",
+  "lsv-13948": "phrase incompréhensible",
+  "lsv-13950": "politique locale",
+  "lsv-13958": "évident",
+  "lsv-13962": "phrase incompréhensible",
+  "lsv-13968": "réponse ambiguë",
+  "lsv-13979": "évident",
+  "lsv-13981": "évident",
+  "lsv-13983": "évident",
+  "lsv-13984": "réponse vague",
+  "lsv-14001": "fait périssable",
+  "lsv-14005": "évident",
+  "lsv-14006": "banal, scolaire",
+  "lsv-14008": "évident",
+  "lsv-14015": "phrase défectueuse",
+  "lsv-14016": "sexualité",
+  "lsv-14039": "évident",
+  "lsv-14042": "fait périssable",
+  "lsv-14046": "fait périssable",
+  "lsv-14062": "réponse vague",
+  "lsv-14063": "record périssable, évident",
+  "lsv-14066": "réponse ambiguë",
+  "lsv-14067": "évident",
+  "lsv-14072": "réponse douteuse/ambiguë",
+  "lsv-14075": "évident",
+  "lsv-14091": "réponse ambiguë",
+  "lsv-14097": "évident",
+  "lsv-14102": "animal tué, macabre",
+  "lsv-14108": "évident",
+  "lsv-14124": "réponse inadaptée",
+  "lsv-14130": "déductible",
+  "lsv-14143": "réponse ambiguë",
+  "lsv-14146": "évident",
+  "lsv-14161": "évident",
+  "lsv-14195": "évident, sujet médical",
+  "lsv-14203": "réponse ambiguë",
+  "lsv-14221": "évident",
+  "lsv-14238": "réponse vague",
+  "lsv-14251": "réponse vague",
+  "lsv-14258": "sexualité, phrase défectueuse",
+  "lsv-14260": "évident",
+  "lsv-14272": "évident",
+  "lsv-14277": "surdosage, réponse ambiguë",
+  "lsv-14278": "évident",
+  "lsv-14282": "sexualité",
+  "lsv-14284": "évident, cancer",
+  "lsv-14285": "sexualité",
+  "lsv-14289": "évident",
+  "lsv-14307": "phrase incompréhensible",
+  "lsv-14309": "évident",
+  "lsv-14312": "réponse ambiguë",
+  "lsv-14313": "mot coupé",
+  "lsv-14321": "évident",
+  "lsv-14330": "réponse ambiguë",
+  "lsv-14343": "accord cassé",
+  "lsv-14345": "évident",
+  "lsv-14347": "évident, sujet raciste",
+  "lsv-14348": "mauvais goût",
+  "lsv-14350": "fait périssable",
+  "lsv-14366": "périssable, banal",
+  "lsv-14368": "évident",
+  "lsv-14371": "sexualité, évident",
+  "lsv-14378": "évident",
+  "lsv-14379": "phrase défectueuse",
+  "lsv-14383": "évident",
+  "lsv-14388": "évident",
+  "lsv-14390": "réponse vague",
+  "lsv-14397": "mot coupé",
+  "lsv-14412": "sujet banal et administratif",
+  "lsv-14422": "mauvais goût, vague",
+  "lsv-14431": "évident",
+  "lsv-14441": "évident",
+  "lsv-14453": "réponse ambiguë",
+  "lsv-14461": "évident",
+  "lsv-14462": "réponse ambiguë",
+  "lsv-14484": "sujet sexuel/lapidation, réponse bizarre",
+  "lsv-14498": "partie de mot, évident",
+  "lsv-14509": "réponse évidente",
+  "lsv-14520": "réponse ambiguë, banal",
+  "lsv-14531": "temple/sanctuaire ambigu",
+  "lsv-14553": "Hitchcock évident",
+  "lsv-14556": "évident",
+  "lsv-14558": "local, non devinable",
+  "lsv-14561": "local obscur",
+  "lsv-14572": "évident",
+  "lsv-14574": "évident",
+  "lsv-14588": "mort macabre d'animal",
+  "lsv-14594": "phrase cassée, exécution",
+  "lsv-14604": "évident",
+  "lsv-14605": "formulation ambiguë",
+  "lsv-14606": "évident",
+  "lsv-14608": "évident",
+  "lsv-14610": "estomac/panse ambigu",
+  "lsv-14614": "évident",
+  "lsv-14618": "banal, évident",
+  "lsv-14620": "maladie, mot dans phrase",
+  "lsv-14624": "évident",
+  "lsv-14626": "oiseaux/passereaux ambigu",
+  "lsv-14631": "camp de concentration",
+  "lsv-14652": "réponse vague",
+  "lsv-14654": "évident",
+  "lsv-14666": "banal",
+  "lsv-14683": "phrase défectueuse, vague",
+  "lsv-14686": "évident",
+  "lsv-14693": "catastrophe, réponse vague",
+  "lsv-14705": "année évidente",
+  "lsv-14715": "évident",
+  "lsv-14726": "évident",
+  "lsv-14727": "évident",
+  "lsv-14732": "évident",
+  "lsv-14749": "évident",
+  "lsv-14753": "mort macabre",
+  "lsv-14759": "réponse ambiguë",
+  "lsv-14767": "évident, sombre",
+  "lsv-14768": "évident",
+  "lsv-14779": "enfant victime",
+  "lsv-14782": "phrase cassée, sujet sexuel",
+  "lsv-14801": "abstrait",
+  "lsv-14808": "assez évident",
+  "lsv-14815": "évident",
+  "lsv-14817": "évident",
+  "lsv-14818": "évident",
+  "lsv-14825": "évident",
+  "lsv-14843": "évident",
+  "lsv-14849": "enfant victime, vague",
+  "lsv-14853": "évident",
+  "lsv-14859": "évident",
+  "lsv-14864": "évident",
+  "lsv-14866": "fait douteux/périssable",
+  "lsv-14877": "réponse ambiguë",
+  "lsv-14896": "évident",
+  "lsv-14901": "mot coupé",
+  "lsv-14933": "enfant mort, année évidente",
+  "lsv-14939": "phrase défectueuse",
+  "lsv-14973": "évident",
+  "lsv-14992": "50/50 évident",
+  "lsv-15003": "phrase défectueuse, évident",
+  "lsv-15004": "évident",
+  "lsv-15033": "phrase défectueuse",
+  "lsv-15035": "obscur, réponse inadaptée",
+  "lsv-15063": "évident",
+  "lsv-15073": "phrase défectueuse",
+  "lsv-15087": "réponse ambiguë",
+  "lsv-15090": "banal",
+  "lsv-15100": "évident",
+  "lsv-15109": "évident",
+  "lsv-15115": "évident",
+  "lsv-15116": "évident",
+  "lsv-15121": "banal, Shoah",
+  "lsv-15131": "administratif",
+  "lsv-15148": "ambigu, scolaire",
+  "lsv-15158": "évident",
+  "lsv-15195": "phrase vague",
+  "lsv-15200": "réponse ambiguë",
+  "lsv-15203": "évident",
+  "lsv-15204": "plusieurs réponses valides",
+  "lsv-15220": "plusieurs réponses valides",
+  "lsv-15230": "évident, goulag",
+  "lsv-15231": "scolaire, vague",
+  "lsv-15236": "mâchoire/morsure ambigu",
+  "lsv-15259": "nationalité devinable",
+  "lsv-15290": "statistique périssable",
+  "lsv-15299": "évident",
+  "lsv-15305": "nationalité devinable",
+  "lsv-15307": "évident",
+  "lsv-15327": "évident",
+  "lsv-15389": "réponse ambiguë",
+  "lsv-15408": "mot coupé",
+  "lsv-15416": "phrase peu claire",
+  "lsv-15418": "réponse ambiguë",
+  "lsv-15423": "partie de mot",
+  "lsv-15425": "tautologie",
+  "lsv-15432": "partie de mot",
+  "lsv-15433": "évident",
+  "lsv-15436": "généalogie obscure",
+  "lsv-15439": "évident",
+  "lsv-15452": "réponse ambiguë",
+  "lsv-15463": "record périssable",
+  "lsv-15480": "évident",
+  "lsv-15483": "réponse ambiguë",
+  "lsv-15488": "évident",
+  "lsv-15501": "évident",
+  "lsv-15507": "enfant, réponse ambiguë",
+  "lsv-15521": "évident",
+  "lsv-15526": "évident, guerre",
+  "lsv-15547": "record périssable, ambigu",
+  "lsv-15548": "ambigu",
+  "lsv-15550": "mort macabre",
+  "lsv-15554": "administratif local",
+  "lsv-15560": "réponse déductible",
+  "lsv-15562": "année sans repère, fait périssable",
+  "lsv-15564": "banal, scolaire",
+  "lsv-15566": "évident",
+  "lsv-15567": "banal, scolaire",
+  "lsv-15585": "administratif",
+  "lsv-15588": "évident",
+  "lsv-15595": "réponse vague",
+  "lsv-15597": "année sans repère",
+  "lsv-15625": "administratif banal",
+  "lsv-15646": "déductible",
+  "lsv-15647": "évident",
+  "lsv-15654": "sujet macabre",
+  "lsv-15673": "réponse vague",
+  "lsv-15688": "évident",
+  "lsv-15691": "accord cassé par le trou",
+  "lsv-15696": "évident",
+  "lsv-15702": "maladie, vague",
+  "lsv-15711": "fait périssable",
+  "lsv-15726": "évident",
+  "lsv-15732": "évident",
+  "lsv-15754": "évident",
+  "lsv-15762": "phrase défectueuse",
+  "lsv-15766": "réponse vague",
+  "lsv-15772": "année sans repère",
+  "lsv-15861": "évident",
+  "lsv-15863": "administratif",
+  "lsv-15868": "réponse vague",
+  "lsv-15869": "sigle sans intérêt",
+  "lsv-15871": "fait périssable",
+  "lsv-15875": "suicide, déductible",
+  "lsv-15882": "année déductible",
+  "lsv-15887": "réponse vague",
+  "lsv-15889": "évident",
+  "lsv-15893": "réponse vague",
+  "lsv-15894": "année déductible",
+  "lsv-15908": "réponse vague",
+  "lsv-15911": "réponse douteuse",
+  "lsv-15916": "évident",
+  "lsv-15919": "réponse ambiguë",
+  "lsv-15925": "sexualité, exécution",
+  "lsv-15926": "évident",
+  "lsv-15931": "évident, vague",
+  "lsv-15932": "déductible, mort violente",
+  "lsv-15933": "mot coupé",
+  "lsv-15937": "évident",
+  "lsv-15942": "évident",
+  "lsv-15951": "évident",
+  "lsv-15957": "évident",
+  "lsv-15963": "réponse vague",
+  "lsv-15968": "année déductible",
+  "lsv-15977": "attentat",
+  "lsv-15989": "phrase tronquée",
+  "lsv-16003": "évident, périssable",
+  "lsv-16006": "phrase incompréhensible seule",
+  "lsv-16015": "évident",
+  "lsv-16023": "fait périssable",
+  "lsv-16025": "évident",
+  "lsv-16029": "évident",
+  "lsv-16039": "réponse vague",
+  "lsv-16063": "réponse vague",
+  "lsv-16072": "sujet macabre",
+  "lsv-16076": "mot coupé par accord",
+  "lsv-16081": "évident",
+  "lsv-16101": "accord cassé, déductible",
+  "lsv-16143": "évident",
+  "lsv-16161": "phrase tronquée",
+  "lsv-16168": "mot coupé",
+  "lsv-16173": "évident",
+  "lsv-16199": "évident",
+  "lsv-16212": "réponse vague",
+  "lsv-16215": "réponse vague",
+  "lsv-16222": "évident",
+  "lsv-16225": "administratif",
+  "lsv-16230": "déductible",
+  "lsv-16235": "évident",
+  "lsv-16250": "évident",
+  "lsv-16262": "administratif, déductible",
+  "lsv-16276": "accord cassé, vague",
+  "lsv-16296": "évident",
+  "lsv-16305": "local",
+  "lsv-16324": "évident",
+  "lsv-16343": "banal, obscur",
+  "lsv-16346": "fait périssable",
+  "lsv-16347": "fait périssable",
+  "lsv-16354": "évident",
+  "lsv-16363": "évident",
+  "lsv-16372": "mot coupé",
+  "lsv-16382": "accord cassé",
+  "lsv-16393": "mot coupé",
+  "lsv-16394": "mot coupé",
+  "lsv-16395": "réponse vague",
+  "lsv-16412": "mot coupé",
+  "lsv-16414": "fait périssable",
+  "lsv-16431": "évident",
+  "lsv-16435": "déductible",
+  "lsv-16436": "déductible",
+  "lsv-16437": "local",
+  "lsv-16446": "évident",
+  "lsv-16447": "texte défectueux",
+  "lsv-16466": "attentat",
+  "lsv-16467": "attentat, exécution",
+  "lsv-16490": "sexualité",
+  "lsv-16492": "réponse vague",
+  "lsv-16497": "réponse vague",
+  "lsv-16498": "évident",
+  "lsv-16504": "banal",
+  "lsv-16505": "évident",
+  "lsv-16507": "mot coupé",
+  "lsv-16512": "réponse ambiguë",
+  "lsv-16518": "réponse vague",
+  "lsv-16519": "évident",
+  "lsv-16520": "évident",
+  "lsv-16542": "évident",
+  "lsv-16546": "réponse vague",
+  "lsv-16560": "réponse vague",
+  "lsv-16568": "évident",
+  "lsv-16582": "administratif, vague",
+  "lsv-16602": "évident",
+  "lsv-16604": "fait périssable",
+  "lsv-16610": "évident",
+  "lsv-16613": "local",
+  "lsv-16614": "sexualité, vague",
+  "lsv-16615": "sexualité",
+  "lsv-16617": "évident, mort",
+  "lsv-16621": "évident",
+  "lsv-16634": "phrase obscure, mot coupé",
+  "lsv-16638": "réponse évidente",
+  "lsv-16643": "suicide, trou évident",
+  "lsv-16648": "réponse ambiguë",
+  "lsv-16662": "réponses multiples",
+  "lsv-16672": "meurtre",
+  "lsv-16677": "réponse évidente",
+  "lsv-16679": "mot coupé, évident",
+  "lsv-16692": "évident, macabre",
+  "lsv-16709": "exécution, évident",
+  "lsv-16710": "évident",
+  "lsv-16724": "sexualité",
+  "lsv-16738": "unité sans intérêt",
+  "lsv-16744": "mot coupé, nazi",
+  "lsv-16745": "réponse vague",
+  "lsv-16756": "évident",
+  "lsv-16759": "sujet raciste, réponse longue",
+  "lsv-16760": "suicide",
+  "lsv-16767": "suicide",
+  "lsv-16768": "évident",
+  "lsv-16769": "évident",
+  "lsv-16773": "évident",
+  "lsv-16776": "évident",
+  "lsv-16791": "évident",
+  "lsv-16797": "article cassé, réponse inadaptée",
+  "lsv-16801": "réponse inadaptée",
+  "lsv-16802": "réponse vague",
+  "lsv-16808": "évident",
+  "lsv-16813": "évident",
+  "lsv-16821": "phrase défectueuse",
+  "lsv-16827": "phrase défectueuse",
+  "lsv-16834": "évident",
+  "lsv-16837": "trou défectueux",
+  "lsv-16850": "mot coupé, unité",
+  "lsv-16866": "évident",
+  "lsv-16869": "évident",
+  "lsv-16873": "réponse ambiguë",
+  "lsv-16878": "réponse vague",
+  "lsv-16887": "politique locale ambiguë",
+  "lsv-16901": "local, évident",
+  "lsv-16943": "évident",
+  "lsv-16950": "évident",
+  "lsv-16951": "local, banal",
+  "lsv-16962": "sexualité",
+  "lsv-16971": "évident",
+  "lsv-16976": "macabre",
+  "lsv-16983": "cannibalisme, vague",
+  "lsv-17000": "macabre",
+  "lsv-17001": "évident",
+  "lsv-17002": "évident",
+  "lsv-17011": "évident",
+  "lsv-17012": "évident",
+  "lsv-17024": "évident",
+  "lsv-17034": "évident",
+  "lsv-17035": "évident",
+  "lsv-17043": "réponse vague",
+  "lsv-17047": "sexualité",
+  "lsv-17051": "évident",
+  "lsv-17065": "évident",
+  "lsv-17069": "phrase incompréhensible",
+  "lsv-17098": "évident, banal",
+  "lsv-17102": "évident",
+  "lsv-17111": "réponse vague",
+  "lsv-17133": "évident",
+  "lsv-17140": "banal, local",
+  "lsv-17143": "réponse ambiguë",
+  "lsv-17180": "réponse ambiguë",
+  "lsv-17189": "markup, phrase défectueuse",
+  "lsv-17195": "phrase défectueuse",
+  "lsv-17197": "évident",
+  "lsv-17208": "banal, érudit",
+  "lsv-17220": "évident",
+  "lsv-17225": "réponse ambiguë",
+  "lsv-17243": "réponse vague",
+  "lsv-17247": "évident",
+  "lsv-17268": "évident",
+  "lsv-17276": "évident",
+  "lsv-17283": "évident",
+  "lsv-17295": "évident, contradictoire",
+  "lsv-17297": "évident",
+  "lsv-17298": "évident",
+  "lsv-17305": "évident",
+  "lsv-17325": "réponse ambiguë",
+  "lsv-17333": "banal",
+  "lsv-17367": "réponse ambiguë",
+  "lsv-17371": "évident",
+  "lsv-17379": "évident",
+  "lsv-17380": "local, banal",
+  "lsv-17389": "évident",
+  "lsv-17395": "évident",
+  "lsv-17397": "dopage, ambigu",
+  "lsv-17401": "fait périssable, banal",
+  "lsv-17404": "famine, obscur",
+  "lsv-17421": "évident",
+  "lsv-17424": "maladie grave",
+  "lsv-17441": "pédophilie",
+  "lsv-17445": "évident",
+  "lsv-17459": "local, évident",
+  "lsv-17477": "administratif, local",
+  "lsv-17493": "évident",
+  "lsv-17496": "évident",
+  "lsv-17522": "réponse ambiguë",
+  "lsv-17524": "évident",
+  "lsv-17527": "évident",
+  "lsv-17544": "juridique, banal",
+  "lsv-17545": "évident",
+  "lsv-17547": "évident",
+  "lsv-17573": "évident",
+  "lsv-17582": "évident",
+  "lsv-17584": "phrase défectueuse",
+  "lsv-17600": "réponse ambiguë",
+  "lsv-17610": "réponse vague",
+  "lsv-17614": "réponse ambiguë/évidente",
+  "lsv-17623": "sexualité, contexte absent",
+  "lsv-17627": "évident (Bolivie/Bolívar)",
+  "lsv-17628": "réponse ambiguë (Équateur)",
+  "lsv-17642": "partie de mot (unité)",
+  "lsv-17643": "viol, sujet de mauvais goût",
+  "lsv-17646": "trou évident",
+  "lsv-17648": "politique locale/obscur",
+  "lsv-17649": "trou évident",
+  "lsv-17651": "banal, évident",
+  "lsv-17654": "trou évident",
+  "lsv-17664": "réponse inadaptée",
+  "lsv-17671": "trou évident",
+  "lsv-17672": "trou évident",
+  "lsv-17699": "trou évident",
+  "lsv-17704": "trou évident",
+  "lsv-17716": "trou évident",
+  "lsv-17719": "trou évident",
+  "lsv-17738": "trou évident",
+  "lsv-17747": "réponse inadaptée",
+  "lsv-17755": "trou évident",
+  "lsv-17763": "trou évident",
+  "lsv-17764": "trou évident, partie de mot",
+  "lsv-17767": "réponse ambiguë",
+  "lsv-17770": "réponse ambiguë, banal",
+  "lsv-17772": "trou évident",
+  "lsv-17773": "phrase incompréhensible",
+  "lsv-17775": "réponse peu intéressante",
+  "lsv-17781": "trou évident",
+  "lsv-17784": "trou évident",
+  "lsv-17800": "trou évident",
+  "lsv-17831": "réponse erronée/ambiguë",
+  "lsv-17837": "réponse ambiguë, commune",
+  "lsv-17841": "obscur, chiffre sans repère",
+  "lsv-17843": "exécutions, macabre",
+  "lsv-17844": "trou évident",
+  "lsv-17852": "phrase incompréhensible",
+  "lsv-17877": "trou évident",
+  "lsv-17900": "trou évident",
+  "lsv-17902": "trou évident",
+  "lsv-17926": "trou évident/ambigu",
+  "lsv-17929": "trou évident",
+  "lsv-17930": "phrase défectueuse",
+  "lsv-17931": "partie de mot",
+  "lsv-17935": "réponse vague",
+  "lsv-17941": "trou évident",
+  "lsv-17957": "réponse ambiguë",
+  "lsv-17961": "massacre, mauvais goût",
+  "lsv-17964": "trou évident",
+  "lsv-17979": "trou évident",
+  "lsv-17997": "réponse ambiguë",
+  "lsv-17999": "record périssable",
+  "lsv-18003": "réponse ambiguë",
+  "lsv-18005": "trou évident",
+  "lsv-18012": "réponse inadaptée",
+  "lsv-18017": "trou évident",
+  "lsv-18023": "trou évident",
+  "lsv-18040": "partie de mot",
+  "lsv-18045": "phrase défectueuse",
+  "lsv-18051": "trou évident",
+  "lsv-18061": "réponse vague",
+  "lsv-18063": "phrase défectueuse",
+  "lsv-18071": "trou évident",
+  "lsv-18075": "trou évident",
+  "lsv-18077": "fait périssable",
+  "lsv-18083": "trou évident",
+  "lsv-18084": "maladie grave, vague",
+  "lsv-18086": "trou évident",
+  "lsv-18087": "trou évident",
+  "lsv-18108": "trou évident",
+  "lsv-18109": "fait périssable",
+  "lsv-18114": "sexualité",
+  "lsv-18115": "trou évident",
+  "lsv-18128": "trou évident",
+  "lsv-18140": "trou évident",
+  "lsv-18141": "trou évident",
+  "lsv-18143": "trou évident",
+  "lsv-18158": "fait périssable",
+  "lsv-18161": "fait périssable",
+  "lsv-18164": "sujet local",
+  "lsv-18168": "trou évident",
+  "lsv-18172": "trou évident",
+  "lsv-18176": "réponse ambiguë",
+  "lsv-18182": "phrase défectueuse",
+  "lsv-18184": "réponse ambiguë",
+  "lsv-18193": "réponse ambiguë",
+  "lsv-18194": "trou évident",
+  "lsv-18204": "trou évident",
+  "lsv-18227": "partie de mot, macabre",
+  "lsv-18244": "trou évident",
+  "lsv-18251": "trou évident",
+  "lsv-18252": "réponse ambiguë",
+  "lsv-18273": "trou évident",
+  "lsv-18279": "trou évident",
+  "lsv-18301": "trou évident",
+  "lsv-18305": "réponse vague",
+  "lsv-18308": "trou évident",
+  "lsv-18310": "trou évident",
+  "lsv-18323": "trou évident",
+  "lsv-18334": "trou évident",
+  "lsv-18336": "partie de mot",
+  "lsv-18346": "trou évident",
+  "lsv-18356": "trou évident",
+  "lsv-18364": "trou évident",
+  "lsv-18367": "réponse inadaptée",
+  "lsv-18369": "trou évident",
+  "lsv-18379": "fait périssable",
+  "lsv-18383": "fait périssable",
+  "lsv-18384": "trou évident",
+  "lsv-18391": "trou évident",
+  "lsv-18402": "réponse banale",
+  "lsv-18415": "trou évident",
+  "lsv-18430": "trou évident",
+  "lsv-18433": "partie de mot, banal",
+  "lsv-18446": "trou évident",
+  "lsv-18456": "trou évident",
+  "lsv-18460": "maladie, réponse vague",
+  "lsv-18467": "trou évident",
+  "lsv-18468": "trou évident",
+  "lsv-18470": "partie de mot, évident",
+  "lsv-18488": "maladie grave",
+  "lsv-18490": "trou évident",
+  "lsv-18530": "sexualité",
+  "lsv-18537": "trou évident",
+  "lsv-18541": "trou évident",
+  "lsv-18542": "réponse inadaptée",
+  "lsv-18544": "macabre",
+  "lsv-18556": "Paris évident",
+  "lsv-18564": "trou évident",
+  "lsv-18582": "trou évident, texte défectueux",
+  "lsv-18589": "fait périssable",
+  "lsv-18594": "réponse vague/évidente",
+  "lsv-18605": "marathon évident",
+  "lsv-18611": "trou évident",
+  "lsv-18614": "trou évident",
+  "lsv-18620": "Canada évident",
+  "lsv-18635": "trou évident",
+  "lsv-18641": "trou évident",
+  "lsv-18651": "exécution macabre",
+  "lsv-18665": "César évident",
+  "lsv-18669": "Lituanie évidente",
+  "lsv-18670": "mutilation sexuelle",
+  "lsv-18700": "Stephen King évident",
+  "lsv-18707": "accord cassé, évident",
+  "lsv-18714": "trou évident",
+  "lsv-18728": "Italie évidente",
+  "lsv-18734": "fusillés, sujet local",
+  "lsv-18736": "nom dans la phrase",
+  "lsv-18737": "sujet local/administratif",
+  "lsv-18746": "phrase défectueuse",
+  "lsv-18753": "réponse ambiguë",
+  "lsv-18762": "dictateur évident",
+  "lsv-18774": "record périssable",
+  "lsv-18782": "neurones évident",
+  "lsv-18788": "phrase méta/défectueuse",
+  "lsv-18789": "trou évident",
+  "lsv-18801": "record périssable",
+  "lsv-18805": "Kennedy évident",
+  "lsv-18810": "réponse ambiguë",
+  "lsv-18820": "réponse ambiguë",
+  "lsv-18822": "trou évident",
+  "lsv-18842": "trou évident",
+  "lsv-18846": "réponse vague, sujet sensible",
+  "lsv-18851": "banal, généalogie",
+  "lsv-18853": "adjectif banal",
+  "lsv-18881": "cavalerie évidente",
+  "lsv-18899": "banal",
+  "lsv-18906": "école publique vague",
+  "lsv-18913": "scolaire",
+  "lsv-18917": "phrase peu claire, ambiguë",
+  "lsv-18922": "trou évident",
+  "lsv-18933": "trou évident",
+  "lsv-18943": "déductible de sardonique",
+  "lsv-18951": "trou évident",
+  "lsv-18960": "mort macabre",
+  "lsv-18964": "César évident",
+  "lsv-18965": "incompréhensible",
+  "lsv-18970": "évident, périssable",
+  "lsv-18980": "trou évident",
+  "lsv-18982": "évident, local",
+  "lsv-18994": "phrase bancale",
+  "lsv-18996": "sujet local",
+  "lsv-19005": "commune voisine, local",
+  "lsv-19019": "mot coupé, tueur en série",
+  "lsv-19036": "réponse ambiguë",
+  "lsv-19058": "banal, local",
+  "lsv-19086": "réponse vague",
+  "lsv-19088": "Hippocrate évident",
+  "lsv-19091": "résidu de markup",
+  "lsv-19099": "incompréhensible",
+  "lsv-19111": "trou évident",
+  "lsv-19113": "URSS évidente",
+  "lsv-19120": "trou évident",
+  "lsv-19122": "trou évident",
+  "lsv-19123": "réponse vague",
+  "lsv-19245": "trou évident",
+  "lsv-19267": "Marseille évident, administratif",
+  "lsv-19271": "trou évident",
+  "lsv-19274": "réponse ambiguë",
+  "lsv-19282": "esclavage/sujet sensible",
+  "lsv-19300": "orbite évidente",
+  "lsv-19320": "réponse vague",
+  "lsv-19353": "trou évident",
+  "lsv-19359": "abeilles évident",
+  "lsv-19370": "phrase confuse",
+  "lsv-19395": "obscur, ambigu",
+  "lsv-19405": "réponse ambiguë",
+  "lsv-19417": "trou évident",
+  "lsv-19448": "Everest évident",
+  "lsv-19471": "victimes de masse",
+  "lsv-19475": "réponse ambiguë",
+  "lsv-19487": "réponse inadaptée",
+  "lsv-19516": "trou évident",
+  "lsv-19518": "morts de masse",
+  "lsv-19523": "réponse vague",
+  "lsv-19544": "trou évident",
+  "lsv-19545": "meurtres rituels",
+  "lsv-19552": "trou évident",
+  "lsv-19567": "trou évident",
+  "lsv-19572": "trou évident",
+  "lsv-19579": "trou évident",
+  "lsv-19584": "réponse vague",
+  "lsv-19593": "ambigu, évident",
+  "lsv-19597": "trou évident",
+  "lsv-19603": "Panthéon évident",
+  "lsv-19604": "expression connue",
+  "lsv-19605": "censure évidente",
+  "lsv-19611": "vulgaire, banal",
+  "lsv-19612": "mot coupé",
+  "lsv-19614": "Vatican évident",
+  "lsv-19619": "phrase défectueuse",
+  "lsv-19631": "trou évident",
+  "lsv-19635": "trou vague",
+  "lsv-19641": "évident",
+  "lsv-19654": "macabre, trou accordé",
+  "lsv-19665": "évident",
+  "lsv-19670": "sexualité/santé, trou accordé",
+  "lsv-19671": "réponse ambiguë",
+  "lsv-19673": "évident",
+  "lsv-19674": "évident",
+  "lsv-19691": "évident",
+  "lsv-19711": "jeu de mots non bluffable",
+  "lsv-19713": "évident",
+  "lsv-19716": "évident",
+  "lsv-19722": "phrase incompréhensible seule",
+  "lsv-19730": "phrase incompréhensible",
+  "lsv-19754": "ambigu (Autrichiens/Habsbourg)",
+  "lsv-19758": "évident",
+  "lsv-19773": "trop obscur/confus",
+  "lsv-19795": "évident",
+  "lsv-19799": "banal",
+  "lsv-19800": "réponse inadaptée",
+  "lsv-19804": "mot coupé",
+  "lsv-19806": "évident",
+  "lsv-19811": "réponse ambiguë, peine de mort",
+  "lsv-19831": "vague",
+  "lsv-19843": "phrase incompréhensible",
+  "lsv-19856": "évident",
+  "lsv-19858": "macabre, incompréhensible",
+  "lsv-19877": "phrase incompréhensible",
+  "lsv-19879": "évident",
+  "lsv-19888": "phrase incompréhensible",
+  "lsv-19892": "phrase incompréhensible",
+  "lsv-19895": "vague",
+  "lsv-19905": "vague",
+  "lsv-19915": "évident",
+  "lsv-19918": "vague",
+  "lsv-19933": "évident",
+  "lsv-19934": "phrase incompréhensible",
+  "lsv-19938": "ambigu",
+  "lsv-19948": "moquerie sur un groupe",
+  "lsv-19959": "sexualité, trou accordé",
+  "lsv-19965": "évident",
+  "lsv-19980": "évident",
+  "lsv-19983": "local, banal",
+  "lsv-19997": "évident",
+  "lsv-20005": "ambigu",
+  "lsv-20011": "vague",
+  "lsv-20016": "local",
+  "lsv-20020": "réponse douteuse",
+  "lsv-20022": "banal",
+  "lsv-20048": "phrase incompréhensible",
+  "lsv-20059": "évident",
+  "lsv-20061": "local",
+  "lsv-20065": "évident",
+  "lsv-20067": "partie de nom, local",
+  "lsv-20069": "mot-outil",
+  "lsv-20108": "mot coupé",
+  "lsv-20117": "évident",
+  "lsv-20119": "évident",
+  "lsv-20120": "local obscur",
+  "lsv-20122": "vague",
+  "lsv-20124": "mot-outil / record",
+  "lsv-20131": "mot-outil",
+  "lsv-20133": "binaire",
+  "lsv-20135": "génocide",
+  "lsv-20143": "évident",
+  "lsv-20152": "évident, Commune",
+  "lsv-20154": "sujet douteux",
+  "lsv-20187": "évident",
+  "lsv-20192": "incompréhensible",
+  "lsv-20199": "mort violente",
+  "lsv-20239": "évident",
+  "lsv-20249": "phrase absurde",
+  "lsv-20269": "évident",
+  "lsv-20273": "évident",
+  "lsv-20302": "évident",
+  "lsv-20326": "évident",
+  "lsv-20331": "mot coupé",
+  "lsv-20332": "phrase défectueuse",
+  "lsv-20333": "fait périssable",
+  "lsv-20335": "phrase peu claire",
+  "lsv-20338": "massacre",
+  "lsv-20360": "évident",
+  "lsv-20363": "meurtre",
+  "lsv-20371": "évident",
+  "lsv-20373": "vague",
+  "lsv-20381": "évident",
+  "lsv-20386": "évident",
+  "lsv-20393": "évident",
+  "lsv-20396": "évident",
+  "lsv-20400": "vague",
+  "lsv-20406": "vague",
+  "lsv-20410": "évident",
+  "lsv-20411": "phrase incompréhensible",
+  "lsv-20413": "banal",
+  "lsv-20416": "maladie, évident",
+  "lsv-20421": "mot-outil",
+  "lsv-20426": "vague",
+  "lsv-20428": "évident",
+  "lsv-20442": "assassinat",
+  "lsv-20444": "évident",
+  "lsv-20456": "maladie grave",
+  "lsv-20488": "évident",
+  "lsv-20519": "évident",
+  "lsv-20521": "évident",
+  "lsv-20529": "phrase confuse",
+  "lsv-20534": "phrase défectueuse",
+  "lsv-20542": "vague",
+  "lsv-20551": "vague",
+  "lsv-20563": "évident, sexualité",
+  "lsv-20607": "évident",
+  "lsv-20608": "vague",
+  "lsv-20610": "attentats",
+  "lsv-20616": "évident",
+  "lsv-20618": "attentat, réponse devinable",
+  "lsv-20621": "évident (sous la glace)",
+  "lsv-20622": "évident",
+  "lsv-20633": "réponse évidente",
+  "lsv-20642": "évident (Forêt-Noire)",
+  "lsv-20656": "réponse ambiguë",
+  "lsv-20678": "plusieurs réponses valides",
+  "lsv-20690": "évident",
+  "lsv-20707": "phrase défectueuse (G____en)",
+  "lsv-20712": "exécution, réponse vague",
+  "lsv-20719": "évident",
+  "lsv-20721": "évident",
+  "lsv-20736": "évident (sourd)",
+  "lsv-20762": "évident",
+  "lsv-20767": "verbe sans intérêt",
+  "lsv-20777": "évident",
+  "lsv-20780": "pogrom, mauvais goût",
+  "lsv-20792": "évident",
+  "lsv-20793": "évident",
+  "lsv-20796": "évident",
+  "lsv-20804": "réponse ambiguë",
+  "lsv-20817": "évident",
+  "lsv-20823": "évident",
+  "lsv-20826": "article cassé, type flou",
+  "lsv-20849": "évident",
+  "lsv-20855": "évident",
+  "lsv-20868": "évident",
+  "lsv-20885": "mort violente",
+  "lsv-20899": "évident",
+  "lsv-20901": "évident",
+  "lsv-20927": "évident",
+  "lsv-20928": "vague",
+  "lsv-20943": "local",
+  "lsv-20949": "évident (Dumas)",
+  "lsv-20955": "réponse vague",
+  "lsv-20969": "évident, politique",
+  "lsv-20974": "obscur, sensible",
+  "lsv-20982": "évident (chrysalide)",
+  "lsv-20992": "réponse vague",
+  "lsv-20995": "réponse ambiguë",
+  "lsv-20999": "sexualité, phrase défectueuse",
+  "lsv-21005": "accident mortel, obscur",
+  "lsv-21013": "liste évidente",
+  "lsv-21017": "mot-outil/adjectif évident",
+  "lsv-21018": "réponse vague",
+  "lsv-21024": "évident",
+  "lsv-21028": "mort banale",
+  "lsv-21029": "mot-outil",
+  "lsv-21036": "évident",
+  "lsv-21037": "disparition, réponse évidente",
+  "lsv-21045": "scolaire, obscur",
+  "lsv-21046": "évident",
+  "lsv-21056": "évident",
+  "lsv-21060": "évident",
+  "lsv-21069": "évident",
+  "lsv-21070": "réponse ambiguë",
+  "lsv-21076": "vague, sujet nazi",
+  "lsv-21081": "année sans repère",
+  "lsv-21094": "évident",
+  "lsv-21106": "évident",
+  "lsv-21110": "évident",
+  "lsv-21117": "évident, assassinat",
+  "lsv-21163": "phrase défectueuse (____aises)",
+  "lsv-21176": "évident",
+  "lsv-21177": "évident",
+  "lsv-21178": "évident",
+  "lsv-21179": "évident",
+  "lsv-21192": "réponse peu claire, famine",
+  "lsv-21222": "mort par animal, vague",
+  "lsv-21224": "évident",
+  "lsv-21231": "évident",
+  "lsv-21234": "évident",
+  "lsv-21236": "évident",
+  "lsv-21245": "phrase défectueuse",
+  "lsv-21257": "local",
+  "lsv-21283": "évident",
+  "lsv-21289": "évident",
+  "lsv-21293": "Shoah, évident",
+  "lsv-21302": "évident",
+  "lsv-21311": "évident",
+  "lsv-21314": "génocide, évident",
+  "lsv-21323": "évident, bombe atomique",
+  "lsv-21330": "mot-outil",
+  "lsv-21341": "local",
+  "lsv-21354": "sexualité",
+  "lsv-21361": "scolaire",
+  "lsv-21372": "évident",
+  "lsv-21385": "évident",
+  "lsv-21391": "évident",
+  "lsv-21403": "nom d'espèce imbluffable",
+  "lsv-21411": "évident",
+  "lsv-21425": "assassinat",
+  "lsv-21450": "évident",
+  "lsv-21468": "évident",
+  "lsv-21473": "évident",
+  "lsv-21474": "verbe sans intérêt",
+  "lsv-21481": "évident",
+  "lsv-21497": "mot-outil",
+  "lsv-21521": "phrase défectueuse (T____)",
+  "lsv-21525": "évident",
+  "lsv-21531": "local",
+  "lsv-21533": "évident",
+  "lsv-21539": "évident",
+  "lsv-21541": "phrase défectueuse",
+  "lsv-21556": "évident",
+  "lsv-21559": "évident",
+  "lsv-21570": "évident",
+  "lsv-21594": "réponse imposée par le contexte",
+  "lsv-21617": "banal, réponse évidente",
+  "lsv-21654": "mot coupé / markup",
+  "lsv-21678": "trou évident",
+  "lsv-21691": "trou évident",
+  "lsv-21717": "mot coupé / markup",
+  "lsv-21719": "réponse vague",
+  "lsv-21724": "trou évident",
+  "lsv-21726": "réponse ambiguë",
+  "lsv-21756": "trou évident",
+  "lsv-21763": "trou évident",
+  "lsv-21764": "phrase incompréhensible seule",
+  "lsv-21825": "sexualité",
+  "lsv-21839": "trou évident",
+  "lsv-21840": "phrase confuse",
+  "lsv-21843": "réponse binaire/évidente",
+  "lsv-21849": "phrase défectueuse",
+  "lsv-21851": "harcèlement sexuel, sujet sensible",
+  "lsv-21900": "réponse ambiguë",
+  "lsv-21909": "trou évident",
+  "lsv-21925": "plusieurs réponses valides",
+  "lsv-21930": "réponse vague",
+  "lsv-21942": "maladie grave, trou évident",
+  "lsv-21952": "administratif, sans intérêt",
+  "lsv-21957": "meurtre, macabre",
+  "lsv-21960": "trou évident",
+  "lsv-21982": "réponse vague",
+  "lsv-21985": "réponse vague, administratif",
+  "lsv-21997": "sujet purement local",
+  "lsv-22027": "phrase défectueuse",
+  "lsv-22034": "trou évident",
+  "lsv-22043": "réponse vague",
+  "lsv-22044": "réponse ambiguë",
+  "lsv-22059": "mot-outil",
+  "lsv-22068": "orientation sexuelle, obscur",
+  "lsv-22071": "trou évident",
+  "lsv-22079": "trou évident",
+  "lsv-22092": "réponse incohérente avec la phrase",
+  "lsv-22103": "administratif",
+  "lsv-22106": "sujet purement local",
+  "lsv-22115": "réponse sans intérêt",
+  "lsv-22129": "sexualité",
+  "lsv-22131": "réponse ambiguë",
+  "lsv-22141": "trou évident",
+  "lsv-22147": "banal, scolaire",
+  "lsv-22161": "phrase défectueuse",
+  "lsv-22178": "trou déductible",
+  "lsv-22180": "macabre",
+  "lsv-22181": "trou évident",
+  "lsv-22184": "phrase confuse",
+  "lsv-22201": "phrase défectueuse",
+  "lsv-22204": "réponse ambiguë",
+  "lsv-22213": "administratif, ambigu",
+  "lsv-22226": "trou évident",
+  "lsv-22244": "trou évident",
+  "lsv-22251": "réponse ambiguë",
+  "lsv-22253": "trou évident",
+  "lsv-22257": "plusieurs réponses valides",
+  "lsv-22258": "trou évident",
+  "lsv-22263": "réponse vague",
+  "lsv-22272": "réponse ambiguë",
+  "lsv-22282": "réponse ambiguë",
+  "lsv-22290": "mot coupé",
+  "lsv-22304": "trou évident",
+  "lsv-22322": "réponse vague",
+  "lsv-22323": "réponse défectueuse",
+  "lsv-22325": "trou évident",
+  "lsv-22340": "réponse ambiguë",
+  "lsv-22359": "trou évident",
+  "lsv-22362": "réponse vague",
+  "lsv-22368": "sexualité",
+  "lsv-22380": "phrase défectueuse",
+  "lsv-22387": "local, fait périssable",
+  "lsv-22391": "trou évident",
+  "lsv-22401": "verbe évident",
+  "lsv-22402": "verbe évident",
+  "lsv-22421": "sujet purement local",
+  "lsv-22429": "sujet purement local",
+  "lsv-22431": "sexualité",
+  "lsv-22439": "trou déductible",
+  "lsv-22441": "trou évident",
+  "lsv-22452": "phrase vague",
+  "lsv-22460": "mort violente",
+  "lsv-22470": "trou évident",
+  "lsv-22475": "maladie grave, mort",
+  "lsv-22504": "réponse vague",
+  "lsv-22506": "phrase défectueuse",
+  "lsv-22528": "trou évident",
+  "lsv-22573": "sexualité",
+  "lsv-22575": "sujet nazi, mauvais goût",
+  "lsv-22583": "réponse double/vague",
+  "lsv-22586": "phrase confuse",
+  "lsv-22634": "trou évident",
+  "lsv-22661": "réponse évidente",
+  "lsv-22662": "sujet local obscur",
+  "lsv-22663": "réponse vague",
+  "lsv-22664": "réponse évidente",
+  "lsv-22666": "réponse évidente",
+  "lsv-22680": "réponse évidente",
+  "lsv-22687": "local, article cassé",
+  "lsv-22699": "mot-outil",
+  "lsv-22718": "banal, vague",
+  "lsv-22721": "mot coupé (archet+s)",
+  "lsv-22744": "type de trou incohérent, guerre meurtrière",
+  "lsv-22754": "réponse vague/évidente",
+  "lsv-22755": "mot-outil",
+  "lsv-22766": "réponse devinable",
+  "lsv-22778": "unité triviale",
+  "lsv-22779": "fictif/incompréhensible",
+  "lsv-22781": "macabre",
+  "lsv-22782": "réponse longue et déductible",
+  "lsv-22787": "réponse évidente",
+  "lsv-22806": "mot coupé",
+  "lsv-22811": "réponse évidente",
+  "lsv-22812": "réponse évidente",
+  "lsv-22817": "mot coupé",
+  "lsv-22828": "réponse évidente, politique",
+  "lsv-22835": "réponse évidente",
+  "lsv-22846": "sexualité",
+  "lsv-22848": "mort macabre",
+  "lsv-22849": "réponse évidente",
+  "lsv-22860": "réponse évidente",
+  "lsv-22869": "réponse évidente",
+  "lsv-22871": "phrase confuse, réponse déductible",
+  "lsv-22879": "fait périssable, évident",
+  "lsv-22898": "sujet de mauvais goût",
+  "lsv-22900": "réponse ambiguë",
+  "lsv-22905": "mot coupé",
+  "lsv-22911": "réponse évidente",
+  "lsv-22921": "maladie grave, obscur",
+  "lsv-22926": "politique, ambigu",
+  "lsv-22930": "réponse évidente",
+  "lsv-22932": "réponse évidente",
+  "lsv-22934": "réponse évidente",
+  "lsv-22944": "fait périssable",
+  "lsv-22951": "banal",
+  "lsv-22962": "réponse évidente, périssable",
+  "lsv-23001": "réponse évidente",
+  "lsv-23003": "scolaire, ambigu",
+  "lsv-23004": "réponse évidente",
+  "lsv-23029": "réponse évidente",
+  "lsv-23054": "réponse évidente",
+  "lsv-23065": "réponse évidente",
+  "lsv-23074": "réponse évidente",
+  "lsv-23081": "maladie, évident",
+  "lsv-23090": "réponse évidente",
+  "lsv-23107": "réponse vague",
+  "lsv-23108": "ambigu",
+  "lsv-23142": "réponse évidente",
+  "lsv-23144": "local",
+  "lsv-23146": "réponse évidente",
+  "lsv-23147": "phrase défectueuse",
+  "lsv-23148": "phrase défectueuse",
+  "lsv-23159": "mot-outil",
+  "lsv-23165": "réponse déductible",
+  "lsv-23166": "réponse vague",
+  "lsv-23190": "réponse évidente",
+  "lsv-23203": "réponse vague",
+  "lsv-23208": "réponse ambiguë",
+  "lsv-23209": "scolaire",
+  "lsv-23210": "mot coupé (pluriel)",
+  "lsv-23213": "réponse évidente",
+  "lsv-23225": "type de réponse flou",
+  "lsv-23227": "phrase défectueuse",
+  "lsv-23236": "maladie, banal",
+  "lsv-23247": "réponse évidente",
+  "lsv-23251": "réponse ambiguë",
+  "lsv-23259": "réponse évidente",
+  "lsv-23261": "sujet de mauvais goût",
+  "lsv-23269": "réponse évidente",
+  "lsv-23277": "réponse évidente",
+  "lsv-23279": "réponse évidente",
+  "lsv-23280": "réponse évidente, nazisme",
+  "lsv-23284": "réponse ambiguë",
+  "lsv-23289": "réponse évidente",
+  "lsv-23291": "réponse vague",
+  "lsv-23294": "réponse évidente",
+  "lsv-23295": "réponse évidente",
+  "lsv-23312": "sujet de mauvais goût",
+  "lsv-23315": "réponse évidente",
+  "lsv-23325": "réponse évidente",
+  "lsv-23333": "réponse vague",
+  "lsv-23336": "réponse évidente, catastrophe",
+  "lsv-23342": "macabre",
+  "lsv-23356": "réponse évidente",
+  "lsv-23357": "réponse évidente",
+  "lsv-23379": "scolaire",
+  "lsv-23380": "mot coupé",
+  "lsv-23386": "réponse évidente",
+  "lsv-23404": "réponse évidente",
+  "lsv-23419": "réponse vague",
+  "lsv-23424": "réponse évidente",
+  "lsv-23430": "réponse évidente",
+  "lsv-23431": "réponse évidente",
+  "lsv-23435": "réponse évidente",
+  "lsv-23437": "réponse déductible",
+  "lsv-23462": "local, déductible",
+  "lsv-23471": "sexualité",
+  "lsv-23485": "trou évident",
+  "lsv-23486": "réponse incohérente/ambiguë",
+  "lsv-23494": "réponse vague/devinable",
+  "lsv-23502": "fait périssable (actuel)",
+  "lsv-23503": "mot coupé",
+  "lsv-23510": "phrase défectueuse",
+  "lsv-23543": "trou évident, sujet sensible",
+  "lsv-23546": "trou évident",
+  "lsv-23565": "type de réponse flou",
+  "lsv-23570": "mot coupé",
+  "lsv-23571": "auto-référence évidente",
+  "lsv-23573": "réponse ambiguë",
+  "lsv-23577": "réponse douteuse/non compréhensible",
+  "lsv-23582": "trou évident",
+  "lsv-23592": "trou évident",
+  "lsv-23595": "trou évident",
+  "lsv-23601": "trou évident",
+  "lsv-23604": "réponse vague",
+  "lsv-23605": "réponse douteuse",
+  "lsv-23613": "trou évident",
+  "lsv-23616": "famine/génocide",
+  "lsv-23620": "phrase défectueuse",
+  "lsv-23629": "réponse vague",
+  "lsv-23638": "trou évident",
+  "lsv-23662": "trou évident",
+  "lsv-23678": "trou évident",
+  "lsv-23684": "trou évident",
+  "lsv-23700": "réponse inexploitable",
+  "lsv-23706": "réponse ambiguë",
+  "lsv-23709": "sexualité",
+  "lsv-23716": "réponse vague",
+  "lsv-23725": "trou évident",
+  "lsv-23726": "trou évident",
+  "lsv-23733": "enfants victimes",
+  "lsv-23740": "sujet local",
+  "lsv-23745": "trou évident",
+  "lsv-23749": "trou évident",
+  "lsv-23765": "trou évident",
+  "lsv-23767": "réponse vague",
+  "lsv-23781": "mot coupé",
+  "lsv-23786": "trou évident",
+  "lsv-23793": "exécution macabre",
+  "lsv-23823": "trou évident",
+  "lsv-23831": "trou évident",
+  "lsv-23832": "mort macabre",
+  "lsv-23852": "trou évident",
+  "lsv-23861": "trou évident",
+  "lsv-23866": "trou évident",
+  "lsv-23877": "réponse vague",
+  "lsv-23881": "réponse incohérente",
+  "lsv-23882": "mort macabre",
+  "lsv-23884": "réponse inadaptée",
+  "lsv-23900": "réponse vague",
+  "lsv-23902": "sujet banal",
+  "lsv-23907": "sexualité",
+  "lsv-23944": "viol",
+  "lsv-23948": "trou évident",
+  "lsv-23950": "génocide",
+  "lsv-23952": "trou évident",
+  "lsv-23955": "sexualité",
+  "lsv-23960": "réponse vague",
+  "lsv-23964": "génocide",
+  "lsv-23968": "cannibalisme",
+  "lsv-23972": "réponse douteuse",
+  "lsv-23973": "réponse vague",
+  "lsv-23985": "trou évident",
+  "lsv-23992": "trou évident",
+  "lsv-24017": "trou évident",
+  "lsv-24022": "violence macabre",
+  "lsv-24034": "réponse vague",
+  "lsv-24048": "réponse vague",
+  "lsv-24049": "trou évident",
+  "lsv-24054": "fait périssable",
+  "lsv-24061": "trou évident",
+  "lsv-24066": "réponse vague",
+  "lsv-24072": "meurtre, réponse vague",
+  "lsv-24074": "sujet banal",
+  "lsv-24080": "trou évident",
+  "lsv-24107": "réponse vague, périssable",
+  "lsv-24112": "sujet local",
+  "lsv-24126": "trou évident",
+  "lsv-24146": "réponse vague",
+  "lsv-24163": "trou évident",
+  "lsv-24170": "trou évident",
+  "lsv-24175": "réponse vague",
+  "lsv-24185": "réponse inadaptée",
+  "lsv-24190": "attentats",
+  "lsv-24201": "trou évident",
+  "lsv-24204": "trou évident",
+  "lsv-24206": "trou évident",
+  "lsv-24211": "trou évident",
+  "lsv-24223": "trou évident",
+  "lsv-24227": "trou évident",
+  "lsv-24242": "sexualité",
+  "lsv-24286": "trou évident"
+ },
+ "tags": {
+  "lsv-11977": [
+   "Insolite",
+   "Religion et mythes",
+   "Politique"
+  ],
+  "lsv-12517": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-12593": [
+   "Insolite",
+   "Musique",
+   "Cinéma et TV",
+   "Politique"
+  ],
+  "lsv-12662": [
+   "Insolite",
+   "Sciences",
+   "Personnage célèbre"
+  ],
+  "lsv-12736": [
+   "Insolite",
+   "Littérature",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-12945": [
+   "Insolite",
+   "Politique",
+   "Histoire"
+  ],
+  "lsv-12995": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-13080": [
+   "Insolite",
+   "Art",
+   "Histoire"
+  ],
+  "lsv-13117": [
+   "Insolite",
+   "Musique",
+   "Histoire"
+  ],
+  "lsv-13127": [
+   "Insolite",
+   "Transports",
+   "Politique"
+  ],
+  "lsv-13138": [
+   "Insolite",
+   "Transports",
+   "Géographie"
+  ],
+  "lsv-13193": [
+   "Insolite",
+   "Transports",
+   "Histoire"
+  ],
+  "lsv-13369": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-13420": [
+   "Insolite",
+   "Technologie",
+   "Personnage célèbre"
+  ],
+  "lsv-13533": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-13540": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-13544": [
+   "Insolite",
+   "Cinéma et TV",
+   "Santé"
+  ],
+  "lsv-13586": [
+   "Insolite",
+   "Sciences",
+   "Langue et mots"
+  ],
+  "lsv-13664": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-13671": [
+   "Insolite",
+   "Cinéma et TV",
+   "Littérature",
+   "Animaux"
+  ],
+  "lsv-13857": [
+   "Insolite",
+   "Gastronomie",
+   "Sciences"
+  ],
+  "lsv-14054": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-14096": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-14122": [
+   "Insolite",
+   "Politique",
+   "Histoire"
+  ],
+  "lsv-14127": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-14133": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-14135": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-14169": [
+   "Insolite",
+   "Technologie",
+   "Histoire"
+  ],
+  "lsv-14178": [
+   "Insolite",
+   "Technologie",
+   "Personnage célèbre"
+  ],
+  "lsv-14212": [
+   "Insolite",
+   "Sciences",
+   "Santé"
+  ],
+  "lsv-14280": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-14295": [
+   "Insolite",
+   "Sciences",
+   "Santé"
+  ],
+  "lsv-14323": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-14331": [
+   "Insolite",
+   "Cinéma et TV",
+   "Politique"
+  ],
+  "lsv-14393": [
+   "Insolite",
+   "Art",
+   "Histoire"
+  ],
+  "lsv-14465": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-14517": [
+   "Insolite",
+   "Religion et mythes",
+   "Littérature"
+  ],
+  "lsv-14526": [
+   "Insolite",
+   "Automobile"
+  ],
+  "lsv-14584": [
+   "Insolite",
+   "Politique",
+   "Technologie",
+   "Personnage célèbre"
+  ],
+  "lsv-14636": [
+   "Insolite",
+   "Halloween"
+  ],
+  "lsv-14690": [
+   "Insolite",
+   "Langue et mots",
+   "Géographie"
+  ],
+  "lsv-14707": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-14799": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre",
+   "Histoire"
+  ],
+  "lsv-14806": [
+   "Insolite",
+   "Histoire",
+   "Géographie",
+   "Personnage célèbre"
+  ],
+  "lsv-14861": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-14895": [
+   "Insolite",
+   "Cinéma et TV",
+   "Gastronomie"
+  ],
+  "lsv-14993": [
+   "Insolite",
+   "Sport",
+   "Automobile"
+  ],
+  "lsv-15125": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-15235": [
+   "Insolite",
+   "Pâques",
+   "Religion et mythes"
+  ],
+  "lsv-15261": [
+   "Insolite",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-15269": [
+   "Insolite",
+   "Transports"
+  ],
+  "lsv-15336": [
+   "Insolite",
+   "Musique",
+   "Technologie"
+  ],
+  "lsv-15366": [
+   "Insolite",
+   "Sport",
+   "Personnage célèbre"
+  ],
+  "lsv-15454": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-15460": [
+   "Insolite",
+   "Transports",
+   "Histoire"
+  ],
+  "lsv-15558": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-15652": [
+   "Insolite",
+   "Musique",
+   "Histoire"
+  ],
+  "lsv-15658": [
+   "Insolite",
+   "Histoire",
+   "Santé"
+  ],
+  "lsv-15681": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-15728": [
+   "Insolite",
+   "Religion et mythes",
+   "Histoire"
+  ],
+  "lsv-15737": [
+   "Insolite",
+   "Santé",
+   "Sciences"
+  ],
+  "lsv-15914": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-15940": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-15960": [
+   "Insolite",
+   "Cinéma et TV",
+   "Sport"
+  ],
+  "lsv-15975": [
+   "Insolite",
+   "Sciences",
+   "Histoire"
+  ],
+  "lsv-15988": [
+   "Insolite",
+   "Halloween",
+   "Histoire"
+  ],
+  "lsv-16005": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-16055": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-16065": [
+   "Insolite",
+   "Politique",
+   "Géographie"
+  ],
+  "lsv-16138": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-16155": [
+   "Insolite",
+   "Sciences",
+   "Histoire"
+  ],
+  "lsv-16180": [
+   "Insolite",
+   "Transports",
+   "Histoire"
+  ],
+  "lsv-16191": [
+   "Insolite",
+   "Sciences",
+   "Personnage célèbre"
+  ],
+  "lsv-16195": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-16220": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-16249": [
+   "Insolite",
+   "Sport",
+   "Personnage célèbre"
+  ],
+  "lsv-16277": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-16319": [
+   "Insolite",
+   "Musique",
+   "Histoire"
+  ],
+  "lsv-16342": [
+   "Insolite",
+   "Automobile"
+  ],
+  "lsv-16378": [
+   "Insolite",
+   "Noël",
+   "Sciences"
+  ],
+  "lsv-16413": [
+   "Insolite",
+   "Sciences",
+   "Nature"
+  ],
+  "lsv-16441": [
+   "Insolite",
+   "Automobile",
+   "Art"
+  ],
+  "lsv-16488": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-16491": [
+   "Insolite",
+   "Sciences",
+   "Personnage célèbre"
+  ],
+  "lsv-16503": [
+   "Insolite",
+   "Histoire",
+   "Gastronomie"
+  ],
+  "lsv-16575": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-16591": [
+   "Insolite",
+   "Cinéma et TV",
+   "Transports"
+  ],
+  "lsv-16721": [
+   "Insolite",
+   "Sport",
+   "Politique"
+  ],
+  "lsv-16846": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-16978": [
+   "Insolite",
+   "Halloween",
+   "Nature"
+  ],
+  "lsv-17026": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-17038": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-17163": [
+   "Insolite",
+   "Religion et mythes",
+   "Politique"
+  ],
+  "lsv-17176": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-17179": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-17194": [
+   "Insolite",
+   "Gastronomie",
+   "Animaux"
+  ],
+  "lsv-17232": [
+   "Insolite",
+   "Nature"
+  ],
+  "lsv-17240": [
+   "Insolite",
+   "Géographie",
+   "Animaux"
+  ],
+  "lsv-17250": [
+   "Insolite",
+   "Animaux",
+   "Nature"
+  ],
+  "lsv-17266": [
+   "Insolite",
+   "Langue et mots",
+   "Géographie"
+  ],
+  "lsv-17280": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-17286": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-17293": [
+   "Insolite",
+   "Histoire",
+   "Géographie"
+  ],
+  "lsv-17354": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-17426": [
+   "Insolite",
+   "Histoire",
+   "Santé"
+  ],
+  "lsv-17494": [
+   "Insolite",
+   "Cinéma et TV",
+   "Littérature"
+  ],
+  "lsv-17596": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-17613": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-17745": [
+   "Insolite",
+   "Histoire",
+   "Animaux"
+  ],
+  "lsv-17828": [
+   "Insolite",
+   "Personnage célèbre",
+   "Cinéma et TV"
+  ],
+  "lsv-17868": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-17869": [
+   "Insolite",
+   "Histoire",
+   "Sciences"
+  ],
+  "lsv-17952": [
+   "Insolite",
+   "Halloween",
+   "Animaux",
+   "Cinéma et TV"
+  ],
+  "lsv-18057": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-18088": [
+   "Insolite",
+   "Religion et mythes",
+   "Histoire"
+  ],
+  "lsv-18132": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-18150": [
+   "Insolite",
+   "Histoire",
+   "Sport"
+  ],
+  "lsv-18162": [
+   "Insolite",
+   "Littérature",
+   "Langue et mots",
+   "Religion et mythes"
+  ],
+  "lsv-18185": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-18209": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-18220": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-18293": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-18300": [
+   "Insolite",
+   "Gastronomie",
+   "Sciences"
+  ],
+  "lsv-18317": [
+   "Insolite",
+   "Musique",
+   "Sciences"
+  ],
+  "lsv-18359": [
+   "Insolite",
+   "Halloween",
+   "Littérature"
+  ],
+  "lsv-18362": [
+   "Insolite",
+   "Cinéma et TV",
+   "Musique",
+   "Technologie"
+  ],
+  "lsv-18421": [
+   "Insolite",
+   "Sport",
+   "Histoire"
+  ],
+  "lsv-18452": [
+   "Insolite",
+   "Religion et mythes",
+   "Histoire"
+  ],
+  "lsv-18517": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-18608": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-18626": [
+   "Insolite",
+   "Sport",
+   "Musique"
+  ],
+  "lsv-18745": [
+   "Insolite",
+   "Animaux",
+   "Sciences",
+   "Personnage célèbre"
+  ],
+  "lsv-18773": [
+   "Insolite",
+   "Halloween",
+   "Littérature"
+  ],
+  "lsv-18786": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-18787": [
+   "Insolite",
+   "Sciences",
+   "Technologie"
+  ],
+  "lsv-18798": [
+   "Insolite",
+   "Politique",
+   "Histoire",
+   "Langue et mots"
+  ],
+  "lsv-18806": [
+   "Insolite",
+   "Histoire",
+   "Religion et mythes"
+  ],
+  "lsv-18834": [
+   "Insolite",
+   "Histoire",
+   "Politique",
+   "Personnage célèbre"
+  ],
+  "lsv-18862": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-18872": [
+   "Insolite",
+   "Automobile",
+   "Gastronomie"
+  ],
+  "lsv-18909": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-18992": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-19040": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-19056": [
+   "Insolite",
+   "Littérature",
+   "Technologie",
+   "Langue et mots"
+  ],
+  "lsv-19102": [
+   "Insolite",
+   "Géographie",
+   "Langue et mots"
+  ],
+  "lsv-19133": [
+   "Insolite",
+   "Sport",
+   "Histoire"
+  ],
+  "lsv-19209": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-19291": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-19293": [
+   "Insolite",
+   "Littérature",
+   "Nature"
+  ],
+  "lsv-19303": [
+   "Insolite",
+   "Littérature",
+   "Langue et mots"
+  ],
+  "lsv-19312": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-19372": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-19384": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-19485": [
+   "Insolite",
+   "Histoire",
+   "Santé"
+  ],
+  "lsv-19521": [
+   "Insolite",
+   "Technologie",
+   "Langue et mots"
+  ],
+  "lsv-19563": [
+   "Insolite",
+   "Animaux",
+   "Langue et mots"
+  ],
+  "lsv-19633": [
+   "Insolite",
+   "Histoire",
+   "Noël"
+  ],
+  "lsv-19693": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-19695": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-19762": [
+   "Insolite",
+   "Cinéma et TV",
+   "Histoire"
+  ],
+  "lsv-19767": [
+   "Insolite",
+   "Musique",
+   "Littérature"
+  ],
+  "lsv-19789": [
+   "Insolite",
+   "Histoire",
+   "Transports"
+  ],
+  "lsv-19805": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-19807": [
+   "Insolite",
+   "Transports",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-19832": [
+   "Insolite",
+   "Histoire",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-20024": [
+   "Insolite",
+   "Automobile",
+   "Animaux"
+  ],
+  "lsv-20078": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-20222": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-20275": [
+   "Insolite",
+   "Automobile",
+   "Personnage célèbre"
+  ],
+  "lsv-20278": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-20329": [
+   "Insolite",
+   "Personnage célèbre",
+   "Sciences"
+  ],
+  "lsv-20343": [
+   "Insolite",
+   "Automobile",
+   "Sport"
+  ],
+  "lsv-20389": [
+   "Insolite",
+   "Musique",
+   "Cinéma et TV"
+  ],
+  "lsv-20401": [
+   "Insolite",
+   "Sciences",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-20431": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-20463": [
+   "Insolite",
+   "Histoire",
+   "Animaux",
+   "Cinéma et TV"
+  ],
+  "lsv-20465": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-20495": [
+   "Insolite",
+   "Transports",
+   "Géographie"
+  ],
+  "lsv-20573": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-20645": [
+   "Insolite",
+   "Halloween",
+   "Histoire",
+   "Littérature"
+  ],
+  "lsv-20677": [
+   "Insolite",
+   "Sciences",
+   "Animaux"
+  ],
+  "lsv-20883": [
+   "Insolite",
+   "Noël",
+   "Gastronomie"
+  ],
+  "lsv-20923": [
+   "Insolite",
+   "Musique",
+   "Sport",
+   "Automobile"
+  ],
+  "lsv-20933": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre",
+   "Sport"
+  ],
+  "lsv-21061": [
+   "Insolite",
+   "Automobile",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-21134": [
+   "Insolite",
+   "Histoire",
+   "Langue et mots",
+   "Littérature"
+  ],
+  "lsv-21216": [
+   "Insolite",
+   "Halloween",
+   "Histoire"
+  ],
+  "lsv-21248": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-21307": [
+   "Insolite",
+   "Sciences",
+   "Géographie"
+  ],
+  "lsv-21343": [
+   "Insolite",
+   "Gastronomie"
+  ],
+  "lsv-21389": [
+   "Insolite",
+   "Musique",
+   "Gastronomie"
+  ],
+  "lsv-21435": [
+   "Insolite",
+   "Art",
+   "Langue et mots"
+  ],
+  "lsv-21489": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-21564": [
+   "Insolite",
+   "Personnage célèbre",
+   "Langue et mots"
+  ],
+  "lsv-21575": [
+   "Insolite",
+   "Santé"
+  ],
+  "lsv-21607": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-21660": [
+   "Insolite",
+   "Nature",
+   "Musique"
+  ],
+  "lsv-21667": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-21772": [
+   "Insolite",
+   "Histoire",
+   "Géographie"
+  ],
+  "lsv-21842": [
+   "Insolite",
+   "Nature"
+  ],
+  "lsv-21860": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-21918": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-21928": [
+   "Insolite",
+   "Noël",
+   "Littérature"
+  ],
+  "lsv-21943": [
+   "Insolite",
+   "Santé"
+  ],
+  "lsv-21973": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-22055": [
+   "Insolite",
+   "Sport",
+   "Géographie"
+  ],
+  "lsv-22122": [
+   "Insolite",
+   "Musique",
+   "Langue et mots"
+  ],
+  "lsv-22132": [
+   "Insolite",
+   "Musique",
+   "Gastronomie"
+  ],
+  "lsv-22170": [
+   "Insolite",
+   "Gastronomie"
+  ],
+  "lsv-22175": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-22188": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-22219": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-22221": [
+   "Insolite",
+   "Histoire",
+   "Géographie"
+  ],
+  "lsv-22231": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-22259": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-22278": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-22314": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-22456": [
+   "Insolite",
+   "Cinéma et TV",
+   "Histoire"
+  ],
+  "lsv-22534": [
+   "Insolite",
+   "Religion et mythes",
+   "Pâques"
+  ],
+  "lsv-22543": [
+   "Insolite",
+   "Histoire",
+   "Technologie"
+  ],
+  "lsv-22643": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-22667": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-22672": [
+   "Insolite",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-22693": [
+   "Insolite",
+   "Transports",
+   "Technologie"
+  ],
+  "lsv-22768": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-22774": [
+   "Insolite",
+   "Gastronomie",
+   "Histoire"
+  ],
+  "lsv-22853": [
+   "Insolite",
+   "Halloween",
+   "Histoire"
+  ],
+  "lsv-22972": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-22980": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-23009": [
+   "Insolite",
+   "Animaux",
+   "Nature"
+  ],
+  "lsv-23102": [
+   "Insolite",
+   "Animaux",
+   "Personnage célèbre"
+  ],
+  "lsv-23350": [
+   "Insolite",
+   "Nature"
+  ],
+  "lsv-23368": [
+   "Insolite",
+   "Religion et mythes",
+   "Pâques",
+   "Politique"
+  ],
+  "lsv-23374": [
+   "Insolite",
+   "Art",
+   "Halloween"
+  ],
+  "lsv-23443": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-23516": [
+   "Insolite",
+   "Automobile",
+   "Histoire"
+  ],
+  "lsv-23608": [
+   "Insolite",
+   "Sciences",
+   "Technologie"
+  ],
+  "lsv-23904": [
+   "Insolite",
+   "Sport",
+   "Personnage célèbre"
+  ],
+  "lsv-23918": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-24151": [
+   "Insolite",
+   "Halloween",
+   "Santé"
+  ],
+  "lsv-24262": [
+   "Insolite",
+   "Cinéma et TV",
+   "Noël"
+  ],
+  "lsv-24297": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-111844": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-11898": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-12228": [
+   "Insolite",
+   "Animaux",
+   "Histoire"
+  ],
+  "lsv-12595": [
+   "Insolite",
+   "Cinéma et TV",
+   "Histoire"
+  ],
+  "lsv-12619": [
+   "Insolite",
+   "Musique",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-12628": [
+   "Insolite",
+   "Personnage célèbre"
+  ],
+  "lsv-12661": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-12698": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-12714": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-12728": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-12733": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-12813": [
+   "Insolite",
+   "Histoire",
+   "Cinéma et TV"
+  ],
+  "lsv-12830": [
+   "Insolite",
+   "Littérature",
+   "Langue et mots",
+   "Personnage célèbre"
+  ],
+  "lsv-12878": [
+   "Insolite",
+   "Géographie",
+   "Nature"
+  ],
+  "lsv-12886": [
+   "Insolite",
+   "Cinéma et TV",
+   "Politique"
+  ],
+  "lsv-12902": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-12909": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-12920": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-12924": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-12927": [
+   "Insolite",
+   "Technologie"
+  ],
+  "lsv-12941": [
+   "Insolite",
+   "Gastronomie",
+   "Langue et mots"
+  ],
+  "lsv-12953": [
+   "Insolite",
+   "Histoire",
+   "Nature"
+  ],
+  "lsv-12957": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-12962": [
+   "Insolite",
+   "Automobile",
+   "Histoire"
+  ],
+  "lsv-12973": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-12980": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-12991": [
+   "Insolite",
+   "Politique",
+   "Histoire"
+  ],
+  "lsv-13013": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-13018": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-13022": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-13028": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-13035": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-13061": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-13065": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-13069": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-13095": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-13113": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-13129": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-13130": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-13141": [
+   "Insolite",
+   "Personnage célèbre",
+   "Politique"
+  ],
+  "lsv-13149": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-13181": [
+   "Insolite",
+   "Personnage célèbre"
+  ],
+  "lsv-13190": [
+   "Insolite",
+   "Animaux",
+   "Nature"
+  ],
+  "lsv-13198": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-13205": [
+   "Insolite",
+   "Histoire",
+   "Langue et mots"
+  ],
+  "lsv-13212": [
+   "Insolite",
+   "Religion et mythes",
+   "Politique"
+  ],
+  "lsv-13214": [
+   "Insolite",
+   "Nature",
+   "Géographie"
+  ],
+  "lsv-13274": [
+   "Insolite",
+   "Musique",
+   "Langue et mots"
+  ],
+  "lsv-13280": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-13289": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-13292": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-13308": [
+   "Insolite",
+   "Littérature",
+   "Religion et mythes",
+   "Personnage célèbre"
+  ],
+  "lsv-13347": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-13374": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-13385": [
+   "Insolite",
+   "Histoire",
+   "Géographie"
+  ],
+  "lsv-13401": [
+   "Insolite",
+   "Cinéma et TV",
+   "Histoire"
+  ],
+  "lsv-13437": [
+   "Insolite",
+   "Sciences",
+   "Politique"
+  ],
+  "lsv-13448": [
+   "Insolite",
+   "Technologie",
+   "Gastronomie"
+  ],
+  "lsv-13454": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-13465": [
+   "Insolite",
+   "Technologie",
+   "Histoire"
+  ],
+  "lsv-13486": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-13495": [
+   "Insolite",
+   "Cinéma et TV",
+   "Technologie",
+   "Personnage célèbre"
+  ],
+  "lsv-13497": [
+   "Insolite",
+   "Gastronomie",
+   "Nature",
+   "Langue et mots"
+  ],
+  "lsv-13500": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-13523": [
+   "Insolite",
+   "Sciences",
+   "Littérature"
+  ],
+  "lsv-13537": [
+   "Insolite",
+   "Politique",
+   "Langue et mots"
+  ],
+  "lsv-13573": [
+   "Insolite",
+   "Musique",
+   "Sport"
+  ],
+  "lsv-13633": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-13660": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-13669": [
+   "Insolite",
+   "Littérature",
+   "Cinéma et TV"
+  ],
+  "lsv-13672": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-13678": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-13703": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-13705": [
+   "Insolite",
+   "Nature",
+   "Politique"
+  ],
+  "lsv-13707": [
+   "Insolite",
+   "Sport",
+   "Littérature"
+  ],
+  "lsv-13746": [
+   "Insolite",
+   "Personnage célèbre"
+  ],
+  "lsv-13817": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-13821": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-13828": [
+   "Insolite",
+   "Histoire",
+   "Musique"
+  ],
+  "lsv-13829": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-13836": [
+   "Insolite",
+   "Transports",
+   "Histoire"
+  ],
+  "lsv-13851": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-13856": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-13867": [
+   "Insolite",
+   "Langue et mots",
+   "Géographie"
+  ],
+  "lsv-13887": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-13892": [
+   "Insolite",
+   "Technologie",
+   "Musique"
+  ],
+  "lsv-13942": [
+   "Insolite",
+   "Religion et mythes"
+  ],
+  "lsv-13982": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-14019": [
+   "Insolite",
+   "Gastronomie"
+  ],
+  "lsv-14059": [
+   "Insolite",
+   "Cinéma et TV",
+   "Histoire"
+  ],
+  "lsv-14078": [
+   "Insolite",
+   "Langue et mots",
+   "Littérature"
+  ],
+  "lsv-14086": [
+   "Insolite",
+   "Histoire",
+   "Art"
+  ],
+  "lsv-14117": [
+   "Insolite",
+   "Sciences",
+   "Art"
+  ],
+  "lsv-14121": [
+   "Insolite",
+   "Technologie",
+   "Histoire"
+  ],
+  "lsv-14138": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-14139": [
+   "Insolite",
+   "Religion et mythes"
+  ],
+  "lsv-14144": [
+   "Insolite",
+   "Cinéma et TV",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-14152": [
+   "Insolite",
+   "Langue et mots",
+   "Histoire"
+  ],
+  "lsv-14179": [
+   "Insolite",
+   "Politique",
+   "Histoire"
+  ],
+  "lsv-14181": [
+   "Insolite",
+   "Gastronomie",
+   "Sciences"
+  ],
+  "lsv-14182": [
+   "Insolite",
+   "Littérature",
+   "Langue et mots"
+  ],
+  "lsv-14192": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-14210": [
+   "Insolite",
+   "Musique",
+   "Transports"
+  ],
+  "lsv-14215": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-14217": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-14220": [
+   "Insolite",
+   "Politique"
+  ],
+  "lsv-14222": [
+   "Insolite",
+   "Musique",
+   "Technologie"
+  ],
+  "lsv-14231": [
+   "Insolite",
+   "Gastronomie"
+  ],
+  "lsv-14235": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-14262": [
+   "Insolite",
+   "Sciences",
+   "Politique"
+  ],
+  "lsv-14273": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-14276": [
+   "Insolite",
+   "Géographie",
+   "Histoire"
+  ],
+  "lsv-14298": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-14334": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-14335": [
+   "Insolite",
+   "Géographie",
+   "Nature"
+  ],
+  "lsv-14351": [
+   "Insolite",
+   "Automobile",
+   "Technologie"
+  ],
+  "lsv-14354": [
+   "Insolite",
+   "Sciences",
+   "Nature"
+  ],
+  "lsv-14375": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-14400": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-14407": [
+   "Insolite",
+   "Transports",
+   "Géographie"
+  ],
+  "lsv-14411": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-14420": [
+   "Insolite",
+   "Histoire",
+   "Géographie"
+  ],
+  "lsv-14429": [
+   "Insolite",
+   "Musique",
+   "Gastronomie"
+  ],
+  "lsv-14479": [
+   "Insolite",
+   "Politique"
+  ],
+  "lsv-14491": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-14514": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-14521": [
+   "Insolite",
+   "Nature"
+  ],
+  "lsv-14523": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-14527": [
+   "Insolite",
+   "Religion et mythes"
+  ],
+  "lsv-14555": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-14603": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-14623": [
+   "Insolite",
+   "Transports"
+  ],
+  "lsv-14638": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-14644": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-14655": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-14656": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-14688": [
+   "Insolite",
+   "Santé"
+  ],
+  "lsv-14694": [
+   "Insolite",
+   "Histoire",
+   "Nature"
+  ],
+  "lsv-14714": [
+   "Insolite",
+   "Cinéma et TV",
+   "Musique",
+   "Littérature"
+  ],
+  "lsv-14728": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-14729": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-14733": [
+   "Insolite",
+   "Gastronomie"
+  ],
+  "lsv-14738": [
+   "Insolite",
+   "Littérature",
+   "Religion et mythes"
+  ],
+  "lsv-14746": [
+   "Insolite",
+   "Art",
+   "Nature"
+  ],
+  "lsv-14748": [
+   "Insolite",
+   "Littérature",
+   "Politique",
+   "Histoire"
+  ],
+  "lsv-14763": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-14780": [
+   "Insolite",
+   "Gastronomie",
+   "Personnage célèbre"
+  ],
+  "lsv-14792": [
+   "Insolite",
+   "Langue et mots",
+   "Littérature"
+  ],
+  "lsv-14796": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-14797": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-14822": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-14844": [
+   "Insolite",
+   "Santé"
+  ],
+  "lsv-14874": [
+   "Insolite",
+   "Sciences",
+   "Personnage célèbre"
+  ],
+  "lsv-14957": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-14987": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-15010": [
+   "Insolite",
+   "Personnage célèbre",
+   "Langue et mots"
+  ],
+  "lsv-15013": [
+   "Insolite",
+   "Animaux",
+   "Nature"
+  ],
+  "lsv-15020": [
+   "Insolite",
+   "Musique",
+   "Animaux",
+   "Personnage célèbre"
+  ],
+  "lsv-15023": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-15051": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-15059": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-15181": [
+   "Insolite",
+   "Sciences",
+   "Politique"
+  ],
+  "lsv-15185": [
+   "Insolite",
+   "Cinéma et TV",
+   "Art",
+   "Politique"
+  ],
+  "lsv-15188": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-15193": [
+   "Insolite",
+   "Littérature",
+   "Religion et mythes"
+  ],
+  "lsv-15198": [
+   "Insolite",
+   "Animaux",
+   "Politique"
+  ],
+  "lsv-15209": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-15211": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-15218": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-15227": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-15270": [
+   "Insolite",
+   "Transports"
+  ],
+  "lsv-15272": [
+   "Insolite"
+  ],
+  "lsv-15284": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-15354": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-15358": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-15379": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-15399": [
+   "Insolite",
+   "Cinéma et TV",
+   "Technologie"
+  ],
+  "lsv-15424": [
+   "Insolite",
+   "Technologie"
+  ],
+  "lsv-15455": [
+   "Insolite",
+   "Littérature",
+   "Langue et mots"
+  ],
+  "lsv-15484": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-15509": [
+   "Insolite",
+   "Langue et mots",
+   "Littérature"
+  ],
+  "lsv-15530": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-15539": [
+   "Insolite",
+   "Politique"
+  ],
+  "lsv-15584": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-15590": [
+   "Insolite",
+   "Histoire",
+   "Littérature"
+  ],
+  "lsv-15630": [
+   "Insolite",
+   "Santé"
+  ],
+  "lsv-15650": [
+   "Insolite",
+   "Littérature",
+   "Langue et mots"
+  ],
+  "lsv-15663": [
+   "Insolite",
+   "Sciences",
+   "Nature"
+  ],
+  "lsv-15668": [
+   "Insolite",
+   "Politique",
+   "Cinéma et TV"
+  ],
+  "lsv-15677": [
+   "Insolite",
+   "Musique",
+   "Religion et mythes"
+  ],
+  "lsv-15714": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-15725": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-15738": [
+   "Insolite",
+   "Personnage célèbre"
+  ],
+  "lsv-15759": [
+   "Insolite",
+   "Histoire",
+   "Sciences"
+  ],
+  "lsv-15866": [
+   "Insolite",
+   "Histoire",
+   "Littérature"
+  ],
+  "lsv-15876": [
+   "Insolite",
+   "Histoire",
+   "Transports"
+  ],
+  "lsv-15891": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-15902": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-15904": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-15921": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-15941": [
+   "Insolite",
+   "Gastronomie"
+  ],
+  "lsv-15949": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-15971": [
+   "Insolite",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-15973": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-15991": [
+   "Insolite",
+   "Sport",
+   "Langue et mots"
+  ],
+  "lsv-16030": [
+   "Insolite",
+   "Gastronomie"
+  ],
+  "lsv-16054": [
+   "Insolite",
+   "Histoire",
+   "Transports"
+  ],
+  "lsv-16059": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-16164": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-16172": [
+   "Insolite",
+   "Transports",
+   "Nature"
+  ],
+  "lsv-16197": [
+   "Insolite",
+   "Technologie"
+  ],
+  "lsv-16202": [
+   "Insolite",
+   "Sciences",
+   "Gastronomie"
+  ],
+  "lsv-16248": [
+   "Insolite",
+   "Histoire",
+   "Géographie"
+  ],
+  "lsv-16263": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-16267": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-16270": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-16285": [
+   "Insolite",
+   "Cinéma et TV",
+   "Littérature"
+  ],
+  "lsv-16297": [
+   "Insolite",
+   "Gastronomie",
+   "Géographie"
+  ],
+  "lsv-16303": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-16326": [
+   "Insolite",
+   "Transports",
+   "Histoire"
+  ],
+  "lsv-16338": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-16374": [
+   "Insolite",
+   "Histoire",
+   "Langue et mots"
+  ],
+  "lsv-16396": [
+   "Insolite",
+   "Santé"
+  ],
+  "lsv-16417": [
+   "Insolite",
+   "Histoire",
+   "Religion et mythes"
+  ],
+  "lsv-16453": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-16524": [
+   "Insolite",
+   "Art",
+   "Transports"
+  ],
+  "lsv-16528": [
+   "Insolite",
+   "Politique"
+  ],
+  "lsv-16543": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-16548": [
+   "Insolite",
+   "Politique",
+   "Personnage célèbre"
+  ],
+  "lsv-16549": [
+   "Insolite",
+   "Transports"
+  ],
+  "lsv-16586": [
+   "Insolite",
+   "Religion et mythes",
+   "Histoire"
+  ],
+  "lsv-16595": [
+   "Insolite",
+   "Nature",
+   "Technologie"
+  ],
+  "lsv-16596": [
+   "Insolite",
+   "Animaux",
+   "Santé"
+  ],
+  "lsv-16622": [
+   "Insolite",
+   "Transports"
+  ],
+  "lsv-16639": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-16668": [
+   "Insolite",
+   "Cinéma et TV",
+   "Sport"
+  ],
+  "lsv-16711": [
+   "Insolite",
+   "Gastronomie"
+  ],
+  "lsv-16748": [
+   "Insolite",
+   "Art",
+   "Histoire"
+  ],
+  "lsv-16752": [
+   "Insolite",
+   "Transports",
+   "Personnage célèbre"
+  ],
+  "lsv-16795": [
+   "Insolite",
+   "Cinéma et TV",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-16800": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-16843": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-16852": [
+   "Insolite",
+   "Histoire",
+   "Animaux"
+  ],
+  "lsv-16858": [
+   "Insolite",
+   "Sport",
+   "Politique"
+  ],
+  "lsv-16861": [
+   "Insolite",
+   "Littérature",
+   "Histoire"
+  ],
+  "lsv-16875": [
+   "Insolite",
+   "Histoire",
+   "Géographie"
+  ],
+  "lsv-16893": [
+   "Insolite",
+   "Gastronomie"
+  ],
+  "lsv-16899": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-16955": [
+   "Insolite",
+   "Animaux",
+   "Langue et mots"
+  ],
+  "lsv-16980": [
+   "Insolite",
+   "Automobile",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-16988": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-16996": [
+   "Insolite",
+   "Religion et mythes",
+   "Histoire"
+  ],
+  "lsv-17008": [
+   "Insolite",
+   "Transports",
+   "Histoire"
+  ],
+  "lsv-17013": [
+   "Insolite",
+   "Cinéma et TV",
+   "Technologie"
+  ],
+  "lsv-17028": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-17029": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-17037": [
+   "Insolite",
+   "Animaux",
+   "Géographie"
+  ],
+  "lsv-17041": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-17052": [
+   "Insolite",
+   "Politique",
+   "Personnage célèbre"
+  ],
+  "lsv-17086": [
+   "Insolite",
+   "Cinéma et TV",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-17097": [
+   "Insolite",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-17103": [
+   "Insolite",
+   "Personnage célèbre",
+   "Cinéma et TV",
+   "Politique"
+  ],
+  "lsv-17108": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-17123": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-17138": [
+   "Insolite",
+   "Cinéma et TV",
+   "Religion et mythes"
+  ],
+  "lsv-17162": [
+   "Insolite",
+   "Nature",
+   "Géographie"
+  ],
+  "lsv-17166": [
+   "Insolite",
+   "Religion et mythes",
+   "Littérature"
+  ],
+  "lsv-17175": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-17178": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-17190": [
+   "Insolite",
+   "Transports",
+   "Personnage célèbre"
+  ],
+  "lsv-17196": [
+   "Insolite",
+   "Transports",
+   "Histoire"
+  ],
+  "lsv-17200": [
+   "Insolite",
+   "Transports",
+   "Géographie"
+  ],
+  "lsv-17203": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-17211": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-17212": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-17226": [
+   "Insolite",
+   "Religion et mythes",
+   "Technologie"
+  ],
+  "lsv-17248": [
+   "Insolite",
+   "Sciences",
+   "Histoire"
+  ],
+  "lsv-17255": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-17288": [
+   "Insolite",
+   "Art",
+   "Littérature"
+  ],
+  "lsv-17299": [
+   "Insolite",
+   "Politique",
+   "Gastronomie"
+  ],
+  "lsv-17332": [
+   "Insolite",
+   "Sport",
+   "Histoire"
+  ],
+  "lsv-17339": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-17345": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-17353": [
+   "Insolite",
+   "Sciences",
+   "Animaux",
+   "Personnage célèbre"
+  ],
+  "lsv-17374": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-17392": [
+   "Insolite",
+   "Sport",
+   "Personnage célèbre",
+   "Politique"
+  ],
+  "lsv-17420": [
+   "Insolite",
+   "Cinéma et TV",
+   "Géographie",
+   "Personnage célèbre"
+  ],
+  "lsv-17425": [
+   "Insolite",
+   "Transports",
+   "Technologie"
+  ],
+  "lsv-17449": [
+   "Insolite",
+   "Musique",
+   "Histoire"
+  ],
+  "lsv-17453": [
+   "Insolite",
+   "Géographie",
+   "Langue et mots"
+  ],
+  "lsv-17457": [
+   "Insolite",
+   "Art",
+   "Cinéma et TV"
+  ],
+  "lsv-17458": [
+   "Insolite",
+   "Politique",
+   "Géographie"
+  ],
+  "lsv-17461": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-17481": [
+   "Insolite",
+   "Histoire",
+   "Religion et mythes"
+  ],
+  "lsv-17518": [
+   "Insolite",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-17520": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-17525": [
+   "Insolite",
+   "Histoire",
+   "Technologie"
+  ],
+  "lsv-17536": [
+   "Insolite",
+   "Politique"
+  ],
+  "lsv-17543": [
+   "Insolite",
+   "Musique",
+   "Sport"
+  ],
+  "lsv-17561": [
+   "Insolite",
+   "Histoire",
+   "Technologie"
+  ],
+  "lsv-17574": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-17581": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-17583": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-17597": [
+   "Insolite",
+   "Histoire",
+   "Géographie"
+  ],
+  "lsv-17602": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-17625": [
+   "Insolite",
+   "Cinéma et TV",
+   "Histoire"
+  ],
+  "lsv-17650": [
+   "Insolite",
+   "Cinéma et TV",
+   "Politique"
+  ],
+  "lsv-17667": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-17670": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-17690": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-17740": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre",
+   "Histoire"
+  ],
+  "lsv-17742": [
+   "Insolite",
+   "Gastronomie",
+   "Langue et mots"
+  ],
+  "lsv-17787": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-17829": [
+   "Insolite",
+   "Transports",
+   "Personnage célèbre"
+  ],
+  "lsv-17833": [
+   "Insolite",
+   "Animaux",
+   "Histoire"
+  ],
+  "lsv-17866": [
+   "Insolite",
+   "Littérature",
+   "Histoire"
+  ],
+  "lsv-17886": [
+   "Insolite",
+   "Sport",
+   "Transports"
+  ],
+  "lsv-17894": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-17897": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-17905": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-17919": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-17922": [
+   "Insolite",
+   "Géographie",
+   "Nature"
+  ],
+  "lsv-17928": [
+   "Insolite",
+   "Politique",
+   "Nature"
+  ],
+  "lsv-17936": [
+   "Insolite",
+   "Sciences",
+   "Personnage célèbre"
+  ],
+  "lsv-17948": [
+   "Insolite",
+   "Sciences",
+   "Santé"
+  ],
+  "lsv-17967": [
+   "Insolite",
+   "Sport",
+   "Langue et mots"
+  ],
+  "lsv-17989": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-18008": [
+   "Insolite",
+   "Gastronomie",
+   "Art"
+  ],
+  "lsv-18009": [
+   "Insolite",
+   "Sciences",
+   "Religion et mythes"
+  ],
+  "lsv-18011": [
+   "Insolite",
+   "Langue et mots",
+   "Histoire"
+  ],
+  "lsv-18013": [
+   "Insolite",
+   "Transports"
+  ],
+  "lsv-18024": [
+   "Insolite",
+   "Histoire",
+   "Santé"
+  ],
+  "lsv-18042": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-18048": [
+   "Insolite",
+   "Histoire",
+   "Religion et mythes"
+  ],
+  "lsv-18070": [
+   "Insolite",
+   "Histoire",
+   "Art"
+  ],
+  "lsv-18121": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-18122": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-18136": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-18237": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-18246": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-18281": [
+   "Insolite",
+   "Sciences",
+   "Littérature"
+  ],
+  "lsv-18286": [
+   "Insolite",
+   "Littérature",
+   "Géographie"
+  ],
+  "lsv-18313": [
+   "Insolite",
+   "Personnage célèbre",
+   "Langue et mots"
+  ],
+  "lsv-18338": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-18354": [
+   "Insolite",
+   "Nature"
+  ],
+  "lsv-18363": [
+   "Insolite",
+   "Histoire",
+   "Religion et mythes"
+  ],
+  "lsv-18371": [
+   "Insolite",
+   "Personnage célèbre",
+   "Géographie"
+  ],
+  "lsv-18410": [
+   "Insolite",
+   "Religion et mythes",
+   "Histoire"
+  ],
+  "lsv-18416": [
+   "Insolite",
+   "Cinéma et TV",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-18420": [
+   "Insolite",
+   "Art",
+   "Histoire"
+  ],
+  "lsv-18432": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-18434": [
+   "Insolite",
+   "Gastronomie",
+   "Nature"
+  ],
+  "lsv-18442": [
+   "Insolite",
+   "Sciences",
+   "Santé",
+   "Personnage célèbre"
+  ],
+  "lsv-18443": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-18459": [
+   "Insolite",
+   "Histoire",
+   "Littérature"
+  ],
+  "lsv-18472": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-18480": [
+   "Insolite",
+   "Politique"
+  ],
+  "lsv-18493": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-18502": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-18504": [
+   "Insolite",
+   "Transports",
+   "Technologie"
+  ],
+  "lsv-18513": [
+   "Insolite",
+   "Cinéma et TV",
+   "Histoire"
+  ],
+  "lsv-18531": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-18549": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-18560": [
+   "Insolite"
+  ],
+  "lsv-18562": [
+   "Insolite",
+   "Histoire",
+   "Musique"
+  ],
+  "lsv-18567": [
+   "Insolite",
+   "Histoire",
+   "Sciences"
+  ],
+  "lsv-18570": [
+   "Insolite",
+   "Animaux",
+   "Personnage célèbre"
+  ],
+  "lsv-18574": [
+   "Insolite",
+   "Langue et mots",
+   "Sciences"
+  ],
+  "lsv-18595": [
+   "Insolite",
+   "Personnage célèbre"
+  ],
+  "lsv-18596": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-18624": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-18675": [
+   "Insolite",
+   "Transports"
+  ],
+  "lsv-18692": [
+   "Insolite",
+   "Musique",
+   "Technologie"
+  ],
+  "lsv-18693": [
+   "Insolite",
+   "Religion et mythes"
+  ],
+  "lsv-18696": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-18718": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-18723": [
+   "Insolite",
+   "Religion et mythes",
+   "Histoire"
+  ],
+  "lsv-18730": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-18752": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre",
+   "Santé"
+  ],
+  "lsv-18761": [
+   "Insolite",
+   "Sciences",
+   "Histoire"
+  ],
+  "lsv-18777": [
+   "Insolite",
+   "Animaux",
+   "Nature"
+  ],
+  "lsv-18785": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-18795": [
+   "Insolite",
+   "Sport",
+   "Personnage célèbre"
+  ],
+  "lsv-18799": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-18811": [
+   "Insolite",
+   "Histoire",
+   "Art"
+  ],
+  "lsv-18838": [
+   "Insolite",
+   "Histoire",
+   "Nature"
+  ],
+  "lsv-18840": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-18847": [
+   "Insolite",
+   "Sciences",
+   "Gastronomie"
+  ],
+  "lsv-18854": [
+   "Insolite",
+   "Histoire",
+   "Technologie"
+  ],
+  "lsv-18864": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-18867": [
+   "Insolite",
+   "Sciences",
+   "Transports"
+  ],
+  "lsv-18876": [
+   "Insolite",
+   "Automobile"
+  ],
+  "lsv-18894": [
+   "Insolite",
+   "Sport",
+   "Histoire"
+  ],
+  "lsv-18911": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-18929": [
+   "Insolite",
+   "Histoire",
+   "Langue et mots"
+  ],
+  "lsv-18979": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-19003": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-19041": [
+   "Insolite",
+   "Sport",
+   "Personnage célèbre"
+  ],
+  "lsv-19048": [
+   "Insolite",
+   "Littérature",
+   "Langue et mots"
+  ],
+  "lsv-19050": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-19082": [
+   "Insolite",
+   "Histoire",
+   "Santé"
+  ],
+  "lsv-19108": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-19114": [
+   "Insolite",
+   "Animaux",
+   "Langue et mots"
+  ],
+  "lsv-19144": [
+   "Insolite",
+   "Animaux",
+   "Géographie"
+  ],
+  "lsv-19190": [
+   "Insolite",
+   "Transports",
+   "Personnage célèbre"
+  ],
+  "lsv-19193": [
+   "Insolite",
+   "Animaux",
+   "Nature"
+  ],
+  "lsv-19198": [
+   "Insolite",
+   "Histoire",
+   "Géographie"
+  ],
+  "lsv-19204": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-19211": [
+   "Insolite",
+   "Art",
+   "Sport"
+  ],
+  "lsv-19233": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-19257": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-19260": [
+   "Insolite",
+   "Personnage célèbre",
+   "Histoire"
+  ],
+  "lsv-19263": [
+   "Insolite",
+   "Histoire",
+   "Art"
+  ],
+  "lsv-19265": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-19304": [
+   "Insolite",
+   "Histoire",
+   "Animaux"
+  ],
+  "lsv-19305": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-19317": [
+   "Insolite",
+   "Cinéma et TV",
+   "Langue et mots"
+  ],
+  "lsv-19319": [
+   "Insolite",
+   "Transports",
+   "Technologie"
+  ],
+  "lsv-19323": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-19326": [
+   "Insolite",
+   "Art",
+   "Santé"
+  ],
+  "lsv-19354": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-19365": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-19368": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-19455": [
+   "Insolite",
+   "Religion et mythes",
+   "Santé"
+  ],
+  "lsv-19467": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-19488": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-19504": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-19510": [
+   "Insolite",
+   "Cinéma et TV",
+   "Histoire"
+  ],
+  "lsv-19513": [
+   "Insolite",
+   "Histoire",
+   "Santé"
+  ],
+  "lsv-19548": [
+   "Insolite",
+   "Religion et mythes",
+   "Sciences"
+  ],
+  "lsv-19580": [
+   "Insolite",
+   "Religion et mythes",
+   "Histoire"
+  ],
+  "lsv-19583": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-19634": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-19640": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-19659": [
+   "Insolite",
+   "Nature"
+  ],
+  "lsv-19661": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-19666": [
+   "Insolite",
+   "Transports"
+  ],
+  "lsv-19672": [
+   "Insolite",
+   "Transports"
+  ],
+  "lsv-19683": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-19688": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-19692": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-19705": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-19707": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-19708": [
+   "Insolite",
+   "Histoire",
+   "Technologie"
+  ],
+  "lsv-19712": [
+   "Insolite",
+   "Religion et mythes"
+  ],
+  "lsv-19719": [
+   "Insolite",
+   "Noël",
+   "Religion et mythes"
+  ],
+  "lsv-19721": [
+   "Insolite",
+   "Gastronomie",
+   "Littérature"
+  ],
+  "lsv-19726": [
+   "Insolite",
+   "Technologie"
+  ],
+  "lsv-19745": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-19778": [
+   "Insolite",
+   "Histoire",
+   "Littérature"
+  ],
+  "lsv-19780": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-19792": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-19825": [
+   "Insolite",
+   "Politique"
+  ],
+  "lsv-19847": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-19867": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-19872": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-19876": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-19896": [
+   "Insolite",
+   "Histoire",
+   "Art"
+  ],
+  "lsv-19898": [
+   "Insolite",
+   "Nature"
+  ],
+  "lsv-19923": [
+   "Insolite",
+   "Sport",
+   "Technologie"
+  ],
+  "lsv-19928": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-19952": [
+   "Insolite",
+   "Littérature",
+   "Art"
+  ],
+  "lsv-19982": [
+   "Insolite",
+   "Musique",
+   "Art"
+  ],
+  "lsv-19995": [
+   "Insolite",
+   "Technologie",
+   "Histoire"
+  ],
+  "lsv-20007": [
+   "Insolite",
+   "Sport",
+   "Histoire"
+  ],
+  "lsv-20026": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-20031": [
+   "Insolite",
+   "Nature"
+  ],
+  "lsv-20082": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-20091": [
+   "Insolite"
+  ],
+  "lsv-20095": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-20103": [
+   "Insolite",
+   "Art",
+   "Religion et mythes"
+  ],
+  "lsv-20130": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-20145": [
+   "Insolite",
+   "Histoire",
+   "Art"
+  ],
+  "lsv-20186": [
+   "Insolite",
+   "Musique",
+   "Histoire"
+  ],
+  "lsv-20193": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-20217": [
+   "Insolite",
+   "Histoire",
+   "Sciences"
+  ],
+  "lsv-20225": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-20315": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-20352": [
+   "Insolite",
+   "Histoire",
+   "Transports"
+  ],
+  "lsv-20366": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-20392": [
+   "Insolite"
+  ],
+  "lsv-20399": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-20409": [
+   "Insolite",
+   "Littérature",
+   "Transports"
+  ],
+  "lsv-20436": [
+   "Insolite",
+   "Nature",
+   "Histoire"
+  ],
+  "lsv-20471": [
+   "Insolite",
+   "Musique",
+   "Histoire"
+  ],
+  "lsv-20479": [
+   "Insolite",
+   "Sport",
+   "Santé"
+  ],
+  "lsv-20481": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-20511": [
+   "Insolite",
+   "Histoire",
+   "Santé"
+  ],
+  "lsv-20522": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-20543": [
+   "Insolite",
+   "Cinéma et TV",
+   "Technologie"
+  ],
+  "lsv-20567": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-20571": [
+   "Insolite",
+   "Histoire",
+   "Religion et mythes"
+  ],
+  "lsv-20582": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-20594": [
+   "Insolite",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-20602": [
+   "Insolite",
+   "Cinéma et TV",
+   "Histoire"
+  ],
+  "lsv-20615": [
+   "Insolite",
+   "Transports",
+   "Technologie"
+  ],
+  "lsv-20629": [
+   "Insolite",
+   "Cinéma et TV",
+   "Musique"
+  ],
+  "lsv-20634": [
+   "Insolite",
+   "Géographie",
+   "Langue et mots"
+  ],
+  "lsv-20663": [
+   "Insolite",
+   "Cinéma et TV",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-20729": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-20730": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-20769": [
+   "Insolite",
+   "Transports",
+   "Automobile"
+  ],
+  "lsv-20773": [
+   "Insolite",
+   "Cinéma et TV",
+   "Sport"
+  ],
+  "lsv-20779": [
+   "Insolite",
+   "Histoire",
+   "Nature"
+  ],
+  "lsv-20828": [
+   "Insolite",
+   "Santé"
+  ],
+  "lsv-20829": [
+   "Insolite",
+   "Santé"
+  ],
+  "lsv-20830": [
+   "Insolite",
+   "Histoire",
+   "Cinéma et TV"
+  ],
+  "lsv-20910": [
+   "Insolite",
+   "Religion et mythes",
+   "Langue et mots"
+  ],
+  "lsv-20914": [
+   "Insolite",
+   "Géographie",
+   "Langue et mots"
+  ],
+  "lsv-20936": [
+   "Insolite",
+   "Nature"
+  ],
+  "lsv-20950": [
+   "Insolite",
+   "Animaux",
+   "Gastronomie"
+  ],
+  "lsv-20954": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-20987": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-21011": [
+   "Insolite",
+   "Littérature",
+   "Art"
+  ],
+  "lsv-21048": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-21052": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-21071": [
+   "Insolite",
+   "Sport",
+   "Personnage célèbre"
+  ],
+  "lsv-21098": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-21104": [
+   "Insolite",
+   "Cinéma et TV",
+   "Histoire"
+  ],
+  "lsv-21108": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-21145": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-21148": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-21159": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-21188": [
+   "Insolite",
+   "Sciences",
+   "Gastronomie"
+  ],
+  "lsv-21196": [
+   "Insolite",
+   "Musique",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-21208": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-21212": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-21242": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-21244": [
+   "Insolite",
+   "Histoire",
+   "Géographie"
+  ],
+  "lsv-21247": [
+   "Insolite",
+   "Sciences",
+   "Personnage célèbre"
+  ],
+  "lsv-21255": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-21295": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-21312": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-21313": [
+   "Insolite",
+   "Histoire",
+   "Religion et mythes"
+  ],
+  "lsv-21318": [
+   "Insolite",
+   "Histoire",
+   "Gastronomie"
+  ],
+  "lsv-21331": [
+   "Insolite",
+   "Religion et mythes"
+  ],
+  "lsv-21337": [
+   "Insolite",
+   "Politique",
+   "Nature"
+  ],
+  "lsv-21342": [
+   "Insolite",
+   "Géographie",
+   "Transports"
+  ],
+  "lsv-21345": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-21348": [
+   "Insolite",
+   "Histoire",
+   "Santé"
+  ],
+  "lsv-21349": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-21383": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-21412": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-21418": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-21419": [
+   "Insolite",
+   "Cinéma et TV",
+   "Musique"
+  ],
+  "lsv-21459": [
+   "Insolite",
+   "Sciences",
+   "Nature"
+  ],
+  "lsv-21467": [
+   "Insolite",
+   "Histoire",
+   "Langue et mots"
+  ],
+  "lsv-21469": [
+   "Insolite",
+   "Histoire",
+   "Transports"
+  ],
+  "lsv-21499": [
+   "Insolite",
+   "Histoire",
+   "Langue et mots"
+  ],
+  "lsv-21512": [
+   "Insolite",
+   "Sciences",
+   "Langue et mots"
+  ],
+  "lsv-21532": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-21547": [
+   "Insolite",
+   "Transports",
+   "Sciences"
+  ],
+  "lsv-21549": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-21560": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-21574": [
+   "Insolite",
+   "Histoire",
+   "Art"
+  ],
+  "lsv-21582": [
+   "Insolite"
+  ],
+  "lsv-21590": [
+   "Insolite",
+   "Histoire",
+   "Gastronomie"
+  ],
+  "lsv-21593": [
+   "Insolite",
+   "Histoire",
+   "Géographie"
+  ],
+  "lsv-21599": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-21619": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-21625": [
+   "Insolite",
+   "Histoire",
+   "Nature"
+  ],
+  "lsv-21634": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-21637": [
+   "Insolite",
+   "Technologie"
+  ],
+  "lsv-21638": [
+   "Insolite",
+   "Histoire",
+   "Gastronomie"
+  ],
+  "lsv-21644": [
+   "Insolite",
+   "Histoire",
+   "Sciences"
+  ],
+  "lsv-21647": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-21679": [
+   "Insolite",
+   "Technologie"
+  ],
+  "lsv-21684": [
+   "Insolite",
+   "Histoire",
+   "Technologie"
+  ],
+  "lsv-21693": [
+   "Insolite",
+   "Gastronomie",
+   "Personnage célèbre"
+  ],
+  "lsv-21695": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-21702": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-21707": [
+   "Insolite",
+   "Transports",
+   "Sciences"
+  ],
+  "lsv-21711": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-21715": [
+   "Insolite",
+   "Histoire",
+   "Religion et mythes"
+  ],
+  "lsv-21725": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-21740": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-21742": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-21760": [
+   "Insolite",
+   "Histoire",
+   "Religion et mythes"
+  ],
+  "lsv-21781": [
+   "Insolite",
+   "Géographie",
+   "Nature"
+  ],
+  "lsv-21795": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-21821": [
+   "Insolite",
+   "Sciences",
+   "Santé"
+  ],
+  "lsv-21844": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-21848": [
+   "Insolite",
+   "Géographie",
+   "Nature"
+  ],
+  "lsv-21861": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-21875": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-21896": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-21911": [
+   "Insolite",
+   "Technologie",
+   "Sciences"
+  ],
+  "lsv-21914": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-21948": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-21950": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-21956": [
+   "Insolite",
+   "Transports"
+  ],
+  "lsv-21981": [
+   "Insolite",
+   "Histoire",
+   "Halloween"
+  ],
+  "lsv-22009": [
+   "Insolite",
+   "Art",
+   "Géographie"
+  ],
+  "lsv-22016": [
+   "Insolite",
+   "Sport",
+   "Histoire"
+  ],
+  "lsv-22029": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-22033": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-22037": [
+   "Insolite",
+   "Musique",
+   "Religion et mythes"
+  ],
+  "lsv-22056": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-22097": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-22116": [
+   "Insolite",
+   "Gastronomie",
+   "Histoire"
+  ],
+  "lsv-22135": [
+   "Insolite",
+   "Art",
+   "Histoire"
+  ],
+  "lsv-22140": [
+   "Insolite",
+   "Cinéma et TV",
+   "Histoire"
+  ],
+  "lsv-22142": [
+   "Insolite",
+   "Personnage célèbre"
+  ],
+  "lsv-22173": [
+   "Insolite"
+  ],
+  "lsv-22191": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-22202": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-22228": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-22235": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-22238": [
+   "Insolite",
+   "Halloween",
+   "Religion et mythes",
+   "Histoire"
+  ],
+  "lsv-22243": [
+   "Insolite",
+   "Sciences",
+   "Histoire"
+  ],
+  "lsv-22271": [
+   "Insolite",
+   "Musique",
+   "Religion et mythes"
+  ],
+  "lsv-22275": [
+   "Insolite",
+   "Art",
+   "Histoire"
+  ],
+  "lsv-22280": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-22285": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-22287": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-22293": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-22310": [
+   "Insolite",
+   "Nature"
+  ],
+  "lsv-22318": [
+   "Insolite",
+   "Cinéma et TV",
+   "Politique"
+  ],
+  "lsv-22327": [
+   "Insolite",
+   "Géographie",
+   "Santé"
+  ],
+  "lsv-22328": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-22330": [
+   "Insolite",
+   "Gastronomie"
+  ],
+  "lsv-22331": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-22369": [
+   "Insolite",
+   "Littérature",
+   "Santé"
+  ],
+  "lsv-22370": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-22371": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-22400": [
+   "Insolite",
+   "Politique",
+   "Histoire"
+  ],
+  "lsv-22403": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-22404": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-22430": [
+   "Insolite",
+   "Technologie"
+  ],
+  "lsv-22432": [
+   "Insolite",
+   "Transports",
+   "Sciences"
+  ],
+  "lsv-22459": [
+   "Insolite",
+   "Religion et mythes",
+   "Littérature"
+  ],
+  "lsv-22496": [
+   "Insolite",
+   "Histoire",
+   "Gastronomie"
+  ],
+  "lsv-22527": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-22550": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-22577": [
+   "Insolite",
+   "Politique",
+   "Histoire"
+  ],
+  "lsv-22603": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-22623": [
+   "Insolite",
+   "Histoire",
+   "Littérature"
+  ],
+  "lsv-22638": [
+   "Insolite",
+   "Histoire",
+   "Religion et mythes"
+  ],
+  "lsv-22644": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-22673": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-22691": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-22701": [
+   "Insolite",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-22729": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-22732": [
+   "Insolite",
+   "Histoire",
+   "Technologie"
+  ],
+  "lsv-22737": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-22756": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-22776": [
+   "Insolite",
+   "Animaux"
+  ],
+  "lsv-22834": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-22840": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-22850": [
+   "Insolite",
+   "Histoire",
+   "Animaux"
+  ],
+  "lsv-22875": [
+   "Insolite",
+   "Technologie",
+   "Sciences"
+  ],
+  "lsv-22885": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-22890": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-22893": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-22895": [
+   "Insolite",
+   "Automobile",
+   "Langue et mots"
+  ],
+  "lsv-22917": [
+   "Insolite",
+   "Religion et mythes",
+   "Technologie"
+  ],
+  "lsv-22935": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-22954": [
+   "Insolite",
+   "Gastronomie",
+   "Nature"
+  ],
+  "lsv-22961": [
+   "Insolite",
+   "Halloween",
+   "Histoire"
+  ],
+  "lsv-22963": [
+   "Insolite",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-22969": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-22976": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-22986": [
+   "Insolite",
+   "Musique",
+   "Langue et mots"
+  ],
+  "lsv-22996": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-23006": [
+   "Insolite",
+   "Nature",
+   "Gastronomie"
+  ],
+  "lsv-23024": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-23066": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-23070": [
+   "Insolite",
+   "Animaux",
+   "Personnage célèbre"
+  ],
+  "lsv-23082": [
+   "Insolite",
+   "Cinéma et TV",
+   "Musique"
+  ],
+  "lsv-23083": [
+   "Insolite",
+   "Personnage célèbre",
+   "Littérature"
+  ],
+  "lsv-23097": [
+   "Insolite",
+   "Technologie"
+  ],
+  "lsv-23098": [
+   "Insolite",
+   "Art",
+   "Animaux"
+  ],
+  "lsv-23106": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-23114": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-23118": [
+   "Insolite",
+   "Musique",
+   "Art"
+  ],
+  "lsv-23155": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-23161": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-23176": [
+   "Insolite",
+   "Musique",
+   "Littérature"
+  ],
+  "lsv-23218": [
+   "Insolite",
+   "Littérature",
+   "Histoire"
+  ],
+  "lsv-23232": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-23242": [
+   "Insolite",
+   "Musique",
+   "Histoire"
+  ],
+  "lsv-23244": [
+   "Insolite",
+   "Sport",
+   "Personnage célèbre"
+  ],
+  "lsv-23245": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-23257": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-23271": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-23285": [
+   "Insolite",
+   "Nature",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-23296": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-23300": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-23311": [
+   "Insolite",
+   "Transports"
+  ],
+  "lsv-23313": [
+   "Insolite",
+   "Animaux",
+   "Géographie",
+   "Personnage célèbre"
+  ],
+  "lsv-23330": [
+   "Insolite",
+   "Gastronomie",
+   "Géographie"
+  ],
+  "lsv-23335": [
+   "Insolite",
+   "Gastronomie",
+   "Personnage célèbre"
+  ],
+  "lsv-23338": [
+   "Insolite",
+   "Transports",
+   "Personnage célèbre"
+  ],
+  "lsv-23340": [
+   "Insolite",
+   "Cinéma et TV",
+   "Histoire"
+  ],
+  "lsv-23346": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-23355": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-23367": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-23370": [
+   "Insolite",
+   "Sport"
+  ],
+  "lsv-23372": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-23377": [
+   "Insolite",
+   "Animaux",
+   "Nature"
+  ],
+  "lsv-23381": [
+   "Insolite",
+   "Sport",
+   "Art"
+  ],
+  "lsv-23397": [
+   "Insolite",
+   "Religion et mythes"
+  ],
+  "lsv-23409": [
+   "Insolite",
+   "Histoire",
+   "Transports"
+  ],
+  "lsv-23410": [
+   "Insolite",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-23412": [
+   "Insolite",
+   "Sport",
+   "Histoire"
+  ],
+  "lsv-23432": [
+   "Insolite",
+   "Transports",
+   "Géographie"
+  ],
+  "lsv-23441": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-23448": [
+   "Insolite",
+   "Cinéma et TV",
+   "Langue et mots"
+  ],
+  "lsv-23460": [
+   "Insolite",
+   "Musique"
+  ],
+  "lsv-23463": [
+   "Insolite",
+   "Transports",
+   "Histoire"
+  ],
+  "lsv-23465": [
+   "Insolite",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-23512": [
+   "Insolite",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-23536": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-23545": [
+   "Insolite",
+   "Cinéma et TV",
+   "Animaux"
+  ],
+  "lsv-23547": [
+   "Insolite",
+   "Musique",
+   "Animaux"
+  ],
+  "lsv-23559": [
+   "Insolite",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-23566": [
+   "Insolite",
+   "Transports",
+   "Géographie"
+  ],
+  "lsv-23567": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-23583": [
+   "Insolite",
+   "Histoire",
+   "Animaux",
+   "Langue et mots"
+  ],
+  "lsv-23609": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-23618": [
+   "Insolite",
+   "Gastronomie"
+  ],
+  "lsv-23633": [
+   "Insolite",
+   "Politique",
+   "Sport"
+  ],
+  "lsv-23642": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-23670": [
+   "Insolite",
+   "Transports"
+  ],
+  "lsv-23686": [
+   "Insolite",
+   "Politique"
+  ],
+  "lsv-23690": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-23724": [
+   "Insolite",
+   "Littérature",
+   "Histoire"
+  ],
+  "lsv-23746": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-23762": [
+   "Insolite",
+   "Géographie"
+  ],
+  "lsv-23766": [
+   "Insolite",
+   "Littérature",
+   "Histoire"
+  ],
+  "lsv-23769": [
+   "Insolite",
+   "Art",
+   "Animaux"
+  ],
+  "lsv-23780": [
+   "Insolite",
+   "Gastronomie"
+  ],
+  "lsv-23784": [
+   "Insolite",
+   "Histoire",
+   "Religion et mythes"
+  ],
+  "lsv-23796": [
+   "Insolite",
+   "Animaux",
+   "Nature"
+  ],
+  "lsv-23798": [
+   "Insolite",
+   "Art",
+   "Personnage célèbre"
+  ],
+  "lsv-23829": [
+   "Insolite",
+   "Politique",
+   "Histoire"
+  ],
+  "lsv-23830": [
+   "Insolite",
+   "Littérature"
+  ],
+  "lsv-23842": [
+   "Insolite",
+   "Sciences"
+  ],
+  "lsv-23844": [
+   "Insolite",
+   "Transports",
+   "Sciences"
+  ],
+  "lsv-23859": [
+   "Insolite",
+   "Littérature",
+   "Langue et mots"
+  ],
+  "lsv-23864": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-23868": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-23869": [
+   "Insolite",
+   "Littérature",
+   "Sciences"
+  ],
+  "lsv-23880": [
+   "Insolite",
+   "Musique",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-23885": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-23892": [
+   "Insolite",
+   "Langue et mots",
+   "Géographie"
+  ],
+  "lsv-23895": [
+   "Insolite",
+   "Art"
+  ],
+  "lsv-23901": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-23923": [
+   "Insolite",
+   "Politique",
+   "Histoire"
+  ],
+  "lsv-23946": [
+   "Insolite",
+   "Histoire",
+   "Personnage célèbre"
+  ],
+  "lsv-23947": [
+   "Insolite",
+   "Musique",
+   "Littérature"
+  ],
+  "lsv-23954": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-23976": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-23977": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-23980": [
+   "Insolite",
+   "Sciences",
+   "Personnage célèbre"
+  ],
+  "lsv-23986": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-23987": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-23996": [
+   "Insolite",
+   "Langue et mots",
+   "Littérature"
+  ],
+  "lsv-24003": [
+   "Insolite",
+   "Musique",
+   "Histoire"
+  ],
+  "lsv-24007": [
+   "Insolite",
+   "Sport",
+   "Politique",
+   "Personnage célèbre"
+  ],
+  "lsv-24018": [
+   "Insolite",
+   "Histoire",
+   "Politique"
+  ],
+  "lsv-24029": [
+   "Insolite",
+   "Histoire",
+   "Nature"
+  ],
+  "lsv-24047": [
+   "Insolite",
+   "Langue et mots",
+   "Géographie"
+  ],
+  "lsv-24051": [
+   "Insolite",
+   "Langue et mots"
+  ],
+  "lsv-24053": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-24059": [
+   "Insolite",
+   "Animaux",
+   "Nature"
+  ],
+  "lsv-24060": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-24091": [
+   "Insolite",
+   "Histoire",
+   "Religion et mythes"
+  ],
+  "lsv-24093": [
+   "Insolite",
+   "Littérature",
+   "Langue et mots"
+  ],
+  "lsv-24095": [
+   "Insolite",
+   "Musique",
+   "Personnage célèbre"
+  ],
+  "lsv-24096": [
+   "Insolite",
+   "Animaux",
+   "Santé"
+  ],
+  "lsv-24106": [
+   "Insolite",
+   "Littérature",
+   "Gastronomie"
+  ],
+  "lsv-24109": [
+   "Insolite",
+   "Religion et mythes",
+   "Nature"
+  ],
+  "lsv-24114": [
+   "Insolite",
+   "Histoire",
+   "Transports"
+  ],
+  "lsv-24125": [
+   "Insolite",
+   "Cinéma et TV"
+  ],
+  "lsv-24135": [
+   "Insolite",
+   "Technologie"
+  ],
+  "lsv-24160": [
+   "Insolite",
+   "Sciences",
+   "Technologie"
+  ],
+  "lsv-24169": [
+   "Insolite",
+   "Cinéma et TV",
+   "Personnage célèbre"
+  ],
+  "lsv-24183": [
+   "Insolite",
+   "Art",
+   "Histoire"
+  ],
+  "lsv-24218": [
+   "Insolite",
+   "Animaux",
+   "Sciences"
+  ],
+  "lsv-24222": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-24231": [
+   "Insolite",
+   "Histoire"
+  ],
+  "lsv-24232": [
+   "Insolite",
+   "Littérature",
+   "Personnage célèbre"
+  ],
+  "lsv-24253": [
+   "Insolite",
+   "Histoire",
+   "Gastronomie"
+  ],
+  "lsv-24301": [
+   "Insolite",
+   "Animaux",
+   "Histoire"
+  ],
+  "lsv-24320": [
+   "Insolite",
+   "Animaux"
+  ]
+ },
+ "reviewed": [
+  "lsv-111844",
+  "lsv-11898",
+  "lsv-11977",
+  "lsv-12046",
+  "lsv-12113",
+  "lsv-12228",
+  "lsv-12287",
+  "lsv-12351",
+  "lsv-12466",
+  "lsv-12494",
+  "lsv-12517",
+  "lsv-12565",
+  "lsv-12570",
+  "lsv-12571",
+  "lsv-12576",
+  "lsv-12577",
+  "lsv-12585",
+  "lsv-12593",
+  "lsv-12595",
+  "lsv-12597",
+  "lsv-12598",
+  "lsv-12600",
+  "lsv-12619",
+  "lsv-12628",
+  "lsv-12629",
+  "lsv-12637",
+  "lsv-12641",
+  "lsv-12646",
+  "lsv-12650",
+  "lsv-12655",
+  "lsv-12661",
+  "lsv-12662",
+  "lsv-12663",
+  "lsv-12680",
+  "lsv-12686",
+  "lsv-12689",
+  "lsv-12691",
+  "lsv-12693",
+  "lsv-12696",
+  "lsv-12698",
+  "lsv-12701",
+  "lsv-12703",
+  "lsv-12706",
+  "lsv-12709",
+  "lsv-12714",
+  "lsv-12728",
+  "lsv-12731",
+  "lsv-12733",
+  "lsv-12735",
+  "lsv-12736",
+  "lsv-12743",
+  "lsv-12746",
+  "lsv-12756",
+  "lsv-12766",
+  "lsv-12787",
+  "lsv-12791",
+  "lsv-12793",
+  "lsv-12806",
+  "lsv-12813",
+  "lsv-12817",
+  "lsv-12825",
+  "lsv-12826",
+  "lsv-12830",
+  "lsv-12841",
+  "lsv-12842",
+  "lsv-12844",
+  "lsv-12849",
+  "lsv-12856",
+  "lsv-12858",
+  "lsv-12864",
+  "lsv-12867",
+  "lsv-12878",
+  "lsv-12886",
+  "lsv-12889",
+  "lsv-12899",
+  "lsv-12902",
+  "lsv-12909",
+  "lsv-12913",
+  "lsv-12920",
+  "lsv-12921",
+  "lsv-12924",
+  "lsv-12925",
+  "lsv-12927",
+  "lsv-12936",
+  "lsv-12939",
+  "lsv-12940",
+  "lsv-12941",
+  "lsv-12942",
+  "lsv-12943",
+  "lsv-12945",
+  "lsv-12953",
+  "lsv-12956",
+  "lsv-12957",
+  "lsv-12962",
+  "lsv-12964",
+  "lsv-12970",
+  "lsv-12972",
+  "lsv-12973",
+  "lsv-12977",
+  "lsv-12978",
+  "lsv-12979",
+  "lsv-12980",
+  "lsv-12982",
+  "lsv-12988",
+  "lsv-12991",
+  "lsv-12994",
+  "lsv-12995",
+  "lsv-12996",
+  "lsv-13003",
+  "lsv-13007",
+  "lsv-13008",
+  "lsv-13010",
+  "lsv-13013",
+  "lsv-13014",
+  "lsv-13018",
+  "lsv-13021",
+  "lsv-13022",
+  "lsv-13028",
+  "lsv-13035",
+  "lsv-13039",
+  "lsv-13049",
+  "lsv-13055",
+  "lsv-13056",
+  "lsv-13057",
+  "lsv-13058",
+  "lsv-13059",
+  "lsv-13060",
+  "lsv-13061",
+  "lsv-13065",
+  "lsv-13066",
+  "lsv-13067",
+  "lsv-13069",
+  "lsv-13072",
+  "lsv-13073",
+  "lsv-13075",
+  "lsv-13076",
+  "lsv-13077",
+  "lsv-13080",
+  "lsv-13083",
+  "lsv-13084",
+  "lsv-13086",
+  "lsv-13088",
+  "lsv-13092",
+  "lsv-13093",
+  "lsv-13094",
+  "lsv-13095",
+  "lsv-13099",
+  "lsv-13100",
+  "lsv-13101",
+  "lsv-13106",
+  "lsv-13108",
+  "lsv-13111",
+  "lsv-13112",
+  "lsv-13113",
+  "lsv-13117",
+  "lsv-13124",
+  "lsv-13127",
+  "lsv-13129",
+  "lsv-13130",
+  "lsv-13132",
+  "lsv-13138",
+  "lsv-13140",
+  "lsv-13141",
+  "lsv-13142",
+  "lsv-13143",
+  "lsv-13149",
+  "lsv-13159",
+  "lsv-13160",
+  "lsv-13165",
+  "lsv-13169",
+  "lsv-13172",
+  "lsv-13181",
+  "lsv-13182",
+  "lsv-13190",
+  "lsv-13193",
+  "lsv-13195",
+  "lsv-13198",
+  "lsv-13200",
+  "lsv-13201",
+  "lsv-13205",
+  "lsv-13209",
+  "lsv-13212",
+  "lsv-13214",
+  "lsv-13218",
+  "lsv-13221",
+  "lsv-13222",
+  "lsv-13224",
+  "lsv-13227",
+  "lsv-13228",
+  "lsv-13238",
+  "lsv-13242",
+  "lsv-13244",
+  "lsv-13245",
+  "lsv-13246",
+  "lsv-13249",
+  "lsv-13255",
+  "lsv-13260",
+  "lsv-13261",
+  "lsv-13265",
+  "lsv-13272",
+  "lsv-13274",
+  "lsv-13277",
+  "lsv-13278",
+  "lsv-13280",
+  "lsv-13282",
+  "lsv-13284",
+  "lsv-13287",
+  "lsv-13289",
+  "lsv-13290",
+  "lsv-13291",
+  "lsv-13292",
+  "lsv-13293",
+  "lsv-13295",
+  "lsv-13296",
+  "lsv-13304",
+  "lsv-13306",
+  "lsv-13308",
+  "lsv-13312",
+  "lsv-13313",
+  "lsv-13320",
+  "lsv-13327",
+  "lsv-13329",
+  "lsv-13336",
+  "lsv-13337",
+  "lsv-13339",
+  "lsv-13345",
+  "lsv-13347",
+  "lsv-13350",
+  "lsv-13351",
+  "lsv-13354",
+  "lsv-13356",
+  "lsv-13360",
+  "lsv-13361",
+  "lsv-13364",
+  "lsv-13365",
+  "lsv-13366",
+  "lsv-13369",
+  "lsv-13371",
+  "lsv-13373",
+  "lsv-13374",
+  "lsv-13376",
+  "lsv-13378",
+  "lsv-13379",
+  "lsv-13385",
+  "lsv-13401",
+  "lsv-13404",
+  "lsv-13405",
+  "lsv-13407",
+  "lsv-13415",
+  "lsv-13418",
+  "lsv-13419",
+  "lsv-13420",
+  "lsv-13433",
+  "lsv-13435",
+  "lsv-13437",
+  "lsv-13439",
+  "lsv-13445",
+  "lsv-13448",
+  "lsv-13449",
+  "lsv-13450",
+  "lsv-13454",
+  "lsv-13456",
+  "lsv-13458",
+  "lsv-13462",
+  "lsv-13465",
+  "lsv-13466",
+  "lsv-13467",
+  "lsv-13473",
+  "lsv-13476",
+  "lsv-13478",
+  "lsv-13479",
+  "lsv-13480",
+  "lsv-13486",
+  "lsv-13487",
+  "lsv-13491",
+  "lsv-13495",
+  "lsv-13497",
+  "lsv-13500",
+  "lsv-13506",
+  "lsv-13512",
+  "lsv-13513",
+  "lsv-13515",
+  "lsv-13517",
+  "lsv-13523",
+  "lsv-13526",
+  "lsv-13528",
+  "lsv-13533",
+  "lsv-13534",
+  "lsv-13537",
+  "lsv-13540",
+  "lsv-13544",
+  "lsv-13546",
+  "lsv-13548",
+  "lsv-13550",
+  "lsv-13551",
+  "lsv-13553",
+  "lsv-13561",
+  "lsv-13566",
+  "lsv-13573",
+  "lsv-13574",
+  "lsv-13575",
+  "lsv-13580",
+  "lsv-13586",
+  "lsv-13587",
+  "lsv-13593",
+  "lsv-13594",
+  "lsv-13596",
+  "lsv-13600",
+  "lsv-13601",
+  "lsv-13605",
+  "lsv-13610",
+  "lsv-13618",
+  "lsv-13620",
+  "lsv-13624",
+  "lsv-13625",
+  "lsv-13628",
+  "lsv-13631",
+  "lsv-13633",
+  "lsv-13640",
+  "lsv-13645",
+  "lsv-13650",
+  "lsv-13657",
+  "lsv-13660",
+  "lsv-13661",
+  "lsv-13664",
+  "lsv-13667",
+  "lsv-13669",
+  "lsv-13671",
+  "lsv-13672",
+  "lsv-13678",
+  "lsv-13679",
+  "lsv-13689",
+  "lsv-13692",
+  "lsv-13698",
+  "lsv-13701",
+  "lsv-13702",
+  "lsv-13703",
+  "lsv-13705",
+  "lsv-13707",
+  "lsv-13708",
+  "lsv-13711",
+  "lsv-13714",
+  "lsv-13715",
+  "lsv-13733",
+  "lsv-13736",
+  "lsv-13745",
+  "lsv-13746",
+  "lsv-13765",
+  "lsv-13773",
+  "lsv-13777",
+  "lsv-13787",
+  "lsv-13799",
+  "lsv-13800",
+  "lsv-13802",
+  "lsv-13807",
+  "lsv-13809",
+  "lsv-13817",
+  "lsv-13820",
+  "lsv-13821",
+  "lsv-13828",
+  "lsv-13829",
+  "lsv-13835",
+  "lsv-13836",
+  "lsv-13839",
+  "lsv-13841",
+  "lsv-13845",
+  "lsv-13851",
+  "lsv-13852",
+  "lsv-13856",
+  "lsv-13857",
+  "lsv-13858",
+  "lsv-13859",
+  "lsv-13860",
+  "lsv-13863",
+  "lsv-13867",
+  "lsv-13869",
+  "lsv-13887",
+  "lsv-13888",
+  "lsv-13892",
+  "lsv-13893",
+  "lsv-13897",
+  "lsv-13898",
+  "lsv-13900",
+  "lsv-13904",
+  "lsv-13905",
+  "lsv-13912",
+  "lsv-13913",
+  "lsv-13916",
+  "lsv-13919",
+  "lsv-13920",
+  "lsv-13926",
+  "lsv-13932",
+  "lsv-13933",
+  "lsv-13935",
+  "lsv-13936",
+  "lsv-13940",
+  "lsv-13942",
+  "lsv-13948",
+  "lsv-13950",
+  "lsv-13958",
+  "lsv-13960",
+  "lsv-13962",
+  "lsv-13968",
+  "lsv-13978",
+  "lsv-13979",
+  "lsv-13980",
+  "lsv-13981",
+  "lsv-13982",
+  "lsv-13983",
+  "lsv-13984",
+  "lsv-13995",
+  "lsv-14001",
+  "lsv-14005",
+  "lsv-14006",
+  "lsv-14008",
+  "lsv-14015",
+  "lsv-14016",
+  "lsv-14019",
+  "lsv-14022",
+  "lsv-14023",
+  "lsv-14032",
+  "lsv-14039",
+  "lsv-14042",
+  "lsv-14044",
+  "lsv-14046",
+  "lsv-14054",
+  "lsv-14059",
+  "lsv-14060",
+  "lsv-14062",
+  "lsv-14063",
+  "lsv-14064",
+  "lsv-14066",
+  "lsv-14067",
+  "lsv-14068",
+  "lsv-14069",
+  "lsv-14072",
+  "lsv-14075",
+  "lsv-14078",
+  "lsv-14081",
+  "lsv-14086",
+  "lsv-14091",
+  "lsv-14092",
+  "lsv-14096",
+  "lsv-14097",
+  "lsv-14102",
+  "lsv-14104",
+  "lsv-14106",
+  "lsv-14108",
+  "lsv-14112",
+  "lsv-14117",
+  "lsv-14121",
+  "lsv-14122",
+  "lsv-14124",
+  "lsv-14127",
+  "lsv-14130",
+  "lsv-14133",
+  "lsv-14135",
+  "lsv-14136",
+  "lsv-14138",
+  "lsv-14139",
+  "lsv-14143",
+  "lsv-14144",
+  "lsv-14146",
+  "lsv-14152",
+  "lsv-14155",
+  "lsv-14158",
+  "lsv-14160",
+  "lsv-14161",
+  "lsv-14168",
+  "lsv-14169",
+  "lsv-14178",
+  "lsv-14179",
+  "lsv-14181",
+  "lsv-14182",
+  "lsv-14189",
+  "lsv-14191",
+  "lsv-14192",
+  "lsv-14195",
+  "lsv-14199",
+  "lsv-14201",
+  "lsv-14203",
+  "lsv-14210",
+  "lsv-14212",
+  "lsv-14215",
+  "lsv-14217",
+  "lsv-14219",
+  "lsv-14220",
+  "lsv-14221",
+  "lsv-14222",
+  "lsv-14223",
+  "lsv-14231",
+  "lsv-14235",
+  "lsv-14237",
+  "lsv-14238",
+  "lsv-14251",
+  "lsv-14252",
+  "lsv-14258",
+  "lsv-14260",
+  "lsv-14262",
+  "lsv-14272",
+  "lsv-14273",
+  "lsv-14276",
+  "lsv-14277",
+  "lsv-14278",
+  "lsv-14280",
+  "lsv-14281",
+  "lsv-14282",
+  "lsv-14284",
+  "lsv-14285",
+  "lsv-14289",
+  "lsv-14295",
+  "lsv-14296",
+  "lsv-14298",
+  "lsv-14302",
+  "lsv-14304",
+  "lsv-14305",
+  "lsv-14306",
+  "lsv-14307",
+  "lsv-14309",
+  "lsv-14312",
+  "lsv-14313",
+  "lsv-14321",
+  "lsv-14323",
+  "lsv-14326",
+  "lsv-14330",
+  "lsv-14331",
+  "lsv-14332",
+  "lsv-14334",
+  "lsv-14335",
+  "lsv-14343",
+  "lsv-14345",
+  "lsv-14346",
+  "lsv-14347",
+  "lsv-14348",
+  "lsv-14350",
+  "lsv-14351",
+  "lsv-14352",
+  "lsv-14354",
+  "lsv-14366",
+  "lsv-14368",
+  "lsv-14369",
+  "lsv-14370",
+  "lsv-14371",
+  "lsv-14375",
+  "lsv-14378",
+  "lsv-14379",
+  "lsv-14383",
+  "lsv-14386",
+  "lsv-14388",
+  "lsv-14390",
+  "lsv-14392",
+  "lsv-14393",
+  "lsv-14397",
+  "lsv-14398",
+  "lsv-14400",
+  "lsv-14401",
+  "lsv-14403",
+  "lsv-14407",
+  "lsv-14411",
+  "lsv-14412",
+  "lsv-14414",
+  "lsv-14420",
+  "lsv-14422",
+  "lsv-14429",
+  "lsv-14431",
+  "lsv-14441",
+  "lsv-14453",
+  "lsv-14461",
+  "lsv-14462",
+  "lsv-14465",
+  "lsv-14472",
+  "lsv-14479",
+  "lsv-14484",
+  "lsv-14491",
+  "lsv-14498",
+  "lsv-14508",
+  "lsv-14509",
+  "lsv-14513",
+  "lsv-14514",
+  "lsv-14517",
+  "lsv-14518",
+  "lsv-14520",
+  "lsv-14521",
+  "lsv-14522",
+  "lsv-14523",
+  "lsv-14526",
+  "lsv-14527",
+  "lsv-14529",
+  "lsv-14531",
+  "lsv-14540",
+  "lsv-14541",
+  "lsv-14550",
+  "lsv-14553",
+  "lsv-14555",
+  "lsv-14556",
+  "lsv-14558",
+  "lsv-14561",
+  "lsv-14564",
+  "lsv-14566",
+  "lsv-14568",
+  "lsv-14572",
+  "lsv-14574",
+  "lsv-14584",
+  "lsv-14588",
+  "lsv-14594",
+  "lsv-14601",
+  "lsv-14603",
+  "lsv-14604",
+  "lsv-14605",
+  "lsv-14606",
+  "lsv-14608",
+  "lsv-14610",
+  "lsv-14614",
+  "lsv-14616",
+  "lsv-14618",
+  "lsv-14620",
+  "lsv-14621",
+  "lsv-14623",
+  "lsv-14624",
+  "lsv-14625",
+  "lsv-14626",
+  "lsv-14628",
+  "lsv-14630",
+  "lsv-14631",
+  "lsv-14636",
+  "lsv-14638",
+  "lsv-14644",
+  "lsv-14647",
+  "lsv-14652",
+  "lsv-14654",
+  "lsv-14655",
+  "lsv-14656",
+  "lsv-14666",
+  "lsv-14667",
+  "lsv-14676",
+  "lsv-14682",
+  "lsv-14683",
+  "lsv-14686",
+  "lsv-14688",
+  "lsv-14690",
+  "lsv-14691",
+  "lsv-14692",
+  "lsv-14693",
+  "lsv-14694",
+  "lsv-14705",
+  "lsv-14707",
+  "lsv-14708",
+  "lsv-14714",
+  "lsv-14715",
+  "lsv-14726",
+  "lsv-14727",
+  "lsv-14728",
+  "lsv-14729",
+  "lsv-14732",
+  "lsv-14733",
+  "lsv-14734",
+  "lsv-14738",
+  "lsv-14743",
+  "lsv-14745",
+  "lsv-14746",
+  "lsv-14747",
+  "lsv-14748",
+  "lsv-14749",
+  "lsv-14753",
+  "lsv-14759",
+  "lsv-14762",
+  "lsv-14763",
+  "lsv-14767",
+  "lsv-14768",
+  "lsv-14772",
+  "lsv-14779",
+  "lsv-14780",
+  "lsv-14781",
+  "lsv-14782",
+  "lsv-14792",
+  "lsv-14796",
+  "lsv-14797",
+  "lsv-14798",
+  "lsv-14799",
+  "lsv-14801",
+  "lsv-14806",
+  "lsv-14807",
+  "lsv-14808",
+  "lsv-14810",
+  "lsv-14815",
+  "lsv-14817",
+  "lsv-14818",
+  "lsv-14822",
+  "lsv-14825",
+  "lsv-14832",
+  "lsv-14843",
+  "lsv-14844",
+  "lsv-14848",
+  "lsv-14849",
+  "lsv-14851",
+  "lsv-14852",
+  "lsv-14853",
+  "lsv-14859",
+  "lsv-14861",
+  "lsv-14864",
+  "lsv-14865",
+  "lsv-14866",
+  "lsv-14868",
+  "lsv-14869",
+  "lsv-14872",
+  "lsv-14874",
+  "lsv-14877",
+  "lsv-14881",
+  "lsv-14895",
+  "lsv-14896",
+  "lsv-14899",
+  "lsv-14901",
+  "lsv-14913",
+  "lsv-14920",
+  "lsv-14929",
+  "lsv-14933",
+  "lsv-14939",
+  "lsv-14940",
+  "lsv-14943",
+  "lsv-14957",
+  "lsv-14961",
+  "lsv-14969",
+  "lsv-14973",
+  "lsv-14987",
+  "lsv-14992",
+  "lsv-14993",
+  "lsv-15003",
+  "lsv-15004",
+  "lsv-15010",
+  "lsv-15013",
+  "lsv-15020",
+  "lsv-15023",
+  "lsv-15026",
+  "lsv-15033",
+  "lsv-15035",
+  "lsv-15038",
+  "lsv-15041",
+  "lsv-15051",
+  "lsv-15059",
+  "lsv-15063",
+  "lsv-15071",
+  "lsv-15073",
+  "lsv-15087",
+  "lsv-15090",
+  "lsv-15100",
+  "lsv-15109",
+  "lsv-15111",
+  "lsv-15115",
+  "lsv-15116",
+  "lsv-15121",
+  "lsv-15125",
+  "lsv-15131",
+  "lsv-15146",
+  "lsv-15148",
+  "lsv-15151",
+  "lsv-15158",
+  "lsv-15161",
+  "lsv-15165",
+  "lsv-15175",
+  "lsv-15176",
+  "lsv-15177",
+  "lsv-15181",
+  "lsv-15185",
+  "lsv-15188",
+  "lsv-15189",
+  "lsv-15193",
+  "lsv-15195",
+  "lsv-15198",
+  "lsv-15200",
+  "lsv-15203",
+  "lsv-15204",
+  "lsv-15206",
+  "lsv-15207",
+  "lsv-15209",
+  "lsv-15211",
+  "lsv-15218",
+  "lsv-15219",
+  "lsv-15220",
+  "lsv-15227",
+  "lsv-15230",
+  "lsv-15231",
+  "lsv-15235",
+  "lsv-15236",
+  "lsv-15259",
+  "lsv-15260",
+  "lsv-15261",
+  "lsv-15263",
+  "lsv-15266",
+  "lsv-15269",
+  "lsv-15270",
+  "lsv-15272",
+  "lsv-15284",
+  "lsv-15289",
+  "lsv-15290",
+  "lsv-15294",
+  "lsv-15299",
+  "lsv-15305",
+  "lsv-15307",
+  "lsv-15309",
+  "lsv-15318",
+  "lsv-15322",
+  "lsv-15327",
+  "lsv-15334",
+  "lsv-15336",
+  "lsv-15337",
+  "lsv-15350",
+  "lsv-15353",
+  "lsv-15354",
+  "lsv-15358",
+  "lsv-15366",
+  "lsv-15379",
+  "lsv-15381",
+  "lsv-15387",
+  "lsv-15389",
+  "lsv-15399",
+  "lsv-15402",
+  "lsv-15405",
+  "lsv-15408",
+  "lsv-15416",
+  "lsv-15418",
+  "lsv-15422",
+  "lsv-15423",
+  "lsv-15424",
+  "lsv-15425",
+  "lsv-15432",
+  "lsv-15433",
+  "lsv-15434",
+  "lsv-15436",
+  "lsv-15439",
+  "lsv-15443",
+  "lsv-15444",
+  "lsv-15452",
+  "lsv-15454",
+  "lsv-15455",
+  "lsv-15460",
+  "lsv-15463",
+  "lsv-15469",
+  "lsv-15480",
+  "lsv-15481",
+  "lsv-15483",
+  "lsv-15484",
+  "lsv-15487",
+  "lsv-15488",
+  "lsv-15501",
+  "lsv-15507",
+  "lsv-15509",
+  "lsv-15521",
+  "lsv-15526",
+  "lsv-15530",
+  "lsv-15539",
+  "lsv-15547",
+  "lsv-15548",
+  "lsv-15549",
+  "lsv-15550",
+  "lsv-15552",
+  "lsv-15554",
+  "lsv-15558",
+  "lsv-15560",
+  "lsv-15562",
+  "lsv-15564",
+  "lsv-15566",
+  "lsv-15567",
+  "lsv-15572",
+  "lsv-15584",
+  "lsv-15585",
+  "lsv-15588",
+  "lsv-15590",
+  "lsv-15595",
+  "lsv-15597",
+  "lsv-15600",
+  "lsv-15605",
+  "lsv-15606",
+  "lsv-15613",
+  "lsv-15620",
+  "lsv-15623",
+  "lsv-15625",
+  "lsv-15626",
+  "lsv-15630",
+  "lsv-15641",
+  "lsv-15646",
+  "lsv-15647",
+  "lsv-15648",
+  "lsv-15650",
+  "lsv-15652",
+  "lsv-15654",
+  "lsv-15658",
+  "lsv-15663",
+  "lsv-15668",
+  "lsv-15673",
+  "lsv-15677",
+  "lsv-15678",
+  "lsv-15681",
+  "lsv-15688",
+  "lsv-15691",
+  "lsv-15693",
+  "lsv-15696",
+  "lsv-15702",
+  "lsv-15711",
+  "lsv-15714",
+  "lsv-15722",
+  "lsv-15725",
+  "lsv-15726",
+  "lsv-15728",
+  "lsv-15732",
+  "lsv-15733",
+  "lsv-15737",
+  "lsv-15738",
+  "lsv-15746",
+  "lsv-15750",
+  "lsv-15752",
+  "lsv-15754",
+  "lsv-15759",
+  "lsv-15762",
+  "lsv-15766",
+  "lsv-15772",
+  "lsv-15773",
+  "lsv-15858",
+  "lsv-15861",
+  "lsv-15862",
+  "lsv-15863",
+  "lsv-15866",
+  "lsv-15868",
+  "lsv-15869",
+  "lsv-15871",
+  "lsv-15872",
+  "lsv-15873",
+  "lsv-15875",
+  "lsv-15876",
+  "lsv-15882",
+  "lsv-15887",
+  "lsv-15889",
+  "lsv-15891",
+  "lsv-15893",
+  "lsv-15894",
+  "lsv-15897",
+  "lsv-15899",
+  "lsv-15902",
+  "lsv-15904",
+  "lsv-15906",
+  "lsv-15908",
+  "lsv-15909",
+  "lsv-15911",
+  "lsv-15914",
+  "lsv-15916",
+  "lsv-15919",
+  "lsv-15920",
+  "lsv-15921",
+  "lsv-15924",
+  "lsv-15925",
+  "lsv-15926",
+  "lsv-15931",
+  "lsv-15932",
+  "lsv-15933",
+  "lsv-15935",
+  "lsv-15937",
+  "lsv-15938",
+  "lsv-15940",
+  "lsv-15941",
+  "lsv-15942",
+  "lsv-15949",
+  "lsv-15951",
+  "lsv-15957",
+  "lsv-15959",
+  "lsv-15960",
+  "lsv-15961",
+  "lsv-15963",
+  "lsv-15968",
+  "lsv-15971",
+  "lsv-15973",
+  "lsv-15975",
+  "lsv-15977",
+  "lsv-15979",
+  "lsv-15982",
+  "lsv-15987",
+  "lsv-15988",
+  "lsv-15989",
+  "lsv-15991",
+  "lsv-15995",
+  "lsv-16003",
+  "lsv-16005",
+  "lsv-16006",
+  "lsv-16015",
+  "lsv-16016",
+  "lsv-16023",
+  "lsv-16025",
+  "lsv-16026",
+  "lsv-16029",
+  "lsv-16030",
+  "lsv-16039",
+  "lsv-16045",
+  "lsv-16048",
+  "lsv-16054",
+  "lsv-16055",
+  "lsv-16059",
+  "lsv-16060",
+  "lsv-16063",
+  "lsv-16064",
+  "lsv-16065",
+  "lsv-16068",
+  "lsv-16072",
+  "lsv-16076",
+  "lsv-16081",
+  "lsv-16084",
+  "lsv-16087",
+  "lsv-16091",
+  "lsv-16095",
+  "lsv-16101",
+  "lsv-16104",
+  "lsv-16120",
+  "lsv-16127",
+  "lsv-16137",
+  "lsv-16138",
+  "lsv-16139",
+  "lsv-16143",
+  "lsv-16144",
+  "lsv-16145",
+  "lsv-16146",
+  "lsv-16155",
+  "lsv-16156",
+  "lsv-16161",
+  "lsv-16162",
+  "lsv-16164",
+  "lsv-16168",
+  "lsv-16172",
+  "lsv-16173",
+  "lsv-16174",
+  "lsv-16177",
+  "lsv-16180",
+  "lsv-16189",
+  "lsv-16191",
+  "lsv-16193",
+  "lsv-16195",
+  "lsv-16197",
+  "lsv-16199",
+  "lsv-16200",
+  "lsv-16201",
+  "lsv-16202",
+  "lsv-16204",
+  "lsv-16208",
+  "lsv-16212",
+  "lsv-16215",
+  "lsv-16220",
+  "lsv-16222",
+  "lsv-16225",
+  "lsv-16230",
+  "lsv-16235",
+  "lsv-16245",
+  "lsv-16248",
+  "lsv-16249",
+  "lsv-16250",
+  "lsv-16258",
+  "lsv-16260",
+  "lsv-16262",
+  "lsv-16263",
+  "lsv-16267",
+  "lsv-16270",
+  "lsv-16275",
+  "lsv-16276",
+  "lsv-16277",
+  "lsv-16285",
+  "lsv-16291",
+  "lsv-16294",
+  "lsv-16296",
+  "lsv-16297",
+  "lsv-16303",
+  "lsv-16305",
+  "lsv-16319",
+  "lsv-16320",
+  "lsv-16324",
+  "lsv-16326",
+  "lsv-16329",
+  "lsv-16338",
+  "lsv-16339",
+  "lsv-16341",
+  "lsv-16342",
+  "lsv-16343",
+  "lsv-16346",
+  "lsv-16347",
+  "lsv-16351",
+  "lsv-16354",
+  "lsv-16360",
+  "lsv-16363",
+  "lsv-16372",
+  "lsv-16374",
+  "lsv-16378",
+  "lsv-16379",
+  "lsv-16381",
+  "lsv-16382",
+  "lsv-16388",
+  "lsv-16393",
+  "lsv-16394",
+  "lsv-16395",
+  "lsv-16396",
+  "lsv-16401",
+  "lsv-16412",
+  "lsv-16413",
+  "lsv-16414",
+  "lsv-16417",
+  "lsv-16422",
+  "lsv-16429",
+  "lsv-16431",
+  "lsv-16433",
+  "lsv-16435",
+  "lsv-16436",
+  "lsv-16437",
+  "lsv-16438",
+  "lsv-16441",
+  "lsv-16446",
+  "lsv-16447",
+  "lsv-16453",
+  "lsv-16466",
+  "lsv-16467",
+  "lsv-16475",
+  "lsv-16488",
+  "lsv-16490",
+  "lsv-16491",
+  "lsv-16492",
+  "lsv-16497",
+  "lsv-16498",
+  "lsv-16503",
+  "lsv-16504",
+  "lsv-16505",
+  "lsv-16507",
+  "lsv-16512",
+  "lsv-16513",
+  "lsv-16518",
+  "lsv-16519",
+  "lsv-16520",
+  "lsv-16523",
+  "lsv-16524",
+  "lsv-16528",
+  "lsv-16529",
+  "lsv-16537",
+  "lsv-16542",
+  "lsv-16543",
+  "lsv-16546",
+  "lsv-16548",
+  "lsv-16549",
+  "lsv-16560",
+  "lsv-16564",
+  "lsv-16568",
+  "lsv-16575",
+  "lsv-16582",
+  "lsv-16586",
+  "lsv-16587",
+  "lsv-16588",
+  "lsv-16591",
+  "lsv-16595",
+  "lsv-16596",
+  "lsv-16602",
+  "lsv-16604",
+  "lsv-16605",
+  "lsv-16610",
+  "lsv-16611",
+  "lsv-16613",
+  "lsv-16614",
+  "lsv-16615",
+  "lsv-16617",
+  "lsv-16621",
+  "lsv-16622",
+  "lsv-16623",
+  "lsv-16634",
+  "lsv-16638",
+  "lsv-16639",
+  "lsv-16643",
+  "lsv-16648",
+  "lsv-16654",
+  "lsv-16662",
+  "lsv-16668",
+  "lsv-16672",
+  "lsv-16677",
+  "lsv-16679",
+  "lsv-16692",
+  "lsv-16709",
+  "lsv-16710",
+  "lsv-16711",
+  "lsv-16713",
+  "lsv-16721",
+  "lsv-16723",
+  "lsv-16724",
+  "lsv-16732",
+  "lsv-16738",
+  "lsv-16739",
+  "lsv-16744",
+  "lsv-16745",
+  "lsv-16748",
+  "lsv-16750",
+  "lsv-16752",
+  "lsv-16755",
+  "lsv-16756",
+  "lsv-16759",
+  "lsv-16760",
+  "lsv-16766",
+  "lsv-16767",
+  "lsv-16768",
+  "lsv-16769",
+  "lsv-16773",
+  "lsv-16776",
+  "lsv-16791",
+  "lsv-16795",
+  "lsv-16797",
+  "lsv-16800",
+  "lsv-16801",
+  "lsv-16802",
+  "lsv-16808",
+  "lsv-16813",
+  "lsv-16821",
+  "lsv-16827",
+  "lsv-16834",
+  "lsv-16837",
+  "lsv-16843",
+  "lsv-16846",
+  "lsv-16850",
+  "lsv-16852",
+  "lsv-16858",
+  "lsv-16860",
+  "lsv-16861",
+  "lsv-16866",
+  "lsv-16869",
+  "lsv-16873",
+  "lsv-16875",
+  "lsv-16878",
+  "lsv-16887",
+  "lsv-16893",
+  "lsv-16897",
+  "lsv-16899",
+  "lsv-16901",
+  "lsv-16912",
+  "lsv-16922",
+  "lsv-16925",
+  "lsv-16928",
+  "lsv-16943",
+  "lsv-16945",
+  "lsv-16946",
+  "lsv-16950",
+  "lsv-16951",
+  "lsv-16955",
+  "lsv-16962",
+  "lsv-16965",
+  "lsv-16971",
+  "lsv-16973",
+  "lsv-16976",
+  "lsv-16977",
+  "lsv-16978",
+  "lsv-16979",
+  "lsv-16980",
+  "lsv-16983",
+  "lsv-16988",
+  "lsv-16996",
+  "lsv-17000",
+  "lsv-17001",
+  "lsv-17002",
+  "lsv-17008",
+  "lsv-17011",
+  "lsv-17012",
+  "lsv-17013",
+  "lsv-17014",
+  "lsv-17020",
+  "lsv-17024",
+  "lsv-17026",
+  "lsv-17028",
+  "lsv-17029",
+  "lsv-17034",
+  "lsv-17035",
+  "lsv-17037",
+  "lsv-17038",
+  "lsv-17041",
+  "lsv-17043",
+  "lsv-17047",
+  "lsv-17048",
+  "lsv-17050",
+  "lsv-17051",
+  "lsv-17052",
+  "lsv-17064",
+  "lsv-17065",
+  "lsv-17069",
+  "lsv-17077",
+  "lsv-17079",
+  "lsv-17086",
+  "lsv-17089",
+  "lsv-17094",
+  "lsv-17097",
+  "lsv-17098",
+  "lsv-17102",
+  "lsv-17103",
+  "lsv-17104",
+  "lsv-17108",
+  "lsv-17109",
+  "lsv-17111",
+  "lsv-17123",
+  "lsv-17125",
+  "lsv-17133",
+  "lsv-17134",
+  "lsv-17138",
+  "lsv-17140",
+  "lsv-17143",
+  "lsv-17152",
+  "lsv-17156",
+  "lsv-17157",
+  "lsv-17162",
+  "lsv-17163",
+  "lsv-17164",
+  "lsv-17166",
+  "lsv-17175",
+  "lsv-17176",
+  "lsv-17178",
+  "lsv-17179",
+  "lsv-17180",
+  "lsv-17181",
+  "lsv-17189",
+  "lsv-17190",
+  "lsv-17194",
+  "lsv-17195",
+  "lsv-17196",
+  "lsv-17197",
+  "lsv-17200",
+  "lsv-17203",
+  "lsv-17207",
+  "lsv-17208",
+  "lsv-17211",
+  "lsv-17212",
+  "lsv-17218",
+  "lsv-17219",
+  "lsv-17220",
+  "lsv-17221",
+  "lsv-17225",
+  "lsv-17226",
+  "lsv-17232",
+  "lsv-17240",
+  "lsv-17243",
+  "lsv-17244",
+  "lsv-17246",
+  "lsv-17247",
+  "lsv-17248",
+  "lsv-17250",
+  "lsv-17251",
+  "lsv-17254",
+  "lsv-17255",
+  "lsv-17258",
+  "lsv-17266",
+  "lsv-17268",
+  "lsv-17273",
+  "lsv-17275",
+  "lsv-17276",
+  "lsv-17279",
+  "lsv-17280",
+  "lsv-17281",
+  "lsv-17283",
+  "lsv-17286",
+  "lsv-17288",
+  "lsv-17290",
+  "lsv-17293",
+  "lsv-17294",
+  "lsv-17295",
+  "lsv-17297",
+  "lsv-17298",
+  "lsv-17299",
+  "lsv-17305",
+  "lsv-17307",
+  "lsv-17310",
+  "lsv-17325",
+  "lsv-17327",
+  "lsv-17328",
+  "lsv-17332",
+  "lsv-17333",
+  "lsv-17334",
+  "lsv-17338",
+  "lsv-17339",
+  "lsv-17345",
+  "lsv-17352",
+  "lsv-17353",
+  "lsv-17354",
+  "lsv-17367",
+  "lsv-17371",
+  "lsv-17374",
+  "lsv-17379",
+  "lsv-17380",
+  "lsv-17381",
+  "lsv-17383",
+  "lsv-17389",
+  "lsv-17392",
+  "lsv-17395",
+  "lsv-17397",
+  "lsv-17400",
+  "lsv-17401",
+  "lsv-17404",
+  "lsv-17406",
+  "lsv-17407",
+  "lsv-17410",
+  "lsv-17415",
+  "lsv-17420",
+  "lsv-17421",
+  "lsv-17422",
+  "lsv-17424",
+  "lsv-17425",
+  "lsv-17426",
+  "lsv-17433",
+  "lsv-17439",
+  "lsv-17441",
+  "lsv-17445",
+  "lsv-17446",
+  "lsv-17449",
+  "lsv-17453",
+  "lsv-17457",
+  "lsv-17458",
+  "lsv-17459",
+  "lsv-17461",
+  "lsv-17464",
+  "lsv-17466",
+  "lsv-17477",
+  "lsv-17479",
+  "lsv-17481",
+  "lsv-17487",
+  "lsv-17493",
+  "lsv-17494",
+  "lsv-17496",
+  "lsv-17499",
+  "lsv-17502",
+  "lsv-17514",
+  "lsv-17518",
+  "lsv-17520",
+  "lsv-17522",
+  "lsv-17524",
+  "lsv-17525",
+  "lsv-17527",
+  "lsv-17536",
+  "lsv-17543",
+  "lsv-17544",
+  "lsv-17545",
+  "lsv-17547",
+  "lsv-17553",
+  "lsv-17560",
+  "lsv-17561",
+  "lsv-17562",
+  "lsv-17573",
+  "lsv-17574",
+  "lsv-17577",
+  "lsv-17581",
+  "lsv-17582",
+  "lsv-17583",
+  "lsv-17584",
+  "lsv-17596",
+  "lsv-17597",
+  "lsv-17600",
+  "lsv-17602",
+  "lsv-17610",
+  "lsv-17613",
+  "lsv-17614",
+  "lsv-17615",
+  "lsv-17623",
+  "lsv-17625",
+  "lsv-17627",
+  "lsv-17628",
+  "lsv-17641",
+  "lsv-17642",
+  "lsv-17643",
+  "lsv-17646",
+  "lsv-17648",
+  "lsv-17649",
+  "lsv-17650",
+  "lsv-17651",
+  "lsv-17654",
+  "lsv-17664",
+  "lsv-17667",
+  "lsv-17670",
+  "lsv-17671",
+  "lsv-17672",
+  "lsv-17673",
+  "lsv-17678",
+  "lsv-17690",
+  "lsv-17699",
+  "lsv-17704",
+  "lsv-17714",
+  "lsv-17716",
+  "lsv-17719",
+  "lsv-17725",
+  "lsv-17726",
+  "lsv-17733",
+  "lsv-17738",
+  "lsv-17740",
+  "lsv-17742",
+  "lsv-17745",
+  "lsv-17747",
+  "lsv-17754",
+  "lsv-17755",
+  "lsv-17763",
+  "lsv-17764",
+  "lsv-17767",
+  "lsv-17770",
+  "lsv-17772",
+  "lsv-17773",
+  "lsv-17775",
+  "lsv-17781",
+  "lsv-17782",
+  "lsv-17784",
+  "lsv-17787",
+  "lsv-17800",
+  "lsv-17812",
+  "lsv-17828",
+  "lsv-17829",
+  "lsv-17831",
+  "lsv-17833",
+  "lsv-17834",
+  "lsv-17837",
+  "lsv-17841",
+  "lsv-17843",
+  "lsv-17844",
+  "lsv-17852",
+  "lsv-17863",
+  "lsv-17866",
+  "lsv-17868",
+  "lsv-17869",
+  "lsv-17877",
+  "lsv-17886",
+  "lsv-17894",
+  "lsv-17897",
+  "lsv-17899",
+  "lsv-17900",
+  "lsv-17902",
+  "lsv-17905",
+  "lsv-17919",
+  "lsv-17922",
+  "lsv-17926",
+  "lsv-17928",
+  "lsv-17929",
+  "lsv-17930",
+  "lsv-17931",
+  "lsv-17935",
+  "lsv-17936",
+  "lsv-17938",
+  "lsv-17941",
+  "lsv-17948",
+  "lsv-17952",
+  "lsv-17957",
+  "lsv-17958",
+  "lsv-17961",
+  "lsv-17964",
+  "lsv-17967",
+  "lsv-17979",
+  "lsv-17982",
+  "lsv-17984",
+  "lsv-17989",
+  "lsv-17997",
+  "lsv-17999",
+  "lsv-18003",
+  "lsv-18005",
+  "lsv-18008",
+  "lsv-18009",
+  "lsv-18011",
+  "lsv-18012",
+  "lsv-18013",
+  "lsv-18017",
+  "lsv-18023",
+  "lsv-18024",
+  "lsv-18026",
+  "lsv-18027",
+  "lsv-18037",
+  "lsv-18040",
+  "lsv-18041",
+  "lsv-18042",
+  "lsv-18045",
+  "lsv-18048",
+  "lsv-18051",
+  "lsv-18052",
+  "lsv-18057",
+  "lsv-18061",
+  "lsv-18063",
+  "lsv-18070",
+  "lsv-18071",
+  "lsv-18072",
+  "lsv-18074",
+  "lsv-18075",
+  "lsv-18077",
+  "lsv-18083",
+  "lsv-18084",
+  "lsv-18086",
+  "lsv-18087",
+  "lsv-18088",
+  "lsv-18105",
+  "lsv-18108",
+  "lsv-18109",
+  "lsv-18114",
+  "lsv-18115",
+  "lsv-18117",
+  "lsv-18121",
+  "lsv-18122",
+  "lsv-18128",
+  "lsv-18129",
+  "lsv-18132",
+  "lsv-18136",
+  "lsv-18140",
+  "lsv-18141",
+  "lsv-18143",
+  "lsv-18148",
+  "lsv-18150",
+  "lsv-18158",
+  "lsv-18159",
+  "lsv-18161",
+  "lsv-18162",
+  "lsv-18164",
+  "lsv-18168",
+  "lsv-18172",
+  "lsv-18176",
+  "lsv-18182",
+  "lsv-18184",
+  "lsv-18185",
+  "lsv-18193",
+  "lsv-18194",
+  "lsv-18201",
+  "lsv-18204",
+  "lsv-18209",
+  "lsv-18212",
+  "lsv-18220",
+  "lsv-18227",
+  "lsv-18228",
+  "lsv-18237",
+  "lsv-18244",
+  "lsv-18246",
+  "lsv-18251",
+  "lsv-18252",
+  "lsv-18273",
+  "lsv-18279",
+  "lsv-18281",
+  "lsv-18286",
+  "lsv-18289",
+  "lsv-18293",
+  "lsv-18295",
+  "lsv-18296",
+  "lsv-18300",
+  "lsv-18301",
+  "lsv-18302",
+  "lsv-18305",
+  "lsv-18306",
+  "lsv-18308",
+  "lsv-18309",
+  "lsv-18310",
+  "lsv-18313",
+  "lsv-18317",
+  "lsv-18323",
+  "lsv-18326",
+  "lsv-18333",
+  "lsv-18334",
+  "lsv-18336",
+  "lsv-18337",
+  "lsv-18338",
+  "lsv-18346",
+  "lsv-18347",
+  "lsv-18348",
+  "lsv-18351",
+  "lsv-18354",
+  "lsv-18356",
+  "lsv-18359",
+  "lsv-18362",
+  "lsv-18363",
+  "lsv-18364",
+  "lsv-18366",
+  "lsv-18367",
+  "lsv-18369",
+  "lsv-18371",
+  "lsv-18379",
+  "lsv-18383",
+  "lsv-18384",
+  "lsv-18386",
+  "lsv-18390",
+  "lsv-18391",
+  "lsv-18402",
+  "lsv-18403",
+  "lsv-18405",
+  "lsv-18410",
+  "lsv-18413",
+  "lsv-18415",
+  "lsv-18416",
+  "lsv-18419",
+  "lsv-18420",
+  "lsv-18421",
+  "lsv-18425",
+  "lsv-18426",
+  "lsv-18427",
+  "lsv-18428",
+  "lsv-18430",
+  "lsv-18431",
+  "lsv-18432",
+  "lsv-18433",
+  "lsv-18434",
+  "lsv-18439",
+  "lsv-18442",
+  "lsv-18443",
+  "lsv-18446",
+  "lsv-18451",
+  "lsv-18452",
+  "lsv-18456",
+  "lsv-18457",
+  "lsv-18459",
+  "lsv-18460",
+  "lsv-18461",
+  "lsv-18467",
+  "lsv-18468",
+  "lsv-18469",
+  "lsv-18470",
+  "lsv-18472",
+  "lsv-18474",
+  "lsv-18480",
+  "lsv-18483",
+  "lsv-18487",
+  "lsv-18488",
+  "lsv-18490",
+  "lsv-18493",
+  "lsv-18502",
+  "lsv-18503",
+  "lsv-18504",
+  "lsv-18507",
+  "lsv-18513",
+  "lsv-18517",
+  "lsv-18519",
+  "lsv-18530",
+  "lsv-18531",
+  "lsv-18535",
+  "lsv-18537",
+  "lsv-18541",
+  "lsv-18542",
+  "lsv-18544",
+  "lsv-18545",
+  "lsv-18549",
+  "lsv-18553",
+  "lsv-18554",
+  "lsv-18555",
+  "lsv-18556",
+  "lsv-18560",
+  "lsv-18562",
+  "lsv-18564",
+  "lsv-18567",
+  "lsv-18570",
+  "lsv-18574",
+  "lsv-18578",
+  "lsv-18582",
+  "lsv-18586",
+  "lsv-18589",
+  "lsv-18594",
+  "lsv-18595",
+  "lsv-18596",
+  "lsv-18600",
+  "lsv-18603",
+  "lsv-18604",
+  "lsv-18605",
+  "lsv-18608",
+  "lsv-18611",
+  "lsv-18614",
+  "lsv-18615",
+  "lsv-18617",
+  "lsv-18619",
+  "lsv-18620",
+  "lsv-18624",
+  "lsv-18626",
+  "lsv-18627",
+  "lsv-18635",
+  "lsv-18641",
+  "lsv-18642",
+  "lsv-18649",
+  "lsv-18650",
+  "lsv-18651",
+  "lsv-18658",
+  "lsv-18659",
+  "lsv-18664",
+  "lsv-18665",
+  "lsv-18669",
+  "lsv-18670",
+  "lsv-18673",
+  "lsv-18675",
+  "lsv-18684",
+  "lsv-18692",
+  "lsv-18693",
+  "lsv-18695",
+  "lsv-18696",
+  "lsv-18700",
+  "lsv-18707",
+  "lsv-18714",
+  "lsv-18718",
+  "lsv-18719",
+  "lsv-18720",
+  "lsv-18723",
+  "lsv-18726",
+  "lsv-18728",
+  "lsv-18730",
+  "lsv-18731",
+  "lsv-18734",
+  "lsv-18736",
+  "lsv-18737",
+  "lsv-18741",
+  "lsv-18745",
+  "lsv-18746",
+  "lsv-18752",
+  "lsv-18753",
+  "lsv-18760",
+  "lsv-18761",
+  "lsv-18762",
+  "lsv-18764",
+  "lsv-18768",
+  "lsv-18769",
+  "lsv-18773",
+  "lsv-18774",
+  "lsv-18776",
+  "lsv-18777",
+  "lsv-18782",
+  "lsv-18785",
+  "lsv-18786",
+  "lsv-18787",
+  "lsv-18788",
+  "lsv-18789",
+  "lsv-18795",
+  "lsv-18797",
+  "lsv-18798",
+  "lsv-18799",
+  "lsv-18801",
+  "lsv-18805",
+  "lsv-18806",
+  "lsv-18810",
+  "lsv-18811",
+  "lsv-18820",
+  "lsv-18822",
+  "lsv-18823",
+  "lsv-18834",
+  "lsv-18838",
+  "lsv-18840",
+  "lsv-18842",
+  "lsv-18846",
+  "lsv-18847",
+  "lsv-18851",
+  "lsv-18853",
+  "lsv-18854",
+  "lsv-18858",
+  "lsv-18861",
+  "lsv-18862",
+  "lsv-18864",
+  "lsv-18867",
+  "lsv-18872",
+  "lsv-18876",
+  "lsv-18881",
+  "lsv-18885",
+  "lsv-18894",
+  "lsv-18897",
+  "lsv-18898",
+  "lsv-18899",
+  "lsv-18906",
+  "lsv-18909",
+  "lsv-18911",
+  "lsv-18913",
+  "lsv-18917",
+  "lsv-18919",
+  "lsv-18922",
+  "lsv-18929",
+  "lsv-18933",
+  "lsv-18936",
+  "lsv-18943",
+  "lsv-18951",
+  "lsv-18960",
+  "lsv-18964",
+  "lsv-18965",
+  "lsv-18970",
+  "lsv-18973",
+  "lsv-18974",
+  "lsv-18976",
+  "lsv-18977",
+  "lsv-18979",
+  "lsv-18980",
+  "lsv-18982",
+  "lsv-18983",
+  "lsv-18989",
+  "lsv-18992",
+  "lsv-18994",
+  "lsv-18996",
+  "lsv-19003",
+  "lsv-19005",
+  "lsv-19019",
+  "lsv-19023",
+  "lsv-19030",
+  "lsv-19033",
+  "lsv-19036",
+  "lsv-19040",
+  "lsv-19041",
+  "lsv-19043",
+  "lsv-19048",
+  "lsv-19050",
+  "lsv-19052",
+  "lsv-19056",
+  "lsv-19058",
+  "lsv-19060",
+  "lsv-19067",
+  "lsv-19071",
+  "lsv-19074",
+  "lsv-19082",
+  "lsv-19086",
+  "lsv-19088",
+  "lsv-19090",
+  "lsv-19091",
+  "lsv-19096",
+  "lsv-19099",
+  "lsv-19101",
+  "lsv-19102",
+  "lsv-19108",
+  "lsv-19111",
+  "lsv-19113",
+  "lsv-19114",
+  "lsv-19120",
+  "lsv-19122",
+  "lsv-19123",
+  "lsv-19124",
+  "lsv-19126",
+  "lsv-19128",
+  "lsv-19133",
+  "lsv-19144",
+  "lsv-19190",
+  "lsv-19192",
+  "lsv-19193",
+  "lsv-19195",
+  "lsv-19198",
+  "lsv-19199",
+  "lsv-19204",
+  "lsv-19209",
+  "lsv-19211",
+  "lsv-19212",
+  "lsv-19215",
+  "lsv-19233",
+  "lsv-19237",
+  "lsv-19245",
+  "lsv-19247",
+  "lsv-19248",
+  "lsv-19249",
+  "lsv-19257",
+  "lsv-19260",
+  "lsv-19263",
+  "lsv-19265",
+  "lsv-19267",
+  "lsv-19269",
+  "lsv-19271",
+  "lsv-19273",
+  "lsv-19274",
+  "lsv-19276",
+  "lsv-19281",
+  "lsv-19282",
+  "lsv-19291",
+  "lsv-19293",
+  "lsv-19294",
+  "lsv-19296",
+  "lsv-19299",
+  "lsv-19300",
+  "lsv-19303",
+  "lsv-19304",
+  "lsv-19305",
+  "lsv-19312",
+  "lsv-19317",
+  "lsv-19318",
+  "lsv-19319",
+  "lsv-19320",
+  "lsv-19323",
+  "lsv-19325",
+  "lsv-19326",
+  "lsv-19332",
+  "lsv-19344",
+  "lsv-19345",
+  "lsv-19353",
+  "lsv-19354",
+  "lsv-19356",
+  "lsv-19359",
+  "lsv-19363",
+  "lsv-19365",
+  "lsv-19368",
+  "lsv-19370",
+  "lsv-19372",
+  "lsv-19377",
+  "lsv-19382",
+  "lsv-19384",
+  "lsv-19389",
+  "lsv-19395",
+  "lsv-19405",
+  "lsv-19417",
+  "lsv-19420",
+  "lsv-19429",
+  "lsv-19434",
+  "lsv-19446",
+  "lsv-19448",
+  "lsv-19455",
+  "lsv-19457",
+  "lsv-19460",
+  "lsv-19466",
+  "lsv-19467",
+  "lsv-19471",
+  "lsv-19473",
+  "lsv-19475",
+  "lsv-19476",
+  "lsv-19481",
+  "lsv-19485",
+  "lsv-19487",
+  "lsv-19488",
+  "lsv-19497",
+  "lsv-19499",
+  "lsv-19504",
+  "lsv-19510",
+  "lsv-19513",
+  "lsv-19516",
+  "lsv-19518",
+  "lsv-19521",
+  "lsv-19523",
+  "lsv-19526",
+  "lsv-19531",
+  "lsv-19544",
+  "lsv-19545",
+  "lsv-19548",
+  "lsv-19552",
+  "lsv-19556",
+  "lsv-19563",
+  "lsv-19567",
+  "lsv-19572",
+  "lsv-19579",
+  "lsv-19580",
+  "lsv-19581",
+  "lsv-19582",
+  "lsv-19583",
+  "lsv-19584",
+  "lsv-19593",
+  "lsv-19597",
+  "lsv-19603",
+  "lsv-19604",
+  "lsv-19605",
+  "lsv-19610",
+  "lsv-19611",
+  "lsv-19612",
+  "lsv-19613",
+  "lsv-19614",
+  "lsv-19615",
+  "lsv-19616",
+  "lsv-19619",
+  "lsv-19631",
+  "lsv-19633",
+  "lsv-19634",
+  "lsv-19635",
+  "lsv-19640",
+  "lsv-19641",
+  "lsv-19653",
+  "lsv-19654",
+  "lsv-19659",
+  "lsv-19660",
+  "lsv-19661",
+  "lsv-19663",
+  "lsv-19665",
+  "lsv-19666",
+  "lsv-19670",
+  "lsv-19671",
+  "lsv-19672",
+  "lsv-19673",
+  "lsv-19674",
+  "lsv-19682",
+  "lsv-19683",
+  "lsv-19688",
+  "lsv-19691",
+  "lsv-19692",
+  "lsv-19693",
+  "lsv-19695",
+  "lsv-19698",
+  "lsv-19703",
+  "lsv-19705",
+  "lsv-19707",
+  "lsv-19708",
+  "lsv-19711",
+  "lsv-19712",
+  "lsv-19713",
+  "lsv-19714",
+  "lsv-19716",
+  "lsv-19719",
+  "lsv-19721",
+  "lsv-19722",
+  "lsv-19725",
+  "lsv-19726",
+  "lsv-19729",
+  "lsv-19730",
+  "lsv-19731",
+  "lsv-19732",
+  "lsv-19733",
+  "lsv-19735",
+  "lsv-19742",
+  "lsv-19745",
+  "lsv-19747",
+  "lsv-19751",
+  "lsv-19754",
+  "lsv-19757",
+  "lsv-19758",
+  "lsv-19762",
+  "lsv-19767",
+  "lsv-19773",
+  "lsv-19778",
+  "lsv-19780",
+  "lsv-19789",
+  "lsv-19792",
+  "lsv-19793",
+  "lsv-19795",
+  "lsv-19799",
+  "lsv-19800",
+  "lsv-19801",
+  "lsv-19803",
+  "lsv-19804",
+  "lsv-19805",
+  "lsv-19806",
+  "lsv-19807",
+  "lsv-19811",
+  "lsv-19813",
+  "lsv-19814",
+  "lsv-19817",
+  "lsv-19824",
+  "lsv-19825",
+  "lsv-19831",
+  "lsv-19832",
+  "lsv-19836",
+  "lsv-19843",
+  "lsv-19847",
+  "lsv-19854",
+  "lsv-19856",
+  "lsv-19858",
+  "lsv-19860",
+  "lsv-19865",
+  "lsv-19867",
+  "lsv-19868",
+  "lsv-19870",
+  "lsv-19872",
+  "lsv-19876",
+  "lsv-19877",
+  "lsv-19879",
+  "lsv-19882",
+  "lsv-19888",
+  "lsv-19890",
+  "lsv-19892",
+  "lsv-19895",
+  "lsv-19896",
+  "lsv-19898",
+  "lsv-19899",
+  "lsv-19904",
+  "lsv-19905",
+  "lsv-19915",
+  "lsv-19918",
+  "lsv-19923",
+  "lsv-19928",
+  "lsv-19933",
+  "lsv-19934",
+  "lsv-19938",
+  "lsv-19946",
+  "lsv-19948",
+  "lsv-19952",
+  "lsv-19959",
+  "lsv-19965",
+  "lsv-19967",
+  "lsv-19973",
+  "lsv-19980",
+  "lsv-19982",
+  "lsv-19983",
+  "lsv-19995",
+  "lsv-19997",
+  "lsv-19998",
+  "lsv-20000",
+  "lsv-20005",
+  "lsv-20007",
+  "lsv-20011",
+  "lsv-20014",
+  "lsv-20016",
+  "lsv-20020",
+  "lsv-20022",
+  "lsv-20024",
+  "lsv-20026",
+  "lsv-20031",
+  "lsv-20032",
+  "lsv-20048",
+  "lsv-20059",
+  "lsv-20060",
+  "lsv-20061",
+  "lsv-20065",
+  "lsv-20067",
+  "lsv-20069",
+  "lsv-20078",
+  "lsv-20082",
+  "lsv-20089",
+  "lsv-20091",
+  "lsv-20095",
+  "lsv-20098",
+  "lsv-20103",
+  "lsv-20108",
+  "lsv-20117",
+  "lsv-20118",
+  "lsv-20119",
+  "lsv-20120",
+  "lsv-20121",
+  "lsv-20122",
+  "lsv-20124",
+  "lsv-20125",
+  "lsv-20130",
+  "lsv-20131",
+  "lsv-20133",
+  "lsv-20135",
+  "lsv-20143",
+  "lsv-20145",
+  "lsv-20151",
+  "lsv-20152",
+  "lsv-20153",
+  "lsv-20154",
+  "lsv-20160",
+  "lsv-20165",
+  "lsv-20172",
+  "lsv-20185",
+  "lsv-20186",
+  "lsv-20187",
+  "lsv-20192",
+  "lsv-20193",
+  "lsv-20199",
+  "lsv-20208",
+  "lsv-20217",
+  "lsv-20220",
+  "lsv-20221",
+  "lsv-20222",
+  "lsv-20225",
+  "lsv-20226",
+  "lsv-20239",
+  "lsv-20241",
+  "lsv-20242",
+  "lsv-20244",
+  "lsv-20249",
+  "lsv-20250",
+  "lsv-20254",
+  "lsv-20263",
+  "lsv-20264",
+  "lsv-20269",
+  "lsv-20273",
+  "lsv-20275",
+  "lsv-20278",
+  "lsv-20283",
+  "lsv-20285",
+  "lsv-20292",
+  "lsv-20293",
+  "lsv-20302",
+  "lsv-20308",
+  "lsv-20314",
+  "lsv-20315",
+  "lsv-20320",
+  "lsv-20321",
+  "lsv-20324",
+  "lsv-20326",
+  "lsv-20329",
+  "lsv-20331",
+  "lsv-20332",
+  "lsv-20333",
+  "lsv-20335",
+  "lsv-20337",
+  "lsv-20338",
+  "lsv-20341",
+  "lsv-20343",
+  "lsv-20346",
+  "lsv-20351",
+  "lsv-20352",
+  "lsv-20359",
+  "lsv-20360",
+  "lsv-20363",
+  "lsv-20366",
+  "lsv-20370",
+  "lsv-20371",
+  "lsv-20373",
+  "lsv-20376",
+  "lsv-20378",
+  "lsv-20379",
+  "lsv-20381",
+  "lsv-20384",
+  "lsv-20386",
+  "lsv-20389",
+  "lsv-20392",
+  "lsv-20393",
+  "lsv-20396",
+  "lsv-20398",
+  "lsv-20399",
+  "lsv-20400",
+  "lsv-20401",
+  "lsv-20403",
+  "lsv-20406",
+  "lsv-20407",
+  "lsv-20409",
+  "lsv-20410",
+  "lsv-20411",
+  "lsv-20413",
+  "lsv-20416",
+  "lsv-20418",
+  "lsv-20421",
+  "lsv-20423",
+  "lsv-20426",
+  "lsv-20428",
+  "lsv-20429",
+  "lsv-20431",
+  "lsv-20436",
+  "lsv-20440",
+  "lsv-20442",
+  "lsv-20444",
+  "lsv-20453",
+  "lsv-20456",
+  "lsv-20457",
+  "lsv-20462",
+  "lsv-20463",
+  "lsv-20465",
+  "lsv-20468",
+  "lsv-20471",
+  "lsv-20479",
+  "lsv-20481",
+  "lsv-20488",
+  "lsv-20495",
+  "lsv-20497",
+  "lsv-20502",
+  "lsv-20508",
+  "lsv-20511",
+  "lsv-20516",
+  "lsv-20517",
+  "lsv-20518",
+  "lsv-20519",
+  "lsv-20521",
+  "lsv-20522",
+  "lsv-20525",
+  "lsv-20529",
+  "lsv-20534",
+  "lsv-20540",
+  "lsv-20541",
+  "lsv-20542",
+  "lsv-20543",
+  "lsv-20544",
+  "lsv-20545",
+  "lsv-20551",
+  "lsv-20563",
+  "lsv-20565",
+  "lsv-20567",
+  "lsv-20571",
+  "lsv-20573",
+  "lsv-20576",
+  "lsv-20579",
+  "lsv-20581",
+  "lsv-20582",
+  "lsv-20594",
+  "lsv-20595",
+  "lsv-20602",
+  "lsv-20603",
+  "lsv-20606",
+  "lsv-20607",
+  "lsv-20608",
+  "lsv-20610",
+  "lsv-20615",
+  "lsv-20616",
+  "lsv-20618",
+  "lsv-20621",
+  "lsv-20622",
+  "lsv-20623",
+  "lsv-20628",
+  "lsv-20629",
+  "lsv-20633",
+  "lsv-20634",
+  "lsv-20637",
+  "lsv-20642",
+  "lsv-20645",
+  "lsv-20650",
+  "lsv-20653",
+  "lsv-20656",
+  "lsv-20657",
+  "lsv-20663",
+  "lsv-20677",
+  "lsv-20678",
+  "lsv-20689",
+  "lsv-20690",
+  "lsv-20692",
+  "lsv-20693",
+  "lsv-20694",
+  "lsv-20701",
+  "lsv-20707",
+  "lsv-20712",
+  "lsv-20713",
+  "lsv-20719",
+  "lsv-20720",
+  "lsv-20721",
+  "lsv-20725",
+  "lsv-20729",
+  "lsv-20730",
+  "lsv-20734",
+  "lsv-20736",
+  "lsv-20751",
+  "lsv-20759",
+  "lsv-20762",
+  "lsv-20767",
+  "lsv-20768",
+  "lsv-20769",
+  "lsv-20771",
+  "lsv-20773",
+  "lsv-20777",
+  "lsv-20778",
+  "lsv-20779",
+  "lsv-20780",
+  "lsv-20783",
+  "lsv-20792",
+  "lsv-20793",
+  "lsv-20796",
+  "lsv-20804",
+  "lsv-20810",
+  "lsv-20817",
+  "lsv-20822",
+  "lsv-20823",
+  "lsv-20826",
+  "lsv-20828",
+  "lsv-20829",
+  "lsv-20830",
+  "lsv-20842",
+  "lsv-20849",
+  "lsv-20852",
+  "lsv-20855",
+  "lsv-20856",
+  "lsv-20858",
+  "lsv-20860",
+  "lsv-20861",
+  "lsv-20868",
+  "lsv-20883",
+  "lsv-20885",
+  "lsv-20893",
+  "lsv-20899",
+  "lsv-20901",
+  "lsv-20907",
+  "lsv-20910",
+  "lsv-20914",
+  "lsv-20919",
+  "lsv-20923",
+  "lsv-20927",
+  "lsv-20928",
+  "lsv-20932",
+  "lsv-20933",
+  "lsv-20936",
+  "lsv-20939",
+  "lsv-20943",
+  "lsv-20949",
+  "lsv-20950",
+  "lsv-20951",
+  "lsv-20954",
+  "lsv-20955",
+  "lsv-20969",
+  "lsv-20974",
+  "lsv-20978",
+  "lsv-20982",
+  "lsv-20987",
+  "lsv-20988",
+  "lsv-20992",
+  "lsv-20995",
+  "lsv-20998",
+  "lsv-20999",
+  "lsv-21001",
+  "lsv-21002",
+  "lsv-21005",
+  "lsv-21011",
+  "lsv-21013",
+  "lsv-21017",
+  "lsv-21018",
+  "lsv-21019",
+  "lsv-21022",
+  "lsv-21024",
+  "lsv-21028",
+  "lsv-21029",
+  "lsv-21036",
+  "lsv-21037",
+  "lsv-21045",
+  "lsv-21046",
+  "lsv-21048",
+  "lsv-21052",
+  "lsv-21054",
+  "lsv-21056",
+  "lsv-21060",
+  "lsv-21061",
+  "lsv-21068",
+  "lsv-21069",
+  "lsv-21070",
+  "lsv-21071",
+  "lsv-21075",
+  "lsv-21076",
+  "lsv-21079",
+  "lsv-21081",
+  "lsv-21085",
+  "lsv-21087",
+  "lsv-21088",
+  "lsv-21094",
+  "lsv-21098",
+  "lsv-21099",
+  "lsv-21101",
+  "lsv-21104",
+  "lsv-21106",
+  "lsv-21108",
+  "lsv-21110",
+  "lsv-21112",
+  "lsv-21117",
+  "lsv-21134",
+  "lsv-21135",
+  "lsv-21139",
+  "lsv-21140",
+  "lsv-21145",
+  "lsv-21148",
+  "lsv-21152",
+  "lsv-21157",
+  "lsv-21159",
+  "lsv-21163",
+  "lsv-21166",
+  "lsv-21176",
+  "lsv-21177",
+  "lsv-21178",
+  "lsv-21179",
+  "lsv-21186",
+  "lsv-21187",
+  "lsv-21188",
+  "lsv-21190",
+  "lsv-21192",
+  "lsv-21196",
+  "lsv-21198",
+  "lsv-21208",
+  "lsv-21212",
+  "lsv-21214",
+  "lsv-21216",
+  "lsv-21217",
+  "lsv-21222",
+  "lsv-21223",
+  "lsv-21224",
+  "lsv-21228",
+  "lsv-21231",
+  "lsv-21234",
+  "lsv-21235",
+  "lsv-21236",
+  "lsv-21242",
+  "lsv-21244",
+  "lsv-21245",
+  "lsv-21247",
+  "lsv-21248",
+  "lsv-21255",
+  "lsv-21256",
+  "lsv-21257",
+  "lsv-21267",
+  "lsv-21271",
+  "lsv-21283",
+  "lsv-21289",
+  "lsv-21293",
+  "lsv-21295",
+  "lsv-21298",
+  "lsv-21302",
+  "lsv-21307",
+  "lsv-21311",
+  "lsv-21312",
+  "lsv-21313",
+  "lsv-21314",
+  "lsv-21318",
+  "lsv-21319",
+  "lsv-21323",
+  "lsv-21325",
+  "lsv-21330",
+  "lsv-21331",
+  "lsv-21332",
+  "lsv-21337",
+  "lsv-21341",
+  "lsv-21342",
+  "lsv-21343",
+  "lsv-21344",
+  "lsv-21345",
+  "lsv-21348",
+  "lsv-21349",
+  "lsv-21351",
+  "lsv-21354",
+  "lsv-21357",
+  "lsv-21358",
+  "lsv-21360",
+  "lsv-21361",
+  "lsv-21366",
+  "lsv-21372",
+  "lsv-21373",
+  "lsv-21375",
+  "lsv-21378",
+  "lsv-21381",
+  "lsv-21383",
+  "lsv-21385",
+  "lsv-21389",
+  "lsv-21391",
+  "lsv-21392",
+  "lsv-21403",
+  "lsv-21411",
+  "lsv-21412",
+  "lsv-21418",
+  "lsv-21419",
+  "lsv-21421",
+  "lsv-21425",
+  "lsv-21435",
+  "lsv-21437",
+  "lsv-21440",
+  "lsv-21445",
+  "lsv-21446",
+  "lsv-21450",
+  "lsv-21459",
+  "lsv-21461",
+  "lsv-21465",
+  "lsv-21467",
+  "lsv-21468",
+  "lsv-21469",
+  "lsv-21472",
+  "lsv-21473",
+  "lsv-21474",
+  "lsv-21478",
+  "lsv-21479",
+  "lsv-21481",
+  "lsv-21483",
+  "lsv-21489",
+  "lsv-21497",
+  "lsv-21499",
+  "lsv-21512",
+  "lsv-21521",
+  "lsv-21525",
+  "lsv-21528",
+  "lsv-21531",
+  "lsv-21532",
+  "lsv-21533",
+  "lsv-21537",
+  "lsv-21539",
+  "lsv-21541",
+  "lsv-21546",
+  "lsv-21547",
+  "lsv-21548",
+  "lsv-21549",
+  "lsv-21556",
+  "lsv-21559",
+  "lsv-21560",
+  "lsv-21564",
+  "lsv-21566",
+  "lsv-21570",
+  "lsv-21574",
+  "lsv-21575",
+  "lsv-21578",
+  "lsv-21582",
+  "lsv-21584",
+  "lsv-21590",
+  "lsv-21592",
+  "lsv-21593",
+  "lsv-21594",
+  "lsv-21595",
+  "lsv-21597",
+  "lsv-21599",
+  "lsv-21607",
+  "lsv-21617",
+  "lsv-21619",
+  "lsv-21625",
+  "lsv-21634",
+  "lsv-21637",
+  "lsv-21638",
+  "lsv-21640",
+  "lsv-21643",
+  "lsv-21644",
+  "lsv-21647",
+  "lsv-21649",
+  "lsv-21654",
+  "lsv-21660",
+  "lsv-21667",
+  "lsv-21673",
+  "lsv-21678",
+  "lsv-21679",
+  "lsv-21683",
+  "lsv-21684",
+  "lsv-21686",
+  "lsv-21690",
+  "lsv-21691",
+  "lsv-21693",
+  "lsv-21695",
+  "lsv-21702",
+  "lsv-21703",
+  "lsv-21704",
+  "lsv-21705",
+  "lsv-21706",
+  "lsv-21707",
+  "lsv-21708",
+  "lsv-21711",
+  "lsv-21715",
+  "lsv-21717",
+  "lsv-21719",
+  "lsv-21722",
+  "lsv-21724",
+  "lsv-21725",
+  "lsv-21726",
+  "lsv-21733",
+  "lsv-21740",
+  "lsv-21742",
+  "lsv-21753",
+  "lsv-21756",
+  "lsv-21760",
+  "lsv-21763",
+  "lsv-21764",
+  "lsv-21772",
+  "lsv-21773",
+  "lsv-21774",
+  "lsv-21777",
+  "lsv-21778",
+  "lsv-21781",
+  "lsv-21795",
+  "lsv-21803",
+  "lsv-21821",
+  "lsv-21824",
+  "lsv-21825",
+  "lsv-21830",
+  "lsv-21834",
+  "lsv-21836",
+  "lsv-21839",
+  "lsv-21840",
+  "lsv-21842",
+  "lsv-21843",
+  "lsv-21844",
+  "lsv-21848",
+  "lsv-21849",
+  "lsv-21851",
+  "lsv-21860",
+  "lsv-21861",
+  "lsv-21871",
+  "lsv-21875",
+  "lsv-21883",
+  "lsv-21896",
+  "lsv-21900",
+  "lsv-21907",
+  "lsv-21909",
+  "lsv-21911",
+  "lsv-21914",
+  "lsv-21917",
+  "lsv-21918",
+  "lsv-21921",
+  "lsv-21925",
+  "lsv-21926",
+  "lsv-21927",
+  "lsv-21928",
+  "lsv-21929",
+  "lsv-21930",
+  "lsv-21942",
+  "lsv-21943",
+  "lsv-21948",
+  "lsv-21950",
+  "lsv-21952",
+  "lsv-21956",
+  "lsv-21957",
+  "lsv-21960",
+  "lsv-21961",
+  "lsv-21967",
+  "lsv-21973",
+  "lsv-21978",
+  "lsv-21981",
+  "lsv-21982",
+  "lsv-21984",
+  "lsv-21985",
+  "lsv-21989",
+  "lsv-21997",
+  "lsv-22008",
+  "lsv-22009",
+  "lsv-22010",
+  "lsv-22016",
+  "lsv-22027",
+  "lsv-22029",
+  "lsv-22033",
+  "lsv-22034",
+  "lsv-22035",
+  "lsv-22037",
+  "lsv-22041",
+  "lsv-22043",
+  "lsv-22044",
+  "lsv-22055",
+  "lsv-22056",
+  "lsv-22059",
+  "lsv-22068",
+  "lsv-22071",
+  "lsv-22072",
+  "lsv-22073",
+  "lsv-22075",
+  "lsv-22076",
+  "lsv-22079",
+  "lsv-22082",
+  "lsv-22083",
+  "lsv-22092",
+  "lsv-22093",
+  "lsv-22097",
+  "lsv-22103",
+  "lsv-22106",
+  "lsv-22114",
+  "lsv-22115",
+  "lsv-22116",
+  "lsv-22122",
+  "lsv-22127",
+  "lsv-22129",
+  "lsv-22131",
+  "lsv-22132",
+  "lsv-22135",
+  "lsv-22140",
+  "lsv-22141",
+  "lsv-22142",
+  "lsv-22147",
+  "lsv-22152",
+  "lsv-22153",
+  "lsv-22161",
+  "lsv-22166",
+  "lsv-22170",
+  "lsv-22173",
+  "lsv-22175",
+  "lsv-22177",
+  "lsv-22178",
+  "lsv-22180",
+  "lsv-22181",
+  "lsv-22184",
+  "lsv-22188",
+  "lsv-22191",
+  "lsv-22192",
+  "lsv-22201",
+  "lsv-22202",
+  "lsv-22204",
+  "lsv-22211",
+  "lsv-22213",
+  "lsv-22219",
+  "lsv-22220",
+  "lsv-22221",
+  "lsv-22223",
+  "lsv-22225",
+  "lsv-22226",
+  "lsv-22228",
+  "lsv-22231",
+  "lsv-22235",
+  "lsv-22237",
+  "lsv-22238",
+  "lsv-22239",
+  "lsv-22243",
+  "lsv-22244",
+  "lsv-22251",
+  "lsv-22253",
+  "lsv-22254",
+  "lsv-22257",
+  "lsv-22258",
+  "lsv-22259",
+  "lsv-22261",
+  "lsv-22262",
+  "lsv-22263",
+  "lsv-22264",
+  "lsv-22267",
+  "lsv-22271",
+  "lsv-22272",
+  "lsv-22275",
+  "lsv-22276",
+  "lsv-22278",
+  "lsv-22280",
+  "lsv-22282",
+  "lsv-22285",
+  "lsv-22287",
+  "lsv-22290",
+  "lsv-22292",
+  "lsv-22293",
+  "lsv-22294",
+  "lsv-22299",
+  "lsv-22301",
+  "lsv-22304",
+  "lsv-22309",
+  "lsv-22310",
+  "lsv-22314",
+  "lsv-22318",
+  "lsv-22322",
+  "lsv-22323",
+  "lsv-22325",
+  "lsv-22327",
+  "lsv-22328",
+  "lsv-22330",
+  "lsv-22331",
+  "lsv-22337",
+  "lsv-22340",
+  "lsv-22359",
+  "lsv-22362",
+  "lsv-22367",
+  "lsv-22368",
+  "lsv-22369",
+  "lsv-22370",
+  "lsv-22371",
+  "lsv-22380",
+  "lsv-22387",
+  "lsv-22389",
+  "lsv-22391",
+  "lsv-22400",
+  "lsv-22401",
+  "lsv-22402",
+  "lsv-22403",
+  "lsv-22404",
+  "lsv-22418",
+  "lsv-22421",
+  "lsv-22429",
+  "lsv-22430",
+  "lsv-22431",
+  "lsv-22432",
+  "lsv-22436",
+  "lsv-22439",
+  "lsv-22441",
+  "lsv-22449",
+  "lsv-22451",
+  "lsv-22452",
+  "lsv-22453",
+  "lsv-22456",
+  "lsv-22459",
+  "lsv-22460",
+  "lsv-22462",
+  "lsv-22470",
+  "lsv-22475",
+  "lsv-22486",
+  "lsv-22496",
+  "lsv-22504",
+  "lsv-22506",
+  "lsv-22510",
+  "lsv-22518",
+  "lsv-22527",
+  "lsv-22528",
+  "lsv-22534",
+  "lsv-22543",
+  "lsv-22550",
+  "lsv-22553",
+  "lsv-22570",
+  "lsv-22572",
+  "lsv-22573",
+  "lsv-22574",
+  "lsv-22575",
+  "lsv-22577",
+  "lsv-22583",
+  "lsv-22586",
+  "lsv-22588",
+  "lsv-22596",
+  "lsv-22599",
+  "lsv-22603",
+  "lsv-22614",
+  "lsv-22617",
+  "lsv-22622",
+  "lsv-22623",
+  "lsv-22624",
+  "lsv-22628",
+  "lsv-22634",
+  "lsv-22635",
+  "lsv-22638",
+  "lsv-22643",
+  "lsv-22644",
+  "lsv-22648",
+  "lsv-22650",
+  "lsv-22652",
+  "lsv-22658",
+  "lsv-22660",
+  "lsv-22661",
+  "lsv-22662",
+  "lsv-22663",
+  "lsv-22664",
+  "lsv-22666",
+  "lsv-22667",
+  "lsv-22672",
+  "lsv-22673",
+  "lsv-22680",
+  "lsv-22681",
+  "lsv-22687",
+  "lsv-22690",
+  "lsv-22691",
+  "lsv-22693",
+  "lsv-22694",
+  "lsv-22699",
+  "lsv-22701",
+  "lsv-22707",
+  "lsv-22713",
+  "lsv-22717",
+  "lsv-22718",
+  "lsv-22721",
+  "lsv-22726",
+  "lsv-22727",
+  "lsv-22729",
+  "lsv-22730",
+  "lsv-22732",
+  "lsv-22735",
+  "lsv-22737",
+  "lsv-22744",
+  "lsv-22745",
+  "lsv-22747",
+  "lsv-22754",
+  "lsv-22755",
+  "lsv-22756",
+  "lsv-22761",
+  "lsv-22763",
+  "lsv-22766",
+  "lsv-22767",
+  "lsv-22768",
+  "lsv-22774",
+  "lsv-22775",
+  "lsv-22776",
+  "lsv-22778",
+  "lsv-22779",
+  "lsv-22781",
+  "lsv-22782",
+  "lsv-22787",
+  "lsv-22800",
+  "lsv-22806",
+  "lsv-22811",
+  "lsv-22812",
+  "lsv-22817",
+  "lsv-22828",
+  "lsv-22834",
+  "lsv-22835",
+  "lsv-22840",
+  "lsv-22846",
+  "lsv-22848",
+  "lsv-22849",
+  "lsv-22850",
+  "lsv-22853",
+  "lsv-22856",
+  "lsv-22860",
+  "lsv-22863",
+  "lsv-22866",
+  "lsv-22868",
+  "lsv-22869",
+  "lsv-22871",
+  "lsv-22872",
+  "lsv-22875",
+  "lsv-22877",
+  "lsv-22878",
+  "lsv-22879",
+  "lsv-22885",
+  "lsv-22890",
+  "lsv-22891",
+  "lsv-22892",
+  "lsv-22893",
+  "lsv-22895",
+  "lsv-22896",
+  "lsv-22898",
+  "lsv-22900",
+  "lsv-22905",
+  "lsv-22906",
+  "lsv-22911",
+  "lsv-22917",
+  "lsv-22921",
+  "lsv-22922",
+  "lsv-22926",
+  "lsv-22930",
+  "lsv-22932",
+  "lsv-22934",
+  "lsv-22935",
+  "lsv-22944",
+  "lsv-22945",
+  "lsv-22950",
+  "lsv-22951",
+  "lsv-22952",
+  "lsv-22953",
+  "lsv-22954",
+  "lsv-22957",
+  "lsv-22961",
+  "lsv-22962",
+  "lsv-22963",
+  "lsv-22967",
+  "lsv-22969",
+  "lsv-22972",
+  "lsv-22976",
+  "lsv-22980",
+  "lsv-22984",
+  "lsv-22986",
+  "lsv-22988",
+  "lsv-22996",
+  "lsv-22999",
+  "lsv-23001",
+  "lsv-23003",
+  "lsv-23004",
+  "lsv-23006",
+  "lsv-23008",
+  "lsv-23009",
+  "lsv-23024",
+  "lsv-23029",
+  "lsv-23037",
+  "lsv-23044",
+  "lsv-23048",
+  "lsv-23054",
+  "lsv-23060",
+  "lsv-23065",
+  "lsv-23066",
+  "lsv-23070",
+  "lsv-23074",
+  "lsv-23081",
+  "lsv-23082",
+  "lsv-23083",
+  "lsv-23090",
+  "lsv-23097",
+  "lsv-23098",
+  "lsv-23102",
+  "lsv-23106",
+  "lsv-23107",
+  "lsv-23108",
+  "lsv-23110",
+  "lsv-23112",
+  "lsv-23114",
+  "lsv-23118",
+  "lsv-23140",
+  "lsv-23142",
+  "lsv-23144",
+  "lsv-23146",
+  "lsv-23147",
+  "lsv-23148",
+  "lsv-23149",
+  "lsv-23155",
+  "lsv-23159",
+  "lsv-23161",
+  "lsv-23165",
+  "lsv-23166",
+  "lsv-23176",
+  "lsv-23190",
+  "lsv-23193",
+  "lsv-23201",
+  "lsv-23203",
+  "lsv-23206",
+  "lsv-23208",
+  "lsv-23209",
+  "lsv-23210",
+  "lsv-23213",
+  "lsv-23218",
+  "lsv-23225",
+  "lsv-23227",
+  "lsv-23232",
+  "lsv-23236",
+  "lsv-23242",
+  "lsv-23244",
+  "lsv-23245",
+  "lsv-23247",
+  "lsv-23251",
+  "lsv-23257",
+  "lsv-23259",
+  "lsv-23261",
+  "lsv-23269",
+  "lsv-23271",
+  "lsv-23277",
+  "lsv-23279",
+  "lsv-23280",
+  "lsv-23284",
+  "lsv-23285",
+  "lsv-23289",
+  "lsv-23291",
+  "lsv-23294",
+  "lsv-23295",
+  "lsv-23296",
+  "lsv-23300",
+  "lsv-23311",
+  "lsv-23312",
+  "lsv-23313",
+  "lsv-23315",
+  "lsv-23317",
+  "lsv-23319",
+  "lsv-23325",
+  "lsv-23330",
+  "lsv-23333",
+  "lsv-23335",
+  "lsv-23336",
+  "lsv-23338",
+  "lsv-23340",
+  "lsv-23342",
+  "lsv-23345",
+  "lsv-23346",
+  "lsv-23350",
+  "lsv-23353",
+  "lsv-23355",
+  "lsv-23356",
+  "lsv-23357",
+  "lsv-23367",
+  "lsv-23368",
+  "lsv-23370",
+  "lsv-23372",
+  "lsv-23374",
+  "lsv-23377",
+  "lsv-23379",
+  "lsv-23380",
+  "lsv-23381",
+  "lsv-23386",
+  "lsv-23397",
+  "lsv-23404",
+  "lsv-23409",
+  "lsv-23410",
+  "lsv-23412",
+  "lsv-23419",
+  "lsv-23424",
+  "lsv-23430",
+  "lsv-23431",
+  "lsv-23432",
+  "lsv-23435",
+  "lsv-23437",
+  "lsv-23441",
+  "lsv-23443",
+  "lsv-23444",
+  "lsv-23448",
+  "lsv-23454",
+  "lsv-23455",
+  "lsv-23460",
+  "lsv-23462",
+  "lsv-23463",
+  "lsv-23465",
+  "lsv-23467",
+  "lsv-23471",
+  "lsv-23472",
+  "lsv-23485",
+  "lsv-23486",
+  "lsv-23494",
+  "lsv-23500",
+  "lsv-23502",
+  "lsv-23503",
+  "lsv-23506",
+  "lsv-23510",
+  "lsv-23512",
+  "lsv-23516",
+  "lsv-23536",
+  "lsv-23541",
+  "lsv-23542",
+  "lsv-23543",
+  "lsv-23545",
+  "lsv-23546",
+  "lsv-23547",
+  "lsv-23552",
+  "lsv-23559",
+  "lsv-23565",
+  "lsv-23566",
+  "lsv-23567",
+  "lsv-23570",
+  "lsv-23571",
+  "lsv-23573",
+  "lsv-23577",
+  "lsv-23580",
+  "lsv-23582",
+  "lsv-23583",
+  "lsv-23584",
+  "lsv-23591",
+  "lsv-23592",
+  "lsv-23595",
+  "lsv-23601",
+  "lsv-23604",
+  "lsv-23605",
+  "lsv-23608",
+  "lsv-23609",
+  "lsv-23613",
+  "lsv-23616",
+  "lsv-23618",
+  "lsv-23620",
+  "lsv-23626",
+  "lsv-23629",
+  "lsv-23633",
+  "lsv-23638",
+  "lsv-23642",
+  "lsv-23661",
+  "lsv-23662",
+  "lsv-23668",
+  "lsv-23670",
+  "lsv-23672",
+  "lsv-23678",
+  "lsv-23683",
+  "lsv-23684",
+  "lsv-23686",
+  "lsv-23690",
+  "lsv-23700",
+  "lsv-23701",
+  "lsv-23706",
+  "lsv-23709",
+  "lsv-23713",
+  "lsv-23716",
+  "lsv-23724",
+  "lsv-23725",
+  "lsv-23726",
+  "lsv-23733",
+  "lsv-23740",
+  "lsv-23745",
+  "lsv-23746",
+  "lsv-23749",
+  "lsv-23762",
+  "lsv-23765",
+  "lsv-23766",
+  "lsv-23767",
+  "lsv-23769",
+  "lsv-23778",
+  "lsv-23780",
+  "lsv-23781",
+  "lsv-23784",
+  "lsv-23786",
+  "lsv-23793",
+  "lsv-23796",
+  "lsv-23798",
+  "lsv-23800",
+  "lsv-23815",
+  "lsv-23820",
+  "lsv-23822",
+  "lsv-23823",
+  "lsv-23829",
+  "lsv-23830",
+  "lsv-23831",
+  "lsv-23832",
+  "lsv-23842",
+  "lsv-23844",
+  "lsv-23848",
+  "lsv-23852",
+  "lsv-23859",
+  "lsv-23861",
+  "lsv-23864",
+  "lsv-23866",
+  "lsv-23868",
+  "lsv-23869",
+  "lsv-23877",
+  "lsv-23880",
+  "lsv-23881",
+  "lsv-23882",
+  "lsv-23884",
+  "lsv-23885",
+  "lsv-23889",
+  "lsv-23892",
+  "lsv-23895",
+  "lsv-23900",
+  "lsv-23901",
+  "lsv-23902",
+  "lsv-23904",
+  "lsv-23907",
+  "lsv-23918",
+  "lsv-23923",
+  "lsv-23930",
+  "lsv-23944",
+  "lsv-23946",
+  "lsv-23947",
+  "lsv-23948",
+  "lsv-23950",
+  "lsv-23952",
+  "lsv-23954",
+  "lsv-23955",
+  "lsv-23957",
+  "lsv-23960",
+  "lsv-23964",
+  "lsv-23968",
+  "lsv-23972",
+  "lsv-23973",
+  "lsv-23976",
+  "lsv-23977",
+  "lsv-23980",
+  "lsv-23985",
+  "lsv-23986",
+  "lsv-23987",
+  "lsv-23992",
+  "lsv-23996",
+  "lsv-24001",
+  "lsv-24003",
+  "lsv-24007",
+  "lsv-24017",
+  "lsv-24018",
+  "lsv-24022",
+  "lsv-24027",
+  "lsv-24029",
+  "lsv-24034",
+  "lsv-24042",
+  "lsv-24047",
+  "lsv-24048",
+  "lsv-24049",
+  "lsv-24051",
+  "lsv-24053",
+  "lsv-24054",
+  "lsv-24059",
+  "lsv-24060",
+  "lsv-24061",
+  "lsv-24066",
+  "lsv-24072",
+  "lsv-24074",
+  "lsv-24080",
+  "lsv-24091",
+  "lsv-24093",
+  "lsv-24095",
+  "lsv-24096",
+  "lsv-24104",
+  "lsv-24106",
+  "lsv-24107",
+  "lsv-24109",
+  "lsv-24112",
+  "lsv-24114",
+  "lsv-24125",
+  "lsv-24126",
+  "lsv-24135",
+  "lsv-24146",
+  "lsv-24151",
+  "lsv-24152",
+  "lsv-24160",
+  "lsv-24163",
+  "lsv-24166",
+  "lsv-24169",
+  "lsv-24170",
+  "lsv-24175",
+  "lsv-24183",
+  "lsv-24185",
+  "lsv-24189",
+  "lsv-24190",
+  "lsv-24201",
+  "lsv-24204",
+  "lsv-24206",
+  "lsv-24211",
+  "lsv-24218",
+  "lsv-24222",
+  "lsv-24223",
+  "lsv-24227",
+  "lsv-24231",
+  "lsv-24232",
+  "lsv-24242",
+  "lsv-24253",
+  "lsv-24255",
+  "lsv-24262",
+  "lsv-24263",
+  "lsv-24283",
+  "lsv-24286",
+  "lsv-24297",
+  "lsv-24301",
+  "lsv-24320",
+  "lsv-24325",
+  "lsv-24328"
+ ]
+}

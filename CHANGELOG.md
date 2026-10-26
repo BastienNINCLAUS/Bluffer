@@ -9,7 +9,8 @@ Protocole Socket.IO : 1 (champs ajoutés, rien de retiré).
 ### Ajouté
 - Thèmes (`tags`) sur chaque question et filtre de thèmes dans les réglages de l'écran hôte, avec le nombre de questions entre parenthèses ; « Classique » est décoché par défaut.
 - La partie ne se lance pas (verrouillage des équipes ou « Lancer la partie ») si les thèmes choisis ont moins de questions que demandé : erreur `not_enough_questions`, avertissement sur l'écran.
-- Banque de ~1000 anecdotes insolites en questions à trous, tirées de « Le saviez-vous ? » de Wikipédia FR (`scripts/import-dyk.js`, crédits dans `NOTICE.md`), et ~50 questions rédigées dont Halloween, Noël, Pâques et automobile.
+- Banque de ~1 400 anecdotes insolites en questions à trous, tirées de « Le saviez-vous ? » de Wikipédia FR (`scripts/import-dyk.js`, crédits dans `NOTICE.md`), et ~50 questions rédigées dont Halloween, Noël, Pâques et automobile.
+- Relecture des 3 400 candidats (trou évident, réponse ambiguë, fait périssable, sujet déplacé écartés ; thèmes corrigés) : décisions versionnées dans `scripts/data/dyk-review.json`, appliquées à chaque import ; seules les questions relues sont conservées.
 - Les faits Wikidata (`scripts/import-wikidata.js`) passent dans le thème « Classique ».
 
 ### Modifié

@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { validateQuestions, loadQuestions, loadQuestionBank } from '../game/questions.js';
 import { parseRules, inlineSegments } from '../shared/markdown.js';
 import { themeCounts, filterByThemes } from '../shared/themes.js';
+import { ALL_THEMES } from '../scripts/lib/tags.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -40,6 +41,19 @@ describe('banque de questions', () => {
     for (const q of questions) {
       assert.match(q.text, /\?$/, q.id);
       assert.ok(q.answer.length <= 80, q.id);
+    }
+  });
+
+  test('les anecdotes importées ont toutes été relues, aucune écartée n’est restée, thèmes autorisés', () => {
+    const review = JSON.parse(readFileSync(join(root, 'scripts', 'data', 'dyk-review.json'), 'utf8'));
+    const reviewed = new Set(review.reviewed);
+    const allowed = new Set(ALL_THEMES);
+    const gaps = questions.filter((q) => q.id.startsWith('lsv-'));
+    for (const q of gaps) {
+      assert.ok(reviewed.has(q.id), `${q.id} non relue`);
+      assert.ok(!(q.id in review.remove), `${q.id} écartée mais présente`);
+      assert.equal(q.tags[0], 'Insolite', q.id);
+      assert.ok(q.tags.length <= 4 && q.tags.every((t) => allowed.has(t)), `${q.id} : ${q.tags}`);
     }
   });
 

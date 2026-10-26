@@ -20,7 +20,7 @@ const argValue = (name, fallback) => {
   return i >= 0 ? args[i + 1] : fallback;
 };
 const [yearFrom, yearTo] = argValue('--years', '2008-2025').split('-').map(Number);
-const target = Number(argValue('--target', 1000));
+const target = Number(argValue('--target', 3400));
 const seed = Number(argValue('--seed', 1));
 const refresh = args.includes('--refresh');
 
@@ -285,6 +285,20 @@ for (const q of shuffled) {
   chosen.set(q.id, q);
 }
 const result = [...chosen.values()].sort((a, b) => a.id.localeCompare(b.id));
+
+// Relecture manuelle : scripts/data/dyk-review.json = { remove: { id: raison }, tags: { id: [thèmes] } }.
+const reviewFile = join(root, 'scripts', 'data', 'dyk-review.json');
+const skipReview = args.includes('--no-review');
+const review =
+  !skipReview && existsSync(reviewFile) ? JSON.parse(readFileSync(reviewFile, 'utf8')) : { remove: {}, tags: {}, reviewed: null };
+// Si `reviewed` est fourni, seules les questions relues (et non écartées) sont conservées.
+const reviewedIds = review.reviewed ? new Set(review.reviewed) : null;
+const reviewed = result
+  .filter((q) => !(q.id in review.remove) && (!reviewedIds || reviewedIds.has(q.id)))
+  .map((q) => (review.tags[q.id] ? { ...q, tags: review.tags[q.id] } : q));
+console.log(`Relecture : ${result.length - reviewed.length} questions écartées, ${Object.keys(review.tags).length} thèmes corrigés.`);
+result.length = 0;
+result.push(...reviewed);
 
 const problems = validateQuestions(result);
 if (problems.length > 0) {
