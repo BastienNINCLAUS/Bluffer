@@ -8,12 +8,12 @@ Versionnement sémantique. Le numéro de protocole Socket.IO (`shared/protocol.j
 - Partie de test : bouton « 🧪 Partie de test » dans le salon de l'écran hôte. Salon au code fixe `TEST`, 2 questions génériques et 3 robots (`game/testGame.js`) qui se déclarent prêts, répondent et votent seuls ; les joueurs peuvent la rejoindre pour un tour de chauffe. Elle ne compte pas dans les questions jouées. Commande `host:create` : champ facultatif `test` ; la vue contient `test`.
 
 ### Modifié
-- Téléphones : quand le clavier s'ouvre (tchat, réponse ou nom d'équipe), la page se limite à la zone visible : barre, proposition en attente, champ de saisie et tchat ; la carte principale et le pied de page sont masqués le temps de la saisie, au lieu que la page remonte et soit tronquée.
+- Téléphones : quand le clavier s'ouvre (tchat, réponse ou nom d'équipe), la page se limite à la zone visible : barre, proposition en attente, champ de saisie et tchat ; la carte principale et le pied de page sont masqués le temps de la saisie, au lieu que la page remonte et soit tronquée. Le mode se quitte quand le clavier est replié (même si le champ garde le focus) ou avec le bouton « ✕ » de la barre.
 - Une équipe qui n'a pas encore de nom s'affiche « Équipe bleue », « Équipe verte »… (nom de sa couleur) au lieu de « Équipe sans nom ».
 - Téléphones, choix du nom d'équipe : l'encart « x/x équipes ont leur nom » est retiré (l'information reste sur l'écran principal).
 - Tous les thèmes sont cochés par défaut dans un nouveau salon (« Classique » compris).
 - Une équipe qui n'a pas validé à l'échéance du délai garde sa dernière proposition comme réponse ou comme vote, au lieu de ne rien jouer.
-- Les téléphones restent allumés pendant la partie (Screen Wake Lock ; demande HTTPS ou localhost). L'écran hôte aussi.
+- Les téléphones restent allumés pendant la partie : Screen Wake Lock en HTTPS ou localhost, et, en HTTP sur le réseau local (où l'API n'existe pas), repli NoSleep.js (vidéo muette en boucle, démarrée au premier toucher ; `/vendor/nosleep`, CSP `media-src` élargie). L'écran hôte aussi.
 - Avant chaque question, l'écran affiche les équipes, les joueurs et leur état « prêt » ; le texte de la question n'apparaît qu'une fois tout le monde prêt (`question.text` est `null` en phase `question`, `players[].ready` ajouté).
 - Le texte de la question n'est plus envoyé aux téléphones : il se lit sur l'écran.
 - Écran d'équipe : la proposition en attente s'affiche dans un encart compact collé en haut de l'écran, au-dessus du tchat : texte, état de validation de chaque coéquipier et bouton « Valider » / « Retirer ».

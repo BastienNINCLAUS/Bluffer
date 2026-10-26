@@ -5,3 +5,7 @@
 - **`game/questions.json`** : questions rédigées pour le projet.
 
 Les fichiers sont régénérés avec `node scripts/import-dyk.js` et `node scripts/import-wikidata.js` (les réponses brutes sont mises en cache dans `.cache/`, ignoré par git).
+
+# Bibliothèques servies au navigateur
+
+- **[NoSleep.js](https://github.com/richtr/NoSleep.js)** (licence MIT), servie depuis `/vendor/nosleep` : repli qui empêche la mise en veille de l'écran quand la page est servie en HTTP.

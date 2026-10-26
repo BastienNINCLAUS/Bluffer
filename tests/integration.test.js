@@ -324,6 +324,15 @@ describe('routes HTTP', () => {
       assert.equal((await fetch(`${server.url}${path}`)).status, 404, path);
     }
     assert.equal((await fetch(`${server.url}/shared/protocol.js`)).status, 200);
+    assert.equal((await fetch(`${server.url}/node_modules/express/package.json`)).status, 404);
+  });
+
+  test('le repli anti-veille NoSleep est servi, rien d’autre de node_modules', async () => {
+    await setup();
+    const res = await fetch(`${server.url}/vendor/nosleep/NoSleep.min.js`);
+    assert.equal(res.status, 200);
+    assert.match(await res.text(), /NoSleep/);
+    assert.equal((await fetch(`${server.url}/vendor/nosleep/../package.json`)).status, 404);
   });
 
   test('en-têtes de sécurité', async () => {

@@ -48,7 +48,7 @@ export function createApp({
     res.setHeader('Referrer-Policy', 'no-referrer');
     res.setHeader(
       'Content-Security-Policy',
-      "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:",
+      "default-src 'self'; img-src 'self' data:; media-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; connect-src 'self' ws: wss:",
     );
     next();
   });
@@ -86,6 +86,8 @@ export function createApp({
   app.get('/host', (req, res) => res.sendFile(join(ROOT, 'public', 'host.html')));
   app.get('/play', (req, res) => res.sendFile(join(ROOT, 'public', 'player.html')));
   app.use('/shared', express.static(join(ROOT, 'shared')));
+  // Repli anti-veille pour les pages servies en HTTP (voir public/lib/wakelock.js).
+  app.use('/vendor/nosleep', express.static(join(ROOT, 'node_modules', 'nosleep.js', 'dist')));
   app.use(express.static(join(ROOT, 'public')));
 
   // ---------- salons ----------

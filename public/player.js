@@ -359,6 +359,7 @@ function renderBar() {
   region(barEl, key, () => [
     me ? h('button', { class: 'bar-me', type: 'button', onclick: chooseFile, title: 'Changer ma photo' }, avatar(me, mine?.color, view.code, 'sm'), h('span', { class: 'bar-name' }, view.me.name), mine ? h('span', { class: 'bar-team', vars: { '--team': mine.color } }, teamLabel(mine)) : null) : h('span', { class: 'bar-title' }, 'Bluffer'),
     h('span', { class: status === 'connected' ? 'dot-status ok' : 'dot-status' }, ''),
+    h('button', { class: 'btn small close-typing', type: 'button', 'aria-label': 'Fermer le clavier', onclick: () => leaveTyping() }, '✕'),
     h('button', { class: 'btn small', type: 'button', onclick: () => openRulesModal(rulesText, { delai: view?.config.graceSeconds ?? 30 }) }, 'Règles'),
   ]);
 }
@@ -500,12 +501,25 @@ function syncViewport() {
   root.setProperty('--vvtop', `${viewport.offsetTop}px`);
 }
 
+// Hauteur visible sans clavier : sert à détecter que le clavier a été replié.
+let baseHeight = Math.max(window.innerHeight, viewport?.height ?? 0);
+let typingSince = 0;
+
 function setTyping(on) {
   if (document.body.classList.contains('typing') === on) return;
   document.body.classList.toggle('typing', on);
-  if (on && viewport) syncViewport();
+  if (on) {
+    typingSince = Date.now();
+    if (viewport) syncViewport();
+  }
   window.scrollTo(0, 0);
   if (on) requestAnimationFrame(() => { chatListEl.scrollTop = chatListEl.scrollHeight; });
+}
+
+// Le clavier replié ne retire pas toujours le focus du champ : on le retire nous-mêmes.
+function leaveTyping() {
+  document.activeElement?.blur();
+  setTyping(false);
 }
 
 for (const input of typingInputs) {
@@ -513,8 +527,17 @@ for (const input of typingInputs) {
   input.addEventListener('blur', () => setTimeout(() => setTyping(typingInputs.includes(document.activeElement)), 0));
 }
 if (viewport) {
-  viewport.addEventListener('resize', () => document.body.classList.contains('typing') && syncViewport());
-  viewport.addEventListener('scroll', () => document.body.classList.contains('typing') && syncViewport());
+  const onViewportChange = () => {
+    if (!document.body.classList.contains('typing')) {
+      baseHeight = Math.max(window.innerHeight, viewport.height);
+      return;
+    }
+    const keyboardClosed = viewport.height >= baseHeight - 80;
+    if (keyboardClosed && Date.now() - typingSince > 400) leaveTyping();
+    else if (!keyboardClosed) syncViewport();
+  };
+  viewport.addEventListener('resize', onViewportChange);
+  viewport.addEventListener('scroll', onViewportChange);
 }
 
 // ---------- démarrage ----------
