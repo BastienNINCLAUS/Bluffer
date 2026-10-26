@@ -118,6 +118,16 @@ body.player { max-width: 560px; margin: 0 auto; padding-bottom: 4rem; }
 #game .screen { padding: .8rem 0; }
 #composer { padding: 0; }
 .composer.card { padding: .7rem; }
+
+/* Saisie au clavier : la page tient dans la zone visible, sans défilement (voir player.js). */
+body.player.typing { position: fixed; top: var(--vvtop, 0px); left: 0; right: 0; height: var(--vvh, 100dvh); padding-bottom: 0; display: flex; flex-direction: column; overflow: hidden; }
+.typing #app { display: contents; }
+.typing .top, .typing .banner { flex: none; }
+.typing #game { flex: 1; min-height: 0; display: flex; flex-direction: column; padding-bottom: .6rem; }
+.typing #main, .typing .footer-hint, .typing #chat h3 { display: none; }
+.typing #composer { flex: none; margin-top: .5rem; }
+.typing #chat { flex: 1; min-height: 0; display: flex; flex-direction: column; margin-top: .5rem; }
+.typing .chat-list { flex: 1; min-height: 0; max-height: none; align-content: start; }
 .selfie { display: flex; align-items: center; gap: 1rem; }
 .footer-hint { text-align: center; color: var(--muted); font-size: .85rem; padding: .5rem 1rem; }
 

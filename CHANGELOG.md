@@ -8,6 +8,7 @@ Versionnement sémantique. Le numéro de protocole Socket.IO (`shared/protocol.j
 - Partie de test : bouton « 🧪 Partie de test » dans le salon de l'écran hôte. Salon au code fixe `TEST`, 2 questions génériques et 3 robots (`game/testGame.js`) qui se déclarent prêts, répondent et votent seuls ; les joueurs peuvent la rejoindre pour un tour de chauffe. Elle ne compte pas dans les questions jouées. Commande `host:create` : champ facultatif `test` ; la vue contient `test`.
 
 ### Modifié
+- Téléphones : quand le clavier s'ouvre (tchat, réponse ou nom d'équipe), la page se limite à la zone visible : barre, proposition en attente, champ de saisie et tchat ; la carte principale et le pied de page sont masqués le temps de la saisie, au lieu que la page remonte et soit tronquée.
 - Une équipe qui n'a pas encore de nom s'affiche « Équipe bleue », « Équipe verte »… (nom de sa couleur) au lieu de « Équipe sans nom ».
 - Téléphones, choix du nom d'équipe : l'encart « x/x équipes ont leur nom » est retiré (l'information reste sur l'écran principal).
 - Tous les thèmes sont cochés par défaut dans un nouveau salon (« Classique » compris).

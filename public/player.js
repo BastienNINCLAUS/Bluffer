@@ -488,6 +488,35 @@ setInterval(() => {
   for (const el of document.querySelectorAll('[data-countdown]')) el.textContent = text;
 }, 250);
 
+// ---------- saisie au clavier ----------
+
+// Pendant la saisie, la page se limite à la zone visible au-dessus du clavier : barre, proposition, saisie et tchat.
+const typingInputs = [chatInput, answerInput, nameInput];
+const viewport = window.visualViewport;
+
+function syncViewport() {
+  const root = document.documentElement.style;
+  root.setProperty('--vvh', `${viewport.height}px`);
+  root.setProperty('--vvtop', `${viewport.offsetTop}px`);
+}
+
+function setTyping(on) {
+  if (document.body.classList.contains('typing') === on) return;
+  document.body.classList.toggle('typing', on);
+  if (on && viewport) syncViewport();
+  window.scrollTo(0, 0);
+  if (on) requestAnimationFrame(() => { chatListEl.scrollTop = chatListEl.scrollHeight; });
+}
+
+for (const input of typingInputs) {
+  input.addEventListener('focus', () => setTyping(true));
+  input.addEventListener('blur', () => setTimeout(() => setTyping(typingInputs.includes(document.activeElement)), 0));
+}
+if (viewport) {
+  viewport.addEventListener('resize', () => document.body.classList.contains('typing') && syncViewport());
+  viewport.addEventListener('scroll', () => document.body.classList.contains('typing') && syncViewport());
+}
+
 // ---------- démarrage ----------
 
 function fatal(title, message, label = 'Recharger', action = () => location.reload()) {
