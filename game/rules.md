@@ -3,6 +3,7 @@
 ## Le principe
 - L'écran pose une **question**. Personne ne connaît la vraie réponse.
 - Chaque équipe invente une **fausse réponse** crédible, en secret, depuis son téléphone.
+- L'animateur choisit avant la partie les **thèmes** des questions (insolite, histoire, Noël…).
 - L'écran mélange la vraie réponse et les fausses, puis tout le monde **vote** pour celle qu'il pense vraie.
 - Les vraies réponses sont déjà étonnantes : pour piéger les autres, soyez plausibles !
 

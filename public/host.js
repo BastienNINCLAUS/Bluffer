@@ -112,6 +112,27 @@ function numberInput(current, min, max, onchange) {
   return h('input', { type: 'number', min, max, value: current, onchange: (event) => onchange(Number(event.target.value)) });
 }
 
+function themePicker(v, patch) {
+  const selected = new Set(v.selectedThemes);
+  const toggle = (name) => {
+    const next = new Set(selected);
+    if (next.has(name)) next.delete(name);
+    else next.add(name);
+    patch({ themes: [...next] });
+  };
+  const { available, needed, ok } = v.pool;
+  return h(
+    'fieldset',
+    { class: 'themes' },
+    h('legend', {}, 'Thèmes des questions'),
+    h('div', { class: 'themes-tools' }, h('button', { class: 'btn small', type: 'button', onclick: () => patch({ themes: null }) }, 'Tout cocher'), h('button', { class: 'btn small', type: 'button', onclick: () => patch({ themes: [] }) }, 'Tout décocher')),
+    h('div', { class: 'theme-list' }, v.themes.map((theme) => h('label', { class: selected.has(theme.name) ? 'theme on' : 'theme' }, h('input', { type: 'checkbox', checked: selected.has(theme.name), onchange: () => toggle(theme.name) }), `${theme.name} (${theme.count})`))),
+    ok
+      ? h('p', { class: 'muted small' }, `${available} question(s) disponible(s) pour ${needed} demandée(s).`)
+      : h('p', { class: 'error pool-warning' }, `Pas assez de questions : ${available} disponible(s) pour ${needed} demandée(s). Sélectionne d’autres thèmes ou réduis le nombre de questions.`),
+  );
+}
+
 function renderSettings(v) {
   const patch = (config) => act('host:configure', { config });
   region(settingsEl, JSON.stringify(v.config), () => [
@@ -120,6 +141,7 @@ function renderSettings(v) {
     h('label', { class: 'field' }, 'Nombre de questions', numberInput(v.config.totalQuestions, 1, 30, (n) => patch({ totalQuestions: n }))),
     h('label', { class: 'field' }, 'Délai accordé aux retardataires (s)', numberInput(v.config.graceSeconds, 5, 300, (n) => patch({ graceSeconds: n }))),
     h('label', { class: 'field' }, 'Faire avancer le jeu avec', select([['both', 'Téléphones ou écran'], ['phones', 'Téléphones (tous prêts)'], ['host', 'Écran uniquement']], v.config.advance, (advanceMode) => patch({ advance: advanceMode }))),
+    themePicker(v, patch),
   ]);
   carousel.update({ delai: v.config.graceSeconds });
 }
@@ -147,12 +169,13 @@ function renderPlayers(v) {
 }
 
 function renderActions(v) {
-  const key = JSON.stringify([v.config.mode, v.canLock, v.canStart, v.unassigned, v.teams.length, v.players.length]);
+  const key = JSON.stringify([v.config.mode, v.canLock, v.canStart, v.unassigned, v.teams.length, v.players.length, v.pool]);
   region(actionsEl, key, () => {
+    const poolHint = v.pool.ok ? null : h('p', { class: 'error' }, `Impossible de lancer : ${v.pool.available} question(s) pour ${v.pool.needed} demandée(s). Sélectionne d’autres thèmes ou réduis le nombre de questions.`);
     if (v.config.mode === 'base') {
       return [
         h('button', { class: 'btn primary huge', type: 'button', disabled: !v.canStart, onclick: () => act('host:start') }, 'Lancer la partie'),
-        v.canStart ? null : h('p', { class: 'muted' }, `Il faut au moins ${v.limits.minTeams} joueurs.`),
+        poolHint ?? (v.canStart ? null : h('p', { class: 'muted' }, `Il faut au moins ${v.limits.minTeams} joueurs.`)),
       ];
     }
     let hint = null;
@@ -161,7 +184,7 @@ function renderActions(v) {
     return [
       h('button', { class: 'btn huge', type: 'button', disabled: v.players.length < 3, onclick: () => act('host:randomize', {}) }, '🎲 Tirage au sort des équipes'),
       h('button', { class: 'btn primary huge', type: 'button', disabled: !v.canLock, onclick: () => act('host:lockTeams') }, 'Verrouiller les équipes'),
-      hint ? h('p', { class: 'muted' }, hint) : null,
+      poolHint ?? (hint ? h('p', { class: 'muted' }, hint) : null),
     ];
   });
 }

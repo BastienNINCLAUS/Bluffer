@@ -8,6 +8,7 @@ import QRCode from 'qrcode';
 import { Game } from '../game/engine.js';
 import { hostView, playerView } from '../game/views.js';
 import { PROTOCOL_VERSION, SERVER_EVENTS, validatePayload } from '../shared/protocol.js';
+import { defaultThemes } from '../shared/themes.js';
 import { resolvePublicUrl, lanAddress } from './publicUrl.js';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -31,6 +32,7 @@ export function createApp({
   version = '0.0.0',
 } = {}) {
   if (!Array.isArray(questions) || questions.length === 0) throw new Error('Questions requises.');
+  const initialThemes = defaultThemes(questions);
 
   const app = express();
   const server = createServer(app);
@@ -191,7 +193,7 @@ export function createApp({
       const code = newCode();
       let game;
       try {
-        game = new Game({ code, questions, config: data.config ?? {}, now, rng });
+        game = new Game({ code, questions, config: { themes: initialThemes, ...(data.config ?? {}) }, now, rng });
       } catch {
         return { ok: false, error: 'invalid_config' };
       }

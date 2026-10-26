@@ -1,5 +1,6 @@
 import { cleanText, normalizeText } from '../shared/text.js';
 import { TEAM_COLORS } from '../shared/palette.js';
+import { themeCounts, filterByThemes } from '../shared/themes.js';
 
 export { TEAM_COLORS };
 
@@ -34,6 +35,7 @@ export const DEFAULT_CONFIG = Object.freeze({
   totalQuestions: 10,
   graceSeconds: 30,
   advance: 'both',
+  themes: null,
 });
 
 const PHOTO_PATTERN = /^data:image\/jpeg;base64,[A-Za-z0-9+/]+=*$/;
@@ -50,6 +52,7 @@ export class Game {
     }
     this.code = code;
     this.bank = questions;
+    this.themeList = themeCounts(questions);
     this.now = now;
     this.rng = rng;
     this.config = { ...DEFAULT_CONFIG };
@@ -193,6 +196,17 @@ export class Game {
       if (!ADVANCE_MODES.includes(patch.advance)) return fail('invalid_config');
       next.advance = patch.advance;
     }
+    if (patch.themes !== undefined) {
+      if (patch.themes === null) {
+        next.themes = null;
+      } else {
+        const known = new Set(this.themeList.map((t) => t.name));
+        const valid =
+          Array.isArray(patch.themes) && patch.themes.every((t) => typeof t === 'string' && known.has(t));
+        if (!valid) return fail('invalid_config');
+        next.themes = [...new Set(patch.themes)];
+      }
+    }
     if (next.mode !== this.config.mode) {
       if (next.mode === 'base' && this.players.size > LIMITS.maxTeams) return fail('too_many_for_base');
       this.config = next;
@@ -201,6 +215,18 @@ export class Game {
       this.config = next;
     }
     return ok();
+  }
+
+  // Questions disponibles pour les thèmes choisis, face au nombre de questions demandé.
+  pool() {
+    const available = filterByThemes(this.bank, this.config.themes).length;
+    const needed = this.config.totalQuestions;
+    return { available, needed, ok: available >= needed };
+  }
+
+  poolError() {
+    const { available, needed, ok: enough } = this.pool();
+    return enough ? null : fail('not_enough_questions', { available, needed });
   }
 
   rebuildTeamsForMode() {
@@ -333,6 +359,8 @@ export class Game {
     }
     this.pruneDisconnected();
     if (this.teams.size < LIMITS.minTeams) return fail('not_enough_teams');
+    const poolError = this.poolError();
+    if (poolError) return poolError;
     for (const team of this.teamList()) {
       this.resetSlot(team);
       const members = this.members(team);
@@ -369,6 +397,8 @@ export class Game {
         return fail('teams_not_ready');
       }
     }
+    const poolError = this.poolError();
+    if (poolError) return poolError;
     this.beginGame();
     return ok();
   }
@@ -386,10 +416,11 @@ export class Game {
   }
 
   pickQuestions(count) {
-    let pool = this.bank.filter((q) => !this.usedQuestionIds.has(q.id));
+    const themed = filterByThemes(this.bank, this.config.themes);
+    let pool = themed.filter((q) => !this.usedQuestionIds.has(q.id));
     if (pool.length < count) {
       this.usedQuestionIds.clear();
-      pool = [...this.bank];
+      pool = themed;
     }
     const picked = this.shuffle(pool).slice(0, count);
     for (const q of picked) this.usedQuestionIds.add(q.id);

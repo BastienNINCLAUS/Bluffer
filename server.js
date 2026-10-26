@@ -2,14 +2,14 @@ import { readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createApp } from './server/app.js';
-import { loadQuestions } from './game/questions.js';
+import { loadQuestionBank } from './game/questions.js';
 import { resolvePublicUrl, lanAddress, DEFAULT_HOST_PORT } from './server/publicUrl.js';
 
 const root = dirname(fileURLToPath(import.meta.url));
 const pkg = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'));
 const port = Number(process.env.PORT) || 3000;
 
-const questions = loadQuestions(join(root, 'game', 'questions.json'));
+const questions = loadQuestionBank(join(root, 'game'));
 const rulesText = readFileSync(join(root, 'game', 'rules.md'), 'utf8');
 
 const { listen } = createApp({ questions, rulesText, version: pkg.version });

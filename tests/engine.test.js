@@ -18,7 +18,7 @@ describe('salon et configuration', () => {
 
   test('valeurs par défaut', () => {
     const game = newGame();
-    assert.deepEqual(game.config, { mode: 'teams', totalQuestions: 6, graceSeconds: 30, advance: 'both' });
+    assert.deepEqual(game.config, { mode: 'teams', totalQuestions: 6, graceSeconds: 30, advance: 'both', themes: null });
   });
 
   test('le nombre de questions par défaut ne dépasse pas la banque', () => {
@@ -34,7 +34,7 @@ describe('salon et configuration', () => {
     assert.equal(errorOf(game.configure({ graceSeconds: 1000 })), 'invalid_config');
     assert.equal(errorOf(game.configure({ advance: 'x' })), 'invalid_config');
     expectOk(game.configure({ totalQuestions: 4, graceSeconds: 45, advance: 'phones' }));
-    assert.deepEqual(game.config, { mode: 'teams', totalQuestions: 4, graceSeconds: 45, advance: 'phones' });
+    assert.deepEqual(game.config, { mode: 'teams', totalQuestions: 4, graceSeconds: 45, advance: 'phones', themes: null });
   });
 
   test('les réglages ne changent plus après le lancement', () => {
@@ -820,5 +820,87 @@ describe('déconnexion et reconnexion', () => {
     game.clock.advance(30_000);
     game.tick();
     assert.equal(game.phase, PHASES.VOTING);
+  });
+});
+
+
+describe('thèmes des questions', () => {
+  const THEMED = [
+    { id: 'a1', text: 'A1 ?', answer: 'x1', tags: ['Insolite', 'Histoire'] },
+    { id: 'a2', text: 'A2 ?', answer: 'x2', tags: ['Insolite'] },
+    { id: 'a3', text: 'A3 ?', answer: 'x3', tags: ['Insolite', 'Noël'] },
+    { id: 'h1', text: 'H1 ?', answer: 'y1', tags: ['Histoire'] },
+    { id: 'h2', text: 'H2 ?', answer: 'y2', tags: ['Histoire'] },
+    { id: 'n1', text: 'N1 ?', answer: 'z1', tags: ['Noël'] },
+    { id: 'd1', text: 'D1 ?', answer: 'w1' },
+  ];
+  const themed = (config = {}) => newGame({ mode: 'base', totalQuestions: 3, ...config }, { questions: THEMED });
+
+  test('liste des thèmes avec leur nombre de questions (une question compte une fois par thème)', () => {
+    const game = themed();
+    assert.deepEqual(game.themeList, [
+      { name: 'Divers', count: 1 },
+      { name: 'Histoire', count: 3 },
+      { name: 'Insolite', count: 3 },
+      { name: 'Noël', count: 2 },
+    ]);
+  });
+
+  test('tous les thèmes par défaut ; une question sans tag va dans « Divers »', () => {
+    const game = themed();
+    assert.equal(game.config.themes, null);
+    assert.deepEqual(game.pool(), { available: 7, needed: 3, ok: true });
+  });
+
+  test('réglage des thèmes : liste connue, doublons ignorés, null pour tout, inconnu refusé', () => {
+    const game = themed();
+    expectOk(game.configure({ themes: ['Histoire', 'Histoire', 'Noël'] }));
+    assert.deepEqual(game.config.themes, ['Histoire', 'Noël']);
+    assert.equal(game.pool().available, 5);
+    assert.equal(errorOf(game.configure({ themes: ['Inconnu'] })), 'invalid_config');
+    assert.equal(errorOf(game.configure({ themes: 'Histoire' })), 'invalid_config');
+    assert.equal(errorOf(game.configure({ themes: [3] })), 'invalid_config');
+    expectOk(game.configure({ themes: [] }));
+    assert.equal(game.pool().available, 0);
+    expectOk(game.configure({ themes: null }));
+    assert.equal(game.config.themes, null);
+  });
+
+  test('seules les questions des thèmes choisis sont tirées', () => {
+    const game = themed({ themes: ['Noël'], totalQuestions: 2 });
+    addPlayers(game, ['Ann', 'Bob', 'Cid']);
+    expectOk(game.start());
+    assert.deepEqual(game.order.map((q) => q.id).sort(), ['a3', 'n1']);
+  });
+
+  test('pas assez de questions : la partie ne démarre pas (mode base) et l’erreur donne les chiffres', () => {
+    const game = themed({ themes: ['Noël'], totalQuestions: 3 });
+    addPlayers(game, ['Ann', 'Bob', 'Cid']);
+    const result = game.start();
+    assert.equal(errorOf(result), 'not_enough_questions');
+    assert.equal(result.available, 2);
+    assert.equal(result.needed, 3);
+    assert.equal(game.phase, PHASES.LOBBY);
+    expectOk(game.configure({ themes: ['Noël', 'Histoire'] }));
+    expectOk(game.start());
+  });
+
+  test('pas assez de questions : les équipes ne se verrouillent pas (mode équipes)', () => {
+    const game = newGame({ mode: 'teams', totalQuestions: 3, themes: ['Divers'] }, { questions: THEMED });
+    const ids = addPlayers(game, ['Ann', 'Bob', 'Cid']);
+    ids.forEach((id) => expectOk(game.createTeam(id)));
+    assert.equal(errorOf(game.lockTeams()), 'not_enough_questions');
+    assert.equal(game.phase, PHASES.LOBBY);
+    expectOk(game.configure({ themes: null }));
+    expectOk(game.lockTeams());
+  });
+
+  test('rejouer reste dans les thèmes choisis, sans manquer de questions', () => {
+    const game = themed({ themes: ['Noël'], totalQuestions: 2 });
+    addPlayers(game, ['Ann', 'Bob', 'Cid']);
+    expectOk(game.start());
+    game.phase = PHASES.FINAL;
+    expectOk(game.replay());
+    assert.deepEqual(game.order.map((q) => q.id).sort(), ['a3', 'n1']);
   });
 });

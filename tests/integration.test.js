@@ -343,3 +343,52 @@ describe('limitation de débit', () => {
     assert.ok(replies.some((r) => r.error === 'rate_limited'));
   });
 });
+
+
+describe('thèmes des questions', () => {
+  const BANK = [
+    ...Array.from({ length: 4 }, (_, i) => ({ id: `i${i}`, text: `Insolite ${i} ?`, answer: `ri${i}`, tags: ['Insolite'] })),
+    ...Array.from({ length: 2 }, (_, i) => ({ id: `n${i}`, text: `Noël ${i} ?`, answer: `rn${i}`, tags: ['Noël', 'Insolite'] })),
+    ...Array.from({ length: 5 }, (_, i) => ({ id: `c${i}`, text: `Classique ${i} ?`, answer: `rc${i}`, tags: ['Classique'] })),
+  ];
+
+  test('le salon expose les thèmes et leur effectif ; « Classique » est décoché par défaut', async () => {
+    await setup({ questions: BANK });
+    const { host } = await createRoom(server, { mode: 'base', totalQuestions: 3 });
+    track(host);
+    const state = await host.waitFor((s) => s.phase === 'lobby', 'salon');
+    assert.deepEqual(state.themes, [
+      { name: 'Classique', count: 5 },
+      { name: 'Insolite', count: 6 },
+      { name: 'Noël', count: 2 },
+    ]);
+    assert.deepEqual(state.selectedThemes, ['Insolite', 'Noël']);
+    assert.deepEqual(state.pool, { available: 6, needed: 3, ok: true });
+  });
+
+  test('changer les thèmes met à jour le décompte ; thème inconnu refusé', async () => {
+    await setup({ questions: BANK });
+    const { host } = await createRoom(server, { mode: 'base', totalQuestions: 3 });
+    track(host);
+    assert.deepEqual(await host.emit('host:configure', { config: { themes: ['Noël'] } }), { ok: true });
+    const state = await host.waitFor((s) => s.pool.available === 2, 'thème Noël seul');
+    assert.equal(state.canStart, false);
+    assert.equal((await host.emit('host:configure', { config: { themes: ['Nope'] } })).error, 'invalid_config');
+  });
+
+  test('pas assez de questions : la partie est refusée, puis acceptée avec d’autres thèmes', async () => {
+    await setup({ questions: BANK });
+    const { host, code } = await createRoom(server, { mode: 'base', totalQuestions: 3, themes: ['Noël'] });
+    track(host);
+    for (const name of ['Ann', 'Bob', 'Cid']) await join(code, name);
+    await host.waitFor((s) => s.players.length === 3, '3 joueurs');
+    const refused = await host.emit('host:start');
+    assert.equal(refused.error, 'not_enough_questions');
+    assert.equal(refused.available, 2);
+    assert.equal(refused.needed, 3);
+    assert.equal(host.state.phase, 'lobby');
+    await host.emit('host:configure', { config: { themes: ['Noël', 'Insolite'] } });
+    assert.deepEqual(await host.emit('host:start'), { ok: true });
+    await host.waitFor((s) => s.phase === 'question', 'question');
+  });
+});

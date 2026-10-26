@@ -26,7 +26,9 @@ Adaptation du jeu de société Bluffer (voir [Rules.md](./Rules.md)) en applicat
 |---|---|
 | `server.js` | Express, Socket.IO, salons à code de 4 lettres, machine à états, timers |
 | `game/engine.js` | Logique pure : tirage, mélange, validation, points |
-| `game/questions.json` | Banque d'environ 20 questions originales avec leur vraie réponse |
+| `game/questions.json`, `game/questions.*.json` | Banque de questions, chacune avec sa vraie réponse et ses thèmes (`tags`) : questions rédigées à la main, anecdotes insolites de Wikipédia (`questions.dyk.json`) et faits classiques de Wikidata (`questions.wikidata.json`, thème « Classique ») |
+| `shared/themes.js` | Thèmes : décompte, filtre, sélection par défaut |
+| `scripts/import-dyk.js`, `scripts/import-wikidata.js` | Génération des banques de questions (`NOTICE.md` : licences) |
 | `public/host.html`, `host.js` | Écran hôte |
 | `public/player.html`, `player.js` | Page joueur (reconnexion automatique) |
 | `package.json`, `CHANGELOG.md` | Scripts (`npm test`, `npm start`), versionnement sémantique |
@@ -111,6 +113,7 @@ Le « Prêt » se règle au début de la partie :
 
 - Mode : « base » (une équipe par joueur, sans tchat ni constitution d'équipes) ou « équipes »
 - Nombre total de questions
+- **Thèmes** : l'animateur coche les thèmes utilisés (Insolite, Histoire, Automobile, Halloween, Noël, Pâques, personnages célèbres…). Chaque thème affiche son nombre de questions entre parenthèses, « Classique » est décoché par défaut. Si les thèmes cochés contiennent moins de questions que le nombre demandé, la partie ne se lance pas (verrouillage des équipes ou « Lancer la partie » refusé) et l'écran invite à choisir d'autres thèmes ou à réduire le nombre de questions.
 - Délai accordé aux retardataires, en secondes
 - Mode d'avancement : téléphones, écran, ou les deux (défaut : les deux)
 

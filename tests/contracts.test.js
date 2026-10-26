@@ -42,8 +42,9 @@ describe('contrat des événements Socket.IO', () => {
   test('forme de la vue écran', () => {
     const { game } = startedBaseGame();
     assert.deepEqual(Object.keys(hostView(game)).sort(), [
-      'canLock', 'canStart', 'code', 'config', 'deadlineIn', 'limits', 'options', 'phase', 'players', 'question',
-      'ranking', 'ready', 'revealCount', 'revealTotal', 'role', 'teams', 'teamsNamed', 'unassigned', 'winners',
+      'canLock', 'canStart', 'code', 'config', 'deadlineIn', 'limits', 'options', 'phase', 'players', 'pool', 'question',
+      'ranking', 'ready', 'revealCount', 'revealTotal', 'role', 'selectedThemes', 'teams', 'teamsNamed', 'themes',
+      'unassigned', 'winners',
     ]);
   });
 

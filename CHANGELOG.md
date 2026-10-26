@@ -2,6 +2,19 @@
 
 Versionnement sémantique. Le numéro de protocole Socket.IO (`shared/protocol.js`) est incrémenté à chaque changement incompatible des événements.
 
+## [0.2.0] - 2026-10-26
+
+Protocole Socket.IO : 1 (champs ajoutés, rien de retiré).
+
+### Ajouté
+- Thèmes (`tags`) sur chaque question et filtre de thèmes dans les réglages de l'écran hôte, avec le nombre de questions entre parenthèses ; « Classique » est décoché par défaut.
+- La partie ne se lance pas (verrouillage des équipes ou « Lancer la partie ») si les thèmes choisis ont moins de questions que demandé : erreur `not_enough_questions`, avertissement sur l'écran.
+- Banque de ~1000 anecdotes insolites en questions à trous, tirées de « Le saviez-vous ? » de Wikipédia FR (`scripts/import-dyk.js`, crédits dans `NOTICE.md`), et ~50 questions rédigées dont Halloween, Noël, Pâques et automobile.
+- Les faits Wikidata (`scripts/import-wikidata.js`) passent dans le thème « Classique ».
+
+### Modifié
+- La banque est chargée depuis tous les fichiers `game/questions*.json`.
+
 ## [0.1.0] - 2026-10-26
 
 Protocole Socket.IO : 1.

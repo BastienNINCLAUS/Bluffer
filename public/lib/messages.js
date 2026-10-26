@@ -7,6 +7,7 @@ export const ERROR_MESSAGES = Object.freeze({
   name_taken: 'Ce nom est déjà pris.',
   invalid_config: 'Réglage invalide.',
   too_many_for_base: 'Trop de joueurs pour le mode « un joueur par équipe » (12 max).',
+  not_enough_questions: 'Pas assez de questions pour les thèmes choisis : sélectionne d’autres thèmes ou réduis le nombre de questions.',
   unknown_player: 'Joueur inconnu.',
   unknown_team: 'Équipe inconnue.',
   unknown_room: 'Code de partie inconnu.',

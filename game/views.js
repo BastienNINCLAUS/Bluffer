@@ -87,19 +87,25 @@ export function publicView(game) {
 export function hostView(game) {
   const unassigned = [...game.players.values()].filter((p) => p.connected && !p.teamId).length;
   const named = game.teamsReady();
+  const pool = game.pool();
   return {
     ...publicView(game),
     role: 'host',
     unassigned,
+    themes: game.themeList.map((t) => ({ ...t })),
+    selectedThemes: game.config.themes ?? game.themeList.map((t) => t.name),
+    pool,
     canLock:
       game.phase === PHASES.LOBBY &&
       game.config.mode === 'teams' &&
       unassigned === 0 &&
+      pool.ok &&
       game.teams.size >= LIMITS.minTeams,
     canStart:
-      game.config.mode === 'base'
+      pool.ok &&
+      (game.config.mode === 'base'
         ? game.phase === PHASES.LOBBY && game.teams.size >= LIMITS.minTeams
-        : game.phase === PHASES.NAMING && named === game.teams.size && game.teams.size >= LIMITS.minTeams,
+        : game.phase === PHASES.NAMING && named === game.teams.size && game.teams.size >= LIMITS.minTeams),
   };
 }
 
