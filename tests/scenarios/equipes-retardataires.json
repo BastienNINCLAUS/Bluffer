@@ -1,0 +1,26 @@
+{
+  "name": "mode équipes, retardataires sans réponse ni vote, puis rejouer",
+  "mode": "teams",
+  "config": { "totalQuestions": 2, "graceSeconds": 20 },
+  "teams": {
+    "Lions": ["Ann", "Bob"],
+    "Tigres": ["Cid", "Dan"],
+    "Eve": ["Eve"]
+  },
+  "rounds": [
+    {
+      "answers": { "Lions": "Du sel", "Tigres": "Du sable", "Eve": null },
+      "votes": { "Lions": "Tigres", "Tigres": "truth", "Eve": "Lions" },
+      "gains": { "Lions": 2, "Tigres": 3, "Eve": 0 },
+      "scores": { "Lions": 2, "Tigres": 3, "Eve": 0 }
+    },
+    {
+      "answers": { "Lions": "Un ressort", "Tigres": "Une pile", "Eve": "Un fil" },
+      "votes": { "Lions": "truth", "Tigres": null, "Eve": "Tigres" },
+      "gains": { "Lions": 1, "Tigres": 2, "Eve": 0 },
+      "scores": { "Lions": 3, "Tigres": 5, "Eve": 0 }
+    }
+  ],
+  "winners": ["Tigres"],
+  "replay": true
+}

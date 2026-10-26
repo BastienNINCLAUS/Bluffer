@@ -1,0 +1,21 @@
+{
+  "name": "mode base, trois joueurs, égalité finale",
+  "mode": "base",
+  "config": { "totalQuestions": 2 },
+  "players": ["Ann", "Bob", "Cid"],
+  "rounds": [
+    {
+      "answers": { "Ann": "Un fromage", "Bob": "Une rivière", "Cid": "Un métal" },
+      "votes": { "Ann": "Bob", "Bob": "truth", "Cid": "Bob" },
+      "gains": { "Ann": 0, "Bob": 5, "Cid": 0 },
+      "scores": { "Ann": 0, "Bob": 5, "Cid": 0 }
+    },
+    {
+      "answers": { "Ann": "Un poisson", "Bob": "Une planète", "Cid": "Un outil" },
+      "votes": { "Ann": "Cid", "Bob": "Cid", "Cid": "truth" },
+      "gains": { "Ann": 0, "Bob": 0, "Cid": 5 },
+      "scores": { "Ann": 0, "Bob": 5, "Cid": 5 }
+    }
+  ],
+  "winners": ["Bob", "Cid"]
+}

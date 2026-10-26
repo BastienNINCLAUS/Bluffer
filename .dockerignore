@@ -1,0 +1,8 @@
+node_modules
+.git
+.vscode
+.env
+coverage
+tests
+scripts
+*.log

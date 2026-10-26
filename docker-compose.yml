@@ -1,0 +1,12 @@
+services:
+  bluffer:
+    build: .
+    restart: unless-stopped
+    ports:
+      # Port publié sur le PC (HOST_PORT) -> port interne du conteneur (3000).
+      - "${HOST_PORT:-3417}:3000"
+    environment:
+      PORT: "3000"
+      # Utilisés pour construire l'URL du QR code : http://HOST_IP:HOST_PORT
+      HOST_IP: "${HOST_IP:-}"
+      HOST_PORT: "${HOST_PORT:-3417}"

@@ -1,0 +1,15 @@
+{
+  "name": "réponses identiques gardées, chaque vote compte pour la réponse choisie",
+  "mode": "base",
+  "config": { "totalQuestions": 1 },
+  "players": ["Ann", "Bob", "Cid", "Dan"],
+  "rounds": [
+    {
+      "answers": { "Ann": "Lyon", "Bob": "Lyon", "Cid": "Nice", "Dan": "Rome" },
+      "votes": { "Ann": "Cid", "Bob": "Cid", "Cid": "Ann", "Dan": "truth" },
+      "gains": { "Ann": 2, "Bob": 0, "Cid": 4, "Dan": 1 },
+      "scores": { "Ann": 2, "Bob": 0, "Cid": 4, "Dan": 1 }
+    }
+  ],
+  "winners": ["Cid"]
+}
