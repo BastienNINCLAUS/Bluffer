@@ -54,7 +54,7 @@ Adaptation du jeu de société Bluffer (voir [Rules.md](./Rules.md)) en applicat
   2. Chaque équipe valide **une** fausse réponse.
   3. L'écran affiche les réponses mélangées avec la vraie, numérotées. Les réponses identiques sont gardées avec des numéros différents.
   4. Chaque équipe valide **un** vote. Elle ne peut pas voter pour sa propre réponse.
-  5. Résultats : révélation réponse par réponse (auteur et votes), vraie réponse en dernier.
+  5. Résultats : révélation automatique, une réponse à la fois (auteur et votes) : les fausses réponses de la moins votée à la plus votée, puis la vraie réponse en dernier.
   6. Classement : les scores sont affichés avec des barres de progression animées avant la question suivante.
 - **Points** : +2 par vote reçu sur sa fausse réponse, +1 pour avoir voté la vraie réponse.
 - **Structure de partie** : nombre de questions réglable par l'animateur, classement final par équipe.
@@ -98,11 +98,10 @@ Adaptation du jeu de société Bluffer (voir [Rules.md](./Rules.md)) en applicat
 Les transitions suivantes sont automatiques :
 - Invention → vote : tout le monde a validé, ou le délai est écoulé.
 - Vote → résultats : même règle.
+- Résultats : les réponses se dévoilent seules, sans « Prêt » (3 s avant la première, 4 s entre deux réponses), puis le classement apparaît 7 s après la vraie réponse. L'écran peut accélérer (bouton ou Espace).
 
 Les autres demandent un « Prêt » :
 - Question → invention.
-- Révélation des résultats, une réponse à la fois.
-- Passage des résultats au classement.
 - Question suivante, depuis le classement.
 
 Le « Prêt » se règle au début de la partie :

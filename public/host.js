@@ -88,7 +88,7 @@ async function newGame(test = false) {
 function advance() {
   if (!view) return;
   if (!['question', 'reveal', 'scoreboard'].includes(view.phase)) return;
-  if (view.config.advance === 'phones') return toast(errorMessage('host_disabled'));
+  if (view.config.advance === 'phones' && view.phase !== 'reveal') return toast(errorMessage('host_disabled'));
   act('host:advance');
 }
 
@@ -337,7 +337,7 @@ function stageKey(v) {
 
 function advanceLabel(v) {
   if (v.phase === 'question') return 'Commencer';
-  if (v.phase === 'reveal') return v.revealCount < v.revealTotal ? 'Dévoiler la suivante' : 'Voir le classement';
+  if (v.phase === 'reveal') return v.revealCount < v.revealTotal ? 'Dévoiler tout de suite la suivante' : 'Voir le classement tout de suite';
   return v.question.index >= v.question.total ? 'Résultat final' : 'Question suivante';
 }
 
@@ -350,7 +350,7 @@ function renderHint(v) {
     return [
       v.deadlineIn !== null ? h('span', { class: 'countdown-big' }, '⏱ ', h('strong', { 'data-countdown': '' }, formatSeconds(remainingMs(v.deadlineIn, receivedAt, Date.now()))), ' s pour les retardataires') : null,
       waiting && v.ready.active ? h('span', { class: 'ready-count' }, `Prêts sur téléphone : ${v.ready.count}/${v.ready.total}`) : null,
-      waiting && v.config.advance !== 'phones' ? h('button', { class: 'btn primary big', type: 'button', onclick: advance }, `${advanceLabel(v)} (Espace)`) : null,
+      waiting && (v.phase === 'reveal' || v.config.advance !== 'phones') ? h('button', { class: 'btn primary big', type: 'button', onclick: advance }, `${advanceLabel(v)} (Espace)`) : null,
       forcing ? h('button', { class: 'btn', type: 'button', onclick: () => act('host:advance') }, 'Passer à la suite sans attendre') : null,
     ];
   });

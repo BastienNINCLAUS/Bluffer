@@ -39,6 +39,9 @@ export const DEFAULT_CONFIG = Object.freeze({
   themes: null,
 });
 
+// Rythme de la révélation automatique : avant la première réponse, entre deux réponses, puis avant le classement.
+export const REVEAL_TIMING = Object.freeze({ firstMs: 3000, stepMs: 4000, endMs: 7000 });
+
 const PHOTO_PATTERN = /^data:image\/jpeg;base64,[A-Za-z0-9+/]+=*$/;
 const ADVANCE_MODES = ['both', 'phones', 'host'];
 const MODES = ['teams', 'base'];
@@ -78,6 +81,7 @@ export class Game {
     this.options = [];
     this.revealOrder = [];
     this.revealCount = 0;
+    this.revealAt = null;
     this.deadline = null;
     this.ready = new Set();
   }
@@ -498,12 +502,17 @@ export class Game {
     for (const option of this.options) {
       if (option.kind === 'team') this.teams.get(option.teamId).gain += 2 * option.voters.length;
     }
-    const fakes = this.options.filter((o) => o.kind === 'team').map((o) => o.id);
+    // Les fausses réponses les moins votées d'abord, la plus votée en dernier, puis la vraie réponse.
+    const fakes = this.options
+      .filter((o) => o.kind === 'team')
+      .sort((a, b) => a.voters.length - b.voters.length || a.id - b.id)
+      .map((o) => o.id);
     const truth = this.options.find((o) => o.kind === 'truth').id;
     this.revealOrder = [...fakes, truth];
     this.revealCount = 0;
     this.phase = PHASES.REVEAL;
     this.deadline = null;
+    this.revealAt = this.now() + REVEAL_TIMING.firstMs;
     this.ready = new Set();
   }
 
@@ -513,7 +522,19 @@ export class Game {
       team.score += team.gain;
     }
     this.phase = PHASES.SCOREBOARD;
+    this.revealAt = null;
     this.ready = new Set();
+  }
+
+  // La révélation se déroule seule : une réponse à la fois, puis le classement (sans attendre les « Prêt »).
+  advanceReveal() {
+    if (this.revealCount >= this.revealOrder.length) {
+      this.enterScoreboard();
+      return;
+    }
+    this.revealCount += 1;
+    const last = this.revealCount >= this.revealOrder.length;
+    this.revealAt = this.now() + (last ? REVEAL_TIMING.endMs : REVEAL_TIMING.stepMs);
   }
 
   advanceStep() {
@@ -523,8 +544,7 @@ export class Game {
         this.enterWriting();
         break;
       case PHASES.REVEAL:
-        if (this.revealCount < this.revealOrder.length) this.revealCount += 1;
-        else this.enterScoreboard();
+        this.advanceReveal();
         break;
       case PHASES.SCOREBOARD:
         if (this.qIndex + 1 >= this.order.length) {
@@ -654,7 +674,7 @@ export class Game {
   // ---------- « Prêt » et avancement ----------
 
   readyPhase() {
-    return [PHASES.QUESTION, PHASES.REVEAL, PHASES.SCOREBOARD].includes(this.phase);
+    return [PHASES.QUESTION, PHASES.SCOREBOARD].includes(this.phase);
   }
 
   setReady(playerId, value = true) {
@@ -683,6 +703,11 @@ export class Game {
       this.finishPhase();
       return ok();
     }
+    // La révélation avance seule ; l'écran peut seulement l'accélérer.
+    if (this.phase === PHASES.REVEAL) {
+      this.advanceStep();
+      return ok();
+    }
     if (!this.readyPhase()) return fail('wrong_phase');
     if (this.config.advance === 'phones') return fail('host_disabled');
     this.advanceStep();
@@ -691,6 +716,10 @@ export class Game {
 
   // Applique les délais expirés ; renvoie true si l'état a changé.
   tick() {
+    if (this.phase === PHASES.REVEAL && this.revealAt !== null && this.now() >= this.revealAt) {
+      this.advanceStep();
+      return true;
+    }
     if (this.deadline !== null && this.now() >= this.deadline) {
       if (this.phase === PHASES.WRITING || this.phase === PHASES.VOTING) {
         this.finishPhase();

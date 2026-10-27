@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readdirSync, readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { REVEAL_TIMING } from '../game/engine.js';
 import { newGame, QUESTIONS, expectOk, addPlayers, nameTeam, everyoneReady } from './helpers.js';
 
 const dir = join(dirname(fileURLToPath(import.meta.url)), 'scenarios');
@@ -71,7 +72,10 @@ function playScenario(scenario) {
 
     const lastRevealed = game.options.find((o) => o.id === game.revealOrder.at(-1));
     assert.equal(lastRevealed.kind, 'truth', `${label} : la vraie réponse est révélée en dernier`);
-    while (game.phase === 'reveal') everyoneReady(game);
+    while (game.phase === 'reveal') {
+      game.clock.advance(REVEAL_TIMING.endMs);
+      game.tick();
+    }
     assert.equal(game.phase, 'scoreboard', label);
 
     assert.deepEqual(gains(), round.gains, `${label} : gains`);

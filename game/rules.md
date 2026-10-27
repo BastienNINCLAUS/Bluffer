@@ -30,6 +30,6 @@
 - Les scores s'affichent après chaque question.
 
 ## Le déroulement
-- Les étapes avancent quand tout le monde appuie sur **Prêt** sur son téléphone, ou depuis l'écran.
-- Les résultats se dévoilent réponse par réponse, la vraie réponse en dernier.
+- Les étapes « Question » et « Classement » avancent quand tout le monde appuie sur **Prêt** sur son téléphone, ou depuis l'écran.
+- Les résultats se dévoilent seuls, sans attendre : les fausses réponses de la moins votée à la plus votée, puis la vraie réponse en dernier.
 - L'équipe qui a le plus de points à la dernière question gagne la partie.

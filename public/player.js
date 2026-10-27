@@ -288,7 +288,6 @@ function screenReveal(v) {
       rows.length === 0 ? h('p', { class: 'muted center' }, 'Regarde l’écran…') : h('ul', { class: 'reveal-list' }, rows.map((option) => revealRow(v, option))),
       allRevealed && myOption ? h('p', { class: 'center' }, `Ta réponse a piégé ${myOption.voters.length} équipe(s) : +${myOption.points} pt(s).`) : null,
       allRevealed && mine && v.options.find((o) => o.kind === 'truth')?.voters.includes(mine.id) ? h('p', { class: 'center ok' }, 'Tu as trouvé la vraie réponse : +1 pt !') : null,
-      readyButton(v),
     ),
   ];
 }

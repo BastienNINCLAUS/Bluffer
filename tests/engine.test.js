@@ -1,6 +1,6 @@
 import { test, describe } from 'node:test';
 import assert from 'node:assert/strict';
-import { Game, PHASES, TEAM_COLORS, LIMITS } from '../game/engine.js';
+import { Game, PHASES, TEAM_COLORS, LIMITS, REVEAL_TIMING } from '../game/engine.js';
 import { MemoryHistory } from '../game/history.js';
 import {
   newGame, addPlayers, expectOk, startedBaseGame, startedTeamsGame, nameTeam, everyoneReady,
@@ -745,16 +745,49 @@ describe('révélation, classement et fin de partie', () => {
     return { ...ctx, truth, bob };
   }
 
-  test('la révélation suit l’ordre des numéros avec la vraie réponse en dernier', () => {
-    const { game, truth } = revealGame();
+  test('la révélation va des fausses réponses les moins votées aux plus votées, la vraie réponse en dernier', () => {
+    const { game, truth, bob } = revealGame();
     assert.equal(game.revealOrder.at(-1), truth.id);
-    const fakes = game.revealOrder.slice(0, -1);
-    assert.deepEqual(fakes, [...fakes].sort((a, b) => a - b));
     assert.equal(game.revealOrder.length, game.options.length);
+    const votes = game.revealOrder.slice(0, -1).map((id) => game.options.find((o) => o.id === id).voters.length);
+    assert.deepEqual(votes, [0, 0, 2]);
+    assert.equal(game.revealOrder.at(-2), bob.id);
   });
 
-  test('une révélation par « Prêt », puis passage au classement', () => {
-    const { game } = revealGame();
+  test('à égalité de votes, l’ordre des numéros est conservé', () => {
+    const { game, bob } = revealGame();
+    const tied = game.revealOrder.slice(0, -1).filter((id) => id !== bob.id);
+    assert.deepEqual(tied, [...tied].sort((a, b) => a - b));
+  });
+
+  test('la révélation avance seule, sans « Prêt », puis passe au classement', () => {
+    const { game, ids } = revealGame();
+    assert.equal(errorOf(game.setReady(ids[0])), 'wrong_phase');
+    assert.equal(game.tick(), false);
+    game.clock.advance(REVEAL_TIMING.firstMs - 1);
+    assert.equal(game.tick(), false);
+    assert.equal(game.revealCount, 0);
+    game.clock.advance(1);
+    assert.equal(game.tick(), true);
+    for (let i = 1; i < game.revealOrder.length; i += 1) {
+      assert.equal(game.revealCount, i);
+      game.clock.advance(REVEAL_TIMING.stepMs - 1);
+      assert.equal(game.tick(), false);
+      game.clock.advance(1);
+      assert.equal(game.tick(), true);
+    }
+    assert.equal(game.phase, PHASES.REVEAL);
+    assert.equal(game.revealCount, game.revealOrder.length);
+    game.clock.advance(REVEAL_TIMING.endMs - 1);
+    assert.equal(game.tick(), false);
+    game.clock.advance(1);
+    assert.equal(game.tick(), true);
+    assert.equal(game.phase, PHASES.SCOREBOARD);
+    assert.equal(game.tick(), false);
+  });
+
+  test('l’écran peut accélérer la révélation, même en mode « phones »', () => {
+    const { game } = revealGame({ advance: 'phones' });
     for (let i = 0; i < game.revealOrder.length; i += 1) {
       assert.equal(game.phase, PHASES.REVEAL);
       assert.equal(game.revealCount, i);

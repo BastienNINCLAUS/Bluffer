@@ -23,7 +23,7 @@ export const TEST_BOT_NAMES = Object.freeze(['Bot Alice', 'Bot Bob', 'Bot Chloé
 const DELAY_MIN_MS = 1500;
 const DELAY_SPREAD_MS = 3500;
 const SLOT_PHASES = [PHASES.NAMING, PHASES.WRITING, PHASES.VOTING];
-const READY_PHASES = [PHASES.QUESTION, PHASES.REVEAL, PHASES.SCOREBOARD];
+const READY_PHASES = [PHASES.QUESTION, PHASES.SCOREBOARD];
 
 export function addBots(game, names = TEST_BOT_NAMES) {
   const ids = [];

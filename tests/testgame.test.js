@@ -27,6 +27,7 @@ describe('robots de la partie de test', () => {
     expectOk(game.start());
     for (let i = 0; i < 100 && game.phase !== PHASES.FINAL; i += 1) {
       clock.advance(5000);
+      game.tick();
       bots.step();
     }
     assert.equal(game.phase, PHASES.FINAL);

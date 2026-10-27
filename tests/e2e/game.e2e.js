@@ -208,16 +208,17 @@ async function fullGame() {
   await numberButton(phones.C, owlNumber).click();
   await phones.C.getByRole('button', { name: /Voter pour le n°/ }).click();
 
-  // Révélation, une réponse à la fois, puis classement animé.
+  // Révélation automatique, sans « Prêt » : une réponse à la fois, la vraie en dernier, puis classement animé.
   await host.locator('.reveal-list-big').waitFor();
   await shot(host, '11-host-reveal-start');
-  await advanceHost(host, 2);
+  assert.equal(await phones.A1.getByRole('button', { name: /prêt/i }).count(), 0, 'pas de « Prêt » pendant la révélation');
+  await host.locator('.reveal-card.shown').first().waitFor({ timeout: 10_000 });
+  assert.equal(await host.locator('.reveal-card.truth').count(), 0, 'la vraie réponse n’est pas révélée en premier');
   await shot(host, '12-host-reveal-partial');
-  await advanceHost(host, 2);
-  assert.equal(await host.locator('.reveal-card.truth').count(), 1);
+  await host.locator('.reveal-card.truth').waitFor({ timeout: 30_000 });
+  assert.equal(await host.locator('.reveal-card.shown').count(), 4, 'la vraie réponse arrive en dernier');
   await shot(host, '13-host-reveal-end');
-  await advanceHost(host, 1);
-  await host.locator('.scoreboard').waitFor();
+  await host.locator('.scoreboard').waitFor({ timeout: 20_000 });
   await host.waitForTimeout(500);
   await shot(host, '14-host-scoreboard-start');
   await host.waitForTimeout(2500);
