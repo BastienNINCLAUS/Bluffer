@@ -98,7 +98,7 @@ Adaptation du jeu de société Bluffer (voir [Rules.md](./Rules.md)) en applicat
 Les transitions suivantes sont automatiques :
 - Invention → vote : tout le monde a validé, ou le délai est écoulé.
 - Vote → résultats : même règle.
-- Résultats : les réponses se dévoilent seules, sans « Prêt » (3 s avant la première, 4 s entre deux réponses), puis le classement apparaît 7 s après la vraie réponse. L'écran peut accélérer (bouton ou Espace).
+- Résultats : les réponses se dévoilent seules, sans « Prêt » (3 s avant la première, 4 s entre deux). Le classement n'apparaît que quand l'animateur passe à la page suivante (bouton ou Espace), qui peut aussi accélérer la révélation.
 
 Les autres demandent un « Prêt » :
 - Question → invention.

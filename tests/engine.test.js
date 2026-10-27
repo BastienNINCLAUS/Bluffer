@@ -760,7 +760,7 @@ describe('révélation, classement et fin de partie', () => {
     assert.deepEqual(tied, [...tied].sort((a, b) => a - b));
   });
 
-  test('la révélation avance seule, sans « Prêt », puis passe au classement', () => {
+  test('la révélation avance seule, sans « Prêt » ; seul l’animateur passe au classement', () => {
     const { game, ids } = revealGame();
     assert.equal(errorOf(game.setReady(ids[0])), 'wrong_phase');
     assert.equal(game.tick(), false);
@@ -778,10 +778,10 @@ describe('révélation, classement et fin de partie', () => {
     }
     assert.equal(game.phase, PHASES.REVEAL);
     assert.equal(game.revealCount, game.revealOrder.length);
-    game.clock.advance(REVEAL_TIMING.endMs - 1);
-    assert.equal(game.tick(), false);
-    game.clock.advance(1);
-    assert.equal(game.tick(), true);
+    game.clock.advance(10 * REVEAL_TIMING.stepMs);
+    assert.equal(game.tick(), false, 'le classement n’arrive pas tout seul');
+    assert.equal(game.phase, PHASES.REVEAL);
+    expectOk(game.hostAdvance());
     assert.equal(game.phase, PHASES.SCOREBOARD);
     assert.equal(game.tick(), false);
   });

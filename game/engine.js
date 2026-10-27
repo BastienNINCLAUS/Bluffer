@@ -39,8 +39,8 @@ export const DEFAULT_CONFIG = Object.freeze({
   themes: null,
 });
 
-// Rythme de la révélation automatique : avant la première réponse, entre deux réponses, puis avant le classement.
-export const REVEAL_TIMING = Object.freeze({ firstMs: 3000, stepMs: 4000, endMs: 7000 });
+// Rythme de la révélation automatique : avant la première réponse, puis entre deux réponses.
+export const REVEAL_TIMING = Object.freeze({ firstMs: 3000, stepMs: 4000 });
 
 const PHOTO_PATTERN = /^data:image\/jpeg;base64,[A-Za-z0-9+/]+=*$/;
 const ADVANCE_MODES = ['both', 'phones', 'host'];
@@ -526,15 +526,14 @@ export class Game {
     this.ready = new Set();
   }
 
-  // La révélation se déroule seule : une réponse à la fois, puis le classement (sans attendre les « Prêt »).
+  // La révélation se déroule seule, une réponse à la fois ; le classement n'arrive que quand l'animateur le demande.
   advanceReveal() {
     if (this.revealCount >= this.revealOrder.length) {
       this.enterScoreboard();
       return;
     }
     this.revealCount += 1;
-    const last = this.revealCount >= this.revealOrder.length;
-    this.revealAt = this.now() + (last ? REVEAL_TIMING.endMs : REVEAL_TIMING.stepMs);
+    this.revealAt = this.revealCount >= this.revealOrder.length ? null : this.now() + REVEAL_TIMING.stepMs;
   }
 
   advanceStep() {

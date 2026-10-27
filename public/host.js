@@ -337,7 +337,7 @@ function stageKey(v) {
 
 function advanceLabel(v) {
   if (v.phase === 'question') return 'Commencer';
-  if (v.phase === 'reveal') return v.revealCount < v.revealTotal ? 'Dévoiler tout de suite la suivante' : 'Voir le classement tout de suite';
+  if (v.phase === 'reveal') return v.revealCount < v.revealTotal ? 'Dévoiler tout de suite la suivante' : 'Voir le classement';
   return v.question.index >= v.question.total ? 'Résultat final' : 'Question suivante';
 }
 

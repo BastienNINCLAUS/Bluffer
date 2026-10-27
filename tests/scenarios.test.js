@@ -72,10 +72,11 @@ function playScenario(scenario) {
 
     const lastRevealed = game.options.find((o) => o.id === game.revealOrder.at(-1));
     assert.equal(lastRevealed.kind, 'truth', `${label} : la vraie réponse est révélée en dernier`);
-    while (game.phase === 'reveal') {
-      game.clock.advance(REVEAL_TIMING.endMs);
+    while (game.revealCount < game.revealOrder.length) {
+      game.clock.advance(REVEAL_TIMING.stepMs);
       game.tick();
     }
+    expectOk(game.hostAdvance());
     assert.equal(game.phase, 'scoreboard', label);
 
     assert.deepEqual(gains(), round.gains, `${label} : gains`);

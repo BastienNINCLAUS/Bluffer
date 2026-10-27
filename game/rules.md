@@ -31,5 +31,5 @@
 
 ## Le déroulement
 - Les étapes « Question » et « Classement » avancent quand tout le monde appuie sur **Prêt** sur son téléphone, ou depuis l'écran.
-- Les résultats se dévoilent seuls, sans attendre : les fausses réponses de la moins votée à la plus votée, puis la vraie réponse en dernier.
+- Les résultats se dévoilent seuls, sans attendre : les fausses réponses de la moins votée à la plus votée, puis la vraie réponse en dernier. L'animateur passe ensuite au classement.
 - L'équipe qui a le plus de points à la dernière question gagne la partie.

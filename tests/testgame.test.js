@@ -29,6 +29,8 @@ describe('robots de la partie de test', () => {
       clock.advance(5000);
       game.tick();
       bots.step();
+      // Les robots ne font pas avancer la révélation : c'est le rôle de l'animateur.
+      if (game.phase === PHASES.REVEAL && game.revealCount >= game.revealOrder.length) game.hostAdvance();
     }
     assert.equal(game.phase, PHASES.FINAL);
     assert.equal(game.order.length, 2);

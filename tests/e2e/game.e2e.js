@@ -218,7 +218,10 @@ async function fullGame() {
   await host.locator('.reveal-card.truth').waitFor({ timeout: 30_000 });
   assert.equal(await host.locator('.reveal-card.shown').count(), 4, 'la vraie réponse arrive en dernier');
   await shot(host, '13-host-reveal-end');
-  await host.locator('.scoreboard').waitFor({ timeout: 20_000 });
+  await host.waitForTimeout(1500);
+  assert.equal(await host.locator('.scoreboard').count(), 0, 'le classement attend l’animateur');
+  await advanceHost(host, 1);
+  await host.locator('.scoreboard').waitFor();
   await host.waitForTimeout(500);
   await shot(host, '14-host-scoreboard-start');
   await host.waitForTimeout(2500);
