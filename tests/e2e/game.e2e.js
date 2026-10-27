@@ -171,7 +171,8 @@ async function fullGame() {
   await phones.B1.getByRole('button', { name: 'Proposer', exact: true }).click();
   await phones.B1.getByRole('button', { name: 'Valider', exact: true }).click();
   await phones.B2.getByRole('button', { name: 'Valider', exact: true }).click();
-  await phones.A1.getByText('Réponse envoyée').waitFor();
+  await phones.A1.getByRole('button', { name: 'Valider', exact: true }).waitFor({ state: 'hidden' });
+  await phones.B2.getByRole('button', { name: 'Valider', exact: true }).waitFor({ state: 'hidden' });
   await shot(host, '07-host-writing');
   await shot(phones.A1, '08-phone-answer-sent');
 
@@ -182,21 +183,29 @@ async function fullGame() {
   await phones.C.locator('#answer-input').fill('Un pigeon voyageur');
   await phones.C.getByRole('button', { name: 'Envoyer' }).click();
 
-  // Vote.
+  // Vote : les téléphones ne montrent que les numéros, la liste est sur l'écran.
   await host.locator('.big-options').waitFor();
   assert.equal(await host.locator('.big-option').count(), 4);
+  const numberOf = async (text) => (await host.locator('.big-option', { hasText: text }).locator('.option-id').textContent()).trim();
+  const truthNumber = await numberOf(truth);
+  const owlNumber = await numberOf('Un hibou furieux');
+  const numberButton = (phone, n) => phone.locator('.option-number', { hasText: new RegExp(`^${n}$`) });
   await shot(host, '09-host-voting');
-  await phones.A1.locator('.option').first().waitFor();
-  await phones.A1.locator('.option', { hasText: 'Un hibou furieux' }).click();
-  assert.equal(await phones.A1.locator('.option.own').count(), 1, 'sa propre réponse est signalée');
-  await phones.A1.locator('.option', { hasText: truth }).click();
+  await phones.A1.locator('.option-number').first().waitFor();
+  assert.equal(await phones.A1.locator('.option-number').count(), 4, 'un bouton par réponse');
+  assert.equal(await phones.A1.getByText(truth).count(), 0, 'la liste des réponses n’est pas sur le téléphone');
+  assert.match(await phones.A1.locator('.own-answer').textContent(), /Un hibou furieux/, 'sa propre réponse est rappelée');
+  assert.equal(await phones.A1.locator('.own-answer .option-id').textContent(), owlNumber, 'avec son numéro');
+  await numberButton(phones.A1, owlNumber).click();
+  assert.equal(await phones.A1.locator('.option-number.own').count(), 1, 'sa propre réponse est signalée');
+  await numberButton(phones.A1, truthNumber).click();
   await phones.A1.getByRole('button', { name: 'Valider', exact: true }).click();
   await phones.A2.getByRole('button', { name: 'Valider', exact: true }).click();
   await shot(phones.A1, '10-phone-voting');
-  await phones.B1.locator('.option', { hasText: truth }).click();
+  await numberButton(phones.B1, truthNumber).click();
   await phones.B1.getByRole('button', { name: 'Valider', exact: true }).click();
   await phones.B2.getByRole('button', { name: 'Valider', exact: true }).click();
-  await phones.C.locator('.option', { hasText: 'Un hibou furieux' }).click();
+  await numberButton(phones.C, owlNumber).click();
   await phones.C.getByRole('button', { name: /Voter pour le n°/ }).click();
 
   // Révélation, une réponse à la fois, puis classement animé.

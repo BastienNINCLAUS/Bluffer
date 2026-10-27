@@ -171,20 +171,13 @@ function countdown(v) {
 }
 
 function readyButton(v) {
-  if (!v.ready.active) return h('p', { class: 'muted center' }, 'L’animateur fait avancer le jeu depuis l’écran.');
+  if (!v.ready.active) return null;
   const ready = v.me.ready;
   return h(
     'button',
     { class: ready ? 'btn ready on big' : 'btn primary big', type: 'button', onclick: () => act('player:ready', { ready: !ready }) },
     ready ? `Prêt ✔ (${v.ready.count}/${v.ready.total})` : `Je suis prêt (${v.ready.count}/${v.ready.total})`,
   );
-}
-
-// La proposition en cours s'affiche dans l'encart collé en haut de l'écran (voir renderProposal).
-function proposalCard(v) {
-  const mine = teamById(v, v.team.id);
-  if (!mine || mine.memberIds.length < 2 || v.team.proposal) return null;
-  return h('div', { class: 'proposal empty' }, 'Pas encore de proposition. Discutez dans le tchat, puis appuyez sur « Proposer ».');
 }
 
 function colorPicker(v) {
@@ -223,31 +216,16 @@ function screenLobby(v) {
   ];
 }
 
-function screenNaming(v) {
-  const mine = teamById(v, v.me.teamId);
-  const team = v.team;
-  const solo = mine.memberIds.length === 1;
-  return [
-    card(
-      h('h2', {}, 'Nom de l’équipe'),
-      mine.name ? h('p', { class: 'big-name', vars: { '--team': mine.color } }, mine.name) : h('p', { class: 'muted' }, 'Choisissez un nom ensemble avant la première question.'),
-      team.notice === 'name_taken' ? h('p', { class: 'error' }, 'Ce nom a été pris par une autre équipe entre-temps.') : null,
-      solo ? h('p', { class: 'muted small' }, 'Tu peux garder ton pseudo ou en choisir un autre.') : null,
-      !mine.name ? proposalCard(v) : h('p', { class: 'ok' }, 'Nom adopté ✔'),
-    ),
-  ];
+function screenNaming() {
+  return [];
 }
 
 function screenQuestion(v) {
-  return [card(h('p', { class: 'muted' }, 'La question s’affichera sur l’écran quand tout le monde sera prêt.'), readyButton(v))];
+  return [readyButton(v)];
 }
 
 function screenWriting(v) {
-  const team = v.team;
-  if (team.locked) {
-    return [card(h('div', { class: 'sent' }, h('strong', {}, 'Réponse envoyée ✔'), h('p', { class: 'quote' }, `« ${team.answer} »`)), countdown(v))];
-  }
-  return [card(h('p', { class: 'hint' }, 'Invente une fausse réponse crédible. Si tu connais la vraie, invente-en une autre !'), proposalCard(v), countdown(v))];
+  return v.team.locked ? [] : [countdown(v)];
 }
 
 function screenVoting(v) {
@@ -256,10 +234,12 @@ function screenVoting(v) {
   const solo = mine.memberIds.length === 1;
   const proposed = team.proposal ? team.proposal.value : null;
   const chosen = team.locked ? team.vote : solo ? pendingVote : proposed;
-  const buttons = v.options.map((option) => {
-    const own = option.id === team.ownOptionId;
-    const classes = ['option'];
-    if (own) classes.push('own');
+  // La liste des réponses est sur l'écran commun : le téléphone ne montre que les numéros.
+  const own = v.options.find((o) => o.id === team.ownOptionId);
+  const numbers = v.options.map((option) => {
+    const isOwn = option.id === team.ownOptionId;
+    const classes = ['option-number'];
+    if (isOwn) classes.push('own');
     if (chosen === option.id) classes.push('chosen');
     return h(
       'button',
@@ -267,8 +247,9 @@ function screenVoting(v) {
         class: classes.join(' '),
         type: 'button',
         disabled: team.locked,
+        'aria-label': `Réponse n°${option.id}`,
         onclick: () => {
-          if (own) return toast(errorMessage('own_answer'));
+          if (isOwn) return toast(errorMessage('own_answer'));
           if (solo) {
             pendingVote = option.id;
             return render();
@@ -276,20 +257,21 @@ function screenVoting(v) {
           return act('team:propose', { value: option.id });
         },
       },
-      h('span', { class: 'option-id' }, String(option.id)),
-      h('span', { class: 'option-text' }, option.text),
-      own ? h('span', { class: 'tag' }, 'Ton équipe') : null,
+      String(option.id),
     );
   });
-  const optionText = (id) => v.options.find((o) => o.id === id)?.text ?? '';
   return [
     card(
-      h('div', { class: 'options' }, buttons),
+      own
+        ? h('div', { class: 'own-answer' }, h('span', { class: 'option-id' }, String(own.id)), h('div', { class: 'own-answer-text' }, h('div', { class: 'muted small' }, 'Ta réponse (n’est pas votable)'), h('div', { class: 'quote' }, `« ${own.text} »`)))
+        : null,
+      h('p', { class: 'hint' }, 'Quelle est la vraie réponse ? Choisis son numéro sur l’écran.'),
+      h('div', { class: 'numbers' }, numbers),
       team.locked
-        ? h('div', { class: 'sent' }, h('strong', {}, `Vote envoyé ✔ : n°${team.vote}`), h('p', { class: 'quote' }, `« ${optionText(team.vote)} »`))
+        ? h('div', { class: 'sent' }, h('strong', {}, `Vote envoyé ✔ : n°${team.vote}`))
         : solo
-          ? h('button', { class: 'btn primary big', type: 'button', disabled: pendingVote === null, onclick: () => act('team:propose', { value: pendingVote }) }, pendingVote === null ? 'Choisis une réponse' : `Voter pour le n°${pendingVote}`)
-          : proposalCard(v),
+          ? h('button', { class: 'btn primary big', type: 'button', disabled: pendingVote === null, onclick: () => act('team:propose', { value: pendingVote }) }, pendingVote === null ? 'Choisis un numéro' : `Voter pour le n°${pendingVote}`)
+          : null,
       countdown(v),
     ),
   ];
