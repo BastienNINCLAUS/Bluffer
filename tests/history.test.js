@@ -31,6 +31,24 @@ describe('MemoryHistory', () => {
     history.reset();
     assert.deepEqual(history.toJSON(), {});
   });
+
+  test('score : likes moins dislikes, conservé à la remise à zéro des passages', () => {
+    const history = new MemoryHistory({ a: 1 }, { a: 2, b: 0, c: 1.5 });
+    assert.deepEqual(history.scoresJSON(), { a: 2 });
+    history.addScore('b', -1);
+    history.addScore('a', -2);
+    assert.deepEqual(history.scoresJSON(), { b: -1 });
+    history.record('a');
+    history.unrecord('a');
+    history.unrecord('a');
+    assert.equal(history.count('a'), 0);
+    history.unrecord('a');
+    assert.equal(history.count('a'), 0, 'jamais négatif');
+    history.record('b');
+    assert.equal(history.priority('b'), 2);
+    history.reset();
+    assert.equal(history.score('b'), -1);
+  });
 });
 
 describe('FileHistory', () => {
@@ -40,14 +58,16 @@ describe('FileHistory', () => {
     history.record('q1');
     history.record('q1');
     history.record('q2');
+    history.addScore('q2', 1);
     assert.equal(existsSync(file), false, 'écriture différée');
     history.flush();
-    assert.deepEqual(JSON.parse(readFileSync(file, 'utf8')), { version: 1, counts: { q1: 2, q2: 1 } });
+    assert.deepEqual(JSON.parse(readFileSync(file, 'utf8')), { version: 1, counts: { q1: 2, q2: 1 }, scores: { q2: 1 } });
     assert.equal(existsSync(`${file}.tmp`), false);
 
     const reloaded = new FileHistory(file, { log: silent });
     assert.equal(reloaded.count('q1'), 2);
     assert.equal(reloaded.count('q2'), 1);
+    assert.equal(reloaded.score('q2'), 1);
   });
 
   test('l’écriture différée a lieu toute seule', async () => {
@@ -142,6 +162,36 @@ describe('serveur : l’historique est partagé entre les salons et survit aux r
     assert.deepEqual(await host.emit('host:resetHistory'), { ok: true });
     const after = await host.waitFor((s) => s.history.played === 0, 'historique vide');
     assert.equal(after.pool.fresh, 6);
+    host.close();
+  });
+
+  test('l’hôte donne son avis : 👍 visible dans la vue, 👎 remplace la question sans la compter', async () => {
+    const history = new MemoryHistory();
+    const server = await startServer({ questions: BANK, history });
+    servers.push(server);
+    const { host, code } = await createRoom(server, { mode: 'base', totalQuestions: 3, advance: 'host' });
+    for (const name of ['Ann', 'Bob', 'Cid']) await joinPlayer(server, code, name);
+    await host.waitFor((s) => s.players.length === 3, '3 joueurs');
+    assert.equal((await host.emit('host:start')).ok, true);
+    const ready = await host.waitFor((s) => s.phase === 'question', 'question');
+    assert.equal(ready.rating, null);
+    assert.equal((await host.emit('host:rate', { rating: 'like' })).error, 'wrong_phase');
+    await host.emit('host:advance');
+    const writing = await host.waitFor((s) => s.phase === 'writing', 'écriture');
+    assert.deepEqual(writing.rating, { value: null, score: 0, canDislike: true });
+    const first = server.rooms.get(code).game.question.id;
+
+    assert.deepEqual(await host.emit('host:rate', { rating: 'like' }), { ok: true });
+    const liked = await host.waitFor((s) => s.rating?.value === 'like', 'like');
+    assert.equal(liked.rating.score, 1);
+    assert.equal(history.score(first), 1);
+
+    assert.deepEqual(await host.emit('host:rate', { rating: 'dislike' }), { ok: true });
+    await host.waitFor((s) => s.phase === 'question', 'retour à « Prêt »');
+    assert.equal(history.score(first), -1);
+    assert.equal(history.count(first), 0);
+    assert.notEqual(server.rooms.get(code).game.question.id, first);
+    assert.equal((await host.emit('host:rate', { rating: 5 })).error, 'invalid_payload');
     host.close();
   });
 });

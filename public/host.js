@@ -229,7 +229,32 @@ function renderActions(v) {
 // ---------- phases ----------
 
 function questionBlock(v) {
-  return h('div', { class: 'question-big' }, h('div', { class: 'question-index' }, `Question ${v.question.index} / ${v.question.total}`), h('h1', {}, v.question.text));
+  return h(
+    'div',
+    { class: 'question-big' },
+    h('div', { class: 'question-head' }, h('span'), h('div', { class: 'question-index' }, `Question ${v.question.index} / ${v.question.total}`), ratingBar(v)),
+    h('h1', {}, v.question.text),
+  );
+}
+
+// Avis de l'animateur : 👍 fait revenir la question plus souvent ; 👎 (pendant l'écriture) l'écarte et la remplace.
+async function rate(event, rating) {
+  event.currentTarget.blur();
+  if (rating === 'dislike' && !confirm('Écarter cette question ? Elle ne comptera pas comme jouée et sera remplacée par une autre (les réponses en cours seront effacées).')) return;
+  const result = await act('host:rate', { rating });
+  if (result.ok && rating === 'dislike') toast('Question écartée : une autre la remplace.');
+}
+
+function ratingBar(v) {
+  if (!v.rating) return null;
+  const liked = v.rating.value === 'like';
+  return h(
+    'div',
+    { class: 'rating-bar' },
+    h('button', { class: liked ? 'btn rating on' : 'btn rating', type: 'button', title: liked ? 'Retirer le like' : 'J’aime cette question : elle reviendra plus souvent', 'aria-pressed': String(liked), onclick: (e) => rate(e, liked ? null : 'like') }, '👍'),
+    v.rating.canDislike ? h('button', { class: 'btn rating', type: 'button', title: 'Je n’aime pas cette question : l’écarter et en tirer une autre', onclick: (e) => rate(e, 'dislike') }, '👎') : null,
+    h('span', { class: 'rating-score', title: 'Score de la question (likes moins dislikes, toutes parties confondues)' }, `Score ${v.rating.score > 0 ? '+' : ''}${v.rating.score}`),
+  );
 }
 
 function progressGrid(v) {
@@ -325,9 +350,9 @@ function stageKey(v) {
   switch (v.phase) {
     case 'naming': return JSON.stringify([teams, v.teamsNamed, v.canStart, v.players]);
     case 'question': return JSON.stringify([v.question, teams, v.players]);
-    case 'writing': return JSON.stringify([v.question, teams, v.players]);
-    case 'voting': return JSON.stringify([v.question, v.options, teams]);
-    case 'reveal': return JSON.stringify([v.question, v.options, v.revealCount]);
+    case 'writing': return JSON.stringify([v.question, teams, v.players, v.rating]);
+    case 'voting': return JSON.stringify([v.question, v.options, teams, v.rating]);
+    case 'reveal': return JSON.stringify([v.question, v.options, v.revealCount, v.rating]);
     case 'scoreboard': return JSON.stringify([v.question.index, teams]);
     default: return JSON.stringify([v.phase, teams, v.winners]);
   }

@@ -243,6 +243,7 @@ export function createApp({
     on('host:advance', 'host', ({ game }) => game.hostAdvance());
     on('host:replay', 'host', ({ game }) => game.replay());
     on('host:resetHistory', 'host', ({ game }) => game.resetHistory());
+    on('host:rate', 'host', ({ game, data }) => game.rate(data.rating));
 
     on('host:kick', 'host', ({ room, game, data }) => {
       const result = game.removePlayer(data.playerId);

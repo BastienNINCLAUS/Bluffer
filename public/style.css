@@ -231,6 +231,12 @@ body.host { font-size: clamp(16px, 1.5vw, 26px); }
 
 .question-big { text-align: center; margin: .5rem 0 1.2rem; }
 .question-big h1 { margin-top: .2rem; }
+.question-head { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; }
+.rating-bar { display: flex; align-items: center; gap: .4rem; justify-self: start; }
+.btn.rating { font-size: 1.05rem; min-height: 34px; padding: .15rem .6rem; opacity: .7; }
+.btn.rating:hover, .btn.rating.on { opacity: 1; }
+.btn.rating.on { background: #14301f; border-color: var(--ok); }
+.rating-score { color: var(--muted); font-size: .9rem; }
 .progress-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: .8rem; margin-top: 1.2rem; }
 .progress-card { background: var(--panel); border-radius: var(--radius); border-bottom: 6px solid var(--team); padding: .8rem; text-align: center; opacity: .8; }
 .progress-card.done { opacity: 1; background: #14301f; }

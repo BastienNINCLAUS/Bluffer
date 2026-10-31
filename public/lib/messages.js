@@ -36,6 +36,7 @@ export const ERROR_MESSAGES = Object.freeze({
   server_error: 'Erreur du serveur, réessaie.',
   timeout: 'Le serveur ne répond pas.',
   protocol_mismatch: 'Version de l’application obsolète : recharge la page.',
+  invalid_rating: 'Avis invalide.',
 });
 
 export function errorMessage(code) {

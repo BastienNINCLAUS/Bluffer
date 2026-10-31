@@ -98,6 +98,13 @@ export function hostView(game) {
     themes: game.themeList.map((t) => ({ ...t })),
     selectedThemes: game.config.themes ?? game.themeList.map((t) => t.name),
     history: { played: game.history.playedAmong(game.bank), total: game.bank.length },
+    rating: game.ratingPhases().includes(game.phase)
+      ? {
+          value: game.rating,
+          score: game.history.score(game.question.id),
+          canDislike: game.phase === PHASES.WRITING,
+        }
+      : null,
     pool,
     canLock:
       game.phase === PHASES.LOBBY &&

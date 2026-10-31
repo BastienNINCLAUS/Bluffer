@@ -1066,3 +1066,106 @@ describe('historique des questions jouées', () => {
     assert.equal(errorOf(game.resetHistory()), 'wrong_phase');
   });
 });
+
+describe('avis de l’animateur sur la question (👍 / 👎)', () => {
+  const started = (history = new MemoryHistory(), config = {}) => {
+    const { game, ids } = startedBaseGame(['Ann', 'Bob', 'Cid'], config);
+    game.history = history;
+    history.record(game.question.id);
+    return { game, ids, history };
+  };
+
+  test('👍 : score +1, annulable ; seulement quand la question est affichée', () => {
+    const { game, history } = started();
+    const id = game.question.id;
+    assert.equal(errorOf(game.rate('like')), 'wrong_phase', 'pas pendant l’écran « Prêt »');
+    toWriting(game);
+    expectOk(game.rate('like'));
+    expectOk(game.rate('like'));
+    assert.equal(history.score(id), 1, 'un seul like par question et par partie');
+    assert.equal(game.rating, 'like');
+    expectOk(game.rate(null));
+    assert.equal(history.score(id), 0);
+    assert.equal(game.rating, null);
+    assert.equal(errorOf(game.rate('bof')), 'invalid_rating');
+  });
+
+  test('👍 possible pendant le vote et la révélation, 👎 seulement pendant l’écriture', () => {
+    const { game, ids, history } = started();
+    toWriting(game);
+    submitAnswers(game, ids.map((id, i) => [[id], `Fausse ${i}`]));
+    assert.equal(game.phase, PHASES.VOTING);
+    assert.equal(errorOf(game.rate('dislike')), 'wrong_phase');
+    expectOk(game.rate('like'));
+    game.finishPhase();
+    assert.equal(game.phase, PHASES.REVEAL);
+    expectOk(game.rate(null));
+    expectOk(game.rate('like'));
+    assert.equal(history.score(game.question.id), 1);
+    game.enterScoreboard();
+    assert.equal(errorOf(game.rate(null)), 'wrong_phase');
+  });
+
+  test('👎 : la question ne compte pas comme jouée, est remplacée et on revient à l’écran « Prêt »', () => {
+    const { game, ids, history } = started();
+    toWriting(game);
+    expectOk(game.propose(ids[0], 'Bluff'));
+    const disliked = game.question.id;
+    const planned = game.order.map((q) => q.id);
+    expectOk(game.rate('like'));
+    expectOk(game.rate('dislike'));
+    assert.equal(history.score(disliked), -1, 'le like est remplacé par le dislike');
+    assert.equal(history.count(disliked), 0);
+    assert.equal(game.phase, PHASES.QUESTION);
+    assert.equal(game.qIndex, 0);
+    assert.equal(game.order.length, 3);
+    assert.ok(!planned.includes(game.question.id), 'une question qui n’était pas prévue');
+    assert.equal(history.count(game.question.id), 1);
+    assert.equal(game.rating, null);
+    assert.equal(game.teams.get(game.players.get(ids[0]).teamId).proposal, null, 'proposition effacée');
+    toWriting(game);
+    assert.equal(game.phase, PHASES.WRITING);
+  });
+
+  test('👎 sans question de rechange : la question est retirée de la partie', () => {
+    const { game, history } = started(new MemoryHistory(), { totalQuestions: 6 });
+    toWriting(game);
+    const disliked = game.question.id;
+    expectOk(game.rate('dislike'));
+    assert.equal(game.order.length, 5);
+    assert.ok(!game.order.some((q) => q.id === disliked));
+    assert.equal(game.phase, PHASES.QUESTION);
+    assert.equal(history.count(disliked), 0);
+  });
+
+  test('👎 sur la dernière question sans rechange : fin de partie', () => {
+    const { game } = started(new MemoryHistory(), { totalQuestions: 6 });
+    game.qIndex = 5;
+    game.enterQuestion();
+    toWriting(game);
+    expectOk(game.rate('dislike'));
+    assert.equal(game.phase, PHASES.FINAL);
+    assert.equal(game.order.length, 5);
+  });
+
+  test('le tirage favorise les questions au meilleur score (priorité = passages − score)', () => {
+    const history = new MemoryHistory();
+    for (const id of ['q1', 'q2', 'q3', 'q4', 'q5', 'q6']) history.record(id);
+    history.addScore('q4', 1);
+    history.addScore('q2', -1);
+    const game = newGame({ mode: 'base', totalQuestions: 1 });
+    game.history = history;
+    addPlayers(game, ['Ann', 'Bob', 'Cid']);
+    expectOk(game.start());
+    assert.equal(game.order[0].id, 'q4');
+    assert.equal(history.priority('q4'), 1, 'jouée deux fois (dont celle-ci), moins son like');
+    assert.equal(history.priority('q2'), 2, 'jouée une fois, plus son dislike');
+  });
+
+  test('pas d’avis dans la partie de test', () => {
+    const { game } = started();
+    game.test = true;
+    toWriting(game);
+    assert.equal(errorOf(game.rate('like')), 'wrong_phase');
+  });
+});

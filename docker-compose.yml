@@ -11,7 +11,7 @@ services:
       HOST_IP: "${HOST_IP:-}"
       HOST_PORT: "${HOST_PORT:-3417}"
     volumes:
-      # Historique des questions déjà jouées (data/played.json dans le conteneur).
+      # Historique des questions : passages et score 👍/👎 (data/played.json dans le conteneur).
       - bluffer-data:/data
 
 volumes:

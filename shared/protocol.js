@@ -21,6 +21,7 @@ export const COMMANDS = Object.freeze({
   'host:advance': {},
   'host:replay': {},
   'host:resetHistory': {},
+  'host:rate': { rating: 'string|null' },
   'host:kick': { playerId: 'string' },
   'host:end': {},
   'player:join': { code: 'string', name: 'string' },

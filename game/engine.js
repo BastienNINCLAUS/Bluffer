@@ -84,6 +84,7 @@ export class Game {
     this.revealAt = null;
     this.deadline = null;
     this.ready = new Set();
+    this.rating = null;
   }
 
   shuffle(items) {
@@ -423,11 +424,15 @@ export class Game {
 
   pickQuestions(count) {
     const themed = filterByThemes(this.bank, this.config.themes);
-    // Mélange puis tri stable par nombre de passages : les questions les moins jouées passent d'abord.
-    const ranked = this.shuffle(themed)
-      .map((question) => ({ question, played: this.history.count(question.id) }))
-      .sort((a, b) => a.played - b.played);
-    return this.shuffle(ranked.slice(0, count).map((entry) => entry.question));
+    return this.shuffle(this.rankByPriority(themed).slice(0, count));
+  }
+
+  // Mélange puis tri stable par priorité (passages − score) : les moins jouées et les plus appréciées d'abord.
+  rankByPriority(questions) {
+    return this.shuffle(questions)
+      .map((question) => ({ question, priority: this.history.priority(question.id) }))
+      .sort((a, b) => a.priority - b.priority)
+      .map((entry) => entry.question);
   }
 
   resetHistory() {
@@ -448,6 +453,7 @@ export class Game {
     this.question = this.order[this.qIndex];
     this.history.record(this.question.id);
     this.phase = PHASES.QUESTION;
+    this.rating = null;
     this.options = [];
     this.revealOrder = [];
     this.revealCount = 0;
@@ -459,8 +465,53 @@ export class Game {
       team.gain = 0;
       team.locked = false;
       this.resetSlot(team);
-      if (this.members(team).length >= 2) team.chat.push({ type: 'separator', qIndex: this.qIndex });
+      const last = team.chat.at(-1);
+      const separated = last?.type === 'separator' && last.qIndex === this.qIndex;
+      if (this.members(team).length >= 2 && !separated) team.chat.push({ type: 'separator', qIndex: this.qIndex });
     }
+  }
+
+  // ---------- avis de l'animateur sur la question (👍 / 👎) ----------
+
+  ratingPhases() {
+    return this.test ? [] : [PHASES.WRITING, PHASES.VOTING, PHASES.REVEAL];
+  }
+
+  // `value` : 'like', 'dislike' ou null (sans avis). Le score cumulé de la question est conservé dans l'historique.
+  // Un 👎 n'est possible que pendant l'écriture : la question est écartée, ne compte pas comme jouée et est remplacée.
+  rate(value) {
+    if (![null, 'like', 'dislike'].includes(value)) return fail('invalid_rating');
+    if (!this.ratingPhases().includes(this.phase)) return fail('wrong_phase');
+    if (value === 'dislike' && this.phase !== PHASES.WRITING) return fail('wrong_phase');
+    const points = { like: 1, dislike: -1 };
+    const id = this.question.id;
+    this.history.addScore(id, (points[value] ?? 0) - (points[this.rating] ?? 0));
+    this.rating = value;
+    if (value === 'dislike') {
+      this.history.unrecord(id);
+      this.replaceQuestion();
+    }
+    return ok();
+  }
+
+  // Remplace la question en cours par la meilleure question non encore prévue dans la partie, puis revient à
+  // l'écran « Prêt ». S'il n'en reste aucune, la question est simplement retirée de la partie.
+  replaceQuestion() {
+    const planned = new Set(this.order.map((q) => q.id));
+    const [next] = this.rankByPriority(filterByThemes(this.bank, this.config.themes).filter((q) => !planned.has(q.id)));
+    if (next) {
+      this.order[this.qIndex] = next;
+    } else {
+      this.order.splice(this.qIndex, 1);
+      if (this.qIndex >= this.order.length) {
+        this.phase = PHASES.FINAL;
+        this.question = null;
+        this.deadline = null;
+        this.ready = new Set();
+        return;
+      }
+    }
+    this.enterQuestion();
   }
 
   enterWriting() {

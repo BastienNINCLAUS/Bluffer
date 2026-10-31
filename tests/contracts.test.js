@@ -10,7 +10,7 @@ describe('contrat des événements Socket.IO', () => {
     assert.equal(PROTOCOL_VERSION, 1);
     assert.deepEqual(Object.keys(COMMANDS).sort(), [
       'host:advance', 'host:configure', 'host:create', 'host:end', 'host:kick', 'host:lockTeams',
-      'host:randomize', 'host:replay', 'host:resetHistory', 'host:resume', 'host:start', 'host:unlockTeams',
+      'host:randomize', 'host:rate', 'host:replay', 'host:resetHistory', 'host:resume', 'host:start', 'host:unlockTeams',
       'player:join', 'player:photo', 'player:ready', 'player:resume',
       'team:chat', 'team:color', 'team:create', 'team:join', 'team:propose', 'team:unvalidate', 'team:validate',
     ]);
@@ -44,7 +44,7 @@ describe('contrat des événements Socket.IO', () => {
     assert.deepEqual(Object.keys(hostView(game)).sort(), [
       'canLock', 'canStart', 'code', 'config', 'deadlineIn', 'history', 'limits', 'options', 'phase', 'players', 'pool',
       'question',
-      'ranking', 'ready', 'revealCount', 'revealTotal', 'role', 'selectedThemes', 'teams', 'teamsNamed', 'test', 'themes',
+      'ranking', 'rating', 'ready', 'revealCount', 'revealTotal', 'role', 'selectedThemes', 'teams', 'teamsNamed', 'test', 'themes',
       'unassigned', 'winners',
     ]);
   });

@@ -2,7 +2,7 @@ import { mkdirSync, readFileSync, renameSync, writeFileSync, existsSync } from '
 import { dirname } from 'node:path';
 import { MemoryHistory } from '../game/history.js';
 
-// Historique persistant : survit aux redémarrages du serveur (fichier JSON écrit de façon atomique).
+// Historique persistant (passages et scores) : survit aux redémarrages du serveur (fichier JSON écrit de façon atomique).
 export class FileHistory extends MemoryHistory {
   constructor(file, { delayMs = 500, log = console } = {}) {
     super();
@@ -20,6 +20,9 @@ export class FileHistory extends MemoryHistory {
       const data = JSON.parse(readFileSync(this.file, 'utf8'));
       for (const [id, n] of Object.entries(data.counts ?? {})) {
         if (Number.isInteger(n) && n > 0) this.counts.set(id, n);
+      }
+      for (const [id, n] of Object.entries(data.scores ?? {})) {
+        if (Number.isInteger(n) && n !== 0) this.scores.set(id, n);
       }
     } catch (error) {
       this.log.warn?.(`Historique illisible (${this.file}), on repart de zéro : ${error.message}`);
@@ -41,7 +44,7 @@ export class FileHistory extends MemoryHistory {
     try {
       mkdirSync(dirname(this.file), { recursive: true });
       const temp = `${this.file}.tmp`;
-      writeFileSync(temp, `${JSON.stringify({ version: 1, counts: this.toJSON() })}\n`);
+      writeFileSync(temp, `${JSON.stringify({ version: 1, counts: this.toJSON(), scores: this.scoresJSON() })}\n`);
       renameSync(temp, this.file);
     } catch (error) {
       this.dirty = true;

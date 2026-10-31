@@ -1,8 +1,10 @@
-// Historique des questions jouées : un compteur par identifiant de question.
-// Le tirage privilégie toujours les questions les moins jouées, donc rien ne se répète tant qu'il en reste de nouvelles.
+// Historique des questions : nombre de passages et score (likes moins dislikes) par identifiant de question.
+// Le tirage privilégie les questions de plus petite priorité (passages − score) : rien ne se répète tant qu'il
+// reste des questions nouvelles, sauf les questions appréciées, qui reviennent plus souvent.
 export class MemoryHistory {
-  constructor(counts = {}) {
+  constructor(counts = {}, scores = {}) {
     this.counts = new Map(Object.entries(counts).filter(([, n]) => Number.isInteger(n) && n > 0));
+    this.scores = new Map(Object.entries(scores).filter(([, n]) => Number.isInteger(n) && n !== 0));
   }
 
   count(id) {
@@ -14,6 +16,31 @@ export class MemoryHistory {
     this.changed();
   }
 
+  // Annule un passage (question écartée avant d'être jouée).
+  unrecord(id) {
+    const n = this.count(id) - 1;
+    if (n > 0) this.counts.set(id, n);
+    else this.counts.delete(id);
+    this.changed();
+  }
+
+  score(id) {
+    return this.scores.get(id) ?? 0;
+  }
+
+  addScore(id, delta) {
+    if (delta === 0) return;
+    const n = this.score(id) + delta;
+    if (n !== 0) this.scores.set(id, n);
+    else this.scores.delete(id);
+    this.changed();
+  }
+
+  priority(id) {
+    return this.count(id) - this.score(id);
+  }
+
+  // Remet à zéro les passages ; les scores sont conservés.
   reset() {
     this.counts.clear();
     this.changed();
@@ -26,6 +53,10 @@ export class MemoryHistory {
 
   toJSON() {
     return Object.fromEntries(this.counts);
+  }
+
+  scoresJSON() {
+    return Object.fromEntries(this.scores);
   }
 
   // Point d'accroche pour la persistance.
