@@ -57,12 +57,16 @@ describe('banque de questions', () => {
     }
   });
 
-  test('les questions à trous ont un seul trou et ne contiennent pas leur réponse', () => {
+  test('les anecdotes sont reformulées en vraies questions qui ne contiennent pas leur réponse', () => {
+    const rewrites = JSON.parse(readFileSync(join(root, 'scripts', 'data', 'dyk-rewrite.json'), 'utf8'));
+    const words = (s) => ` ${s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()} `;
     const gaps = questions.filter((q) => q.id.startsWith('lsv-'));
     assert.ok(gaps.length >= 900);
     for (const q of gaps) {
-      assert.equal(q.text.split('____').length, 2, q.id);
+      assert.deepEqual(rewrites[q.id], { answer: q.answer, text: q.text }, `${q.id} : absente de dyk-rewrite.json ou différente`);
+      assert.ok(!/_{2,}|complète cette anecdote/i.test(q.text), `${q.id} : gabarit à trous`);
       assert.ok(!/[[\]{}|]|'''/.test(q.text), `${q.id} : markup résiduel`);
+      assert.ok(!words(q.text).includes(words(q.answer)), `${q.id} : la réponse apparaît dans l’énoncé`);
     }
   });
 

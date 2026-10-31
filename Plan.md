@@ -29,7 +29,7 @@ Adaptation du jeu de société Bluffer (voir [Rules.md](./Rules.md)) en applicat
 | `game/questions.json`, `game/questions.*.json` | Banque de questions, chacune avec sa vraie réponse et ses thèmes (`tags`) : questions rédigées à la main, anecdotes insolites de Wikipédia (`questions.dyk.json`) et faits classiques de Wikidata (`questions.wikidata.json`, thème « Classique ») |
 | `shared/themes.js` | Thèmes : décompte, filtre |
 | `game/testGame.js` | Partie de test : code `TEST`, 2 questions génériques, robots |
-| `scripts/import-dyk.js`, `scripts/import-wikidata.js` | Génération des banques de questions (`NOTICE.md` : licences) |
+| `scripts/import-dyk.js`, `scripts/import-wikidata.js` | Génération des banques de questions (`NOTICE.md` : licences). Pour les anecdotes : relecture dans `scripts/data/dyk-review.json`, reformulation en questions ouvertes dans `scripts/data/dyk-rewrite.json` |
 | `public/host.html`, `host.js` | Écran hôte |
 | `public/player.html`, `player.js` | Page joueur (reconnexion automatique) |
 | `package.json`, `CHANGELOG.md` | Scripts (`npm test`, `npm start`), versionnement sémantique |

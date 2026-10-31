@@ -1,4 +1,5 @@
-// Convertit les archives « Le saviez-vous ? » de Wikipédia FR en questions à compléter (texte à trous).
+// Convertit les archives « Le saviez-vous ? » de Wikipédia FR en questions à compléter (texte à trous),
+// puis remplace chaque texte à trous par sa reformulation en question ouverte (scripts/data/dyk-rewrite.json).
 // Usage : node scripts/import-dyk.js [--years 2010-2025] [--target 1000] [--seed 1] [--refresh]
 // Sortie : game/questions.dyk.json. Texte des anecdotes : Wikipédia, CC BY-SA 4.0 (voir NOTICE.md).
 import { mkdirSync, existsSync, readFileSync, writeFileSync } from 'node:fs';
@@ -297,8 +298,22 @@ const reviewed = result
   .filter((q) => !(q.id in review.remove) && (!reviewedIds || reviewedIds.has(q.id)))
   .map((q) => (review.tags[q.id] ? { ...q, tags: review.tags[q.id] } : q));
 console.log(`Relecture : ${result.length - reviewed.length} questions écartées, ${Object.keys(review.tags).length} thèmes corrigés.`);
+
+// Reformulation : scripts/data/dyk-rewrite.json = { id: { answer, text } }. Elle n'est appliquée que si la réponse
+// importée n'a pas changé ; sinon la question garde son texte à trous et il faut la reformuler à nouveau.
+const rewriteFile = join(root, 'scripts', 'data', 'dyk-rewrite.json');
+const rewrites = existsSync(rewriteFile) ? JSON.parse(readFileSync(rewriteFile, 'utf8')) : {};
+const stale = [];
+const rewritten = reviewed.map((q) => {
+  const rewrite = rewrites[q.id];
+  if (rewrite?.answer === q.answer) return { ...q, text: rewrite.text };
+  stale.push(q.id);
+  return q;
+});
+console.log(`Reformulation : ${rewritten.length - stale.length} énoncés reformulés, ${stale.length} encore à trous.`);
+if (stale.length > 0) console.log(`  À reformuler : ${stale.slice(0, 20).join(', ')}${stale.length > 20 ? '…' : ''}`);
 result.length = 0;
-result.push(...reviewed);
+result.push(...rewritten);
 
 const problems = validateQuestions(result);
 if (problems.length > 0) {
