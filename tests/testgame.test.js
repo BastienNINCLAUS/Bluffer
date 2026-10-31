@@ -143,6 +143,9 @@ describe('salon de test', () => {
       assert.equal(host.state.phase, phase);
     };
     await until('writing');
+    expectOk(await host.emit('host:rate', { rating: 'like' }));
+    await host.waitFor((s) => s.rating?.value === 'like' && s.rating.score === 1, 'avis visible');
+    assert.equal(server.history.score('test-ocean') + server.history.score('test-pieuvre'), 0, 'scores réels intacts');
     await until('voting');
     await until('reveal');
     assert.equal(server.history.count('test-ocean') + server.history.count('test-pieuvre'), 0);

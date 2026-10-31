@@ -1162,10 +1162,11 @@ describe('avis de l’animateur sur la question (👍 / 👎)', () => {
     assert.equal(history.priority('q2'), 2, 'jouée une fois, plus son dislike');
   });
 
-  test('pas d’avis dans la partie de test', () => {
-    const { game } = started();
+  test('les avis sont aussi possibles dans la partie de test', () => {
+    const { game, history } = started();
     game.test = true;
     toWriting(game);
-    assert.equal(errorOf(game.rate('like')), 'wrong_phase');
+    expectOk(game.rate('like'));
+    assert.equal(history.score(game.question.id), 1);
   });
 });

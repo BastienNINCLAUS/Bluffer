@@ -240,9 +240,9 @@ function questionBlock(v) {
 // Avis de l'animateur : 👍 fait revenir la question plus souvent ; 👎 (pendant l'écriture) l'écarte et la remplace.
 async function rate(event, rating) {
   event.currentTarget.blur();
-  if (rating === 'dislike' && !confirm('Écarter cette question ? Elle ne comptera pas comme jouée et sera remplacée par une autre (les réponses en cours seront effacées).')) return;
+  if (rating === 'dislike' && !confirm('Écarter cette question ? Elle ne comptera pas comme jouée et sera remplacée par une autre s'il en reste (les réponses en cours seront effacées).')) return;
   const result = await act('host:rate', { rating });
-  if (result.ok && rating === 'dislike') toast('Question écartée : une autre la remplace.');
+  if (result.ok && rating === 'dislike') toast('Question écartée.');
 }
 
 function ratingBar(v) {

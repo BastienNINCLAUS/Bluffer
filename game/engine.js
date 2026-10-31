@@ -474,10 +474,11 @@ export class Game {
   // ---------- avis de l'animateur sur la question (👍 / 👎) ----------
 
   ratingPhases() {
-    return this.test ? [] : [PHASES.WRITING, PHASES.VOTING, PHASES.REVEAL];
+    return [PHASES.WRITING, PHASES.VOTING, PHASES.REVEAL];
   }
 
-  // `value` : 'like', 'dislike' ou null (sans avis). Le score cumulé de la question est conservé dans l'historique.
+  // `value` : 'like', 'dislike' ou null (sans avis). Le score cumulé de la question est conservé dans l'historique
+  // (celui de la partie de test reste en mémoire : les avis y sont sans effet sur les vraies questions).
   // Un 👎 n'est possible que pendant l'écriture : la question est écartée, ne compte pas comme jouée et est remplacée.
   rate(value) {
     if (![null, 'like', 'dislike'].includes(value)) return fail('invalid_rating');
